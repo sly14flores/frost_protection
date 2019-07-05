@@ -1,0 +1,183 @@
+<?php
+
+require_once 'authentication.php';
+
+?>
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Benguet</title>
+    <link rel="shortcut icon" type="image/png" href="./imgs/benguet logo.png"/>
+    <link rel="stylesheet" href="./vendor/simple-line-icons/css/simple-line-icons.css">
+    <link rel="stylesheet" href="./vendor/font-awesome/css/fontawesome-all.min.css">
+    <link rel="stylesheet" href="./css/styles.css">
+    <link href="css/jquery-jvectormap-1.2.2.css" rel="stylesheet">
+    <style style="text/css">
+	
+      #map {
+        width: 100%;
+        height: 350px;
+        background-color: grey;
+      }
+		
+    </style>
+</head>
+<body id="dashboard" class="sidebar-fixed header-fixed" ng-app="dashboard" ng-controller="dashboardCtrl">
+<div class="page-wrapper">
+    <nav class="navbar page-header">
+        <a href="#" class="btn btn-link sidebar-mobile-toggle d-md-none mr-auto">
+            <i class="fa fa-bars"></i>
+        </a>
+
+        <a class="navbar-brand" href="javascript:;">
+            <img src="./imgs/benguet-logo.png" style ="width:200px; height: 45px;" alt="logo">
+        </a>
+
+        <a href="#" class="btn btn-link sidebar-toggle d-md-down-none">
+            <i class="fa fa-bars"></i>
+        </a>
+
+        <ul class="navbar-nav ml-auto">
+            <li class="nav-item dropdown" account-profile>
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    <img ng-src="{{profile.picture}}" class="avatar avatar-sm" alt="logo">
+                    <span class="small ml-1 d-md-down-none">{{profile.user}}</span>
+                </a>
+                <div class="dropdown-menu dropdown-menu-right" drop-down></div>
+            </li>
+        </ul>
+    </nav>
+
+    <div class="main-container">
+        <div class="sidebar">
+            <nav class="sidebar-nav">
+                <ul class="nav">
+                    <li class="nav-title">NAVIGATION</li>
+
+                    <li class="nav-item">
+                        <a href="index.html" class="nav-link active">
+                            <i class="icon icon-speedometer"></i>Dashboard
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="user-profile.html" class="nav-link">
+                            <i class="icon icon-user"></i>User Profile
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="users-list.html" class="nav-link">
+                            <i class="icon icon-people"></i>Users
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <span><br><br><img src="imgs/benguet logo.png" width="160px" height="160px" style="margin-left: 35px;"></span>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+
+        <div class="content">
+            <div class="container-fluid">
+
+				<div class="row">					
+					<div class="col-lg-7">
+						<div class="card">
+							<div class="card-header bg-light">
+								<strong>Locations</strong>
+							</div>
+							<div class="card-body">
+								<table class="table table-striped" style="font-size: 11px;">
+									<thead>
+										<tr><th>Location</th><th>Last update</th><th>Temperature</th><th>Humidity</th><th>Soil</th><th>Moisture Dew</th><th>Moisture Rain</th></tr>
+									</thead>
+									<tbody>
+										<tr ng-repeat="l in data.locations" style="cursor: pointer;" ng-click="locate(l.id)">
+											<td>{{l.location}}</td><td ng-bind-html="l.last_update"></td><td>{{l.temperature}}</td><td>{{l.humidity}}</td><td>{{l.soil}}</td><td>{{l.moisture_dew}}</td><td>{{l.moisture_rain}}</td>
+										</tr>
+									</tbody>
+								</table>
+							</div>						
+						</div>
+					</div>
+					<div class="col-lg-5">
+						<div class="card">
+							<div class="card-header bg-light">
+								<strong>Map</strong>
+							</div>
+							<div class="card-body">
+								<div id="map"></div>
+							</div>						
+						</div>						
+					</div>
+				</div>
+				
+				<div class="row">					
+					<div class="col-lg-6">
+						<div class="card">
+							<div class="card-header bg-light">
+								<strong>Farmers</strong>
+							</div>
+							<div class="card-body">
+								<table class="table table-striped" style="font-size: 11px;">
+									<thead>
+										<tr><th>#</th><th>Name</th><th>Location</th></tr>
+									</thead>
+									<tbody>
+										<tr ng-repeat="farmer in farmers"><td>{{$index+1}}</td><td>{{farmer.fullname}}</td><td>{{farmer.location}}</td></tr>
+									</tbody>
+								</table>
+							</div>						
+						</div>					
+					</div>
+				</div>
+
+			</div>
+		</div>
+</div>
+<script src="./vendor/jquery/jquery.min.js"></script>
+<script src="./vendor/popper.js/popper.min.js"></script>
+<script src="./vendor/bootstrap/js/bootstrap.min.js"></script>
+<script src="./vendor/chart.js/chart.min.js"></script>
+<script src="./js/carbon.js"></script>
+<script src="./js/dashboard.js"></script>
+
+<!-- dependencies -->
+<script src="vendor/bootbox/bootbox.min.js"></script>
+<script src="vendor/growl/jquery.bootstrap-growl.min.js"></script>
+<script src="vendor/blockui/jquery.blockUI.js"></script>
+
+<script src="angular/angular.min.js"></script>
+<script src="angular/angular-route.min.js"></script>
+<script src="angular/angular-sanitize.min.js"></script>
+<script src="angular/ui-bootstrap-tpls-3.0.2.min.js"></script>
+
+<script type="text/javascript" src="js/mqttws31.min.js"></script>
+
+<!-- modules -->
+<script src="modules/bootstrap-modal.js"></script>
+<script src="modules/blockui.js"></script>
+<script src="modules/growl.js"></script>
+<script src="modules/account.js"></script>
+<script src="modules/notifications.js"></script>
+<script src="modules/module-access.js"></script>
+<script src="modules/dashboard.js"></script>
+<!-- controller -->
+<script type="text/javascript" src="angular/angu-fixed-header-table.js"></script>
+<script src="controllers/dashboard.js"></script>
+<script type="text/javascript">
+
+function initMap() {
+
+  angular.element('#dashboard').scope().initMap();
+  
+}
+
+</script>
+ <script async defer
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDdByzZLgOU5350B83M_AFD_-p2dZoaOwA&callback=initMap">
+    </script>
+</body>
+</html>

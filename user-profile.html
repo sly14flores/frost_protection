@@ -1,0 +1,209 @@
+<?php
+
+require_once 'authentication.php';
+
+?>
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Benguet</title>
+    <link rel="shortcut icon" type="image/png" href="./imgs/benguet logo.png"/>
+    <link rel="stylesheet" href="./vendor/simple-line-icons/css/simple-line-icons.css">
+    <link rel="stylesheet" href="./vendor/font-awesome/css/fontawesome-all.min.css">
+    <link rel="stylesheet" href="./css/styles.css">
+</head>
+<body class="sidebar-fixed header-fixed" ng-app="profile" ng-controller="profileCtrl">
+<div class="page-wrapper">
+    <nav class="navbar page-header">
+        <a href="#" class="btn btn-link sidebar-mobile-toggle d-md-none mr-auto">
+            <i class="fa fa-bars"></i>
+        </a>
+
+        <a class="navbar-brand" href="javascript:;">
+            <img src="./imgs/benguet-logo.png" style ="width:200px; height: 45px;" alt="logo">
+        </a>
+
+        <a href="#" class="btn btn-link sidebar-toggle d-md-down-none">
+            <i class="fa fa-bars"></i>
+        </a>
+
+        <ul class="navbar-nav ml-auto">
+            <li class="nav-item dropdown" account-profile>
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    <img ng-src="{{profile.picture}}" class="avatar avatar-sm" alt="logo">
+                    <span class="small ml-1 d-md-down-none">{{profile.user}}</span>
+                </a>
+                <div class="dropdown-menu dropdown-menu-right" drop-down></div>
+            </li>
+        </ul>
+    </nav>
+
+    <div class="main-container">
+        <div class="sidebar">
+            <nav class="sidebar-nav">
+                <ul class="nav">
+                    <li class="nav-title">NAVIGATION</li>
+
+                    <li class="nav-item">
+                        <a href="index.html" class="nav-link">
+                            <i class="icon icon-speedometer"></i>Dashboard
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="user-profile.html" class="nav-link active">
+                            <i class="icon icon-user"></i>User Profile
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="users-list.html" class="nav-link">
+                            <i class="icon icon-people"></i>Users
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <span><br><br><img src="imgs/benguet logo.png" width="160px" height="160px" style="margin-left: 35px;"></span>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+
+        <div class="content">
+            <div class="container-fluid">
+				<button type="button" class="btn btn-primary" ng-click="app.add(this)" ng-show="controls.add" ng-disabled="!controls.btns.ok">
+                    <i class="fa fa-user"></i> &nbsp; Add
+                </button>
+				<button type="button" class="btn btn-primary" ng-click="app.edit(this)" ng-show="controls.edit" ng-disabled="!controls.btns.ok">
+                    <i class="fa fa-edit"></i> &nbsp; Edit
+                </button>				
+				<hr>
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="card">
+                            <div class="card-header bg-light">
+                                Profile
+                            </div>
+
+                            <div class="card-body">
+							<form novalidate autocomplete=off name="formHolder.user">
+                                
+                                <div class="row mt-4">
+                                    <div class="col-md-4">
+                                        <div class="form-group">
+                                            <label class="form-control-label">First Name</label>
+                                            <input type="text" class="form-control" name="fname" ng-class="{'is-invalid': formHolder.user.fname.$touched && formHolder.user.fname.$invalid}" ng-model="user.fname" ng-disabled="controls.btns.ok" required>
+											<div class="invalid-feedback">First Name is required</div>
+										</div>	
+                                    </div>
+                                    <div class="col-md-4">
+                                        <div class="form-group">
+                                            <label class="form-control-label">Middle Name</label>
+                                            <input type="text" class="form-control" name="mname" ng-class="{'is-invalid': formHolder.user.mname.$touched && formHolder.user.mname.$invalid}" ng-model="user.mname" ng-disabled="controls.btns.ok" required>
+                                            <div class="invalid-feedback">Middle Name is required</div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <div class="form-group">
+                                            <label class="form-control-label">Last Name</label>
+                                            <input type="text" class="form-control" name="lname" ng-class="{'is-invalid': formHolder.user.lname.$touched && formHolder.user.lname.$invalid}" ng-model="user.lname" ng-disabled="controls.btns.ok" required>
+											<div class="invalid-feedback">Last Name is required</div>
+										</div>	
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-md-4">
+                                        <div class="form-group">
+                                            <label class="form-control-label">Phone Number</label>
+                                            <input type="text" class="form-control" name="phone" ng-model="user.phone" ng-pattern="/^[0-9\s]*$/" ng-class="{'is-invalid': formHolder.user.phone.$touched && formHolder.user.phone.$invalid}" ng-disabled="controls.btns.ok" required>
+                                            <div class="invalid-feedback">Phone Number is required</div>
+                                        </div>  
+                                    </div>
+                                    <div class="col-md-4">
+                                        <div class="form-group">
+                                            <label class="form-control-label">Address</label>
+                                            <input type="text" class="form-control" name="address" ng-class="{'is-invalid': formHolder.user.address.$touched && formHolder.user.address.$invalid}" ng-model="user.address" ng-disabled="controls.btns.ok" required>
+                                            <div class="invalid-feedback">Address is required</div>
+                                        </div>  
+                                    </div>
+                                    <div class="col-md-4">
+                                        <div class="form-group">
+                                            <label for="single-select_1">Nearest Location</label>
+                                            <select id="single-select_1" class="form-control" name="location_id" ng-class="{'is-invalid': formHolder.user.location_id.$touched && formHolder.user.location_id.$invalid}" ng-model="user.location_id" ng-options="l.location for l in location track by l.id" ng-disabled="controls.btns.ok" required></select>
+                                            <div class="invalid-feedback">Location is required</div>                                           
+                                        </div> 
+                                    </div>
+                                    
+                                    
+                                </div>
+                                <div class="row mt-4">
+                                    <div class="col-md-4">
+                                        <div class="form-group">
+                                            <label for="single-select">Groups</label>
+                                            <select id="single-select" class="form-control" name="group_id" ng-class="{'is-invalid': formHolder.user.group_id.$touched && formHolder.user.group_id.$invalid}" ng-model="user.group_id" ng-options="g.group_name for g in groups track by g.id" ng-disabled="controls.btns.ok" required></select>
+                                            <div class="invalid-feedback">Group is required</div>                                           
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4" ng-show = "user.group_id.id == '1'">
+                                        <div class="form-group">
+                                            <label class="form-control-label">Username</label>
+                                            <input type="text" name="uname" ng-class="{'form-control': true, 'is-invalid': formHolder.user.uname.$touched && formHolder.user.uname.$invalid}" ng-model="user.uname" ng-disabled="controls.btns.ok" ng-required="user.group_id.id == '1'">
+                                            <div class="invalid-feedback">Username is required</div>
+                                        </div>
+                                    </div>  
+                                
+                                    <div class="col-md-4" ng-show = "user.group_id.id == '1'">
+                                        <div class="form-group">
+                                            <label class="form-control-label">Password</label>
+                                            <input type="password" name="pw" ng-class="{'form-control': true, 'is-invalid': formHolder.user.pw.$touched && formHolder.user.pw.$invalid}" ng-model="user.pw" ng-disabled="controls.btns.ok" ng-required="user.group_id.id == '1'">
+                                            <div class="invalid-feedback">Password is required</div>
+                                        </div>
+                                    </div>  
+                                </div>
+								
+								
+								<br>
+                                <hr>
+								
+                                <button class="btn btn-primary" ng-click="app.save(this)" ng-disabled="controls.btns.ok" ng-show="controls.ok">Save</button>
+								<button class="btn btn-secondary" ng-disabled="controls.btns.cancel" ng-click="app.cancel(this)" ng-show="controls.cancel">Cancel</button>
+
+							</form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+			</div>
+        </div><!-- /content -->
+    </div>
+</div>
+<script src="./vendor/jquery/jquery.min.js"></script>
+<script src="./vendor/popper.js/popper.min.js"></script>
+<script src="./vendor/bootstrap/js/bootstrap.min.js"></script>
+<script src="./vendor/chart.js/chart.min.js"></script>
+<script src="./js/carbon.js"></script>
+<script src="./js/demo.js"></script>
+
+<!-- dependencies -->
+<script src="vendor/bootbox/bootbox.min.js"></script>
+<script src="vendor/growl/jquery.bootstrap-growl.min.js"></script>
+<script src="vendor/blockui/jquery.blockUI.js"></script>
+
+<script src="angular/angular.min.js"></script>
+<script src="angular/angular-route.min.js"></script>
+<script src="angular/angular-sanitize.min.js"></script>
+<script src="angular/ui-bootstrap-tpls-3.0.2.min.js"></script>
+
+<!-- modules -->
+<script src="modules/bootstrap-modal.js"></script>
+<script src="modules/account.js"></script>
+<script src="modules/notifications.js"></script>
+<script src="modules/module-access.js"></script>
+<script src="modules/validate.js"></script>
+<script src="modules/blockui.js"></script>
+<script src="modules/growl.js"></script>
+<script src="modules/user-profile.js"></script>
+<!-- controller -->
+<script src="controllers/user-profile.js"></script>
+</body>
+</html>

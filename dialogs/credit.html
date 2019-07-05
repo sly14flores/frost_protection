@@ -1,0 +1,42 @@
+<form name="formHolder.user">
+<div class="row">
+	<div class="col-md-12">
+
+		<label>Identification</label>
+		<div class="input-group mb-3">
+			<div class="input-group-prepend">
+				<i class="fa fa-id-badge input-group-text"></i>
+			</div>
+                <input type="text" id="bold" class="form-control" placeholder="{{user.student_id}}: {{user.fname}} {{user.mname}} {{user.lname}}" ng-disabled="controls.btns.ok" required>
+			
+		</div>                
+	</div>
+</div>
+<div class="row">
+	<div class="col-md-12">
+		<label>Remaining Balance</label>
+		<div class="input-group mb-3">
+			<div class="input-group-prepend">
+				<i class="far fa-money-bill-alt input-group-text"></i>
+			</div>
+			<input type="text" class="form-control" placeholder="Remaining credit" name="credit" ng-class="{'is-invalid': formHolder.user.credit.$touched && formHolder.user.credit.$invalid}" ng-model="user.credit" ng-disabled="controls.btns.ok" required>
+           	<div class="invalid-feedback">Prepaid Balance is required</div>
+		</div>                
+	</div>
+</div>
+<div class="row">
+	<div class="col-md-12">
+		<label>Amount to Add</label>
+		<div class="input-group mb-3">
+			<div class="input-group-prepend">
+				<i class="far fa-money-bill-alt input-group-text"></i>
+			</div>
+			<input type="text" class="form-control" placeholder="Enter additional prepaid here" name="add_credit" ng-class="{'is-invalid': formHolder.user.add_credit.$touched && formHolder.user.add_credit.$invalid}" ng-model="user.add_credit" required>
+            <div class="invalid-feedback">Additional Prepaid is required</div>
+		</div>                
+	</div>
+</div>
+</form>
+
+
+ 

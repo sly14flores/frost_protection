@@ -1,0 +1,2076 @@
+[26-Sep-2018 01:36:33 Asia/Manila] PHP Notice:  Undefined variable: data in C:\UwAmp310\www\despro\rfid-handler.php on line 11
+[26-Sep-2018 01:36:33 Asia/Manila] PHP Stack trace:
+[26-Sep-2018 01:36:33 Asia/Manila] PHP   1. {main}() C:\UwAmp310\www\despro\rfid-handler.php:0
+[26-Sep-2018 01:36:33 Asia/Manila] PHP Notice:  Undefined variable: data in C:\UwAmp310\www\despro\rfid-handler.php on line 21
+[26-Sep-2018 01:36:33 Asia/Manila] PHP Stack trace:
+[26-Sep-2018 01:36:33 Asia/Manila] PHP   1. {main}() C:\UwAmp310\www\despro\rfid-handler.php:0
+[26-Sep-2018 01:36:33 Asia/Manila] PHP Warning:  Invalid argument supplied for foreach() in C:\UwAmp310\www\despro\db.php on line 203
+[26-Sep-2018 01:36:33 Asia/Manila] PHP Stack trace:
+[26-Sep-2018 01:36:33 Asia/Manila] PHP   1. {main}() C:\UwAmp310\www\despro\rfid-handler.php:0
+[26-Sep-2018 01:36:33 Asia/Manila] PHP   2. pdo_db->updateData() C:\UwAmp310\www\despro\rfid-handler.php:21
+[26-Sep-2018 01:36:33 Asia/Manila] PHP Notice:  Undefined variable: pk_value in C:\UwAmp310\www\despro\db.php on line 225
+[26-Sep-2018 01:36:33 Asia/Manila] PHP Stack trace:
+[26-Sep-2018 01:36:33 Asia/Manila] PHP   1. {main}() C:\UwAmp310\www\despro\rfid-handler.php:0
+[26-Sep-2018 01:36:33 Asia/Manila] PHP   2. pdo_db->updateData() C:\UwAmp310\www\despro\rfid-handler.php:21
+[26-Sep-2018 01:36:33 Asia/Manila] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'WHERE rfid=?' at line 1 in C:\UwAmp310\www\despro\db.php:227
+Stack trace:
+#0 C:\UwAmp310\www\despro\db.php(227): PDO->prepare('UPDATE users SE...')
+#1 C:\UwAmp310\www\despro\rfid-handler.php(21): pdo_db->updateData(NULL, 'rfid')
+#2 {main}
+  thrown in C:\UwAmp310\www\despro\db.php on line 227
+[26-Sep-2018 01:36:41 Asia/Manila] PHP Notice:  Undefined variable: data in C:\UwAmp310\www\despro\rfid-handler.php on line 11
+[26-Sep-2018 01:36:41 Asia/Manila] PHP Stack trace:
+[26-Sep-2018 01:36:41 Asia/Manila] PHP   1. {main}() C:\UwAmp310\www\despro\rfid-handler.php:0
+[26-Sep-2018 01:36:41 Asia/Manila] PHP Notice:  Undefined variable: data in C:\UwAmp310\www\despro\rfid-handler.php on line 21
+[26-Sep-2018 01:36:41 Asia/Manila] PHP Stack trace:
+[26-Sep-2018 01:36:41 Asia/Manila] PHP   1. {main}() C:\UwAmp310\www\despro\rfid-handler.php:0
+[26-Sep-2018 01:36:41 Asia/Manila] PHP Warning:  Invalid argument supplied for foreach() in C:\UwAmp310\www\despro\db.php on line 203
+[26-Sep-2018 01:36:41 Asia/Manila] PHP Stack trace:
+[26-Sep-2018 01:36:41 Asia/Manila] PHP   1. {main}() C:\UwAmp310\www\despro\rfid-handler.php:0
+[26-Sep-2018 01:36:41 Asia/Manila] PHP   2. pdo_db->updateData() C:\UwAmp310\www\despro\rfid-handler.php:21
+[26-Sep-2018 01:36:41 Asia/Manila] PHP Notice:  Undefined variable: pk_value in C:\UwAmp310\www\despro\db.php on line 225
+[26-Sep-2018 01:36:41 Asia/Manila] PHP Stack trace:
+[26-Sep-2018 01:36:41 Asia/Manila] PHP   1. {main}() C:\UwAmp310\www\despro\rfid-handler.php:0
+[26-Sep-2018 01:36:41 Asia/Manila] PHP   2. pdo_db->updateData() C:\UwAmp310\www\despro\rfid-handler.php:21
+[26-Sep-2018 01:36:41 Asia/Manila] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'WHERE rfid=?' at line 1 in C:\UwAmp310\www\despro\db.php:227
+Stack trace:
+#0 C:\UwAmp310\www\despro\db.php(227): PDO->prepare('UPDATE users SE...')
+#1 C:\UwAmp310\www\despro\rfid-handler.php(21): pdo_db->updateData(NULL, 'rfid')
+#2 {main}
+  thrown in C:\UwAmp310\www\despro\db.php on line 227
+[26-Sep-2018 01:36:48 Asia/Manila] PHP Notice:  Undefined variable: data in C:\UwAmp310\www\despro\rfid-handler.php on line 11
+[26-Sep-2018 01:36:48 Asia/Manila] PHP Stack trace:
+[26-Sep-2018 01:36:48 Asia/Manila] PHP   1. {main}() C:\UwAmp310\www\despro\rfid-handler.php:0
+[26-Sep-2018 01:36:48 Asia/Manila] PHP Notice:  Undefined variable: data in C:\UwAmp310\www\despro\rfid-handler.php on line 21
+[26-Sep-2018 01:36:48 Asia/Manila] PHP Stack trace:
+[26-Sep-2018 01:36:48 Asia/Manila] PHP   1. {main}() C:\UwAmp310\www\despro\rfid-handler.php:0
+[26-Sep-2018 01:36:48 Asia/Manila] PHP Warning:  Invalid argument supplied for foreach() in C:\UwAmp310\www\despro\db.php on line 203
+[26-Sep-2018 01:36:48 Asia/Manila] PHP Stack trace:
+[26-Sep-2018 01:36:48 Asia/Manila] PHP   1. {main}() C:\UwAmp310\www\despro\rfid-handler.php:0
+[26-Sep-2018 01:36:48 Asia/Manila] PHP   2. pdo_db->updateData() C:\UwAmp310\www\despro\rfid-handler.php:21
+[26-Sep-2018 01:36:48 Asia/Manila] PHP Notice:  Undefined variable: pk_value in C:\UwAmp310\www\despro\db.php on line 225
+[26-Sep-2018 01:36:48 Asia/Manila] PHP Stack trace:
+[26-Sep-2018 01:36:48 Asia/Manila] PHP   1. {main}() C:\UwAmp310\www\despro\rfid-handler.php:0
+[26-Sep-2018 01:36:48 Asia/Manila] PHP   2. pdo_db->updateData() C:\UwAmp310\www\despro\rfid-handler.php:21
+[26-Sep-2018 01:36:48 Asia/Manila] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'WHERE rfid=?' at line 1 in C:\UwAmp310\www\despro\db.php:227
+Stack trace:
+#0 C:\UwAmp310\www\despro\db.php(227): PDO->prepare('UPDATE users SE...')
+#1 C:\UwAmp310\www\despro\rfid-handler.php(21): pdo_db->updateData(NULL, 'rfid')
+#2 {main}
+  thrown in C:\UwAmp310\www\despro\db.php on line 227
+[26-Sep-2018 01:36:55 Asia/Manila] PHP Notice:  Undefined variable: data in C:\UwAmp310\www\despro\rfid-handler.php on line 11
+[26-Sep-2018 01:36:55 Asia/Manila] PHP Stack trace:
+[26-Sep-2018 01:36:55 Asia/Manila] PHP   1. {main}() C:\UwAmp310\www\despro\rfid-handler.php:0
+[26-Sep-2018 01:36:55 Asia/Manila] PHP Notice:  Undefined variable: data in C:\UwAmp310\www\despro\rfid-handler.php on line 21
+[26-Sep-2018 01:36:55 Asia/Manila] PHP Stack trace:
+[26-Sep-2018 01:36:55 Asia/Manila] PHP   1. {main}() C:\UwAmp310\www\despro\rfid-handler.php:0
+[26-Sep-2018 01:36:55 Asia/Manila] PHP Warning:  Invalid argument supplied for foreach() in C:\UwAmp310\www\despro\db.php on line 203
+[26-Sep-2018 01:36:55 Asia/Manila] PHP Stack trace:
+[26-Sep-2018 01:36:55 Asia/Manila] PHP   1. {main}() C:\UwAmp310\www\despro\rfid-handler.php:0
+[26-Sep-2018 01:36:55 Asia/Manila] PHP   2. pdo_db->updateData() C:\UwAmp310\www\despro\rfid-handler.php:21
+[26-Sep-2018 01:36:55 Asia/Manila] PHP Notice:  Undefined variable: pk_value in C:\UwAmp310\www\despro\db.php on line 225
+[26-Sep-2018 01:36:55 Asia/Manila] PHP Stack trace:
+[26-Sep-2018 01:36:55 Asia/Manila] PHP   1. {main}() C:\UwAmp310\www\despro\rfid-handler.php:0
+[26-Sep-2018 01:36:55 Asia/Manila] PHP   2. pdo_db->updateData() C:\UwAmp310\www\despro\rfid-handler.php:21
+[26-Sep-2018 01:36:55 Asia/Manila] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'WHERE rfid=?' at line 1 in C:\UwAmp310\www\despro\db.php:227
+Stack trace:
+#0 C:\UwAmp310\www\despro\db.php(227): PDO->prepare('UPDATE users SE...')
+#1 C:\UwAmp310\www\despro\rfid-handler.php(21): pdo_db->updateData(NULL, 'rfid')
+#2 {main}
+  thrown in C:\UwAmp310\www\despro\db.php on line 227
+[26-Sep-2018 01:37:03 Asia/Manila] PHP Notice:  Undefined variable: data in C:\UwAmp310\www\despro\rfid-handler.php on line 11
+[26-Sep-2018 01:37:03 Asia/Manila] PHP Stack trace:
+[26-Sep-2018 01:37:03 Asia/Manila] PHP   1. {main}() C:\UwAmp310\www\despro\rfid-handler.php:0
+[26-Sep-2018 01:37:03 Asia/Manila] PHP Notice:  Undefined variable: data in C:\UwAmp310\www\despro\rfid-handler.php on line 21
+[26-Sep-2018 01:37:03 Asia/Manila] PHP Stack trace:
+[26-Sep-2018 01:37:03 Asia/Manila] PHP   1. {main}() C:\UwAmp310\www\despro\rfid-handler.php:0
+[26-Sep-2018 01:37:03 Asia/Manila] PHP Warning:  Invalid argument supplied for foreach() in C:\UwAmp310\www\despro\db.php on line 203
+[26-Sep-2018 01:37:03 Asia/Manila] PHP Stack trace:
+[26-Sep-2018 01:37:03 Asia/Manila] PHP   1. {main}() C:\UwAmp310\www\despro\rfid-handler.php:0
+[26-Sep-2018 01:37:03 Asia/Manila] PHP   2. pdo_db->updateData() C:\UwAmp310\www\despro\rfid-handler.php:21
+[26-Sep-2018 01:37:03 Asia/Manila] PHP Notice:  Undefined variable: pk_value in C:\UwAmp310\www\despro\db.php on line 225
+[26-Sep-2018 01:37:03 Asia/Manila] PHP Stack trace:
+[26-Sep-2018 01:37:03 Asia/Manila] PHP   1. {main}() C:\UwAmp310\www\despro\rfid-handler.php:0
+[26-Sep-2018 01:37:03 Asia/Manila] PHP   2. pdo_db->updateData() C:\UwAmp310\www\despro\rfid-handler.php:21
+[26-Sep-2018 01:37:03 Asia/Manila] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'WHERE rfid=?' at line 1 in C:\UwAmp310\www\despro\db.php:227
+Stack trace:
+#0 C:\UwAmp310\www\despro\db.php(227): PDO->prepare('UPDATE users SE...')
+#1 C:\UwAmp310\www\despro\rfid-handler.php(21): pdo_db->updateData(NULL, 'rfid')
+#2 {main}
+  thrown in C:\UwAmp310\www\despro\db.php on line 227
+[26-Sep-2018 01:37:10 Asia/Manila] PHP Notice:  Undefined variable: data in C:\UwAmp310\www\despro\rfid-handler.php on line 11
+[26-Sep-2018 01:37:10 Asia/Manila] PHP Stack trace:
+[26-Sep-2018 01:37:10 Asia/Manila] PHP   1. {main}() C:\UwAmp310\www\despro\rfid-handler.php:0
+[26-Sep-2018 01:37:10 Asia/Manila] PHP Notice:  Undefined variable: data in C:\UwAmp310\www\despro\rfid-handler.php on line 21
+[26-Sep-2018 01:37:10 Asia/Manila] PHP Stack trace:
+[26-Sep-2018 01:37:10 Asia/Manila] PHP   1. {main}() C:\UwAmp310\www\despro\rfid-handler.php:0
+[26-Sep-2018 01:37:10 Asia/Manila] PHP Warning:  Invalid argument supplied for foreach() in C:\UwAmp310\www\despro\db.php on line 203
+[26-Sep-2018 01:37:10 Asia/Manila] PHP Stack trace:
+[26-Sep-2018 01:37:10 Asia/Manila] PHP   1. {main}() C:\UwAmp310\www\despro\rfid-handler.php:0
+[26-Sep-2018 01:37:10 Asia/Manila] PHP   2. pdo_db->updateData() C:\UwAmp310\www\despro\rfid-handler.php:21
+[26-Sep-2018 01:37:10 Asia/Manila] PHP Notice:  Undefined variable: pk_value in C:\UwAmp310\www\despro\db.php on line 225
+[26-Sep-2018 01:37:10 Asia/Manila] PHP Stack trace:
+[26-Sep-2018 01:37:10 Asia/Manila] PHP   1. {main}() C:\UwAmp310\www\despro\rfid-handler.php:0
+[26-Sep-2018 01:37:10 Asia/Manila] PHP   2. pdo_db->updateData() C:\UwAmp310\www\despro\rfid-handler.php:21
+[26-Sep-2018 01:37:10 Asia/Manila] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'WHERE rfid=?' at line 1 in C:\UwAmp310\www\despro\db.php:227
+Stack trace:
+#0 C:\UwAmp310\www\despro\db.php(227): PDO->prepare('UPDATE users SE...')
+#1 C:\UwAmp310\www\despro\rfid-handler.php(21): pdo_db->updateData(NULL, 'rfid')
+#2 {main}
+  thrown in C:\UwAmp310\www\despro\db.php on line 227
+[26-Sep-2018 01:37:18 Asia/Manila] PHP Notice:  Undefined variable: data in C:\UwAmp310\www\despro\rfid-handler.php on line 11
+[26-Sep-2018 01:37:18 Asia/Manila] PHP Stack trace:
+[26-Sep-2018 01:37:18 Asia/Manila] PHP   1. {main}() C:\UwAmp310\www\despro\rfid-handler.php:0
+[26-Sep-2018 01:37:18 Asia/Manila] PHP Notice:  Undefined variable: data in C:\UwAmp310\www\despro\rfid-handler.php on line 21
+[26-Sep-2018 01:37:18 Asia/Manila] PHP Stack trace:
+[26-Sep-2018 01:37:18 Asia/Manila] PHP   1. {main}() C:\UwAmp310\www\despro\rfid-handler.php:0
+[26-Sep-2018 01:37:18 Asia/Manila] PHP Warning:  Invalid argument supplied for foreach() in C:\UwAmp310\www\despro\db.php on line 203
+[26-Sep-2018 01:37:18 Asia/Manila] PHP Stack trace:
+[26-Sep-2018 01:37:18 Asia/Manila] PHP   1. {main}() C:\UwAmp310\www\despro\rfid-handler.php:0
+[26-Sep-2018 01:37:18 Asia/Manila] PHP   2. pdo_db->updateData() C:\UwAmp310\www\despro\rfid-handler.php:21
+[26-Sep-2018 01:37:18 Asia/Manila] PHP Notice:  Undefined variable: pk_value in C:\UwAmp310\www\despro\db.php on line 225
+[26-Sep-2018 01:37:18 Asia/Manila] PHP Stack trace:
+[26-Sep-2018 01:37:18 Asia/Manila] PHP   1. {main}() C:\UwAmp310\www\despro\rfid-handler.php:0
+[26-Sep-2018 01:37:18 Asia/Manila] PHP   2. pdo_db->updateData() C:\UwAmp310\www\despro\rfid-handler.php:21
+[26-Sep-2018 01:37:18 Asia/Manila] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'WHERE rfid=?' at line 1 in C:\UwAmp310\www\despro\db.php:227
+Stack trace:
+#0 C:\UwAmp310\www\despro\db.php(227): PDO->prepare('UPDATE users SE...')
+#1 C:\UwAmp310\www\despro\rfid-handler.php(21): pdo_db->updateData(NULL, 'rfid')
+#2 {main}
+  thrown in C:\UwAmp310\www\despro\db.php on line 227
+[26-Sep-2018 01:37:25 Asia/Manila] PHP Notice:  Undefined variable: data in C:\UwAmp310\www\despro\rfid-handler.php on line 11
+[26-Sep-2018 01:37:25 Asia/Manila] PHP Stack trace:
+[26-Sep-2018 01:37:25 Asia/Manila] PHP   1. {main}() C:\UwAmp310\www\despro\rfid-handler.php:0
+[26-Sep-2018 01:37:25 Asia/Manila] PHP Notice:  Undefined variable: data in C:\UwAmp310\www\despro\rfid-handler.php on line 21
+[26-Sep-2018 01:37:25 Asia/Manila] PHP Stack trace:
+[26-Sep-2018 01:37:25 Asia/Manila] PHP   1. {main}() C:\UwAmp310\www\despro\rfid-handler.php:0
+[26-Sep-2018 01:37:25 Asia/Manila] PHP Warning:  Invalid argument supplied for foreach() in C:\UwAmp310\www\despro\db.php on line 203
+[26-Sep-2018 01:37:25 Asia/Manila] PHP Stack trace:
+[26-Sep-2018 01:37:25 Asia/Manila] PHP   1. {main}() C:\UwAmp310\www\despro\rfid-handler.php:0
+[26-Sep-2018 01:37:25 Asia/Manila] PHP   2. pdo_db->updateData() C:\UwAmp310\www\despro\rfid-handler.php:21
+[26-Sep-2018 01:37:25 Asia/Manila] PHP Notice:  Undefined variable: pk_value in C:\UwAmp310\www\despro\db.php on line 225
+[26-Sep-2018 01:37:25 Asia/Manila] PHP Stack trace:
+[26-Sep-2018 01:37:25 Asia/Manila] PHP   1. {main}() C:\UwAmp310\www\despro\rfid-handler.php:0
+[26-Sep-2018 01:37:25 Asia/Manila] PHP   2. pdo_db->updateData() C:\UwAmp310\www\despro\rfid-handler.php:21
+[26-Sep-2018 01:37:25 Asia/Manila] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'WHERE rfid=?' at line 1 in C:\UwAmp310\www\despro\db.php:227
+Stack trace:
+#0 C:\UwAmp310\www\despro\db.php(227): PDO->prepare('UPDATE users SE...')
+#1 C:\UwAmp310\www\despro\rfid-handler.php(21): pdo_db->updateData(NULL, 'rfid')
+#2 {main}
+  thrown in C:\UwAmp310\www\despro\db.php on line 227
+[26-Sep-2018 01:37:33 Asia/Manila] PHP Notice:  Undefined variable: data in C:\UwAmp310\www\despro\rfid-handler.php on line 11
+[26-Sep-2018 01:37:33 Asia/Manila] PHP Stack trace:
+[26-Sep-2018 01:37:33 Asia/Manila] PHP   1. {main}() C:\UwAmp310\www\despro\rfid-handler.php:0
+[26-Sep-2018 01:37:33 Asia/Manila] PHP Notice:  Undefined variable: data in C:\UwAmp310\www\despro\rfid-handler.php on line 21
+[26-Sep-2018 01:37:33 Asia/Manila] PHP Stack trace:
+[26-Sep-2018 01:37:33 Asia/Manila] PHP   1. {main}() C:\UwAmp310\www\despro\rfid-handler.php:0
+[26-Sep-2018 01:37:33 Asia/Manila] PHP Warning:  Invalid argument supplied for foreach() in C:\UwAmp310\www\despro\db.php on line 203
+[26-Sep-2018 01:37:33 Asia/Manila] PHP Stack trace:
+[26-Sep-2018 01:37:33 Asia/Manila] PHP   1. {main}() C:\UwAmp310\www\despro\rfid-handler.php:0
+[26-Sep-2018 01:37:33 Asia/Manila] PHP   2. pdo_db->updateData() C:\UwAmp310\www\despro\rfid-handler.php:21
+[26-Sep-2018 01:37:33 Asia/Manila] PHP Notice:  Undefined variable: pk_value in C:\UwAmp310\www\despro\db.php on line 225
+[26-Sep-2018 01:37:33 Asia/Manila] PHP Stack trace:
+[26-Sep-2018 01:37:33 Asia/Manila] PHP   1. {main}() C:\UwAmp310\www\despro\rfid-handler.php:0
+[26-Sep-2018 01:37:33 Asia/Manila] PHP   2. pdo_db->updateData() C:\UwAmp310\www\despro\rfid-handler.php:21
+[26-Sep-2018 01:37:33 Asia/Manila] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'WHERE rfid=?' at line 1 in C:\UwAmp310\www\despro\db.php:227
+Stack trace:
+#0 C:\UwAmp310\www\despro\db.php(227): PDO->prepare('UPDATE users SE...')
+#1 C:\UwAmp310\www\despro\rfid-handler.php(21): pdo_db->updateData(NULL, 'rfid')
+#2 {main}
+  thrown in C:\UwAmp310\www\despro\db.php on line 227
+[26-Sep-2018 01:37:40 Asia/Manila] PHP Notice:  Undefined variable: data in C:\UwAmp310\www\despro\rfid-handler.php on line 11
+[26-Sep-2018 01:37:40 Asia/Manila] PHP Stack trace:
+[26-Sep-2018 01:37:40 Asia/Manila] PHP   1. {main}() C:\UwAmp310\www\despro\rfid-handler.php:0
+[26-Sep-2018 01:37:40 Asia/Manila] PHP Notice:  Undefined variable: data in C:\UwAmp310\www\despro\rfid-handler.php on line 21
+[26-Sep-2018 01:37:40 Asia/Manila] PHP Stack trace:
+[26-Sep-2018 01:37:40 Asia/Manila] PHP   1. {main}() C:\UwAmp310\www\despro\rfid-handler.php:0
+[26-Sep-2018 01:37:40 Asia/Manila] PHP Warning:  Invalid argument supplied for foreach() in C:\UwAmp310\www\despro\db.php on line 203
+[26-Sep-2018 01:37:40 Asia/Manila] PHP Stack trace:
+[26-Sep-2018 01:37:40 Asia/Manila] PHP   1. {main}() C:\UwAmp310\www\despro\rfid-handler.php:0
+[26-Sep-2018 01:37:40 Asia/Manila] PHP   2. pdo_db->updateData() C:\UwAmp310\www\despro\rfid-handler.php:21
+[26-Sep-2018 01:37:40 Asia/Manila] PHP Notice:  Undefined variable: pk_value in C:\UwAmp310\www\despro\db.php on line 225
+[26-Sep-2018 01:37:40 Asia/Manila] PHP Stack trace:
+[26-Sep-2018 01:37:40 Asia/Manila] PHP   1. {main}() C:\UwAmp310\www\despro\rfid-handler.php:0
+[26-Sep-2018 01:37:40 Asia/Manila] PHP   2. pdo_db->updateData() C:\UwAmp310\www\despro\rfid-handler.php:21
+[26-Sep-2018 01:37:40 Asia/Manila] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'WHERE rfid=?' at line 1 in C:\UwAmp310\www\despro\db.php:227
+Stack trace:
+#0 C:\UwAmp310\www\despro\db.php(227): PDO->prepare('UPDATE users SE...')
+#1 C:\UwAmp310\www\despro\rfid-handler.php(21): pdo_db->updateData(NULL, 'rfid')
+#2 {main}
+  thrown in C:\UwAmp310\www\despro\db.php on line 227
+[26-Sep-2018 01:37:48 Asia/Manila] PHP Notice:  Undefined variable: data in C:\UwAmp310\www\despro\rfid-handler.php on line 11
+[26-Sep-2018 01:37:48 Asia/Manila] PHP Stack trace:
+[26-Sep-2018 01:37:48 Asia/Manila] PHP   1. {main}() C:\UwAmp310\www\despro\rfid-handler.php:0
+[26-Sep-2018 01:37:48 Asia/Manila] PHP Notice:  Undefined variable: data in C:\UwAmp310\www\despro\rfid-handler.php on line 21
+[26-Sep-2018 01:37:48 Asia/Manila] PHP Stack trace:
+[26-Sep-2018 01:37:48 Asia/Manila] PHP   1. {main}() C:\UwAmp310\www\despro\rfid-handler.php:0
+[26-Sep-2018 01:37:48 Asia/Manila] PHP Warning:  Invalid argument supplied for foreach() in C:\UwAmp310\www\despro\db.php on line 203
+[26-Sep-2018 01:37:48 Asia/Manila] PHP Stack trace:
+[26-Sep-2018 01:37:48 Asia/Manila] PHP   1. {main}() C:\UwAmp310\www\despro\rfid-handler.php:0
+[26-Sep-2018 01:37:48 Asia/Manila] PHP   2. pdo_db->updateData() C:\UwAmp310\www\despro\rfid-handler.php:21
+[26-Sep-2018 01:37:48 Asia/Manila] PHP Notice:  Undefined variable: pk_value in C:\UwAmp310\www\despro\db.php on line 225
+[26-Sep-2018 01:37:48 Asia/Manila] PHP Stack trace:
+[26-Sep-2018 01:37:48 Asia/Manila] PHP   1. {main}() C:\UwAmp310\www\despro\rfid-handler.php:0
+[26-Sep-2018 01:37:48 Asia/Manila] PHP   2. pdo_db->updateData() C:\UwAmp310\www\despro\rfid-handler.php:21
+[26-Sep-2018 01:37:48 Asia/Manila] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'WHERE rfid=?' at line 1 in C:\UwAmp310\www\despro\db.php:227
+Stack trace:
+#0 C:\UwAmp310\www\despro\db.php(227): PDO->prepare('UPDATE users SE...')
+#1 C:\UwAmp310\www\despro\rfid-handler.php(21): pdo_db->updateData(NULL, 'rfid')
+#2 {main}
+  thrown in C:\UwAmp310\www\despro\db.php on line 227
+[26-Sep-2018 01:37:55 Asia/Manila] PHP Notice:  Undefined variable: data in C:\UwAmp310\www\despro\rfid-handler.php on line 11
+[26-Sep-2018 01:37:55 Asia/Manila] PHP Stack trace:
+[26-Sep-2018 01:37:55 Asia/Manila] PHP   1. {main}() C:\UwAmp310\www\despro\rfid-handler.php:0
+[26-Sep-2018 01:37:55 Asia/Manila] PHP Notice:  Undefined variable: data in C:\UwAmp310\www\despro\rfid-handler.php on line 21
+[26-Sep-2018 01:37:55 Asia/Manila] PHP Stack trace:
+[26-Sep-2018 01:37:55 Asia/Manila] PHP   1. {main}() C:\UwAmp310\www\despro\rfid-handler.php:0
+[26-Sep-2018 01:37:55 Asia/Manila] PHP Warning:  Invalid argument supplied for foreach() in C:\UwAmp310\www\despro\db.php on line 203
+[26-Sep-2018 01:37:55 Asia/Manila] PHP Stack trace:
+[26-Sep-2018 01:37:55 Asia/Manila] PHP   1. {main}() C:\UwAmp310\www\despro\rfid-handler.php:0
+[26-Sep-2018 01:37:55 Asia/Manila] PHP   2. pdo_db->updateData() C:\UwAmp310\www\despro\rfid-handler.php:21
+[26-Sep-2018 01:37:55 Asia/Manila] PHP Notice:  Undefined variable: pk_value in C:\UwAmp310\www\despro\db.php on line 225
+[26-Sep-2018 01:37:55 Asia/Manila] PHP Stack trace:
+[26-Sep-2018 01:37:55 Asia/Manila] PHP   1. {main}() C:\UwAmp310\www\despro\rfid-handler.php:0
+[26-Sep-2018 01:37:55 Asia/Manila] PHP   2. pdo_db->updateData() C:\UwAmp310\www\despro\rfid-handler.php:21
+[26-Sep-2018 01:37:55 Asia/Manila] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'WHERE rfid=?' at line 1 in C:\UwAmp310\www\despro\db.php:227
+Stack trace:
+#0 C:\UwAmp310\www\despro\db.php(227): PDO->prepare('UPDATE users SE...')
+#1 C:\UwAmp310\www\despro\rfid-handler.php(21): pdo_db->updateData(NULL, 'rfid')
+#2 {main}
+  thrown in C:\UwAmp310\www\despro\db.php on line 227
+[26-Sep-2018 01:38:02 Asia/Manila] PHP Notice:  Undefined variable: data in C:\UwAmp310\www\despro\rfid-handler.php on line 11
+[26-Sep-2018 01:38:02 Asia/Manila] PHP Stack trace:
+[26-Sep-2018 01:38:02 Asia/Manila] PHP   1. {main}() C:\UwAmp310\www\despro\rfid-handler.php:0
+[26-Sep-2018 01:38:02 Asia/Manila] PHP Notice:  Undefined variable: data in C:\UwAmp310\www\despro\rfid-handler.php on line 21
+[26-Sep-2018 01:38:02 Asia/Manila] PHP Stack trace:
+[26-Sep-2018 01:38:02 Asia/Manila] PHP   1. {main}() C:\UwAmp310\www\despro\rfid-handler.php:0
+[26-Sep-2018 01:38:02 Asia/Manila] PHP Warning:  Invalid argument supplied for foreach() in C:\UwAmp310\www\despro\db.php on line 203
+[26-Sep-2018 01:38:02 Asia/Manila] PHP Stack trace:
+[26-Sep-2018 01:38:02 Asia/Manila] PHP   1. {main}() C:\UwAmp310\www\despro\rfid-handler.php:0
+[26-Sep-2018 01:38:02 Asia/Manila] PHP   2. pdo_db->updateData() C:\UwAmp310\www\despro\rfid-handler.php:21
+[26-Sep-2018 01:38:02 Asia/Manila] PHP Notice:  Undefined variable: pk_value in C:\UwAmp310\www\despro\db.php on line 225
+[26-Sep-2018 01:38:02 Asia/Manila] PHP Stack trace:
+[26-Sep-2018 01:38:02 Asia/Manila] PHP   1. {main}() C:\UwAmp310\www\despro\rfid-handler.php:0
+[26-Sep-2018 01:38:02 Asia/Manila] PHP   2. pdo_db->updateData() C:\UwAmp310\www\despro\rfid-handler.php:21
+[26-Sep-2018 01:38:02 Asia/Manila] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'WHERE rfid=?' at line 1 in C:\UwAmp310\www\despro\db.php:227
+Stack trace:
+#0 C:\UwAmp310\www\despro\db.php(227): PDO->prepare('UPDATE users SE...')
+#1 C:\UwAmp310\www\despro\rfid-handler.php(21): pdo_db->updateData(NULL, 'rfid')
+#2 {main}
+  thrown in C:\UwAmp310\www\despro\db.php on line 227
+[26-Sep-2018 01:38:10 Asia/Manila] PHP Notice:  Undefined variable: data in C:\UwAmp310\www\despro\rfid-handler.php on line 11
+[26-Sep-2018 01:38:10 Asia/Manila] PHP Stack trace:
+[26-Sep-2018 01:38:10 Asia/Manila] PHP   1. {main}() C:\UwAmp310\www\despro\rfid-handler.php:0
+[26-Sep-2018 01:38:10 Asia/Manila] PHP Notice:  Undefined variable: data in C:\UwAmp310\www\despro\rfid-handler.php on line 21
+[26-Sep-2018 01:38:10 Asia/Manila] PHP Stack trace:
+[26-Sep-2018 01:38:10 Asia/Manila] PHP   1. {main}() C:\UwAmp310\www\despro\rfid-handler.php:0
+[26-Sep-2018 01:38:10 Asia/Manila] PHP Warning:  Invalid argument supplied for foreach() in C:\UwAmp310\www\despro\db.php on line 203
+[26-Sep-2018 01:38:10 Asia/Manila] PHP Stack trace:
+[26-Sep-2018 01:38:10 Asia/Manila] PHP   1. {main}() C:\UwAmp310\www\despro\rfid-handler.php:0
+[26-Sep-2018 01:38:10 Asia/Manila] PHP   2. pdo_db->updateData() C:\UwAmp310\www\despro\rfid-handler.php:21
+[26-Sep-2018 01:38:10 Asia/Manila] PHP Notice:  Undefined variable: pk_value in C:\UwAmp310\www\despro\db.php on line 225
+[26-Sep-2018 01:38:10 Asia/Manila] PHP Stack trace:
+[26-Sep-2018 01:38:10 Asia/Manila] PHP   1. {main}() C:\UwAmp310\www\despro\rfid-handler.php:0
+[26-Sep-2018 01:38:10 Asia/Manila] PHP   2. pdo_db->updateData() C:\UwAmp310\www\despro\rfid-handler.php:21
+[26-Sep-2018 01:38:10 Asia/Manila] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'WHERE rfid=?' at line 1 in C:\UwAmp310\www\despro\db.php:227
+Stack trace:
+#0 C:\UwAmp310\www\despro\db.php(227): PDO->prepare('UPDATE users SE...')
+#1 C:\UwAmp310\www\despro\rfid-handler.php(21): pdo_db->updateData(NULL, 'rfid')
+#2 {main}
+  thrown in C:\UwAmp310\www\despro\db.php on line 227
+[26-Sep-2018 01:38:17 Asia/Manila] PHP Notice:  Undefined variable: data in C:\UwAmp310\www\despro\rfid-handler.php on line 11
+[26-Sep-2018 01:38:17 Asia/Manila] PHP Stack trace:
+[26-Sep-2018 01:38:17 Asia/Manila] PHP   1. {main}() C:\UwAmp310\www\despro\rfid-handler.php:0
+[26-Sep-2018 01:38:17 Asia/Manila] PHP Notice:  Undefined variable: data in C:\UwAmp310\www\despro\rfid-handler.php on line 21
+[26-Sep-2018 01:38:17 Asia/Manila] PHP Stack trace:
+[26-Sep-2018 01:38:17 Asia/Manila] PHP   1. {main}() C:\UwAmp310\www\despro\rfid-handler.php:0
+[26-Sep-2018 01:38:17 Asia/Manila] PHP Warning:  Invalid argument supplied for foreach() in C:\UwAmp310\www\despro\db.php on line 203
+[26-Sep-2018 01:38:17 Asia/Manila] PHP Stack trace:
+[26-Sep-2018 01:38:17 Asia/Manila] PHP   1. {main}() C:\UwAmp310\www\despro\rfid-handler.php:0
+[26-Sep-2018 01:38:17 Asia/Manila] PHP   2. pdo_db->updateData() C:\UwAmp310\www\despro\rfid-handler.php:21
+[26-Sep-2018 01:38:17 Asia/Manila] PHP Notice:  Undefined variable: pk_value in C:\UwAmp310\www\despro\db.php on line 225
+[26-Sep-2018 01:38:17 Asia/Manila] PHP Stack trace:
+[26-Sep-2018 01:38:17 Asia/Manila] PHP   1. {main}() C:\UwAmp310\www\despro\rfid-handler.php:0
+[26-Sep-2018 01:38:17 Asia/Manila] PHP   2. pdo_db->updateData() C:\UwAmp310\www\despro\rfid-handler.php:21
+[26-Sep-2018 01:38:17 Asia/Manila] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'WHERE rfid=?' at line 1 in C:\UwAmp310\www\despro\db.php:227
+Stack trace:
+#0 C:\UwAmp310\www\despro\db.php(227): PDO->prepare('UPDATE users SE...')
+#1 C:\UwAmp310\www\despro\rfid-handler.php(21): pdo_db->updateData(NULL, 'rfid')
+#2 {main}
+  thrown in C:\UwAmp310\www\despro\db.php on line 227
+[26-Sep-2018 01:38:25 Asia/Manila] PHP Notice:  Undefined variable: data in C:\UwAmp310\www\despro\rfid-handler.php on line 11
+[26-Sep-2018 01:38:25 Asia/Manila] PHP Stack trace:
+[26-Sep-2018 01:38:25 Asia/Manila] PHP   1. {main}() C:\UwAmp310\www\despro\rfid-handler.php:0
+[26-Sep-2018 01:38:25 Asia/Manila] PHP Notice:  Undefined variable: data in C:\UwAmp310\www\despro\rfid-handler.php on line 21
+[26-Sep-2018 01:38:25 Asia/Manila] PHP Stack trace:
+[26-Sep-2018 01:38:25 Asia/Manila] PHP   1. {main}() C:\UwAmp310\www\despro\rfid-handler.php:0
+[26-Sep-2018 01:38:25 Asia/Manila] PHP Warning:  Invalid argument supplied for foreach() in C:\UwAmp310\www\despro\db.php on line 203
+[26-Sep-2018 01:38:25 Asia/Manila] PHP Stack trace:
+[26-Sep-2018 01:38:25 Asia/Manila] PHP   1. {main}() C:\UwAmp310\www\despro\rfid-handler.php:0
+[26-Sep-2018 01:38:25 Asia/Manila] PHP   2. pdo_db->updateData() C:\UwAmp310\www\despro\rfid-handler.php:21
+[26-Sep-2018 01:38:25 Asia/Manila] PHP Notice:  Undefined variable: pk_value in C:\UwAmp310\www\despro\db.php on line 225
+[26-Sep-2018 01:38:25 Asia/Manila] PHP Stack trace:
+[26-Sep-2018 01:38:25 Asia/Manila] PHP   1. {main}() C:\UwAmp310\www\despro\rfid-handler.php:0
+[26-Sep-2018 01:38:25 Asia/Manila] PHP   2. pdo_db->updateData() C:\UwAmp310\www\despro\rfid-handler.php:21
+[26-Sep-2018 01:38:25 Asia/Manila] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'WHERE rfid=?' at line 1 in C:\UwAmp310\www\despro\db.php:227
+Stack trace:
+#0 C:\UwAmp310\www\despro\db.php(227): PDO->prepare('UPDATE users SE...')
+#1 C:\UwAmp310\www\despro\rfid-handler.php(21): pdo_db->updateData(NULL, 'rfid')
+#2 {main}
+  thrown in C:\UwAmp310\www\despro\db.php on line 227
+[26-Sep-2018 01:38:32 Asia/Manila] PHP Notice:  Undefined variable: data in C:\UwAmp310\www\despro\rfid-handler.php on line 11
+[26-Sep-2018 01:38:32 Asia/Manila] PHP Stack trace:
+[26-Sep-2018 01:38:32 Asia/Manila] PHP   1. {main}() C:\UwAmp310\www\despro\rfid-handler.php:0
+[26-Sep-2018 01:38:32 Asia/Manila] PHP Notice:  Undefined variable: data in C:\UwAmp310\www\despro\rfid-handler.php on line 21
+[26-Sep-2018 01:38:32 Asia/Manila] PHP Stack trace:
+[26-Sep-2018 01:38:32 Asia/Manila] PHP   1. {main}() C:\UwAmp310\www\despro\rfid-handler.php:0
+[26-Sep-2018 01:38:32 Asia/Manila] PHP Warning:  Invalid argument supplied for foreach() in C:\UwAmp310\www\despro\db.php on line 203
+[26-Sep-2018 01:38:32 Asia/Manila] PHP Stack trace:
+[26-Sep-2018 01:38:32 Asia/Manila] PHP   1. {main}() C:\UwAmp310\www\despro\rfid-handler.php:0
+[26-Sep-2018 01:38:32 Asia/Manila] PHP   2. pdo_db->updateData() C:\UwAmp310\www\despro\rfid-handler.php:21
+[26-Sep-2018 01:38:32 Asia/Manila] PHP Notice:  Undefined variable: pk_value in C:\UwAmp310\www\despro\db.php on line 225
+[26-Sep-2018 01:38:32 Asia/Manila] PHP Stack trace:
+[26-Sep-2018 01:38:32 Asia/Manila] PHP   1. {main}() C:\UwAmp310\www\despro\rfid-handler.php:0
+[26-Sep-2018 01:38:32 Asia/Manila] PHP   2. pdo_db->updateData() C:\UwAmp310\www\despro\rfid-handler.php:21
+[26-Sep-2018 01:38:32 Asia/Manila] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'WHERE rfid=?' at line 1 in C:\UwAmp310\www\despro\db.php:227
+Stack trace:
+#0 C:\UwAmp310\www\despro\db.php(227): PDO->prepare('UPDATE users SE...')
+#1 C:\UwAmp310\www\despro\rfid-handler.php(21): pdo_db->updateData(NULL, 'rfid')
+#2 {main}
+  thrown in C:\UwAmp310\www\despro\db.php on line 227
+[26-Sep-2018 01:38:39 Asia/Manila] PHP Notice:  Undefined variable: data in C:\UwAmp310\www\despro\rfid-handler.php on line 11
+[26-Sep-2018 01:38:39 Asia/Manila] PHP Stack trace:
+[26-Sep-2018 01:38:39 Asia/Manila] PHP   1. {main}() C:\UwAmp310\www\despro\rfid-handler.php:0
+[26-Sep-2018 01:38:39 Asia/Manila] PHP Notice:  Undefined variable: data in C:\UwAmp310\www\despro\rfid-handler.php on line 21
+[26-Sep-2018 01:38:39 Asia/Manila] PHP Stack trace:
+[26-Sep-2018 01:38:39 Asia/Manila] PHP   1. {main}() C:\UwAmp310\www\despro\rfid-handler.php:0
+[26-Sep-2018 01:38:39 Asia/Manila] PHP Warning:  Invalid argument supplied for foreach() in C:\UwAmp310\www\despro\db.php on line 203
+[26-Sep-2018 01:38:39 Asia/Manila] PHP Stack trace:
+[26-Sep-2018 01:38:39 Asia/Manila] PHP   1. {main}() C:\UwAmp310\www\despro\rfid-handler.php:0
+[26-Sep-2018 01:38:39 Asia/Manila] PHP   2. pdo_db->updateData() C:\UwAmp310\www\despro\rfid-handler.php:21
+[26-Sep-2018 01:38:39 Asia/Manila] PHP Notice:  Undefined variable: pk_value in C:\UwAmp310\www\despro\db.php on line 225
+[26-Sep-2018 01:38:39 Asia/Manila] PHP Stack trace:
+[26-Sep-2018 01:38:39 Asia/Manila] PHP   1. {main}() C:\UwAmp310\www\despro\rfid-handler.php:0
+[26-Sep-2018 01:38:39 Asia/Manila] PHP   2. pdo_db->updateData() C:\UwAmp310\www\despro\rfid-handler.php:21
+[26-Sep-2018 01:38:39 Asia/Manila] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'WHERE rfid=?' at line 1 in C:\UwAmp310\www\despro\db.php:227
+Stack trace:
+#0 C:\UwAmp310\www\despro\db.php(227): PDO->prepare('UPDATE users SE...')
+#1 C:\UwAmp310\www\despro\rfid-handler.php(21): pdo_db->updateData(NULL, 'rfid')
+#2 {main}
+  thrown in C:\UwAmp310\www\despro\db.php on line 227
+[26-Sep-2018 01:38:47 Asia/Manila] PHP Notice:  Undefined variable: data in C:\UwAmp310\www\despro\rfid-handler.php on line 11
+[26-Sep-2018 01:38:47 Asia/Manila] PHP Stack trace:
+[26-Sep-2018 01:38:47 Asia/Manila] PHP   1. {main}() C:\UwAmp310\www\despro\rfid-handler.php:0
+[26-Sep-2018 01:38:47 Asia/Manila] PHP Notice:  Undefined variable: data in C:\UwAmp310\www\despro\rfid-handler.php on line 21
+[26-Sep-2018 01:38:47 Asia/Manila] PHP Stack trace:
+[26-Sep-2018 01:38:47 Asia/Manila] PHP   1. {main}() C:\UwAmp310\www\despro\rfid-handler.php:0
+[26-Sep-2018 01:38:47 Asia/Manila] PHP Warning:  Invalid argument supplied for foreach() in C:\UwAmp310\www\despro\db.php on line 203
+[26-Sep-2018 01:38:47 Asia/Manila] PHP Stack trace:
+[26-Sep-2018 01:38:47 Asia/Manila] PHP   1. {main}() C:\UwAmp310\www\despro\rfid-handler.php:0
+[26-Sep-2018 01:38:47 Asia/Manila] PHP   2. pdo_db->updateData() C:\UwAmp310\www\despro\rfid-handler.php:21
+[26-Sep-2018 01:38:47 Asia/Manila] PHP Notice:  Undefined variable: pk_value in C:\UwAmp310\www\despro\db.php on line 225
+[26-Sep-2018 01:38:47 Asia/Manila] PHP Stack trace:
+[26-Sep-2018 01:38:47 Asia/Manila] PHP   1. {main}() C:\UwAmp310\www\despro\rfid-handler.php:0
+[26-Sep-2018 01:38:47 Asia/Manila] PHP   2. pdo_db->updateData() C:\UwAmp310\www\despro\rfid-handler.php:21
+[26-Sep-2018 01:38:47 Asia/Manila] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'WHERE rfid=?' at line 1 in C:\UwAmp310\www\despro\db.php:227
+Stack trace:
+#0 C:\UwAmp310\www\despro\db.php(227): PDO->prepare('UPDATE users SE...')
+#1 C:\UwAmp310\www\despro\rfid-handler.php(21): pdo_db->updateData(NULL, 'rfid')
+#2 {main}
+  thrown in C:\UwAmp310\www\despro\db.php on line 227
+[26-Sep-2018 01:38:54 Asia/Manila] PHP Notice:  Undefined variable: data in C:\UwAmp310\www\despro\rfid-handler.php on line 11
+[26-Sep-2018 01:38:54 Asia/Manila] PHP Stack trace:
+[26-Sep-2018 01:38:54 Asia/Manila] PHP   1. {main}() C:\UwAmp310\www\despro\rfid-handler.php:0
+[26-Sep-2018 01:38:54 Asia/Manila] PHP Notice:  Undefined variable: data in C:\UwAmp310\www\despro\rfid-handler.php on line 21
+[26-Sep-2018 01:38:54 Asia/Manila] PHP Stack trace:
+[26-Sep-2018 01:38:54 Asia/Manila] PHP   1. {main}() C:\UwAmp310\www\despro\rfid-handler.php:0
+[26-Sep-2018 01:38:54 Asia/Manila] PHP Warning:  Invalid argument supplied for foreach() in C:\UwAmp310\www\despro\db.php on line 203
+[26-Sep-2018 01:38:54 Asia/Manila] PHP Stack trace:
+[26-Sep-2018 01:38:54 Asia/Manila] PHP   1. {main}() C:\UwAmp310\www\despro\rfid-handler.php:0
+[26-Sep-2018 01:38:54 Asia/Manila] PHP   2. pdo_db->updateData() C:\UwAmp310\www\despro\rfid-handler.php:21
+[26-Sep-2018 01:38:54 Asia/Manila] PHP Notice:  Undefined variable: pk_value in C:\UwAmp310\www\despro\db.php on line 225
+[26-Sep-2018 01:38:54 Asia/Manila] PHP Stack trace:
+[26-Sep-2018 01:38:54 Asia/Manila] PHP   1. {main}() C:\UwAmp310\www\despro\rfid-handler.php:0
+[26-Sep-2018 01:38:54 Asia/Manila] PHP   2. pdo_db->updateData() C:\UwAmp310\www\despro\rfid-handler.php:21
+[26-Sep-2018 01:38:54 Asia/Manila] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'WHERE rfid=?' at line 1 in C:\UwAmp310\www\despro\db.php:227
+Stack trace:
+#0 C:\UwAmp310\www\despro\db.php(227): PDO->prepare('UPDATE users SE...')
+#1 C:\UwAmp310\www\despro\rfid-handler.php(21): pdo_db->updateData(NULL, 'rfid')
+#2 {main}
+  thrown in C:\UwAmp310\www\despro\db.php on line 227
+[26-Sep-2018 01:39:02 Asia/Manila] PHP Notice:  Undefined variable: data in C:\UwAmp310\www\despro\rfid-handler.php on line 11
+[26-Sep-2018 01:39:02 Asia/Manila] PHP Stack trace:
+[26-Sep-2018 01:39:02 Asia/Manila] PHP   1. {main}() C:\UwAmp310\www\despro\rfid-handler.php:0
+[26-Sep-2018 01:39:02 Asia/Manila] PHP Notice:  Undefined variable: data in C:\UwAmp310\www\despro\rfid-handler.php on line 21
+[26-Sep-2018 01:39:02 Asia/Manila] PHP Stack trace:
+[26-Sep-2018 01:39:02 Asia/Manila] PHP   1. {main}() C:\UwAmp310\www\despro\rfid-handler.php:0
+[26-Sep-2018 01:39:02 Asia/Manila] PHP Warning:  Invalid argument supplied for foreach() in C:\UwAmp310\www\despro\db.php on line 203
+[26-Sep-2018 01:39:02 Asia/Manila] PHP Stack trace:
+[26-Sep-2018 01:39:02 Asia/Manila] PHP   1. {main}() C:\UwAmp310\www\despro\rfid-handler.php:0
+[26-Sep-2018 01:39:02 Asia/Manila] PHP   2. pdo_db->updateData() C:\UwAmp310\www\despro\rfid-handler.php:21
+[26-Sep-2018 01:39:02 Asia/Manila] PHP Notice:  Undefined variable: pk_value in C:\UwAmp310\www\despro\db.php on line 225
+[26-Sep-2018 01:39:02 Asia/Manila] PHP Stack trace:
+[26-Sep-2018 01:39:02 Asia/Manila] PHP   1. {main}() C:\UwAmp310\www\despro\rfid-handler.php:0
+[26-Sep-2018 01:39:02 Asia/Manila] PHP   2. pdo_db->updateData() C:\UwAmp310\www\despro\rfid-handler.php:21
+[26-Sep-2018 01:39:02 Asia/Manila] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'WHERE rfid=?' at line 1 in C:\UwAmp310\www\despro\db.php:227
+Stack trace:
+#0 C:\UwAmp310\www\despro\db.php(227): PDO->prepare('UPDATE users SE...')
+#1 C:\UwAmp310\www\despro\rfid-handler.php(21): pdo_db->updateData(NULL, 'rfid')
+#2 {main}
+  thrown in C:\UwAmp310\www\despro\db.php on line 227
+[26-Sep-2018 01:39:09 Asia/Manila] PHP Notice:  Undefined variable: data in C:\UwAmp310\www\despro\rfid-handler.php on line 11
+[26-Sep-2018 01:39:09 Asia/Manila] PHP Stack trace:
+[26-Sep-2018 01:39:09 Asia/Manila] PHP   1. {main}() C:\UwAmp310\www\despro\rfid-handler.php:0
+[26-Sep-2018 01:39:09 Asia/Manila] PHP Notice:  Undefined variable: data in C:\UwAmp310\www\despro\rfid-handler.php on line 21
+[26-Sep-2018 01:39:09 Asia/Manila] PHP Stack trace:
+[26-Sep-2018 01:39:09 Asia/Manila] PHP   1. {main}() C:\UwAmp310\www\despro\rfid-handler.php:0
+[26-Sep-2018 01:39:09 Asia/Manila] PHP Warning:  Invalid argument supplied for foreach() in C:\UwAmp310\www\despro\db.php on line 203
+[26-Sep-2018 01:39:09 Asia/Manila] PHP Stack trace:
+[26-Sep-2018 01:39:09 Asia/Manila] PHP   1. {main}() C:\UwAmp310\www\despro\rfid-handler.php:0
+[26-Sep-2018 01:39:09 Asia/Manila] PHP   2. pdo_db->updateData() C:\UwAmp310\www\despro\rfid-handler.php:21
+[26-Sep-2018 01:39:09 Asia/Manila] PHP Notice:  Undefined variable: pk_value in C:\UwAmp310\www\despro\db.php on line 225
+[26-Sep-2018 01:39:09 Asia/Manila] PHP Stack trace:
+[26-Sep-2018 01:39:09 Asia/Manila] PHP   1. {main}() C:\UwAmp310\www\despro\rfid-handler.php:0
+[26-Sep-2018 01:39:09 Asia/Manila] PHP   2. pdo_db->updateData() C:\UwAmp310\www\despro\rfid-handler.php:21
+[26-Sep-2018 01:39:09 Asia/Manila] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'WHERE rfid=?' at line 1 in C:\UwAmp310\www\despro\db.php:227
+Stack trace:
+#0 C:\UwAmp310\www\despro\db.php(227): PDO->prepare('UPDATE users SE...')
+#1 C:\UwAmp310\www\despro\rfid-handler.php(21): pdo_db->updateData(NULL, 'rfid')
+#2 {main}
+  thrown in C:\UwAmp310\www\despro\db.php on line 227
+[26-Sep-2018 01:39:16 Asia/Manila] PHP Notice:  Undefined variable: data in C:\UwAmp310\www\despro\rfid-handler.php on line 11
+[26-Sep-2018 01:39:16 Asia/Manila] PHP Stack trace:
+[26-Sep-2018 01:39:16 Asia/Manila] PHP   1. {main}() C:\UwAmp310\www\despro\rfid-handler.php:0
+[26-Sep-2018 01:39:16 Asia/Manila] PHP Notice:  Undefined variable: data in C:\UwAmp310\www\despro\rfid-handler.php on line 21
+[26-Sep-2018 01:39:16 Asia/Manila] PHP Stack trace:
+[26-Sep-2018 01:39:16 Asia/Manila] PHP   1. {main}() C:\UwAmp310\www\despro\rfid-handler.php:0
+[26-Sep-2018 01:39:16 Asia/Manila] PHP Warning:  Invalid argument supplied for foreach() in C:\UwAmp310\www\despro\db.php on line 203
+[26-Sep-2018 01:39:16 Asia/Manila] PHP Stack trace:
+[26-Sep-2018 01:39:16 Asia/Manila] PHP   1. {main}() C:\UwAmp310\www\despro\rfid-handler.php:0
+[26-Sep-2018 01:39:16 Asia/Manila] PHP   2. pdo_db->updateData() C:\UwAmp310\www\despro\rfid-handler.php:21
+[26-Sep-2018 01:39:16 Asia/Manila] PHP Notice:  Undefined variable: pk_value in C:\UwAmp310\www\despro\db.php on line 225
+[26-Sep-2018 01:39:16 Asia/Manila] PHP Stack trace:
+[26-Sep-2018 01:39:16 Asia/Manila] PHP   1. {main}() C:\UwAmp310\www\despro\rfid-handler.php:0
+[26-Sep-2018 01:39:16 Asia/Manila] PHP   2. pdo_db->updateData() C:\UwAmp310\www\despro\rfid-handler.php:21
+[26-Sep-2018 01:39:16 Asia/Manila] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'WHERE rfid=?' at line 1 in C:\UwAmp310\www\despro\db.php:227
+Stack trace:
+#0 C:\UwAmp310\www\despro\db.php(227): PDO->prepare('UPDATE users SE...')
+#1 C:\UwAmp310\www\despro\rfid-handler.php(21): pdo_db->updateData(NULL, 'rfid')
+#2 {main}
+  thrown in C:\UwAmp310\www\despro\db.php on line 227
+[26-Sep-2018 01:39:24 Asia/Manila] PHP Notice:  Undefined variable: data in C:\UwAmp310\www\despro\rfid-handler.php on line 11
+[26-Sep-2018 01:39:24 Asia/Manila] PHP Stack trace:
+[26-Sep-2018 01:39:24 Asia/Manila] PHP   1. {main}() C:\UwAmp310\www\despro\rfid-handler.php:0
+[26-Sep-2018 01:39:24 Asia/Manila] PHP Notice:  Undefined variable: data in C:\UwAmp310\www\despro\rfid-handler.php on line 21
+[26-Sep-2018 01:39:24 Asia/Manila] PHP Stack trace:
+[26-Sep-2018 01:39:24 Asia/Manila] PHP   1. {main}() C:\UwAmp310\www\despro\rfid-handler.php:0
+[26-Sep-2018 01:39:24 Asia/Manila] PHP Warning:  Invalid argument supplied for foreach() in C:\UwAmp310\www\despro\db.php on line 203
+[26-Sep-2018 01:39:24 Asia/Manila] PHP Stack trace:
+[26-Sep-2018 01:39:24 Asia/Manila] PHP   1. {main}() C:\UwAmp310\www\despro\rfid-handler.php:0
+[26-Sep-2018 01:39:24 Asia/Manila] PHP   2. pdo_db->updateData() C:\UwAmp310\www\despro\rfid-handler.php:21
+[26-Sep-2018 01:39:24 Asia/Manila] PHP Notice:  Undefined variable: pk_value in C:\UwAmp310\www\despro\db.php on line 225
+[26-Sep-2018 01:39:24 Asia/Manila] PHP Stack trace:
+[26-Sep-2018 01:39:24 Asia/Manila] PHP   1. {main}() C:\UwAmp310\www\despro\rfid-handler.php:0
+[26-Sep-2018 01:39:24 Asia/Manila] PHP   2. pdo_db->updateData() C:\UwAmp310\www\despro\rfid-handler.php:21
+[26-Sep-2018 01:39:24 Asia/Manila] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'WHERE rfid=?' at line 1 in C:\UwAmp310\www\despro\db.php:227
+Stack trace:
+#0 C:\UwAmp310\www\despro\db.php(227): PDO->prepare('UPDATE users SE...')
+#1 C:\UwAmp310\www\despro\rfid-handler.php(21): pdo_db->updateData(NULL, 'rfid')
+#2 {main}
+  thrown in C:\UwAmp310\www\despro\db.php on line 227
+[26-Sep-2018 01:39:31 Asia/Manila] PHP Notice:  Undefined variable: data in C:\UwAmp310\www\despro\rfid-handler.php on line 11
+[26-Sep-2018 01:39:31 Asia/Manila] PHP Stack trace:
+[26-Sep-2018 01:39:31 Asia/Manila] PHP   1. {main}() C:\UwAmp310\www\despro\rfid-handler.php:0
+[26-Sep-2018 01:39:31 Asia/Manila] PHP Notice:  Undefined variable: data in C:\UwAmp310\www\despro\rfid-handler.php on line 21
+[26-Sep-2018 01:39:31 Asia/Manila] PHP Stack trace:
+[26-Sep-2018 01:39:31 Asia/Manila] PHP   1. {main}() C:\UwAmp310\www\despro\rfid-handler.php:0
+[26-Sep-2018 01:39:31 Asia/Manila] PHP Warning:  Invalid argument supplied for foreach() in C:\UwAmp310\www\despro\db.php on line 203
+[26-Sep-2018 01:39:31 Asia/Manila] PHP Stack trace:
+[26-Sep-2018 01:39:31 Asia/Manila] PHP   1. {main}() C:\UwAmp310\www\despro\rfid-handler.php:0
+[26-Sep-2018 01:39:31 Asia/Manila] PHP   2. pdo_db->updateData() C:\UwAmp310\www\despro\rfid-handler.php:21
+[26-Sep-2018 01:39:31 Asia/Manila] PHP Notice:  Undefined variable: pk_value in C:\UwAmp310\www\despro\db.php on line 225
+[26-Sep-2018 01:39:31 Asia/Manila] PHP Stack trace:
+[26-Sep-2018 01:39:31 Asia/Manila] PHP   1. {main}() C:\UwAmp310\www\despro\rfid-handler.php:0
+[26-Sep-2018 01:39:31 Asia/Manila] PHP   2. pdo_db->updateData() C:\UwAmp310\www\despro\rfid-handler.php:21
+[26-Sep-2018 01:39:31 Asia/Manila] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'WHERE rfid=?' at line 1 in C:\UwAmp310\www\despro\db.php:227
+Stack trace:
+#0 C:\UwAmp310\www\despro\db.php(227): PDO->prepare('UPDATE users SE...')
+#1 C:\UwAmp310\www\despro\rfid-handler.php(21): pdo_db->updateData(NULL, 'rfid')
+#2 {main}
+  thrown in C:\UwAmp310\www\despro\db.php on line 227
+[26-Sep-2018 01:39:39 Asia/Manila] PHP Notice:  Undefined variable: data in C:\UwAmp310\www\despro\rfid-handler.php on line 11
+[26-Sep-2018 01:39:39 Asia/Manila] PHP Stack trace:
+[26-Sep-2018 01:39:39 Asia/Manila] PHP   1. {main}() C:\UwAmp310\www\despro\rfid-handler.php:0
+[26-Sep-2018 01:39:39 Asia/Manila] PHP Notice:  Undefined variable: data in C:\UwAmp310\www\despro\rfid-handler.php on line 21
+[26-Sep-2018 01:39:39 Asia/Manila] PHP Stack trace:
+[26-Sep-2018 01:39:39 Asia/Manila] PHP   1. {main}() C:\UwAmp310\www\despro\rfid-handler.php:0
+[26-Sep-2018 01:39:39 Asia/Manila] PHP Warning:  Invalid argument supplied for foreach() in C:\UwAmp310\www\despro\db.php on line 203
+[26-Sep-2018 01:39:39 Asia/Manila] PHP Stack trace:
+[26-Sep-2018 01:39:39 Asia/Manila] PHP   1. {main}() C:\UwAmp310\www\despro\rfid-handler.php:0
+[26-Sep-2018 01:39:39 Asia/Manila] PHP   2. pdo_db->updateData() C:\UwAmp310\www\despro\rfid-handler.php:21
+[26-Sep-2018 01:39:39 Asia/Manila] PHP Notice:  Undefined variable: pk_value in C:\UwAmp310\www\despro\db.php on line 225
+[26-Sep-2018 01:39:39 Asia/Manila] PHP Stack trace:
+[26-Sep-2018 01:39:39 Asia/Manila] PHP   1. {main}() C:\UwAmp310\www\despro\rfid-handler.php:0
+[26-Sep-2018 01:39:39 Asia/Manila] PHP   2. pdo_db->updateData() C:\UwAmp310\www\despro\rfid-handler.php:21
+[26-Sep-2018 01:39:39 Asia/Manila] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'WHERE rfid=?' at line 1 in C:\UwAmp310\www\despro\db.php:227
+Stack trace:
+#0 C:\UwAmp310\www\despro\db.php(227): PDO->prepare('UPDATE users SE...')
+#1 C:\UwAmp310\www\despro\rfid-handler.php(21): pdo_db->updateData(NULL, 'rfid')
+#2 {main}
+  thrown in C:\UwAmp310\www\despro\db.php on line 227
+[26-Sep-2018 01:39:46 Asia/Manila] PHP Notice:  Undefined variable: data in C:\UwAmp310\www\despro\rfid-handler.php on line 11
+[26-Sep-2018 01:39:46 Asia/Manila] PHP Stack trace:
+[26-Sep-2018 01:39:46 Asia/Manila] PHP   1. {main}() C:\UwAmp310\www\despro\rfid-handler.php:0
+[26-Sep-2018 01:39:46 Asia/Manila] PHP Notice:  Undefined variable: data in C:\UwAmp310\www\despro\rfid-handler.php on line 21
+[26-Sep-2018 01:39:46 Asia/Manila] PHP Stack trace:
+[26-Sep-2018 01:39:46 Asia/Manila] PHP   1. {main}() C:\UwAmp310\www\despro\rfid-handler.php:0
+[26-Sep-2018 01:39:46 Asia/Manila] PHP Warning:  Invalid argument supplied for foreach() in C:\UwAmp310\www\despro\db.php on line 203
+[26-Sep-2018 01:39:46 Asia/Manila] PHP Stack trace:
+[26-Sep-2018 01:39:46 Asia/Manila] PHP   1. {main}() C:\UwAmp310\www\despro\rfid-handler.php:0
+[26-Sep-2018 01:39:46 Asia/Manila] PHP   2. pdo_db->updateData() C:\UwAmp310\www\despro\rfid-handler.php:21
+[26-Sep-2018 01:39:46 Asia/Manila] PHP Notice:  Undefined variable: pk_value in C:\UwAmp310\www\despro\db.php on line 225
+[26-Sep-2018 01:39:46 Asia/Manila] PHP Stack trace:
+[26-Sep-2018 01:39:46 Asia/Manila] PHP   1. {main}() C:\UwAmp310\www\despro\rfid-handler.php:0
+[26-Sep-2018 01:39:46 Asia/Manila] PHP   2. pdo_db->updateData() C:\UwAmp310\www\despro\rfid-handler.php:21
+[26-Sep-2018 01:39:46 Asia/Manila] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'WHERE rfid=?' at line 1 in C:\UwAmp310\www\despro\db.php:227
+Stack trace:
+#0 C:\UwAmp310\www\despro\db.php(227): PDO->prepare('UPDATE users SE...')
+#1 C:\UwAmp310\www\despro\rfid-handler.php(21): pdo_db->updateData(NULL, 'rfid')
+#2 {main}
+  thrown in C:\UwAmp310\www\despro\db.php on line 227
+[26-Sep-2018 01:39:53 Asia/Manila] PHP Notice:  Undefined variable: data in C:\UwAmp310\www\despro\rfid-handler.php on line 11
+[26-Sep-2018 01:39:53 Asia/Manila] PHP Stack trace:
+[26-Sep-2018 01:39:53 Asia/Manila] PHP   1. {main}() C:\UwAmp310\www\despro\rfid-handler.php:0
+[26-Sep-2018 01:39:53 Asia/Manila] PHP Notice:  Undefined variable: data in C:\UwAmp310\www\despro\rfid-handler.php on line 21
+[26-Sep-2018 01:39:53 Asia/Manila] PHP Stack trace:
+[26-Sep-2018 01:39:53 Asia/Manila] PHP   1. {main}() C:\UwAmp310\www\despro\rfid-handler.php:0
+[26-Sep-2018 01:39:53 Asia/Manila] PHP Warning:  Invalid argument supplied for foreach() in C:\UwAmp310\www\despro\db.php on line 203
+[26-Sep-2018 01:39:53 Asia/Manila] PHP Stack trace:
+[26-Sep-2018 01:39:53 Asia/Manila] PHP   1. {main}() C:\UwAmp310\www\despro\rfid-handler.php:0
+[26-Sep-2018 01:39:53 Asia/Manila] PHP   2. pdo_db->updateData() C:\UwAmp310\www\despro\rfid-handler.php:21
+[26-Sep-2018 01:39:53 Asia/Manila] PHP Notice:  Undefined variable: pk_value in C:\UwAmp310\www\despro\db.php on line 225
+[26-Sep-2018 01:39:53 Asia/Manila] PHP Stack trace:
+[26-Sep-2018 01:39:53 Asia/Manila] PHP   1. {main}() C:\UwAmp310\www\despro\rfid-handler.php:0
+[26-Sep-2018 01:39:53 Asia/Manila] PHP   2. pdo_db->updateData() C:\UwAmp310\www\despro\rfid-handler.php:21
+[26-Sep-2018 01:39:53 Asia/Manila] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'WHERE rfid=?' at line 1 in C:\UwAmp310\www\despro\db.php:227
+Stack trace:
+#0 C:\UwAmp310\www\despro\db.php(227): PDO->prepare('UPDATE users SE...')
+#1 C:\UwAmp310\www\despro\rfid-handler.php(21): pdo_db->updateData(NULL, 'rfid')
+#2 {main}
+  thrown in C:\UwAmp310\www\despro\db.php on line 227
+[26-Sep-2018 01:40:04 Asia/Manila] PHP Notice:  Undefined variable: data in C:\UwAmp310\www\despro\rfid-handler.php on line 11
+[26-Sep-2018 01:40:04 Asia/Manila] PHP Stack trace:
+[26-Sep-2018 01:40:04 Asia/Manila] PHP   1. {main}() C:\UwAmp310\www\despro\rfid-handler.php:0
+[26-Sep-2018 01:40:04 Asia/Manila] PHP Notice:  Undefined variable: data in C:\UwAmp310\www\despro\rfid-handler.php on line 21
+[26-Sep-2018 01:40:04 Asia/Manila] PHP Stack trace:
+[26-Sep-2018 01:40:04 Asia/Manila] PHP   1. {main}() C:\UwAmp310\www\despro\rfid-handler.php:0
+[26-Sep-2018 01:40:04 Asia/Manila] PHP Warning:  Invalid argument supplied for foreach() in C:\UwAmp310\www\despro\db.php on line 203
+[26-Sep-2018 01:40:04 Asia/Manila] PHP Stack trace:
+[26-Sep-2018 01:40:04 Asia/Manila] PHP   1. {main}() C:\UwAmp310\www\despro\rfid-handler.php:0
+[26-Sep-2018 01:40:04 Asia/Manila] PHP   2. pdo_db->updateData() C:\UwAmp310\www\despro\rfid-handler.php:21
+[26-Sep-2018 01:40:04 Asia/Manila] PHP Notice:  Undefined variable: pk_value in C:\UwAmp310\www\despro\db.php on line 225
+[26-Sep-2018 01:40:04 Asia/Manila] PHP Stack trace:
+[26-Sep-2018 01:40:04 Asia/Manila] PHP   1. {main}() C:\UwAmp310\www\despro\rfid-handler.php:0
+[26-Sep-2018 01:40:04 Asia/Manila] PHP   2. pdo_db->updateData() C:\UwAmp310\www\despro\rfid-handler.php:21
+[26-Sep-2018 01:40:04 Asia/Manila] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'WHERE rfid=?' at line 1 in C:\UwAmp310\www\despro\db.php:227
+Stack trace:
+#0 C:\UwAmp310\www\despro\db.php(227): PDO->prepare('UPDATE users SE...')
+#1 C:\UwAmp310\www\despro\rfid-handler.php(21): pdo_db->updateData(NULL, 'rfid')
+#2 {main}
+  thrown in C:\UwAmp310\www\despro\db.php on line 227
+[26-Sep-2018 01:40:11 Asia/Manila] PHP Notice:  Undefined variable: data in C:\UwAmp310\www\despro\rfid-handler.php on line 11
+[26-Sep-2018 01:40:11 Asia/Manila] PHP Stack trace:
+[26-Sep-2018 01:40:11 Asia/Manila] PHP   1. {main}() C:\UwAmp310\www\despro\rfid-handler.php:0
+[26-Sep-2018 01:40:11 Asia/Manila] PHP Notice:  Undefined variable: data in C:\UwAmp310\www\despro\rfid-handler.php on line 21
+[26-Sep-2018 01:40:11 Asia/Manila] PHP Stack trace:
+[26-Sep-2018 01:40:11 Asia/Manila] PHP   1. {main}() C:\UwAmp310\www\despro\rfid-handler.php:0
+[26-Sep-2018 01:40:11 Asia/Manila] PHP Warning:  Invalid argument supplied for foreach() in C:\UwAmp310\www\despro\db.php on line 203
+[26-Sep-2018 01:40:11 Asia/Manila] PHP Stack trace:
+[26-Sep-2018 01:40:11 Asia/Manila] PHP   1. {main}() C:\UwAmp310\www\despro\rfid-handler.php:0
+[26-Sep-2018 01:40:11 Asia/Manila] PHP   2. pdo_db->updateData() C:\UwAmp310\www\despro\rfid-handler.php:21
+[26-Sep-2018 01:40:11 Asia/Manila] PHP Notice:  Undefined variable: pk_value in C:\UwAmp310\www\despro\db.php on line 225
+[26-Sep-2018 01:40:11 Asia/Manila] PHP Stack trace:
+[26-Sep-2018 01:40:11 Asia/Manila] PHP   1. {main}() C:\UwAmp310\www\despro\rfid-handler.php:0
+[26-Sep-2018 01:40:11 Asia/Manila] PHP   2. pdo_db->updateData() C:\UwAmp310\www\despro\rfid-handler.php:21
+[26-Sep-2018 01:40:11 Asia/Manila] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'WHERE rfid=?' at line 1 in C:\UwAmp310\www\despro\db.php:227
+Stack trace:
+#0 C:\UwAmp310\www\despro\db.php(227): PDO->prepare('UPDATE users SE...')
+#1 C:\UwAmp310\www\despro\rfid-handler.php(21): pdo_db->updateData(NULL, 'rfid')
+#2 {main}
+  thrown in C:\UwAmp310\www\despro\db.php on line 227
+[26-Sep-2018 01:40:19 Asia/Manila] PHP Notice:  Undefined variable: data in C:\UwAmp310\www\despro\rfid-handler.php on line 11
+[26-Sep-2018 01:40:19 Asia/Manila] PHP Stack trace:
+[26-Sep-2018 01:40:19 Asia/Manila] PHP   1. {main}() C:\UwAmp310\www\despro\rfid-handler.php:0
+[26-Sep-2018 01:40:19 Asia/Manila] PHP Notice:  Undefined variable: data in C:\UwAmp310\www\despro\rfid-handler.php on line 21
+[26-Sep-2018 01:40:19 Asia/Manila] PHP Stack trace:
+[26-Sep-2018 01:40:19 Asia/Manila] PHP   1. {main}() C:\UwAmp310\www\despro\rfid-handler.php:0
+[26-Sep-2018 01:40:19 Asia/Manila] PHP Warning:  Invalid argument supplied for foreach() in C:\UwAmp310\www\despro\db.php on line 203
+[26-Sep-2018 01:40:19 Asia/Manila] PHP Stack trace:
+[26-Sep-2018 01:40:19 Asia/Manila] PHP   1. {main}() C:\UwAmp310\www\despro\rfid-handler.php:0
+[26-Sep-2018 01:40:19 Asia/Manila] PHP   2. pdo_db->updateData() C:\UwAmp310\www\despro\rfid-handler.php:21
+[26-Sep-2018 01:40:19 Asia/Manila] PHP Notice:  Undefined variable: pk_value in C:\UwAmp310\www\despro\db.php on line 225
+[26-Sep-2018 01:40:19 Asia/Manila] PHP Stack trace:
+[26-Sep-2018 01:40:19 Asia/Manila] PHP   1. {main}() C:\UwAmp310\www\despro\rfid-handler.php:0
+[26-Sep-2018 01:40:19 Asia/Manila] PHP   2. pdo_db->updateData() C:\UwAmp310\www\despro\rfid-handler.php:21
+[26-Sep-2018 01:40:19 Asia/Manila] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'WHERE rfid=?' at line 1 in C:\UwAmp310\www\despro\db.php:227
+Stack trace:
+#0 C:\UwAmp310\www\despro\db.php(227): PDO->prepare('UPDATE users SE...')
+#1 C:\UwAmp310\www\despro\rfid-handler.php(21): pdo_db->updateData(NULL, 'rfid')
+#2 {main}
+  thrown in C:\UwAmp310\www\despro\db.php on line 227
+[26-Sep-2018 01:40:26 Asia/Manila] PHP Notice:  Undefined variable: data in C:\UwAmp310\www\despro\rfid-handler.php on line 11
+[26-Sep-2018 01:40:26 Asia/Manila] PHP Stack trace:
+[26-Sep-2018 01:40:26 Asia/Manila] PHP   1. {main}() C:\UwAmp310\www\despro\rfid-handler.php:0
+[26-Sep-2018 01:40:26 Asia/Manila] PHP Notice:  Undefined variable: data in C:\UwAmp310\www\despro\rfid-handler.php on line 21
+[26-Sep-2018 01:40:26 Asia/Manila] PHP Stack trace:
+[26-Sep-2018 01:40:26 Asia/Manila] PHP   1. {main}() C:\UwAmp310\www\despro\rfid-handler.php:0
+[26-Sep-2018 01:40:26 Asia/Manila] PHP Warning:  Invalid argument supplied for foreach() in C:\UwAmp310\www\despro\db.php on line 203
+[26-Sep-2018 01:40:26 Asia/Manila] PHP Stack trace:
+[26-Sep-2018 01:40:26 Asia/Manila] PHP   1. {main}() C:\UwAmp310\www\despro\rfid-handler.php:0
+[26-Sep-2018 01:40:26 Asia/Manila] PHP   2. pdo_db->updateData() C:\UwAmp310\www\despro\rfid-handler.php:21
+[26-Sep-2018 01:40:26 Asia/Manila] PHP Notice:  Undefined variable: pk_value in C:\UwAmp310\www\despro\db.php on line 225
+[26-Sep-2018 01:40:26 Asia/Manila] PHP Stack trace:
+[26-Sep-2018 01:40:26 Asia/Manila] PHP   1. {main}() C:\UwAmp310\www\despro\rfid-handler.php:0
+[26-Sep-2018 01:40:26 Asia/Manila] PHP   2. pdo_db->updateData() C:\UwAmp310\www\despro\rfid-handler.php:21
+[26-Sep-2018 01:40:26 Asia/Manila] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'WHERE rfid=?' at line 1 in C:\UwAmp310\www\despro\db.php:227
+Stack trace:
+#0 C:\UwAmp310\www\despro\db.php(227): PDO->prepare('UPDATE users SE...')
+#1 C:\UwAmp310\www\despro\rfid-handler.php(21): pdo_db->updateData(NULL, 'rfid')
+#2 {main}
+  thrown in C:\UwAmp310\www\despro\db.php on line 227
+[26-Sep-2018 01:40:34 Asia/Manila] PHP Notice:  Undefined variable: data in C:\UwAmp310\www\despro\rfid-handler.php on line 11
+[26-Sep-2018 01:40:34 Asia/Manila] PHP Stack trace:
+[26-Sep-2018 01:40:34 Asia/Manila] PHP   1. {main}() C:\UwAmp310\www\despro\rfid-handler.php:0
+[26-Sep-2018 01:40:34 Asia/Manila] PHP Notice:  Undefined variable: data in C:\UwAmp310\www\despro\rfid-handler.php on line 21
+[26-Sep-2018 01:40:34 Asia/Manila] PHP Stack trace:
+[26-Sep-2018 01:40:34 Asia/Manila] PHP   1. {main}() C:\UwAmp310\www\despro\rfid-handler.php:0
+[26-Sep-2018 01:40:34 Asia/Manila] PHP Warning:  Invalid argument supplied for foreach() in C:\UwAmp310\www\despro\db.php on line 203
+[26-Sep-2018 01:40:34 Asia/Manila] PHP Stack trace:
+[26-Sep-2018 01:40:34 Asia/Manila] PHP   1. {main}() C:\UwAmp310\www\despro\rfid-handler.php:0
+[26-Sep-2018 01:40:34 Asia/Manila] PHP   2. pdo_db->updateData() C:\UwAmp310\www\despro\rfid-handler.php:21
+[26-Sep-2018 01:40:34 Asia/Manila] PHP Notice:  Undefined variable: pk_value in C:\UwAmp310\www\despro\db.php on line 225
+[26-Sep-2018 01:40:34 Asia/Manila] PHP Stack trace:
+[26-Sep-2018 01:40:34 Asia/Manila] PHP   1. {main}() C:\UwAmp310\www\despro\rfid-handler.php:0
+[26-Sep-2018 01:40:34 Asia/Manila] PHP   2. pdo_db->updateData() C:\UwAmp310\www\despro\rfid-handler.php:21
+[26-Sep-2018 01:40:34 Asia/Manila] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'WHERE rfid=?' at line 1 in C:\UwAmp310\www\despro\db.php:227
+Stack trace:
+#0 C:\UwAmp310\www\despro\db.php(227): PDO->prepare('UPDATE users SE...')
+#1 C:\UwAmp310\www\despro\rfid-handler.php(21): pdo_db->updateData(NULL, 'rfid')
+#2 {main}
+  thrown in C:\UwAmp310\www\despro\db.php on line 227
+[26-Sep-2018 01:40:41 Asia/Manila] PHP Notice:  Undefined variable: data in C:\UwAmp310\www\despro\rfid-handler.php on line 11
+[26-Sep-2018 01:40:41 Asia/Manila] PHP Stack trace:
+[26-Sep-2018 01:40:41 Asia/Manila] PHP   1. {main}() C:\UwAmp310\www\despro\rfid-handler.php:0
+[26-Sep-2018 01:40:41 Asia/Manila] PHP Notice:  Undefined variable: data in C:\UwAmp310\www\despro\rfid-handler.php on line 21
+[26-Sep-2018 01:40:41 Asia/Manila] PHP Stack trace:
+[26-Sep-2018 01:40:41 Asia/Manila] PHP   1. {main}() C:\UwAmp310\www\despro\rfid-handler.php:0
+[26-Sep-2018 01:40:41 Asia/Manila] PHP Warning:  Invalid argument supplied for foreach() in C:\UwAmp310\www\despro\db.php on line 203
+[26-Sep-2018 01:40:41 Asia/Manila] PHP Stack trace:
+[26-Sep-2018 01:40:41 Asia/Manila] PHP   1. {main}() C:\UwAmp310\www\despro\rfid-handler.php:0
+[26-Sep-2018 01:40:41 Asia/Manila] PHP   2. pdo_db->updateData() C:\UwAmp310\www\despro\rfid-handler.php:21
+[26-Sep-2018 01:40:41 Asia/Manila] PHP Notice:  Undefined variable: pk_value in C:\UwAmp310\www\despro\db.php on line 225
+[26-Sep-2018 01:40:41 Asia/Manila] PHP Stack trace:
+[26-Sep-2018 01:40:41 Asia/Manila] PHP   1. {main}() C:\UwAmp310\www\despro\rfid-handler.php:0
+[26-Sep-2018 01:40:41 Asia/Manila] PHP   2. pdo_db->updateData() C:\UwAmp310\www\despro\rfid-handler.php:21
+[26-Sep-2018 01:40:41 Asia/Manila] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'WHERE rfid=?' at line 1 in C:\UwAmp310\www\despro\db.php:227
+Stack trace:
+#0 C:\UwAmp310\www\despro\db.php(227): PDO->prepare('UPDATE users SE...')
+#1 C:\UwAmp310\www\despro\rfid-handler.php(21): pdo_db->updateData(NULL, 'rfid')
+#2 {main}
+  thrown in C:\UwAmp310\www\despro\db.php on line 227
+[26-Sep-2018 01:40:48 Asia/Manila] PHP Notice:  Undefined variable: data in C:\UwAmp310\www\despro\rfid-handler.php on line 11
+[26-Sep-2018 01:40:48 Asia/Manila] PHP Stack trace:
+[26-Sep-2018 01:40:48 Asia/Manila] PHP   1. {main}() C:\UwAmp310\www\despro\rfid-handler.php:0
+[26-Sep-2018 01:40:48 Asia/Manila] PHP Notice:  Undefined variable: data in C:\UwAmp310\www\despro\rfid-handler.php on line 21
+[26-Sep-2018 01:40:48 Asia/Manila] PHP Stack trace:
+[26-Sep-2018 01:40:48 Asia/Manila] PHP   1. {main}() C:\UwAmp310\www\despro\rfid-handler.php:0
+[26-Sep-2018 01:40:48 Asia/Manila] PHP Warning:  Invalid argument supplied for foreach() in C:\UwAmp310\www\despro\db.php on line 203
+[26-Sep-2018 01:40:48 Asia/Manila] PHP Stack trace:
+[26-Sep-2018 01:40:48 Asia/Manila] PHP   1. {main}() C:\UwAmp310\www\despro\rfid-handler.php:0
+[26-Sep-2018 01:40:48 Asia/Manila] PHP   2. pdo_db->updateData() C:\UwAmp310\www\despro\rfid-handler.php:21
+[26-Sep-2018 01:40:48 Asia/Manila] PHP Notice:  Undefined variable: pk_value in C:\UwAmp310\www\despro\db.php on line 225
+[26-Sep-2018 01:40:48 Asia/Manila] PHP Stack trace:
+[26-Sep-2018 01:40:48 Asia/Manila] PHP   1. {main}() C:\UwAmp310\www\despro\rfid-handler.php:0
+[26-Sep-2018 01:40:48 Asia/Manila] PHP   2. pdo_db->updateData() C:\UwAmp310\www\despro\rfid-handler.php:21
+[26-Sep-2018 01:40:48 Asia/Manila] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'WHERE rfid=?' at line 1 in C:\UwAmp310\www\despro\db.php:227
+Stack trace:
+#0 C:\UwAmp310\www\despro\db.php(227): PDO->prepare('UPDATE users SE...')
+#1 C:\UwAmp310\www\despro\rfid-handler.php(21): pdo_db->updateData(NULL, 'rfid')
+#2 {main}
+  thrown in C:\UwAmp310\www\despro\db.php on line 227
+[26-Sep-2018 01:40:56 Asia/Manila] PHP Notice:  Undefined variable: data in C:\UwAmp310\www\despro\rfid-handler.php on line 11
+[26-Sep-2018 01:40:56 Asia/Manila] PHP Stack trace:
+[26-Sep-2018 01:40:56 Asia/Manila] PHP   1. {main}() C:\UwAmp310\www\despro\rfid-handler.php:0
+[26-Sep-2018 01:40:56 Asia/Manila] PHP Notice:  Undefined variable: data in C:\UwAmp310\www\despro\rfid-handler.php on line 21
+[26-Sep-2018 01:40:56 Asia/Manila] PHP Stack trace:
+[26-Sep-2018 01:40:56 Asia/Manila] PHP   1. {main}() C:\UwAmp310\www\despro\rfid-handler.php:0
+[26-Sep-2018 01:40:56 Asia/Manila] PHP Warning:  Invalid argument supplied for foreach() in C:\UwAmp310\www\despro\db.php on line 203
+[26-Sep-2018 01:40:56 Asia/Manila] PHP Stack trace:
+[26-Sep-2018 01:40:56 Asia/Manila] PHP   1. {main}() C:\UwAmp310\www\despro\rfid-handler.php:0
+[26-Sep-2018 01:40:56 Asia/Manila] PHP   2. pdo_db->updateData() C:\UwAmp310\www\despro\rfid-handler.php:21
+[26-Sep-2018 01:40:56 Asia/Manila] PHP Notice:  Undefined variable: pk_value in C:\UwAmp310\www\despro\db.php on line 225
+[26-Sep-2018 01:40:56 Asia/Manila] PHP Stack trace:
+[26-Sep-2018 01:40:56 Asia/Manila] PHP   1. {main}() C:\UwAmp310\www\despro\rfid-handler.php:0
+[26-Sep-2018 01:40:56 Asia/Manila] PHP   2. pdo_db->updateData() C:\UwAmp310\www\despro\rfid-handler.php:21
+[26-Sep-2018 01:40:56 Asia/Manila] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'WHERE rfid=?' at line 1 in C:\UwAmp310\www\despro\db.php:227
+Stack trace:
+#0 C:\UwAmp310\www\despro\db.php(227): PDO->prepare('UPDATE users SE...')
+#1 C:\UwAmp310\www\despro\rfid-handler.php(21): pdo_db->updateData(NULL, 'rfid')
+#2 {main}
+  thrown in C:\UwAmp310\www\despro\db.php on line 227
+[26-Sep-2018 01:41:03 Asia/Manila] PHP Notice:  Undefined variable: data in C:\UwAmp310\www\despro\rfid-handler.php on line 11
+[26-Sep-2018 01:41:03 Asia/Manila] PHP Stack trace:
+[26-Sep-2018 01:41:03 Asia/Manila] PHP   1. {main}() C:\UwAmp310\www\despro\rfid-handler.php:0
+[26-Sep-2018 01:41:03 Asia/Manila] PHP Notice:  Undefined variable: data in C:\UwAmp310\www\despro\rfid-handler.php on line 21
+[26-Sep-2018 01:41:03 Asia/Manila] PHP Stack trace:
+[26-Sep-2018 01:41:03 Asia/Manila] PHP   1. {main}() C:\UwAmp310\www\despro\rfid-handler.php:0
+[26-Sep-2018 01:41:03 Asia/Manila] PHP Warning:  Invalid argument supplied for foreach() in C:\UwAmp310\www\despro\db.php on line 203
+[26-Sep-2018 01:41:03 Asia/Manila] PHP Stack trace:
+[26-Sep-2018 01:41:03 Asia/Manila] PHP   1. {main}() C:\UwAmp310\www\despro\rfid-handler.php:0
+[26-Sep-2018 01:41:03 Asia/Manila] PHP   2. pdo_db->updateData() C:\UwAmp310\www\despro\rfid-handler.php:21
+[26-Sep-2018 01:41:03 Asia/Manila] PHP Notice:  Undefined variable: pk_value in C:\UwAmp310\www\despro\db.php on line 225
+[26-Sep-2018 01:41:03 Asia/Manila] PHP Stack trace:
+[26-Sep-2018 01:41:03 Asia/Manila] PHP   1. {main}() C:\UwAmp310\www\despro\rfid-handler.php:0
+[26-Sep-2018 01:41:03 Asia/Manila] PHP   2. pdo_db->updateData() C:\UwAmp310\www\despro\rfid-handler.php:21
+[26-Sep-2018 01:41:03 Asia/Manila] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'WHERE rfid=?' at line 1 in C:\UwAmp310\www\despro\db.php:227
+Stack trace:
+#0 C:\UwAmp310\www\despro\db.php(227): PDO->prepare('UPDATE users SE...')
+#1 C:\UwAmp310\www\despro\rfid-handler.php(21): pdo_db->updateData(NULL, 'rfid')
+#2 {main}
+  thrown in C:\UwAmp310\www\despro\db.php on line 227
+[26-Sep-2018 01:41:11 Asia/Manila] PHP Notice:  Undefined variable: data in C:\UwAmp310\www\despro\rfid-handler.php on line 11
+[26-Sep-2018 01:41:11 Asia/Manila] PHP Stack trace:
+[26-Sep-2018 01:41:11 Asia/Manila] PHP   1. {main}() C:\UwAmp310\www\despro\rfid-handler.php:0
+[26-Sep-2018 01:41:11 Asia/Manila] PHP Notice:  Undefined variable: data in C:\UwAmp310\www\despro\rfid-handler.php on line 21
+[26-Sep-2018 01:41:11 Asia/Manila] PHP Stack trace:
+[26-Sep-2018 01:41:11 Asia/Manila] PHP   1. {main}() C:\UwAmp310\www\despro\rfid-handler.php:0
+[26-Sep-2018 01:41:11 Asia/Manila] PHP Warning:  Invalid argument supplied for foreach() in C:\UwAmp310\www\despro\db.php on line 203
+[26-Sep-2018 01:41:11 Asia/Manila] PHP Stack trace:
+[26-Sep-2018 01:41:11 Asia/Manila] PHP   1. {main}() C:\UwAmp310\www\despro\rfid-handler.php:0
+[26-Sep-2018 01:41:11 Asia/Manila] PHP   2. pdo_db->updateData() C:\UwAmp310\www\despro\rfid-handler.php:21
+[26-Sep-2018 01:41:11 Asia/Manila] PHP Notice:  Undefined variable: pk_value in C:\UwAmp310\www\despro\db.php on line 225
+[26-Sep-2018 01:41:11 Asia/Manila] PHP Stack trace:
+[26-Sep-2018 01:41:11 Asia/Manila] PHP   1. {main}() C:\UwAmp310\www\despro\rfid-handler.php:0
+[26-Sep-2018 01:41:11 Asia/Manila] PHP   2. pdo_db->updateData() C:\UwAmp310\www\despro\rfid-handler.php:21
+[26-Sep-2018 01:41:11 Asia/Manila] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'WHERE rfid=?' at line 1 in C:\UwAmp310\www\despro\db.php:227
+Stack trace:
+#0 C:\UwAmp310\www\despro\db.php(227): PDO->prepare('UPDATE users SE...')
+#1 C:\UwAmp310\www\despro\rfid-handler.php(21): pdo_db->updateData(NULL, 'rfid')
+#2 {main}
+  thrown in C:\UwAmp310\www\despro\db.php on line 227
+[26-Sep-2018 01:41:18 Asia/Manila] PHP Notice:  Undefined variable: data in C:\UwAmp310\www\despro\rfid-handler.php on line 11
+[26-Sep-2018 01:41:18 Asia/Manila] PHP Stack trace:
+[26-Sep-2018 01:41:18 Asia/Manila] PHP   1. {main}() C:\UwAmp310\www\despro\rfid-handler.php:0
+[26-Sep-2018 01:41:18 Asia/Manila] PHP Notice:  Undefined variable: data in C:\UwAmp310\www\despro\rfid-handler.php on line 21
+[26-Sep-2018 01:41:18 Asia/Manila] PHP Stack trace:
+[26-Sep-2018 01:41:18 Asia/Manila] PHP   1. {main}() C:\UwAmp310\www\despro\rfid-handler.php:0
+[26-Sep-2018 01:41:18 Asia/Manila] PHP Warning:  Invalid argument supplied for foreach() in C:\UwAmp310\www\despro\db.php on line 203
+[26-Sep-2018 01:41:18 Asia/Manila] PHP Stack trace:
+[26-Sep-2018 01:41:18 Asia/Manila] PHP   1. {main}() C:\UwAmp310\www\despro\rfid-handler.php:0
+[26-Sep-2018 01:41:18 Asia/Manila] PHP   2. pdo_db->updateData() C:\UwAmp310\www\despro\rfid-handler.php:21
+[26-Sep-2018 01:41:18 Asia/Manila] PHP Notice:  Undefined variable: pk_value in C:\UwAmp310\www\despro\db.php on line 225
+[26-Sep-2018 01:41:18 Asia/Manila] PHP Stack trace:
+[26-Sep-2018 01:41:18 Asia/Manila] PHP   1. {main}() C:\UwAmp310\www\despro\rfid-handler.php:0
+[26-Sep-2018 01:41:18 Asia/Manila] PHP   2. pdo_db->updateData() C:\UwAmp310\www\despro\rfid-handler.php:21
+[26-Sep-2018 01:41:18 Asia/Manila] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'WHERE rfid=?' at line 1 in C:\UwAmp310\www\despro\db.php:227
+Stack trace:
+#0 C:\UwAmp310\www\despro\db.php(227): PDO->prepare('UPDATE users SE...')
+#1 C:\UwAmp310\www\despro\rfid-handler.php(21): pdo_db->updateData(NULL, 'rfid')
+#2 {main}
+  thrown in C:\UwAmp310\www\despro\db.php on line 227
+[26-Sep-2018 01:41:25 Asia/Manila] PHP Notice:  Undefined variable: data in C:\UwAmp310\www\despro\rfid-handler.php on line 11
+[26-Sep-2018 01:41:25 Asia/Manila] PHP Stack trace:
+[26-Sep-2018 01:41:25 Asia/Manila] PHP   1. {main}() C:\UwAmp310\www\despro\rfid-handler.php:0
+[26-Sep-2018 01:41:25 Asia/Manila] PHP Notice:  Undefined variable: data in C:\UwAmp310\www\despro\rfid-handler.php on line 21
+[26-Sep-2018 01:41:25 Asia/Manila] PHP Stack trace:
+[26-Sep-2018 01:41:25 Asia/Manila] PHP   1. {main}() C:\UwAmp310\www\despro\rfid-handler.php:0
+[26-Sep-2018 01:41:25 Asia/Manila] PHP Warning:  Invalid argument supplied for foreach() in C:\UwAmp310\www\despro\db.php on line 203
+[26-Sep-2018 01:41:25 Asia/Manila] PHP Stack trace:
+[26-Sep-2018 01:41:25 Asia/Manila] PHP   1. {main}() C:\UwAmp310\www\despro\rfid-handler.php:0
+[26-Sep-2018 01:41:25 Asia/Manila] PHP   2. pdo_db->updateData() C:\UwAmp310\www\despro\rfid-handler.php:21
+[26-Sep-2018 01:41:25 Asia/Manila] PHP Notice:  Undefined variable: pk_value in C:\UwAmp310\www\despro\db.php on line 225
+[26-Sep-2018 01:41:25 Asia/Manila] PHP Stack trace:
+[26-Sep-2018 01:41:25 Asia/Manila] PHP   1. {main}() C:\UwAmp310\www\despro\rfid-handler.php:0
+[26-Sep-2018 01:41:25 Asia/Manila] PHP   2. pdo_db->updateData() C:\UwAmp310\www\despro\rfid-handler.php:21
+[26-Sep-2018 01:41:25 Asia/Manila] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'WHERE rfid=?' at line 1 in C:\UwAmp310\www\despro\db.php:227
+Stack trace:
+#0 C:\UwAmp310\www\despro\db.php(227): PDO->prepare('UPDATE users SE...')
+#1 C:\UwAmp310\www\despro\rfid-handler.php(21): pdo_db->updateData(NULL, 'rfid')
+#2 {main}
+  thrown in C:\UwAmp310\www\despro\db.php on line 227
+[26-Sep-2018 01:41:33 Asia/Manila] PHP Notice:  Undefined variable: data in C:\UwAmp310\www\despro\rfid-handler.php on line 11
+[26-Sep-2018 01:41:33 Asia/Manila] PHP Stack trace:
+[26-Sep-2018 01:41:33 Asia/Manila] PHP   1. {main}() C:\UwAmp310\www\despro\rfid-handler.php:0
+[26-Sep-2018 01:41:33 Asia/Manila] PHP Notice:  Undefined variable: data in C:\UwAmp310\www\despro\rfid-handler.php on line 21
+[26-Sep-2018 01:41:33 Asia/Manila] PHP Stack trace:
+[26-Sep-2018 01:41:33 Asia/Manila] PHP   1. {main}() C:\UwAmp310\www\despro\rfid-handler.php:0
+[26-Sep-2018 01:41:33 Asia/Manila] PHP Warning:  Invalid argument supplied for foreach() in C:\UwAmp310\www\despro\db.php on line 203
+[26-Sep-2018 01:41:33 Asia/Manila] PHP Stack trace:
+[26-Sep-2018 01:41:33 Asia/Manila] PHP   1. {main}() C:\UwAmp310\www\despro\rfid-handler.php:0
+[26-Sep-2018 01:41:33 Asia/Manila] PHP   2. pdo_db->updateData() C:\UwAmp310\www\despro\rfid-handler.php:21
+[26-Sep-2018 01:41:33 Asia/Manila] PHP Notice:  Undefined variable: pk_value in C:\UwAmp310\www\despro\db.php on line 225
+[26-Sep-2018 01:41:33 Asia/Manila] PHP Stack trace:
+[26-Sep-2018 01:41:33 Asia/Manila] PHP   1. {main}() C:\UwAmp310\www\despro\rfid-handler.php:0
+[26-Sep-2018 01:41:33 Asia/Manila] PHP   2. pdo_db->updateData() C:\UwAmp310\www\despro\rfid-handler.php:21
+[26-Sep-2018 01:41:33 Asia/Manila] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'WHERE rfid=?' at line 1 in C:\UwAmp310\www\despro\db.php:227
+Stack trace:
+#0 C:\UwAmp310\www\despro\db.php(227): PDO->prepare('UPDATE users SE...')
+#1 C:\UwAmp310\www\despro\rfid-handler.php(21): pdo_db->updateData(NULL, 'rfid')
+#2 {main}
+  thrown in C:\UwAmp310\www\despro\db.php on line 227
+[26-Sep-2018 01:41:40 Asia/Manila] PHP Notice:  Undefined variable: data in C:\UwAmp310\www\despro\rfid-handler.php on line 11
+[26-Sep-2018 01:41:40 Asia/Manila] PHP Stack trace:
+[26-Sep-2018 01:41:40 Asia/Manila] PHP   1. {main}() C:\UwAmp310\www\despro\rfid-handler.php:0
+[26-Sep-2018 01:41:40 Asia/Manila] PHP Notice:  Undefined variable: data in C:\UwAmp310\www\despro\rfid-handler.php on line 21
+[26-Sep-2018 01:41:40 Asia/Manila] PHP Stack trace:
+[26-Sep-2018 01:41:40 Asia/Manila] PHP   1. {main}() C:\UwAmp310\www\despro\rfid-handler.php:0
+[26-Sep-2018 01:41:40 Asia/Manila] PHP Warning:  Invalid argument supplied for foreach() in C:\UwAmp310\www\despro\db.php on line 203
+[26-Sep-2018 01:41:40 Asia/Manila] PHP Stack trace:
+[26-Sep-2018 01:41:40 Asia/Manila] PHP   1. {main}() C:\UwAmp310\www\despro\rfid-handler.php:0
+[26-Sep-2018 01:41:40 Asia/Manila] PHP   2. pdo_db->updateData() C:\UwAmp310\www\despro\rfid-handler.php:21
+[26-Sep-2018 01:41:40 Asia/Manila] PHP Notice:  Undefined variable: pk_value in C:\UwAmp310\www\despro\db.php on line 225
+[26-Sep-2018 01:41:40 Asia/Manila] PHP Stack trace:
+[26-Sep-2018 01:41:40 Asia/Manila] PHP   1. {main}() C:\UwAmp310\www\despro\rfid-handler.php:0
+[26-Sep-2018 01:41:40 Asia/Manila] PHP   2. pdo_db->updateData() C:\UwAmp310\www\despro\rfid-handler.php:21
+[26-Sep-2018 01:41:40 Asia/Manila] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'WHERE rfid=?' at line 1 in C:\UwAmp310\www\despro\db.php:227
+Stack trace:
+#0 C:\UwAmp310\www\despro\db.php(227): PDO->prepare('UPDATE users SE...')
+#1 C:\UwAmp310\www\despro\rfid-handler.php(21): pdo_db->updateData(NULL, 'rfid')
+#2 {main}
+  thrown in C:\UwAmp310\www\despro\db.php on line 227
+[26-Sep-2018 01:41:48 Asia/Manila] PHP Notice:  Undefined variable: data in C:\UwAmp310\www\despro\rfid-handler.php on line 11
+[26-Sep-2018 01:41:48 Asia/Manila] PHP Stack trace:
+[26-Sep-2018 01:41:48 Asia/Manila] PHP   1. {main}() C:\UwAmp310\www\despro\rfid-handler.php:0
+[26-Sep-2018 01:41:48 Asia/Manila] PHP Notice:  Undefined variable: data in C:\UwAmp310\www\despro\rfid-handler.php on line 21
+[26-Sep-2018 01:41:48 Asia/Manila] PHP Stack trace:
+[26-Sep-2018 01:41:48 Asia/Manila] PHP   1. {main}() C:\UwAmp310\www\despro\rfid-handler.php:0
+[26-Sep-2018 01:41:48 Asia/Manila] PHP Warning:  Invalid argument supplied for foreach() in C:\UwAmp310\www\despro\db.php on line 203
+[26-Sep-2018 01:41:48 Asia/Manila] PHP Stack trace:
+[26-Sep-2018 01:41:48 Asia/Manila] PHP   1. {main}() C:\UwAmp310\www\despro\rfid-handler.php:0
+[26-Sep-2018 01:41:48 Asia/Manila] PHP   2. pdo_db->updateData() C:\UwAmp310\www\despro\rfid-handler.php:21
+[26-Sep-2018 01:41:48 Asia/Manila] PHP Notice:  Undefined variable: pk_value in C:\UwAmp310\www\despro\db.php on line 225
+[26-Sep-2018 01:41:48 Asia/Manila] PHP Stack trace:
+[26-Sep-2018 01:41:48 Asia/Manila] PHP   1. {main}() C:\UwAmp310\www\despro\rfid-handler.php:0
+[26-Sep-2018 01:41:48 Asia/Manila] PHP   2. pdo_db->updateData() C:\UwAmp310\www\despro\rfid-handler.php:21
+[26-Sep-2018 01:41:48 Asia/Manila] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'WHERE rfid=?' at line 1 in C:\UwAmp310\www\despro\db.php:227
+Stack trace:
+#0 C:\UwAmp310\www\despro\db.php(227): PDO->prepare('UPDATE users SE...')
+#1 C:\UwAmp310\www\despro\rfid-handler.php(21): pdo_db->updateData(NULL, 'rfid')
+#2 {main}
+  thrown in C:\UwAmp310\www\despro\db.php on line 227
+[26-Sep-2018 01:41:55 Asia/Manila] PHP Notice:  Undefined variable: data in C:\UwAmp310\www\despro\rfid-handler.php on line 11
+[26-Sep-2018 01:41:55 Asia/Manila] PHP Stack trace:
+[26-Sep-2018 01:41:55 Asia/Manila] PHP   1. {main}() C:\UwAmp310\www\despro\rfid-handler.php:0
+[26-Sep-2018 01:41:55 Asia/Manila] PHP Notice:  Undefined variable: data in C:\UwAmp310\www\despro\rfid-handler.php on line 21
+[26-Sep-2018 01:41:55 Asia/Manila] PHP Stack trace:
+[26-Sep-2018 01:41:55 Asia/Manila] PHP   1. {main}() C:\UwAmp310\www\despro\rfid-handler.php:0
+[26-Sep-2018 01:41:55 Asia/Manila] PHP Warning:  Invalid argument supplied for foreach() in C:\UwAmp310\www\despro\db.php on line 203
+[26-Sep-2018 01:41:55 Asia/Manila] PHP Stack trace:
+[26-Sep-2018 01:41:55 Asia/Manila] PHP   1. {main}() C:\UwAmp310\www\despro\rfid-handler.php:0
+[26-Sep-2018 01:41:55 Asia/Manila] PHP   2. pdo_db->updateData() C:\UwAmp310\www\despro\rfid-handler.php:21
+[26-Sep-2018 01:41:55 Asia/Manila] PHP Notice:  Undefined variable: pk_value in C:\UwAmp310\www\despro\db.php on line 225
+[26-Sep-2018 01:41:55 Asia/Manila] PHP Stack trace:
+[26-Sep-2018 01:41:55 Asia/Manila] PHP   1. {main}() C:\UwAmp310\www\despro\rfid-handler.php:0
+[26-Sep-2018 01:41:55 Asia/Manila] PHP   2. pdo_db->updateData() C:\UwAmp310\www\despro\rfid-handler.php:21
+[26-Sep-2018 01:41:55 Asia/Manila] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'WHERE rfid=?' at line 1 in C:\UwAmp310\www\despro\db.php:227
+Stack trace:
+#0 C:\UwAmp310\www\despro\db.php(227): PDO->prepare('UPDATE users SE...')
+#1 C:\UwAmp310\www\despro\rfid-handler.php(21): pdo_db->updateData(NULL, 'rfid')
+#2 {main}
+  thrown in C:\UwAmp310\www\despro\db.php on line 227
+[26-Sep-2018 01:42:02 Asia/Manila] PHP Notice:  Undefined variable: data in C:\UwAmp310\www\despro\rfid-handler.php on line 11
+[26-Sep-2018 01:42:02 Asia/Manila] PHP Stack trace:
+[26-Sep-2018 01:42:02 Asia/Manila] PHP   1. {main}() C:\UwAmp310\www\despro\rfid-handler.php:0
+[26-Sep-2018 01:42:02 Asia/Manila] PHP Notice:  Undefined variable: data in C:\UwAmp310\www\despro\rfid-handler.php on line 21
+[26-Sep-2018 01:42:02 Asia/Manila] PHP Stack trace:
+[26-Sep-2018 01:42:02 Asia/Manila] PHP   1. {main}() C:\UwAmp310\www\despro\rfid-handler.php:0
+[26-Sep-2018 01:42:02 Asia/Manila] PHP Warning:  Invalid argument supplied for foreach() in C:\UwAmp310\www\despro\db.php on line 203
+[26-Sep-2018 01:42:02 Asia/Manila] PHP Stack trace:
+[26-Sep-2018 01:42:02 Asia/Manila] PHP   1. {main}() C:\UwAmp310\www\despro\rfid-handler.php:0
+[26-Sep-2018 01:42:02 Asia/Manila] PHP   2. pdo_db->updateData() C:\UwAmp310\www\despro\rfid-handler.php:21
+[26-Sep-2018 01:42:02 Asia/Manila] PHP Notice:  Undefined variable: pk_value in C:\UwAmp310\www\despro\db.php on line 225
+[26-Sep-2018 01:42:02 Asia/Manila] PHP Stack trace:
+[26-Sep-2018 01:42:02 Asia/Manila] PHP   1. {main}() C:\UwAmp310\www\despro\rfid-handler.php:0
+[26-Sep-2018 01:42:02 Asia/Manila] PHP   2. pdo_db->updateData() C:\UwAmp310\www\despro\rfid-handler.php:21
+[26-Sep-2018 01:42:02 Asia/Manila] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'WHERE rfid=?' at line 1 in C:\UwAmp310\www\despro\db.php:227
+Stack trace:
+#0 C:\UwAmp310\www\despro\db.php(227): PDO->prepare('UPDATE users SE...')
+#1 C:\UwAmp310\www\despro\rfid-handler.php(21): pdo_db->updateData(NULL, 'rfid')
+#2 {main}
+  thrown in C:\UwAmp310\www\despro\db.php on line 227
+[26-Sep-2018 01:42:10 Asia/Manila] PHP Notice:  Undefined variable: data in C:\UwAmp310\www\despro\rfid-handler.php on line 11
+[26-Sep-2018 01:42:10 Asia/Manila] PHP Stack trace:
+[26-Sep-2018 01:42:10 Asia/Manila] PHP   1. {main}() C:\UwAmp310\www\despro\rfid-handler.php:0
+[26-Sep-2018 01:42:10 Asia/Manila] PHP Notice:  Undefined variable: data in C:\UwAmp310\www\despro\rfid-handler.php on line 21
+[26-Sep-2018 01:42:10 Asia/Manila] PHP Stack trace:
+[26-Sep-2018 01:42:10 Asia/Manila] PHP   1. {main}() C:\UwAmp310\www\despro\rfid-handler.php:0
+[26-Sep-2018 01:42:10 Asia/Manila] PHP Warning:  Invalid argument supplied for foreach() in C:\UwAmp310\www\despro\db.php on line 203
+[26-Sep-2018 01:42:10 Asia/Manila] PHP Stack trace:
+[26-Sep-2018 01:42:10 Asia/Manila] PHP   1. {main}() C:\UwAmp310\www\despro\rfid-handler.php:0
+[26-Sep-2018 01:42:10 Asia/Manila] PHP   2. pdo_db->updateData() C:\UwAmp310\www\despro\rfid-handler.php:21
+[26-Sep-2018 01:42:10 Asia/Manila] PHP Notice:  Undefined variable: pk_value in C:\UwAmp310\www\despro\db.php on line 225
+[26-Sep-2018 01:42:10 Asia/Manila] PHP Stack trace:
+[26-Sep-2018 01:42:10 Asia/Manila] PHP   1. {main}() C:\UwAmp310\www\despro\rfid-handler.php:0
+[26-Sep-2018 01:42:10 Asia/Manila] PHP   2. pdo_db->updateData() C:\UwAmp310\www\despro\rfid-handler.php:21
+[26-Sep-2018 01:42:10 Asia/Manila] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'WHERE rfid=?' at line 1 in C:\UwAmp310\www\despro\db.php:227
+Stack trace:
+#0 C:\UwAmp310\www\despro\db.php(227): PDO->prepare('UPDATE users SE...')
+#1 C:\UwAmp310\www\despro\rfid-handler.php(21): pdo_db->updateData(NULL, 'rfid')
+#2 {main}
+  thrown in C:\UwAmp310\www\despro\db.php on line 227
+[26-Sep-2018 01:42:17 Asia/Manila] PHP Notice:  Undefined variable: data in C:\UwAmp310\www\despro\rfid-handler.php on line 11
+[26-Sep-2018 01:42:17 Asia/Manila] PHP Stack trace:
+[26-Sep-2018 01:42:17 Asia/Manila] PHP   1. {main}() C:\UwAmp310\www\despro\rfid-handler.php:0
+[26-Sep-2018 01:42:17 Asia/Manila] PHP Notice:  Undefined variable: data in C:\UwAmp310\www\despro\rfid-handler.php on line 21
+[26-Sep-2018 01:42:17 Asia/Manila] PHP Stack trace:
+[26-Sep-2018 01:42:17 Asia/Manila] PHP   1. {main}() C:\UwAmp310\www\despro\rfid-handler.php:0
+[26-Sep-2018 01:42:17 Asia/Manila] PHP Warning:  Invalid argument supplied for foreach() in C:\UwAmp310\www\despro\db.php on line 203
+[26-Sep-2018 01:42:17 Asia/Manila] PHP Stack trace:
+[26-Sep-2018 01:42:17 Asia/Manila] PHP   1. {main}() C:\UwAmp310\www\despro\rfid-handler.php:0
+[26-Sep-2018 01:42:17 Asia/Manila] PHP   2. pdo_db->updateData() C:\UwAmp310\www\despro\rfid-handler.php:21
+[26-Sep-2018 01:42:17 Asia/Manila] PHP Notice:  Undefined variable: pk_value in C:\UwAmp310\www\despro\db.php on line 225
+[26-Sep-2018 01:42:17 Asia/Manila] PHP Stack trace:
+[26-Sep-2018 01:42:17 Asia/Manila] PHP   1. {main}() C:\UwAmp310\www\despro\rfid-handler.php:0
+[26-Sep-2018 01:42:17 Asia/Manila] PHP   2. pdo_db->updateData() C:\UwAmp310\www\despro\rfid-handler.php:21
+[26-Sep-2018 01:42:17 Asia/Manila] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'WHERE rfid=?' at line 1 in C:\UwAmp310\www\despro\db.php:227
+Stack trace:
+#0 C:\UwAmp310\www\despro\db.php(227): PDO->prepare('UPDATE users SE...')
+#1 C:\UwAmp310\www\despro\rfid-handler.php(21): pdo_db->updateData(NULL, 'rfid')
+#2 {main}
+  thrown in C:\UwAmp310\www\despro\db.php on line 227
+[26-Sep-2018 01:42:25 Asia/Manila] PHP Notice:  Undefined variable: data in C:\UwAmp310\www\despro\rfid-handler.php on line 11
+[26-Sep-2018 01:42:25 Asia/Manila] PHP Stack trace:
+[26-Sep-2018 01:42:25 Asia/Manila] PHP   1. {main}() C:\UwAmp310\www\despro\rfid-handler.php:0
+[26-Sep-2018 01:42:25 Asia/Manila] PHP Notice:  Undefined variable: data in C:\UwAmp310\www\despro\rfid-handler.php on line 21
+[26-Sep-2018 01:42:25 Asia/Manila] PHP Stack trace:
+[26-Sep-2018 01:42:25 Asia/Manila] PHP   1. {main}() C:\UwAmp310\www\despro\rfid-handler.php:0
+[26-Sep-2018 01:42:25 Asia/Manila] PHP Warning:  Invalid argument supplied for foreach() in C:\UwAmp310\www\despro\db.php on line 203
+[26-Sep-2018 01:42:25 Asia/Manila] PHP Stack trace:
+[26-Sep-2018 01:42:25 Asia/Manila] PHP   1. {main}() C:\UwAmp310\www\despro\rfid-handler.php:0
+[26-Sep-2018 01:42:25 Asia/Manila] PHP   2. pdo_db->updateData() C:\UwAmp310\www\despro\rfid-handler.php:21
+[26-Sep-2018 01:42:25 Asia/Manila] PHP Notice:  Undefined variable: pk_value in C:\UwAmp310\www\despro\db.php on line 225
+[26-Sep-2018 01:42:25 Asia/Manila] PHP Stack trace:
+[26-Sep-2018 01:42:25 Asia/Manila] PHP   1. {main}() C:\UwAmp310\www\despro\rfid-handler.php:0
+[26-Sep-2018 01:42:25 Asia/Manila] PHP   2. pdo_db->updateData() C:\UwAmp310\www\despro\rfid-handler.php:21
+[26-Sep-2018 01:42:25 Asia/Manila] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'WHERE rfid=?' at line 1 in C:\UwAmp310\www\despro\db.php:227
+Stack trace:
+#0 C:\UwAmp310\www\despro\db.php(227): PDO->prepare('UPDATE users SE...')
+#1 C:\UwAmp310\www\despro\rfid-handler.php(21): pdo_db->updateData(NULL, 'rfid')
+#2 {main}
+  thrown in C:\UwAmp310\www\despro\db.php on line 227
+[26-Sep-2018 01:42:32 Asia/Manila] PHP Notice:  Undefined variable: data in C:\UwAmp310\www\despro\rfid-handler.php on line 11
+[26-Sep-2018 01:42:32 Asia/Manila] PHP Stack trace:
+[26-Sep-2018 01:42:32 Asia/Manila] PHP   1. {main}() C:\UwAmp310\www\despro\rfid-handler.php:0
+[26-Sep-2018 01:42:32 Asia/Manila] PHP Notice:  Undefined variable: data in C:\UwAmp310\www\despro\rfid-handler.php on line 21
+[26-Sep-2018 01:42:32 Asia/Manila] PHP Stack trace:
+[26-Sep-2018 01:42:32 Asia/Manila] PHP   1. {main}() C:\UwAmp310\www\despro\rfid-handler.php:0
+[26-Sep-2018 01:42:32 Asia/Manila] PHP Warning:  Invalid argument supplied for foreach() in C:\UwAmp310\www\despro\db.php on line 203
+[26-Sep-2018 01:42:32 Asia/Manila] PHP Stack trace:
+[26-Sep-2018 01:42:32 Asia/Manila] PHP   1. {main}() C:\UwAmp310\www\despro\rfid-handler.php:0
+[26-Sep-2018 01:42:32 Asia/Manila] PHP   2. pdo_db->updateData() C:\UwAmp310\www\despro\rfid-handler.php:21
+[26-Sep-2018 01:42:32 Asia/Manila] PHP Notice:  Undefined variable: pk_value in C:\UwAmp310\www\despro\db.php on line 225
+[26-Sep-2018 01:42:32 Asia/Manila] PHP Stack trace:
+[26-Sep-2018 01:42:32 Asia/Manila] PHP   1. {main}() C:\UwAmp310\www\despro\rfid-handler.php:0
+[26-Sep-2018 01:42:32 Asia/Manila] PHP   2. pdo_db->updateData() C:\UwAmp310\www\despro\rfid-handler.php:21
+[26-Sep-2018 01:42:32 Asia/Manila] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'WHERE rfid=?' at line 1 in C:\UwAmp310\www\despro\db.php:227
+Stack trace:
+#0 C:\UwAmp310\www\despro\db.php(227): PDO->prepare('UPDATE users SE...')
+#1 C:\UwAmp310\www\despro\rfid-handler.php(21): pdo_db->updateData(NULL, 'rfid')
+#2 {main}
+  thrown in C:\UwAmp310\www\despro\db.php on line 227
+[26-Sep-2018 01:42:39 Asia/Manila] PHP Notice:  Undefined variable: data in C:\UwAmp310\www\despro\rfid-handler.php on line 11
+[26-Sep-2018 01:42:39 Asia/Manila] PHP Stack trace:
+[26-Sep-2018 01:42:39 Asia/Manila] PHP   1. {main}() C:\UwAmp310\www\despro\rfid-handler.php:0
+[26-Sep-2018 01:42:39 Asia/Manila] PHP Notice:  Undefined variable: data in C:\UwAmp310\www\despro\rfid-handler.php on line 21
+[26-Sep-2018 01:42:39 Asia/Manila] PHP Stack trace:
+[26-Sep-2018 01:42:39 Asia/Manila] PHP   1. {main}() C:\UwAmp310\www\despro\rfid-handler.php:0
+[26-Sep-2018 01:42:39 Asia/Manila] PHP Warning:  Invalid argument supplied for foreach() in C:\UwAmp310\www\despro\db.php on line 203
+[26-Sep-2018 01:42:39 Asia/Manila] PHP Stack trace:
+[26-Sep-2018 01:42:39 Asia/Manila] PHP   1. {main}() C:\UwAmp310\www\despro\rfid-handler.php:0
+[26-Sep-2018 01:42:39 Asia/Manila] PHP   2. pdo_db->updateData() C:\UwAmp310\www\despro\rfid-handler.php:21
+[26-Sep-2018 01:42:39 Asia/Manila] PHP Notice:  Undefined variable: pk_value in C:\UwAmp310\www\despro\db.php on line 225
+[26-Sep-2018 01:42:39 Asia/Manila] PHP Stack trace:
+[26-Sep-2018 01:42:39 Asia/Manila] PHP   1. {main}() C:\UwAmp310\www\despro\rfid-handler.php:0
+[26-Sep-2018 01:42:39 Asia/Manila] PHP   2. pdo_db->updateData() C:\UwAmp310\www\despro\rfid-handler.php:21
+[26-Sep-2018 01:42:39 Asia/Manila] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'WHERE rfid=?' at line 1 in C:\UwAmp310\www\despro\db.php:227
+Stack trace:
+#0 C:\UwAmp310\www\despro\db.php(227): PDO->prepare('UPDATE users SE...')
+#1 C:\UwAmp310\www\despro\rfid-handler.php(21): pdo_db->updateData(NULL, 'rfid')
+#2 {main}
+  thrown in C:\UwAmp310\www\despro\db.php on line 227
+[26-Sep-2018 01:42:47 Asia/Manila] PHP Notice:  Undefined variable: data in C:\UwAmp310\www\despro\rfid-handler.php on line 11
+[26-Sep-2018 01:42:47 Asia/Manila] PHP Stack trace:
+[26-Sep-2018 01:42:47 Asia/Manila] PHP   1. {main}() C:\UwAmp310\www\despro\rfid-handler.php:0
+[26-Sep-2018 01:42:47 Asia/Manila] PHP Notice:  Undefined variable: data in C:\UwAmp310\www\despro\rfid-handler.php on line 21
+[26-Sep-2018 01:42:47 Asia/Manila] PHP Stack trace:
+[26-Sep-2018 01:42:47 Asia/Manila] PHP   1. {main}() C:\UwAmp310\www\despro\rfid-handler.php:0
+[26-Sep-2018 01:42:47 Asia/Manila] PHP Warning:  Invalid argument supplied for foreach() in C:\UwAmp310\www\despro\db.php on line 203
+[26-Sep-2018 01:42:47 Asia/Manila] PHP Stack trace:
+[26-Sep-2018 01:42:47 Asia/Manila] PHP   1. {main}() C:\UwAmp310\www\despro\rfid-handler.php:0
+[26-Sep-2018 01:42:47 Asia/Manila] PHP   2. pdo_db->updateData() C:\UwAmp310\www\despro\rfid-handler.php:21
+[26-Sep-2018 01:42:47 Asia/Manila] PHP Notice:  Undefined variable: pk_value in C:\UwAmp310\www\despro\db.php on line 225
+[26-Sep-2018 01:42:47 Asia/Manila] PHP Stack trace:
+[26-Sep-2018 01:42:47 Asia/Manila] PHP   1. {main}() C:\UwAmp310\www\despro\rfid-handler.php:0
+[26-Sep-2018 01:42:47 Asia/Manila] PHP   2. pdo_db->updateData() C:\UwAmp310\www\despro\rfid-handler.php:21
+[26-Sep-2018 01:42:47 Asia/Manila] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'WHERE rfid=?' at line 1 in C:\UwAmp310\www\despro\db.php:227
+Stack trace:
+#0 C:\UwAmp310\www\despro\db.php(227): PDO->prepare('UPDATE users SE...')
+#1 C:\UwAmp310\www\despro\rfid-handler.php(21): pdo_db->updateData(NULL, 'rfid')
+#2 {main}
+  thrown in C:\UwAmp310\www\despro\db.php on line 227
+[26-Sep-2018 01:42:54 Asia/Manila] PHP Notice:  Undefined variable: data in C:\UwAmp310\www\despro\rfid-handler.php on line 11
+[26-Sep-2018 01:42:54 Asia/Manila] PHP Stack trace:
+[26-Sep-2018 01:42:54 Asia/Manila] PHP   1. {main}() C:\UwAmp310\www\despro\rfid-handler.php:0
+[26-Sep-2018 01:42:54 Asia/Manila] PHP Notice:  Undefined variable: data in C:\UwAmp310\www\despro\rfid-handler.php on line 21
+[26-Sep-2018 01:42:54 Asia/Manila] PHP Stack trace:
+[26-Sep-2018 01:42:54 Asia/Manila] PHP   1. {main}() C:\UwAmp310\www\despro\rfid-handler.php:0
+[26-Sep-2018 01:42:54 Asia/Manila] PHP Warning:  Invalid argument supplied for foreach() in C:\UwAmp310\www\despro\db.php on line 203
+[26-Sep-2018 01:42:54 Asia/Manila] PHP Stack trace:
+[26-Sep-2018 01:42:54 Asia/Manila] PHP   1. {main}() C:\UwAmp310\www\despro\rfid-handler.php:0
+[26-Sep-2018 01:42:54 Asia/Manila] PHP   2. pdo_db->updateData() C:\UwAmp310\www\despro\rfid-handler.php:21
+[26-Sep-2018 01:42:54 Asia/Manila] PHP Notice:  Undefined variable: pk_value in C:\UwAmp310\www\despro\db.php on line 225
+[26-Sep-2018 01:42:54 Asia/Manila] PHP Stack trace:
+[26-Sep-2018 01:42:54 Asia/Manila] PHP   1. {main}() C:\UwAmp310\www\despro\rfid-handler.php:0
+[26-Sep-2018 01:42:54 Asia/Manila] PHP   2. pdo_db->updateData() C:\UwAmp310\www\despro\rfid-handler.php:21
+[26-Sep-2018 01:42:54 Asia/Manila] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'WHERE rfid=?' at line 1 in C:\UwAmp310\www\despro\db.php:227
+Stack trace:
+#0 C:\UwAmp310\www\despro\db.php(227): PDO->prepare('UPDATE users SE...')
+#1 C:\UwAmp310\www\despro\rfid-handler.php(21): pdo_db->updateData(NULL, 'rfid')
+#2 {main}
+  thrown in C:\UwAmp310\www\despro\db.php on line 227
+[26-Sep-2018 01:43:02 Asia/Manila] PHP Notice:  Undefined variable: data in C:\UwAmp310\www\despro\rfid-handler.php on line 11
+[26-Sep-2018 01:43:02 Asia/Manila] PHP Stack trace:
+[26-Sep-2018 01:43:02 Asia/Manila] PHP   1. {main}() C:\UwAmp310\www\despro\rfid-handler.php:0
+[26-Sep-2018 01:43:02 Asia/Manila] PHP Notice:  Undefined variable: data in C:\UwAmp310\www\despro\rfid-handler.php on line 21
+[26-Sep-2018 01:43:02 Asia/Manila] PHP Stack trace:
+[26-Sep-2018 01:43:02 Asia/Manila] PHP   1. {main}() C:\UwAmp310\www\despro\rfid-handler.php:0
+[26-Sep-2018 01:43:02 Asia/Manila] PHP Warning:  Invalid argument supplied for foreach() in C:\UwAmp310\www\despro\db.php on line 203
+[26-Sep-2018 01:43:02 Asia/Manila] PHP Stack trace:
+[26-Sep-2018 01:43:02 Asia/Manila] PHP   1. {main}() C:\UwAmp310\www\despro\rfid-handler.php:0
+[26-Sep-2018 01:43:02 Asia/Manila] PHP   2. pdo_db->updateData() C:\UwAmp310\www\despro\rfid-handler.php:21
+[26-Sep-2018 01:43:02 Asia/Manila] PHP Notice:  Undefined variable: pk_value in C:\UwAmp310\www\despro\db.php on line 225
+[26-Sep-2018 01:43:02 Asia/Manila] PHP Stack trace:
+[26-Sep-2018 01:43:02 Asia/Manila] PHP   1. {main}() C:\UwAmp310\www\despro\rfid-handler.php:0
+[26-Sep-2018 01:43:02 Asia/Manila] PHP   2. pdo_db->updateData() C:\UwAmp310\www\despro\rfid-handler.php:21
+[26-Sep-2018 01:43:02 Asia/Manila] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'WHERE rfid=?' at line 1 in C:\UwAmp310\www\despro\db.php:227
+Stack trace:
+#0 C:\UwAmp310\www\despro\db.php(227): PDO->prepare('UPDATE users SE...')
+#1 C:\UwAmp310\www\despro\rfid-handler.php(21): pdo_db->updateData(NULL, 'rfid')
+#2 {main}
+  thrown in C:\UwAmp310\www\despro\db.php on line 227
+[26-Sep-2018 01:43:09 Asia/Manila] PHP Notice:  Undefined variable: data in C:\UwAmp310\www\despro\rfid-handler.php on line 11
+[26-Sep-2018 01:43:09 Asia/Manila] PHP Stack trace:
+[26-Sep-2018 01:43:09 Asia/Manila] PHP   1. {main}() C:\UwAmp310\www\despro\rfid-handler.php:0
+[26-Sep-2018 01:43:09 Asia/Manila] PHP Notice:  Undefined variable: data in C:\UwAmp310\www\despro\rfid-handler.php on line 21
+[26-Sep-2018 01:43:09 Asia/Manila] PHP Stack trace:
+[26-Sep-2018 01:43:09 Asia/Manila] PHP   1. {main}() C:\UwAmp310\www\despro\rfid-handler.php:0
+[26-Sep-2018 01:43:09 Asia/Manila] PHP Warning:  Invalid argument supplied for foreach() in C:\UwAmp310\www\despro\db.php on line 203
+[26-Sep-2018 01:43:09 Asia/Manila] PHP Stack trace:
+[26-Sep-2018 01:43:09 Asia/Manila] PHP   1. {main}() C:\UwAmp310\www\despro\rfid-handler.php:0
+[26-Sep-2018 01:43:09 Asia/Manila] PHP   2. pdo_db->updateData() C:\UwAmp310\www\despro\rfid-handler.php:21
+[26-Sep-2018 01:43:09 Asia/Manila] PHP Notice:  Undefined variable: pk_value in C:\UwAmp310\www\despro\db.php on line 225
+[26-Sep-2018 01:43:09 Asia/Manila] PHP Stack trace:
+[26-Sep-2018 01:43:09 Asia/Manila] PHP   1. {main}() C:\UwAmp310\www\despro\rfid-handler.php:0
+[26-Sep-2018 01:43:09 Asia/Manila] PHP   2. pdo_db->updateData() C:\UwAmp310\www\despro\rfid-handler.php:21
+[26-Sep-2018 01:43:09 Asia/Manila] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'WHERE rfid=?' at line 1 in C:\UwAmp310\www\despro\db.php:227
+Stack trace:
+#0 C:\UwAmp310\www\despro\db.php(227): PDO->prepare('UPDATE users SE...')
+#1 C:\UwAmp310\www\despro\rfid-handler.php(21): pdo_db->updateData(NULL, 'rfid')
+#2 {main}
+  thrown in C:\UwAmp310\www\despro\db.php on line 227
+[26-Sep-2018 01:43:16 Asia/Manila] PHP Notice:  Undefined variable: data in C:\UwAmp310\www\despro\rfid-handler.php on line 11
+[26-Sep-2018 01:43:16 Asia/Manila] PHP Stack trace:
+[26-Sep-2018 01:43:16 Asia/Manila] PHP   1. {main}() C:\UwAmp310\www\despro\rfid-handler.php:0
+[26-Sep-2018 01:43:16 Asia/Manila] PHP Notice:  Undefined variable: data in C:\UwAmp310\www\despro\rfid-handler.php on line 21
+[26-Sep-2018 01:43:16 Asia/Manila] PHP Stack trace:
+[26-Sep-2018 01:43:16 Asia/Manila] PHP   1. {main}() C:\UwAmp310\www\despro\rfid-handler.php:0
+[26-Sep-2018 01:43:16 Asia/Manila] PHP Warning:  Invalid argument supplied for foreach() in C:\UwAmp310\www\despro\db.php on line 203
+[26-Sep-2018 01:43:16 Asia/Manila] PHP Stack trace:
+[26-Sep-2018 01:43:16 Asia/Manila] PHP   1. {main}() C:\UwAmp310\www\despro\rfid-handler.php:0
+[26-Sep-2018 01:43:16 Asia/Manila] PHP   2. pdo_db->updateData() C:\UwAmp310\www\despro\rfid-handler.php:21
+[26-Sep-2018 01:43:16 Asia/Manila] PHP Notice:  Undefined variable: pk_value in C:\UwAmp310\www\despro\db.php on line 225
+[26-Sep-2018 01:43:16 Asia/Manila] PHP Stack trace:
+[26-Sep-2018 01:43:16 Asia/Manila] PHP   1. {main}() C:\UwAmp310\www\despro\rfid-handler.php:0
+[26-Sep-2018 01:43:16 Asia/Manila] PHP   2. pdo_db->updateData() C:\UwAmp310\www\despro\rfid-handler.php:21
+[26-Sep-2018 01:43:16 Asia/Manila] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'WHERE rfid=?' at line 1 in C:\UwAmp310\www\despro\db.php:227
+Stack trace:
+#0 C:\UwAmp310\www\despro\db.php(227): PDO->prepare('UPDATE users SE...')
+#1 C:\UwAmp310\www\despro\rfid-handler.php(21): pdo_db->updateData(NULL, 'rfid')
+#2 {main}
+  thrown in C:\UwAmp310\www\despro\db.php on line 227
+[26-Sep-2018 01:43:24 Asia/Manila] PHP Notice:  Undefined variable: data in C:\UwAmp310\www\despro\rfid-handler.php on line 11
+[26-Sep-2018 01:43:24 Asia/Manila] PHP Stack trace:
+[26-Sep-2018 01:43:24 Asia/Manila] PHP   1. {main}() C:\UwAmp310\www\despro\rfid-handler.php:0
+[26-Sep-2018 01:43:24 Asia/Manila] PHP Notice:  Undefined variable: data in C:\UwAmp310\www\despro\rfid-handler.php on line 21
+[26-Sep-2018 01:43:24 Asia/Manila] PHP Stack trace:
+[26-Sep-2018 01:43:24 Asia/Manila] PHP   1. {main}() C:\UwAmp310\www\despro\rfid-handler.php:0
+[26-Sep-2018 01:43:24 Asia/Manila] PHP Warning:  Invalid argument supplied for foreach() in C:\UwAmp310\www\despro\db.php on line 203
+[26-Sep-2018 01:43:24 Asia/Manila] PHP Stack trace:
+[26-Sep-2018 01:43:24 Asia/Manila] PHP   1. {main}() C:\UwAmp310\www\despro\rfid-handler.php:0
+[26-Sep-2018 01:43:24 Asia/Manila] PHP   2. pdo_db->updateData() C:\UwAmp310\www\despro\rfid-handler.php:21
+[26-Sep-2018 01:43:24 Asia/Manila] PHP Notice:  Undefined variable: pk_value in C:\UwAmp310\www\despro\db.php on line 225
+[26-Sep-2018 01:43:24 Asia/Manila] PHP Stack trace:
+[26-Sep-2018 01:43:24 Asia/Manila] PHP   1. {main}() C:\UwAmp310\www\despro\rfid-handler.php:0
+[26-Sep-2018 01:43:24 Asia/Manila] PHP   2. pdo_db->updateData() C:\UwAmp310\www\despro\rfid-handler.php:21
+[26-Sep-2018 01:43:24 Asia/Manila] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'WHERE rfid=?' at line 1 in C:\UwAmp310\www\despro\db.php:227
+Stack trace:
+#0 C:\UwAmp310\www\despro\db.php(227): PDO->prepare('UPDATE users SE...')
+#1 C:\UwAmp310\www\despro\rfid-handler.php(21): pdo_db->updateData(NULL, 'rfid')
+#2 {main}
+  thrown in C:\UwAmp310\www\despro\db.php on line 227
+[26-Sep-2018 01:43:31 Asia/Manila] PHP Notice:  Undefined variable: data in C:\UwAmp310\www\despro\rfid-handler.php on line 11
+[26-Sep-2018 01:43:31 Asia/Manila] PHP Stack trace:
+[26-Sep-2018 01:43:31 Asia/Manila] PHP   1. {main}() C:\UwAmp310\www\despro\rfid-handler.php:0
+[26-Sep-2018 01:43:31 Asia/Manila] PHP Notice:  Undefined variable: data in C:\UwAmp310\www\despro\rfid-handler.php on line 21
+[26-Sep-2018 01:43:31 Asia/Manila] PHP Stack trace:
+[26-Sep-2018 01:43:31 Asia/Manila] PHP   1. {main}() C:\UwAmp310\www\despro\rfid-handler.php:0
+[26-Sep-2018 01:43:31 Asia/Manila] PHP Warning:  Invalid argument supplied for foreach() in C:\UwAmp310\www\despro\db.php on line 203
+[26-Sep-2018 01:43:31 Asia/Manila] PHP Stack trace:
+[26-Sep-2018 01:43:31 Asia/Manila] PHP   1. {main}() C:\UwAmp310\www\despro\rfid-handler.php:0
+[26-Sep-2018 01:43:31 Asia/Manila] PHP   2. pdo_db->updateData() C:\UwAmp310\www\despro\rfid-handler.php:21
+[26-Sep-2018 01:43:31 Asia/Manila] PHP Notice:  Undefined variable: pk_value in C:\UwAmp310\www\despro\db.php on line 225
+[26-Sep-2018 01:43:31 Asia/Manila] PHP Stack trace:
+[26-Sep-2018 01:43:31 Asia/Manila] PHP   1. {main}() C:\UwAmp310\www\despro\rfid-handler.php:0
+[26-Sep-2018 01:43:31 Asia/Manila] PHP   2. pdo_db->updateData() C:\UwAmp310\www\despro\rfid-handler.php:21
+[26-Sep-2018 01:43:31 Asia/Manila] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'WHERE rfid=?' at line 1 in C:\UwAmp310\www\despro\db.php:227
+Stack trace:
+#0 C:\UwAmp310\www\despro\db.php(227): PDO->prepare('UPDATE users SE...')
+#1 C:\UwAmp310\www\despro\rfid-handler.php(21): pdo_db->updateData(NULL, 'rfid')
+#2 {main}
+  thrown in C:\UwAmp310\www\despro\db.php on line 227
+[26-Sep-2018 01:43:39 Asia/Manila] PHP Notice:  Undefined variable: data in C:\UwAmp310\www\despro\rfid-handler.php on line 11
+[26-Sep-2018 01:43:39 Asia/Manila] PHP Stack trace:
+[26-Sep-2018 01:43:39 Asia/Manila] PHP   1. {main}() C:\UwAmp310\www\despro\rfid-handler.php:0
+[26-Sep-2018 01:43:39 Asia/Manila] PHP Notice:  Undefined variable: data in C:\UwAmp310\www\despro\rfid-handler.php on line 21
+[26-Sep-2018 01:43:39 Asia/Manila] PHP Stack trace:
+[26-Sep-2018 01:43:39 Asia/Manila] PHP   1. {main}() C:\UwAmp310\www\despro\rfid-handler.php:0
+[26-Sep-2018 01:43:39 Asia/Manila] PHP Warning:  Invalid argument supplied for foreach() in C:\UwAmp310\www\despro\db.php on line 203
+[26-Sep-2018 01:43:39 Asia/Manila] PHP Stack trace:
+[26-Sep-2018 01:43:39 Asia/Manila] PHP   1. {main}() C:\UwAmp310\www\despro\rfid-handler.php:0
+[26-Sep-2018 01:43:39 Asia/Manila] PHP   2. pdo_db->updateData() C:\UwAmp310\www\despro\rfid-handler.php:21
+[26-Sep-2018 01:43:39 Asia/Manila] PHP Notice:  Undefined variable: pk_value in C:\UwAmp310\www\despro\db.php on line 225
+[26-Sep-2018 01:43:39 Asia/Manila] PHP Stack trace:
+[26-Sep-2018 01:43:39 Asia/Manila] PHP   1. {main}() C:\UwAmp310\www\despro\rfid-handler.php:0
+[26-Sep-2018 01:43:39 Asia/Manila] PHP   2. pdo_db->updateData() C:\UwAmp310\www\despro\rfid-handler.php:21
+[26-Sep-2018 01:43:39 Asia/Manila] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'WHERE rfid=?' at line 1 in C:\UwAmp310\www\despro\db.php:227
+Stack trace:
+#0 C:\UwAmp310\www\despro\db.php(227): PDO->prepare('UPDATE users SE...')
+#1 C:\UwAmp310\www\despro\rfid-handler.php(21): pdo_db->updateData(NULL, 'rfid')
+#2 {main}
+  thrown in C:\UwAmp310\www\despro\db.php on line 227
+[26-Sep-2018 01:43:46 Asia/Manila] PHP Notice:  Undefined variable: data in C:\UwAmp310\www\despro\rfid-handler.php on line 11
+[26-Sep-2018 01:43:46 Asia/Manila] PHP Stack trace:
+[26-Sep-2018 01:43:46 Asia/Manila] PHP   1. {main}() C:\UwAmp310\www\despro\rfid-handler.php:0
+[26-Sep-2018 01:43:46 Asia/Manila] PHP Notice:  Undefined variable: data in C:\UwAmp310\www\despro\rfid-handler.php on line 21
+[26-Sep-2018 01:43:46 Asia/Manila] PHP Stack trace:
+[26-Sep-2018 01:43:46 Asia/Manila] PHP   1. {main}() C:\UwAmp310\www\despro\rfid-handler.php:0
+[26-Sep-2018 01:43:46 Asia/Manila] PHP Warning:  Invalid argument supplied for foreach() in C:\UwAmp310\www\despro\db.php on line 203
+[26-Sep-2018 01:43:46 Asia/Manila] PHP Stack trace:
+[26-Sep-2018 01:43:46 Asia/Manila] PHP   1. {main}() C:\UwAmp310\www\despro\rfid-handler.php:0
+[26-Sep-2018 01:43:46 Asia/Manila] PHP   2. pdo_db->updateData() C:\UwAmp310\www\despro\rfid-handler.php:21
+[26-Sep-2018 01:43:46 Asia/Manila] PHP Notice:  Undefined variable: pk_value in C:\UwAmp310\www\despro\db.php on line 225
+[26-Sep-2018 01:43:46 Asia/Manila] PHP Stack trace:
+[26-Sep-2018 01:43:46 Asia/Manila] PHP   1. {main}() C:\UwAmp310\www\despro\rfid-handler.php:0
+[26-Sep-2018 01:43:46 Asia/Manila] PHP   2. pdo_db->updateData() C:\UwAmp310\www\despro\rfid-handler.php:21
+[26-Sep-2018 01:43:46 Asia/Manila] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'WHERE rfid=?' at line 1 in C:\UwAmp310\www\despro\db.php:227
+Stack trace:
+#0 C:\UwAmp310\www\despro\db.php(227): PDO->prepare('UPDATE users SE...')
+#1 C:\UwAmp310\www\despro\rfid-handler.php(21): pdo_db->updateData(NULL, 'rfid')
+#2 {main}
+  thrown in C:\UwAmp310\www\despro\db.php on line 227
+[26-Sep-2018 01:43:53 Asia/Manila] PHP Notice:  Undefined variable: data in C:\UwAmp310\www\despro\rfid-handler.php on line 11
+[26-Sep-2018 01:43:53 Asia/Manila] PHP Stack trace:
+[26-Sep-2018 01:43:53 Asia/Manila] PHP   1. {main}() C:\UwAmp310\www\despro\rfid-handler.php:0
+[26-Sep-2018 01:43:53 Asia/Manila] PHP Notice:  Undefined variable: data in C:\UwAmp310\www\despro\rfid-handler.php on line 21
+[26-Sep-2018 01:43:53 Asia/Manila] PHP Stack trace:
+[26-Sep-2018 01:43:53 Asia/Manila] PHP   1. {main}() C:\UwAmp310\www\despro\rfid-handler.php:0
+[26-Sep-2018 01:43:53 Asia/Manila] PHP Warning:  Invalid argument supplied for foreach() in C:\UwAmp310\www\despro\db.php on line 203
+[26-Sep-2018 01:43:53 Asia/Manila] PHP Stack trace:
+[26-Sep-2018 01:43:53 Asia/Manila] PHP   1. {main}() C:\UwAmp310\www\despro\rfid-handler.php:0
+[26-Sep-2018 01:43:53 Asia/Manila] PHP   2. pdo_db->updateData() C:\UwAmp310\www\despro\rfid-handler.php:21
+[26-Sep-2018 01:43:53 Asia/Manila] PHP Notice:  Undefined variable: pk_value in C:\UwAmp310\www\despro\db.php on line 225
+[26-Sep-2018 01:43:53 Asia/Manila] PHP Stack trace:
+[26-Sep-2018 01:43:53 Asia/Manila] PHP   1. {main}() C:\UwAmp310\www\despro\rfid-handler.php:0
+[26-Sep-2018 01:43:53 Asia/Manila] PHP   2. pdo_db->updateData() C:\UwAmp310\www\despro\rfid-handler.php:21
+[26-Sep-2018 01:43:53 Asia/Manila] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'WHERE rfid=?' at line 1 in C:\UwAmp310\www\despro\db.php:227
+Stack trace:
+#0 C:\UwAmp310\www\despro\db.php(227): PDO->prepare('UPDATE users SE...')
+#1 C:\UwAmp310\www\despro\rfid-handler.php(21): pdo_db->updateData(NULL, 'rfid')
+#2 {main}
+  thrown in C:\UwAmp310\www\despro\db.php on line 227
+[26-Sep-2018 01:44:01 Asia/Manila] PHP Notice:  Undefined variable: data in C:\UwAmp310\www\despro\rfid-handler.php on line 11
+[26-Sep-2018 01:44:01 Asia/Manila] PHP Stack trace:
+[26-Sep-2018 01:44:01 Asia/Manila] PHP   1. {main}() C:\UwAmp310\www\despro\rfid-handler.php:0
+[26-Sep-2018 01:44:01 Asia/Manila] PHP Notice:  Undefined variable: data in C:\UwAmp310\www\despro\rfid-handler.php on line 21
+[26-Sep-2018 01:44:01 Asia/Manila] PHP Stack trace:
+[26-Sep-2018 01:44:01 Asia/Manila] PHP   1. {main}() C:\UwAmp310\www\despro\rfid-handler.php:0
+[26-Sep-2018 01:44:01 Asia/Manila] PHP Warning:  Invalid argument supplied for foreach() in C:\UwAmp310\www\despro\db.php on line 203
+[26-Sep-2018 01:44:01 Asia/Manila] PHP Stack trace:
+[26-Sep-2018 01:44:01 Asia/Manila] PHP   1. {main}() C:\UwAmp310\www\despro\rfid-handler.php:0
+[26-Sep-2018 01:44:01 Asia/Manila] PHP   2. pdo_db->updateData() C:\UwAmp310\www\despro\rfid-handler.php:21
+[26-Sep-2018 01:44:01 Asia/Manila] PHP Notice:  Undefined variable: pk_value in C:\UwAmp310\www\despro\db.php on line 225
+[26-Sep-2018 01:44:01 Asia/Manila] PHP Stack trace:
+[26-Sep-2018 01:44:01 Asia/Manila] PHP   1. {main}() C:\UwAmp310\www\despro\rfid-handler.php:0
+[26-Sep-2018 01:44:01 Asia/Manila] PHP   2. pdo_db->updateData() C:\UwAmp310\www\despro\rfid-handler.php:21
+[26-Sep-2018 01:44:01 Asia/Manila] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'WHERE rfid=?' at line 1 in C:\UwAmp310\www\despro\db.php:227
+Stack trace:
+#0 C:\UwAmp310\www\despro\db.php(227): PDO->prepare('UPDATE users SE...')
+#1 C:\UwAmp310\www\despro\rfid-handler.php(21): pdo_db->updateData(NULL, 'rfid')
+#2 {main}
+  thrown in C:\UwAmp310\www\despro\db.php on line 227
+[26-Sep-2018 01:44:08 Asia/Manila] PHP Notice:  Undefined variable: data in C:\UwAmp310\www\despro\rfid-handler.php on line 11
+[26-Sep-2018 01:44:08 Asia/Manila] PHP Stack trace:
+[26-Sep-2018 01:44:08 Asia/Manila] PHP   1. {main}() C:\UwAmp310\www\despro\rfid-handler.php:0
+[26-Sep-2018 01:44:08 Asia/Manila] PHP Notice:  Undefined variable: data in C:\UwAmp310\www\despro\rfid-handler.php on line 21
+[26-Sep-2018 01:44:08 Asia/Manila] PHP Stack trace:
+[26-Sep-2018 01:44:08 Asia/Manila] PHP   1. {main}() C:\UwAmp310\www\despro\rfid-handler.php:0
+[26-Sep-2018 01:44:08 Asia/Manila] PHP Warning:  Invalid argument supplied for foreach() in C:\UwAmp310\www\despro\db.php on line 203
+[26-Sep-2018 01:44:08 Asia/Manila] PHP Stack trace:
+[26-Sep-2018 01:44:08 Asia/Manila] PHP   1. {main}() C:\UwAmp310\www\despro\rfid-handler.php:0
+[26-Sep-2018 01:44:08 Asia/Manila] PHP   2. pdo_db->updateData() C:\UwAmp310\www\despro\rfid-handler.php:21
+[26-Sep-2018 01:44:08 Asia/Manila] PHP Notice:  Undefined variable: pk_value in C:\UwAmp310\www\despro\db.php on line 225
+[26-Sep-2018 01:44:08 Asia/Manila] PHP Stack trace:
+[26-Sep-2018 01:44:08 Asia/Manila] PHP   1. {main}() C:\UwAmp310\www\despro\rfid-handler.php:0
+[26-Sep-2018 01:44:08 Asia/Manila] PHP   2. pdo_db->updateData() C:\UwAmp310\www\despro\rfid-handler.php:21
+[26-Sep-2018 01:44:08 Asia/Manila] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'WHERE rfid=?' at line 1 in C:\UwAmp310\www\despro\db.php:227
+Stack trace:
+#0 C:\UwAmp310\www\despro\db.php(227): PDO->prepare('UPDATE users SE...')
+#1 C:\UwAmp310\www\despro\rfid-handler.php(21): pdo_db->updateData(NULL, 'rfid')
+#2 {main}
+  thrown in C:\UwAmp310\www\despro\db.php on line 227
+[26-Sep-2018 01:44:16 Asia/Manila] PHP Notice:  Undefined variable: data in C:\UwAmp310\www\despro\rfid-handler.php on line 11
+[26-Sep-2018 01:44:16 Asia/Manila] PHP Stack trace:
+[26-Sep-2018 01:44:16 Asia/Manila] PHP   1. {main}() C:\UwAmp310\www\despro\rfid-handler.php:0
+[26-Sep-2018 01:44:16 Asia/Manila] PHP Notice:  Undefined variable: data in C:\UwAmp310\www\despro\rfid-handler.php on line 21
+[26-Sep-2018 01:44:16 Asia/Manila] PHP Stack trace:
+[26-Sep-2018 01:44:16 Asia/Manila] PHP   1. {main}() C:\UwAmp310\www\despro\rfid-handler.php:0
+[26-Sep-2018 01:44:16 Asia/Manila] PHP Warning:  Invalid argument supplied for foreach() in C:\UwAmp310\www\despro\db.php on line 203
+[26-Sep-2018 01:44:16 Asia/Manila] PHP Stack trace:
+[26-Sep-2018 01:44:16 Asia/Manila] PHP   1. {main}() C:\UwAmp310\www\despro\rfid-handler.php:0
+[26-Sep-2018 01:44:16 Asia/Manila] PHP   2. pdo_db->updateData() C:\UwAmp310\www\despro\rfid-handler.php:21
+[26-Sep-2018 01:44:16 Asia/Manila] PHP Notice:  Undefined variable: pk_value in C:\UwAmp310\www\despro\db.php on line 225
+[26-Sep-2018 01:44:16 Asia/Manila] PHP Stack trace:
+[26-Sep-2018 01:44:16 Asia/Manila] PHP   1. {main}() C:\UwAmp310\www\despro\rfid-handler.php:0
+[26-Sep-2018 01:44:16 Asia/Manila] PHP   2. pdo_db->updateData() C:\UwAmp310\www\despro\rfid-handler.php:21
+[26-Sep-2018 01:44:16 Asia/Manila] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'WHERE rfid=?' at line 1 in C:\UwAmp310\www\despro\db.php:227
+Stack trace:
+#0 C:\UwAmp310\www\despro\db.php(227): PDO->prepare('UPDATE users SE...')
+#1 C:\UwAmp310\www\despro\rfid-handler.php(21): pdo_db->updateData(NULL, 'rfid')
+#2 {main}
+  thrown in C:\UwAmp310\www\despro\db.php on line 227
+[26-Sep-2018 01:44:23 Asia/Manila] PHP Notice:  Undefined variable: data in C:\UwAmp310\www\despro\rfid-handler.php on line 11
+[26-Sep-2018 01:44:23 Asia/Manila] PHP Stack trace:
+[26-Sep-2018 01:44:23 Asia/Manila] PHP   1. {main}() C:\UwAmp310\www\despro\rfid-handler.php:0
+[26-Sep-2018 01:44:23 Asia/Manila] PHP Notice:  Undefined variable: data in C:\UwAmp310\www\despro\rfid-handler.php on line 21
+[26-Sep-2018 01:44:23 Asia/Manila] PHP Stack trace:
+[26-Sep-2018 01:44:23 Asia/Manila] PHP   1. {main}() C:\UwAmp310\www\despro\rfid-handler.php:0
+[26-Sep-2018 01:44:23 Asia/Manila] PHP Warning:  Invalid argument supplied for foreach() in C:\UwAmp310\www\despro\db.php on line 203
+[26-Sep-2018 01:44:23 Asia/Manila] PHP Stack trace:
+[26-Sep-2018 01:44:23 Asia/Manila] PHP   1. {main}() C:\UwAmp310\www\despro\rfid-handler.php:0
+[26-Sep-2018 01:44:23 Asia/Manila] PHP   2. pdo_db->updateData() C:\UwAmp310\www\despro\rfid-handler.php:21
+[26-Sep-2018 01:44:23 Asia/Manila] PHP Notice:  Undefined variable: pk_value in C:\UwAmp310\www\despro\db.php on line 225
+[26-Sep-2018 01:44:23 Asia/Manila] PHP Stack trace:
+[26-Sep-2018 01:44:23 Asia/Manila] PHP   1. {main}() C:\UwAmp310\www\despro\rfid-handler.php:0
+[26-Sep-2018 01:44:23 Asia/Manila] PHP   2. pdo_db->updateData() C:\UwAmp310\www\despro\rfid-handler.php:21
+[26-Sep-2018 01:44:23 Asia/Manila] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'WHERE rfid=?' at line 1 in C:\UwAmp310\www\despro\db.php:227
+Stack trace:
+#0 C:\UwAmp310\www\despro\db.php(227): PDO->prepare('UPDATE users SE...')
+#1 C:\UwAmp310\www\despro\rfid-handler.php(21): pdo_db->updateData(NULL, 'rfid')
+#2 {main}
+  thrown in C:\UwAmp310\www\despro\db.php on line 227
+[26-Sep-2018 01:44:30 Asia/Manila] PHP Notice:  Undefined variable: data in C:\UwAmp310\www\despro\rfid-handler.php on line 11
+[26-Sep-2018 01:44:30 Asia/Manila] PHP Stack trace:
+[26-Sep-2018 01:44:30 Asia/Manila] PHP   1. {main}() C:\UwAmp310\www\despro\rfid-handler.php:0
+[26-Sep-2018 01:44:30 Asia/Manila] PHP Notice:  Undefined variable: data in C:\UwAmp310\www\despro\rfid-handler.php on line 21
+[26-Sep-2018 01:44:30 Asia/Manila] PHP Stack trace:
+[26-Sep-2018 01:44:30 Asia/Manila] PHP   1. {main}() C:\UwAmp310\www\despro\rfid-handler.php:0
+[26-Sep-2018 01:44:30 Asia/Manila] PHP Warning:  Invalid argument supplied for foreach() in C:\UwAmp310\www\despro\db.php on line 203
+[26-Sep-2018 01:44:30 Asia/Manila] PHP Stack trace:
+[26-Sep-2018 01:44:30 Asia/Manila] PHP   1. {main}() C:\UwAmp310\www\despro\rfid-handler.php:0
+[26-Sep-2018 01:44:30 Asia/Manila] PHP   2. pdo_db->updateData() C:\UwAmp310\www\despro\rfid-handler.php:21
+[26-Sep-2018 01:44:30 Asia/Manila] PHP Notice:  Undefined variable: pk_value in C:\UwAmp310\www\despro\db.php on line 225
+[26-Sep-2018 01:44:30 Asia/Manila] PHP Stack trace:
+[26-Sep-2018 01:44:30 Asia/Manila] PHP   1. {main}() C:\UwAmp310\www\despro\rfid-handler.php:0
+[26-Sep-2018 01:44:30 Asia/Manila] PHP   2. pdo_db->updateData() C:\UwAmp310\www\despro\rfid-handler.php:21
+[26-Sep-2018 01:44:30 Asia/Manila] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'WHERE rfid=?' at line 1 in C:\UwAmp310\www\despro\db.php:227
+Stack trace:
+#0 C:\UwAmp310\www\despro\db.php(227): PDO->prepare('UPDATE users SE...')
+#1 C:\UwAmp310\www\despro\rfid-handler.php(21): pdo_db->updateData(NULL, 'rfid')
+#2 {main}
+  thrown in C:\UwAmp310\www\despro\db.php on line 227
+[26-Sep-2018 01:44:38 Asia/Manila] PHP Notice:  Undefined variable: data in C:\UwAmp310\www\despro\rfid-handler.php on line 11
+[26-Sep-2018 01:44:38 Asia/Manila] PHP Stack trace:
+[26-Sep-2018 01:44:38 Asia/Manila] PHP   1. {main}() C:\UwAmp310\www\despro\rfid-handler.php:0
+[26-Sep-2018 01:44:38 Asia/Manila] PHP Notice:  Undefined variable: data in C:\UwAmp310\www\despro\rfid-handler.php on line 21
+[26-Sep-2018 01:44:38 Asia/Manila] PHP Stack trace:
+[26-Sep-2018 01:44:38 Asia/Manila] PHP   1. {main}() C:\UwAmp310\www\despro\rfid-handler.php:0
+[26-Sep-2018 01:44:38 Asia/Manila] PHP Warning:  Invalid argument supplied for foreach() in C:\UwAmp310\www\despro\db.php on line 203
+[26-Sep-2018 01:44:38 Asia/Manila] PHP Stack trace:
+[26-Sep-2018 01:44:38 Asia/Manila] PHP   1. {main}() C:\UwAmp310\www\despro\rfid-handler.php:0
+[26-Sep-2018 01:44:38 Asia/Manila] PHP   2. pdo_db->updateData() C:\UwAmp310\www\despro\rfid-handler.php:21
+[26-Sep-2018 01:44:38 Asia/Manila] PHP Notice:  Undefined variable: pk_value in C:\UwAmp310\www\despro\db.php on line 225
+[26-Sep-2018 01:44:38 Asia/Manila] PHP Stack trace:
+[26-Sep-2018 01:44:38 Asia/Manila] PHP   1. {main}() C:\UwAmp310\www\despro\rfid-handler.php:0
+[26-Sep-2018 01:44:38 Asia/Manila] PHP   2. pdo_db->updateData() C:\UwAmp310\www\despro\rfid-handler.php:21
+[26-Sep-2018 01:44:38 Asia/Manila] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'WHERE rfid=?' at line 1 in C:\UwAmp310\www\despro\db.php:227
+Stack trace:
+#0 C:\UwAmp310\www\despro\db.php(227): PDO->prepare('UPDATE users SE...')
+#1 C:\UwAmp310\www\despro\rfid-handler.php(21): pdo_db->updateData(NULL, 'rfid')
+#2 {main}
+  thrown in C:\UwAmp310\www\despro\db.php on line 227
+[26-Sep-2018 01:44:45 Asia/Manila] PHP Notice:  Undefined variable: data in C:\UwAmp310\www\despro\rfid-handler.php on line 11
+[26-Sep-2018 01:44:45 Asia/Manila] PHP Stack trace:
+[26-Sep-2018 01:44:45 Asia/Manila] PHP   1. {main}() C:\UwAmp310\www\despro\rfid-handler.php:0
+[26-Sep-2018 01:44:45 Asia/Manila] PHP Notice:  Undefined variable: data in C:\UwAmp310\www\despro\rfid-handler.php on line 21
+[26-Sep-2018 01:44:45 Asia/Manila] PHP Stack trace:
+[26-Sep-2018 01:44:45 Asia/Manila] PHP   1. {main}() C:\UwAmp310\www\despro\rfid-handler.php:0
+[26-Sep-2018 01:44:45 Asia/Manila] PHP Warning:  Invalid argument supplied for foreach() in C:\UwAmp310\www\despro\db.php on line 203
+[26-Sep-2018 01:44:45 Asia/Manila] PHP Stack trace:
+[26-Sep-2018 01:44:45 Asia/Manila] PHP   1. {main}() C:\UwAmp310\www\despro\rfid-handler.php:0
+[26-Sep-2018 01:44:45 Asia/Manila] PHP   2. pdo_db->updateData() C:\UwAmp310\www\despro\rfid-handler.php:21
+[26-Sep-2018 01:44:45 Asia/Manila] PHP Notice:  Undefined variable: pk_value in C:\UwAmp310\www\despro\db.php on line 225
+[26-Sep-2018 01:44:45 Asia/Manila] PHP Stack trace:
+[26-Sep-2018 01:44:45 Asia/Manila] PHP   1. {main}() C:\UwAmp310\www\despro\rfid-handler.php:0
+[26-Sep-2018 01:44:45 Asia/Manila] PHP   2. pdo_db->updateData() C:\UwAmp310\www\despro\rfid-handler.php:21
+[26-Sep-2018 01:44:45 Asia/Manila] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'WHERE rfid=?' at line 1 in C:\UwAmp310\www\despro\db.php:227
+Stack trace:
+#0 C:\UwAmp310\www\despro\db.php(227): PDO->prepare('UPDATE users SE...')
+#1 C:\UwAmp310\www\despro\rfid-handler.php(21): pdo_db->updateData(NULL, 'rfid')
+#2 {main}
+  thrown in C:\UwAmp310\www\despro\db.php on line 227
+[26-Sep-2018 01:44:53 Asia/Manila] PHP Notice:  Undefined variable: data in C:\UwAmp310\www\despro\rfid-handler.php on line 11
+[26-Sep-2018 01:44:53 Asia/Manila] PHP Stack trace:
+[26-Sep-2018 01:44:53 Asia/Manila] PHP   1. {main}() C:\UwAmp310\www\despro\rfid-handler.php:0
+[26-Sep-2018 01:44:53 Asia/Manila] PHP Notice:  Undefined variable: data in C:\UwAmp310\www\despro\rfid-handler.php on line 21
+[26-Sep-2018 01:44:53 Asia/Manila] PHP Stack trace:
+[26-Sep-2018 01:44:53 Asia/Manila] PHP   1. {main}() C:\UwAmp310\www\despro\rfid-handler.php:0
+[26-Sep-2018 01:44:53 Asia/Manila] PHP Warning:  Invalid argument supplied for foreach() in C:\UwAmp310\www\despro\db.php on line 203
+[26-Sep-2018 01:44:53 Asia/Manila] PHP Stack trace:
+[26-Sep-2018 01:44:53 Asia/Manila] PHP   1. {main}() C:\UwAmp310\www\despro\rfid-handler.php:0
+[26-Sep-2018 01:44:53 Asia/Manila] PHP   2. pdo_db->updateData() C:\UwAmp310\www\despro\rfid-handler.php:21
+[26-Sep-2018 01:44:53 Asia/Manila] PHP Notice:  Undefined variable: pk_value in C:\UwAmp310\www\despro\db.php on line 225
+[26-Sep-2018 01:44:53 Asia/Manila] PHP Stack trace:
+[26-Sep-2018 01:44:53 Asia/Manila] PHP   1. {main}() C:\UwAmp310\www\despro\rfid-handler.php:0
+[26-Sep-2018 01:44:53 Asia/Manila] PHP   2. pdo_db->updateData() C:\UwAmp310\www\despro\rfid-handler.php:21
+[26-Sep-2018 01:44:53 Asia/Manila] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'WHERE rfid=?' at line 1 in C:\UwAmp310\www\despro\db.php:227
+Stack trace:
+#0 C:\UwAmp310\www\despro\db.php(227): PDO->prepare('UPDATE users SE...')
+#1 C:\UwAmp310\www\despro\rfid-handler.php(21): pdo_db->updateData(NULL, 'rfid')
+#2 {main}
+  thrown in C:\UwAmp310\www\despro\db.php on line 227
+[26-Sep-2018 01:45:00 Asia/Manila] PHP Notice:  Undefined variable: data in C:\UwAmp310\www\despro\rfid-handler.php on line 11
+[26-Sep-2018 01:45:00 Asia/Manila] PHP Stack trace:
+[26-Sep-2018 01:45:00 Asia/Manila] PHP   1. {main}() C:\UwAmp310\www\despro\rfid-handler.php:0
+[26-Sep-2018 01:45:00 Asia/Manila] PHP Notice:  Undefined variable: data in C:\UwAmp310\www\despro\rfid-handler.php on line 21
+[26-Sep-2018 01:45:00 Asia/Manila] PHP Stack trace:
+[26-Sep-2018 01:45:00 Asia/Manila] PHP   1. {main}() C:\UwAmp310\www\despro\rfid-handler.php:0
+[26-Sep-2018 01:45:00 Asia/Manila] PHP Warning:  Invalid argument supplied for foreach() in C:\UwAmp310\www\despro\db.php on line 203
+[26-Sep-2018 01:45:00 Asia/Manila] PHP Stack trace:
+[26-Sep-2018 01:45:00 Asia/Manila] PHP   1. {main}() C:\UwAmp310\www\despro\rfid-handler.php:0
+[26-Sep-2018 01:45:00 Asia/Manila] PHP   2. pdo_db->updateData() C:\UwAmp310\www\despro\rfid-handler.php:21
+[26-Sep-2018 01:45:00 Asia/Manila] PHP Notice:  Undefined variable: pk_value in C:\UwAmp310\www\despro\db.php on line 225
+[26-Sep-2018 01:45:00 Asia/Manila] PHP Stack trace:
+[26-Sep-2018 01:45:00 Asia/Manila] PHP   1. {main}() C:\UwAmp310\www\despro\rfid-handler.php:0
+[26-Sep-2018 01:45:00 Asia/Manila] PHP   2. pdo_db->updateData() C:\UwAmp310\www\despro\rfid-handler.php:21
+[26-Sep-2018 01:45:00 Asia/Manila] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'WHERE rfid=?' at line 1 in C:\UwAmp310\www\despro\db.php:227
+Stack trace:
+#0 C:\UwAmp310\www\despro\db.php(227): PDO->prepare('UPDATE users SE...')
+#1 C:\UwAmp310\www\despro\rfid-handler.php(21): pdo_db->updateData(NULL, 'rfid')
+#2 {main}
+  thrown in C:\UwAmp310\www\despro\db.php on line 227
+[26-Sep-2018 01:45:07 Asia/Manila] PHP Notice:  Undefined variable: data in C:\UwAmp310\www\despro\rfid-handler.php on line 11
+[26-Sep-2018 01:45:07 Asia/Manila] PHP Stack trace:
+[26-Sep-2018 01:45:07 Asia/Manila] PHP   1. {main}() C:\UwAmp310\www\despro\rfid-handler.php:0
+[26-Sep-2018 01:45:07 Asia/Manila] PHP Notice:  Undefined variable: data in C:\UwAmp310\www\despro\rfid-handler.php on line 21
+[26-Sep-2018 01:45:07 Asia/Manila] PHP Stack trace:
+[26-Sep-2018 01:45:07 Asia/Manila] PHP   1. {main}() C:\UwAmp310\www\despro\rfid-handler.php:0
+[26-Sep-2018 01:45:07 Asia/Manila] PHP Warning:  Invalid argument supplied for foreach() in C:\UwAmp310\www\despro\db.php on line 203
+[26-Sep-2018 01:45:07 Asia/Manila] PHP Stack trace:
+[26-Sep-2018 01:45:07 Asia/Manila] PHP   1. {main}() C:\UwAmp310\www\despro\rfid-handler.php:0
+[26-Sep-2018 01:45:07 Asia/Manila] PHP   2. pdo_db->updateData() C:\UwAmp310\www\despro\rfid-handler.php:21
+[26-Sep-2018 01:45:07 Asia/Manila] PHP Notice:  Undefined variable: pk_value in C:\UwAmp310\www\despro\db.php on line 225
+[26-Sep-2018 01:45:07 Asia/Manila] PHP Stack trace:
+[26-Sep-2018 01:45:07 Asia/Manila] PHP   1. {main}() C:\UwAmp310\www\despro\rfid-handler.php:0
+[26-Sep-2018 01:45:07 Asia/Manila] PHP   2. pdo_db->updateData() C:\UwAmp310\www\despro\rfid-handler.php:21
+[26-Sep-2018 01:45:07 Asia/Manila] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'WHERE rfid=?' at line 1 in C:\UwAmp310\www\despro\db.php:227
+Stack trace:
+#0 C:\UwAmp310\www\despro\db.php(227): PDO->prepare('UPDATE users SE...')
+#1 C:\UwAmp310\www\despro\rfid-handler.php(21): pdo_db->updateData(NULL, 'rfid')
+#2 {main}
+  thrown in C:\UwAmp310\www\despro\db.php on line 227
+[26-Sep-2018 01:45:15 Asia/Manila] PHP Notice:  Undefined variable: data in C:\UwAmp310\www\despro\rfid-handler.php on line 11
+[26-Sep-2018 01:45:15 Asia/Manila] PHP Stack trace:
+[26-Sep-2018 01:45:15 Asia/Manila] PHP   1. {main}() C:\UwAmp310\www\despro\rfid-handler.php:0
+[26-Sep-2018 01:45:15 Asia/Manila] PHP Notice:  Undefined variable: data in C:\UwAmp310\www\despro\rfid-handler.php on line 21
+[26-Sep-2018 01:45:15 Asia/Manila] PHP Stack trace:
+[26-Sep-2018 01:45:15 Asia/Manila] PHP   1. {main}() C:\UwAmp310\www\despro\rfid-handler.php:0
+[26-Sep-2018 01:45:15 Asia/Manila] PHP Warning:  Invalid argument supplied for foreach() in C:\UwAmp310\www\despro\db.php on line 203
+[26-Sep-2018 01:45:15 Asia/Manila] PHP Stack trace:
+[26-Sep-2018 01:45:15 Asia/Manila] PHP   1. {main}() C:\UwAmp310\www\despro\rfid-handler.php:0
+[26-Sep-2018 01:45:15 Asia/Manila] PHP   2. pdo_db->updateData() C:\UwAmp310\www\despro\rfid-handler.php:21
+[26-Sep-2018 01:45:15 Asia/Manila] PHP Notice:  Undefined variable: pk_value in C:\UwAmp310\www\despro\db.php on line 225
+[26-Sep-2018 01:45:15 Asia/Manila] PHP Stack trace:
+[26-Sep-2018 01:45:15 Asia/Manila] PHP   1. {main}() C:\UwAmp310\www\despro\rfid-handler.php:0
+[26-Sep-2018 01:45:15 Asia/Manila] PHP   2. pdo_db->updateData() C:\UwAmp310\www\despro\rfid-handler.php:21
+[26-Sep-2018 01:45:15 Asia/Manila] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'WHERE rfid=?' at line 1 in C:\UwAmp310\www\despro\db.php:227
+Stack trace:
+#0 C:\UwAmp310\www\despro\db.php(227): PDO->prepare('UPDATE users SE...')
+#1 C:\UwAmp310\www\despro\rfid-handler.php(21): pdo_db->updateData(NULL, 'rfid')
+#2 {main}
+  thrown in C:\UwAmp310\www\despro\db.php on line 227
+[26-Sep-2018 01:45:22 Asia/Manila] PHP Notice:  Undefined variable: data in C:\UwAmp310\www\despro\rfid-handler.php on line 11
+[26-Sep-2018 01:45:22 Asia/Manila] PHP Stack trace:
+[26-Sep-2018 01:45:22 Asia/Manila] PHP   1. {main}() C:\UwAmp310\www\despro\rfid-handler.php:0
+[26-Sep-2018 01:45:22 Asia/Manila] PHP Notice:  Undefined variable: data in C:\UwAmp310\www\despro\rfid-handler.php on line 21
+[26-Sep-2018 01:45:22 Asia/Manila] PHP Stack trace:
+[26-Sep-2018 01:45:22 Asia/Manila] PHP   1. {main}() C:\UwAmp310\www\despro\rfid-handler.php:0
+[26-Sep-2018 01:45:22 Asia/Manila] PHP Warning:  Invalid argument supplied for foreach() in C:\UwAmp310\www\despro\db.php on line 203
+[26-Sep-2018 01:45:22 Asia/Manila] PHP Stack trace:
+[26-Sep-2018 01:45:22 Asia/Manila] PHP   1. {main}() C:\UwAmp310\www\despro\rfid-handler.php:0
+[26-Sep-2018 01:45:22 Asia/Manila] PHP   2. pdo_db->updateData() C:\UwAmp310\www\despro\rfid-handler.php:21
+[26-Sep-2018 01:45:22 Asia/Manila] PHP Notice:  Undefined variable: pk_value in C:\UwAmp310\www\despro\db.php on line 225
+[26-Sep-2018 01:45:22 Asia/Manila] PHP Stack trace:
+[26-Sep-2018 01:45:22 Asia/Manila] PHP   1. {main}() C:\UwAmp310\www\despro\rfid-handler.php:0
+[26-Sep-2018 01:45:22 Asia/Manila] PHP   2. pdo_db->updateData() C:\UwAmp310\www\despro\rfid-handler.php:21
+[26-Sep-2018 01:45:22 Asia/Manila] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'WHERE rfid=?' at line 1 in C:\UwAmp310\www\despro\db.php:227
+Stack trace:
+#0 C:\UwAmp310\www\despro\db.php(227): PDO->prepare('UPDATE users SE...')
+#1 C:\UwAmp310\www\despro\rfid-handler.php(21): pdo_db->updateData(NULL, 'rfid')
+#2 {main}
+  thrown in C:\UwAmp310\www\despro\db.php on line 227
+[26-Sep-2018 01:45:30 Asia/Manila] PHP Notice:  Undefined variable: data in C:\UwAmp310\www\despro\rfid-handler.php on line 11
+[26-Sep-2018 01:45:30 Asia/Manila] PHP Stack trace:
+[26-Sep-2018 01:45:30 Asia/Manila] PHP   1. {main}() C:\UwAmp310\www\despro\rfid-handler.php:0
+[26-Sep-2018 01:45:30 Asia/Manila] PHP Notice:  Undefined variable: data in C:\UwAmp310\www\despro\rfid-handler.php on line 21
+[26-Sep-2018 01:45:30 Asia/Manila] PHP Stack trace:
+[26-Sep-2018 01:45:30 Asia/Manila] PHP   1. {main}() C:\UwAmp310\www\despro\rfid-handler.php:0
+[26-Sep-2018 01:45:30 Asia/Manila] PHP Warning:  Invalid argument supplied for foreach() in C:\UwAmp310\www\despro\db.php on line 203
+[26-Sep-2018 01:45:30 Asia/Manila] PHP Stack trace:
+[26-Sep-2018 01:45:30 Asia/Manila] PHP   1. {main}() C:\UwAmp310\www\despro\rfid-handler.php:0
+[26-Sep-2018 01:45:30 Asia/Manila] PHP   2. pdo_db->updateData() C:\UwAmp310\www\despro\rfid-handler.php:21
+[26-Sep-2018 01:45:30 Asia/Manila] PHP Notice:  Undefined variable: pk_value in C:\UwAmp310\www\despro\db.php on line 225
+[26-Sep-2018 01:45:30 Asia/Manila] PHP Stack trace:
+[26-Sep-2018 01:45:30 Asia/Manila] PHP   1. {main}() C:\UwAmp310\www\despro\rfid-handler.php:0
+[26-Sep-2018 01:45:30 Asia/Manila] PHP   2. pdo_db->updateData() C:\UwAmp310\www\despro\rfid-handler.php:21
+[26-Sep-2018 01:45:30 Asia/Manila] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'WHERE rfid=?' at line 1 in C:\UwAmp310\www\despro\db.php:227
+Stack trace:
+#0 C:\UwAmp310\www\despro\db.php(227): PDO->prepare('UPDATE users SE...')
+#1 C:\UwAmp310\www\despro\rfid-handler.php(21): pdo_db->updateData(NULL, 'rfid')
+#2 {main}
+  thrown in C:\UwAmp310\www\despro\db.php on line 227
+[26-Sep-2018 01:45:37 Asia/Manila] PHP Notice:  Undefined variable: data in C:\UwAmp310\www\despro\rfid-handler.php on line 11
+[26-Sep-2018 01:45:37 Asia/Manila] PHP Stack trace:
+[26-Sep-2018 01:45:37 Asia/Manila] PHP   1. {main}() C:\UwAmp310\www\despro\rfid-handler.php:0
+[26-Sep-2018 01:45:37 Asia/Manila] PHP Notice:  Undefined variable: data in C:\UwAmp310\www\despro\rfid-handler.php on line 21
+[26-Sep-2018 01:45:37 Asia/Manila] PHP Stack trace:
+[26-Sep-2018 01:45:37 Asia/Manila] PHP   1. {main}() C:\UwAmp310\www\despro\rfid-handler.php:0
+[26-Sep-2018 01:45:37 Asia/Manila] PHP Warning:  Invalid argument supplied for foreach() in C:\UwAmp310\www\despro\db.php on line 203
+[26-Sep-2018 01:45:37 Asia/Manila] PHP Stack trace:
+[26-Sep-2018 01:45:37 Asia/Manila] PHP   1. {main}() C:\UwAmp310\www\despro\rfid-handler.php:0
+[26-Sep-2018 01:45:37 Asia/Manila] PHP   2. pdo_db->updateData() C:\UwAmp310\www\despro\rfid-handler.php:21
+[26-Sep-2018 01:45:37 Asia/Manila] PHP Notice:  Undefined variable: pk_value in C:\UwAmp310\www\despro\db.php on line 225
+[26-Sep-2018 01:45:37 Asia/Manila] PHP Stack trace:
+[26-Sep-2018 01:45:37 Asia/Manila] PHP   1. {main}() C:\UwAmp310\www\despro\rfid-handler.php:0
+[26-Sep-2018 01:45:37 Asia/Manila] PHP   2. pdo_db->updateData() C:\UwAmp310\www\despro\rfid-handler.php:21
+[26-Sep-2018 01:45:37 Asia/Manila] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'WHERE rfid=?' at line 1 in C:\UwAmp310\www\despro\db.php:227
+Stack trace:
+#0 C:\UwAmp310\www\despro\db.php(227): PDO->prepare('UPDATE users SE...')
+#1 C:\UwAmp310\www\despro\rfid-handler.php(21): pdo_db->updateData(NULL, 'rfid')
+#2 {main}
+  thrown in C:\UwAmp310\www\despro\db.php on line 227
+[26-Sep-2018 01:45:45 Asia/Manila] PHP Notice:  Undefined variable: data in C:\UwAmp310\www\despro\rfid-handler.php on line 11
+[26-Sep-2018 01:45:45 Asia/Manila] PHP Stack trace:
+[26-Sep-2018 01:45:45 Asia/Manila] PHP   1. {main}() C:\UwAmp310\www\despro\rfid-handler.php:0
+[26-Sep-2018 01:45:45 Asia/Manila] PHP Notice:  Undefined variable: data in C:\UwAmp310\www\despro\rfid-handler.php on line 21
+[26-Sep-2018 01:45:45 Asia/Manila] PHP Stack trace:
+[26-Sep-2018 01:45:45 Asia/Manila] PHP   1. {main}() C:\UwAmp310\www\despro\rfid-handler.php:0
+[26-Sep-2018 01:45:45 Asia/Manila] PHP Warning:  Invalid argument supplied for foreach() in C:\UwAmp310\www\despro\db.php on line 203
+[26-Sep-2018 01:45:45 Asia/Manila] PHP Stack trace:
+[26-Sep-2018 01:45:45 Asia/Manila] PHP   1. {main}() C:\UwAmp310\www\despro\rfid-handler.php:0
+[26-Sep-2018 01:45:45 Asia/Manila] PHP   2. pdo_db->updateData() C:\UwAmp310\www\despro\rfid-handler.php:21
+[26-Sep-2018 01:45:45 Asia/Manila] PHP Notice:  Undefined variable: pk_value in C:\UwAmp310\www\despro\db.php on line 225
+[26-Sep-2018 01:45:45 Asia/Manila] PHP Stack trace:
+[26-Sep-2018 01:45:45 Asia/Manila] PHP   1. {main}() C:\UwAmp310\www\despro\rfid-handler.php:0
+[26-Sep-2018 01:45:45 Asia/Manila] PHP   2. pdo_db->updateData() C:\UwAmp310\www\despro\rfid-handler.php:21
+[26-Sep-2018 01:45:45 Asia/Manila] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'WHERE rfid=?' at line 1 in C:\UwAmp310\www\despro\db.php:227
+Stack trace:
+#0 C:\UwAmp310\www\despro\db.php(227): PDO->prepare('UPDATE users SE...')
+#1 C:\UwAmp310\www\despro\rfid-handler.php(21): pdo_db->updateData(NULL, 'rfid')
+#2 {main}
+  thrown in C:\UwAmp310\www\despro\db.php on line 227
+[26-Sep-2018 01:45:52 Asia/Manila] PHP Notice:  Undefined variable: data in C:\UwAmp310\www\despro\rfid-handler.php on line 11
+[26-Sep-2018 01:45:52 Asia/Manila] PHP Stack trace:
+[26-Sep-2018 01:45:52 Asia/Manila] PHP   1. {main}() C:\UwAmp310\www\despro\rfid-handler.php:0
+[26-Sep-2018 01:45:52 Asia/Manila] PHP Notice:  Undefined variable: data in C:\UwAmp310\www\despro\rfid-handler.php on line 21
+[26-Sep-2018 01:45:52 Asia/Manila] PHP Stack trace:
+[26-Sep-2018 01:45:52 Asia/Manila] PHP   1. {main}() C:\UwAmp310\www\despro\rfid-handler.php:0
+[26-Sep-2018 01:45:52 Asia/Manila] PHP Warning:  Invalid argument supplied for foreach() in C:\UwAmp310\www\despro\db.php on line 203
+[26-Sep-2018 01:45:52 Asia/Manila] PHP Stack trace:
+[26-Sep-2018 01:45:52 Asia/Manila] PHP   1. {main}() C:\UwAmp310\www\despro\rfid-handler.php:0
+[26-Sep-2018 01:45:52 Asia/Manila] PHP   2. pdo_db->updateData() C:\UwAmp310\www\despro\rfid-handler.php:21
+[26-Sep-2018 01:45:52 Asia/Manila] PHP Notice:  Undefined variable: pk_value in C:\UwAmp310\www\despro\db.php on line 225
+[26-Sep-2018 01:45:52 Asia/Manila] PHP Stack trace:
+[26-Sep-2018 01:45:52 Asia/Manila] PHP   1. {main}() C:\UwAmp310\www\despro\rfid-handler.php:0
+[26-Sep-2018 01:45:52 Asia/Manila] PHP   2. pdo_db->updateData() C:\UwAmp310\www\despro\rfid-handler.php:21
+[26-Sep-2018 01:45:52 Asia/Manila] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'WHERE rfid=?' at line 1 in C:\UwAmp310\www\despro\db.php:227
+Stack trace:
+#0 C:\UwAmp310\www\despro\db.php(227): PDO->prepare('UPDATE users SE...')
+#1 C:\UwAmp310\www\despro\rfid-handler.php(21): pdo_db->updateData(NULL, 'rfid')
+#2 {main}
+  thrown in C:\UwAmp310\www\despro\db.php on line 227
+[26-Sep-2018 01:45:59 Asia/Manila] PHP Notice:  Undefined variable: data in C:\UwAmp310\www\despro\rfid-handler.php on line 11
+[26-Sep-2018 01:45:59 Asia/Manila] PHP Stack trace:
+[26-Sep-2018 01:45:59 Asia/Manila] PHP   1. {main}() C:\UwAmp310\www\despro\rfid-handler.php:0
+[26-Sep-2018 01:45:59 Asia/Manila] PHP Notice:  Undefined variable: data in C:\UwAmp310\www\despro\rfid-handler.php on line 21
+[26-Sep-2018 01:45:59 Asia/Manila] PHP Stack trace:
+[26-Sep-2018 01:45:59 Asia/Manila] PHP   1. {main}() C:\UwAmp310\www\despro\rfid-handler.php:0
+[26-Sep-2018 01:45:59 Asia/Manila] PHP Warning:  Invalid argument supplied for foreach() in C:\UwAmp310\www\despro\db.php on line 203
+[26-Sep-2018 01:45:59 Asia/Manila] PHP Stack trace:
+[26-Sep-2018 01:45:59 Asia/Manila] PHP   1. {main}() C:\UwAmp310\www\despro\rfid-handler.php:0
+[26-Sep-2018 01:45:59 Asia/Manila] PHP   2. pdo_db->updateData() C:\UwAmp310\www\despro\rfid-handler.php:21
+[26-Sep-2018 01:45:59 Asia/Manila] PHP Notice:  Undefined variable: pk_value in C:\UwAmp310\www\despro\db.php on line 225
+[26-Sep-2018 01:45:59 Asia/Manila] PHP Stack trace:
+[26-Sep-2018 01:45:59 Asia/Manila] PHP   1. {main}() C:\UwAmp310\www\despro\rfid-handler.php:0
+[26-Sep-2018 01:45:59 Asia/Manila] PHP   2. pdo_db->updateData() C:\UwAmp310\www\despro\rfid-handler.php:21
+[26-Sep-2018 01:45:59 Asia/Manila] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'WHERE rfid=?' at line 1 in C:\UwAmp310\www\despro\db.php:227
+Stack trace:
+#0 C:\UwAmp310\www\despro\db.php(227): PDO->prepare('UPDATE users SE...')
+#1 C:\UwAmp310\www\despro\rfid-handler.php(21): pdo_db->updateData(NULL, 'rfid')
+#2 {main}
+  thrown in C:\UwAmp310\www\despro\db.php on line 227
+[26-Sep-2018 01:46:07 Asia/Manila] PHP Notice:  Undefined variable: data in C:\UwAmp310\www\despro\rfid-handler.php on line 11
+[26-Sep-2018 01:46:07 Asia/Manila] PHP Stack trace:
+[26-Sep-2018 01:46:07 Asia/Manila] PHP   1. {main}() C:\UwAmp310\www\despro\rfid-handler.php:0
+[26-Sep-2018 01:46:07 Asia/Manila] PHP Notice:  Undefined variable: data in C:\UwAmp310\www\despro\rfid-handler.php on line 21
+[26-Sep-2018 01:46:07 Asia/Manila] PHP Stack trace:
+[26-Sep-2018 01:46:07 Asia/Manila] PHP   1. {main}() C:\UwAmp310\www\despro\rfid-handler.php:0
+[26-Sep-2018 01:46:07 Asia/Manila] PHP Warning:  Invalid argument supplied for foreach() in C:\UwAmp310\www\despro\db.php on line 203
+[26-Sep-2018 01:46:07 Asia/Manila] PHP Stack trace:
+[26-Sep-2018 01:46:07 Asia/Manila] PHP   1. {main}() C:\UwAmp310\www\despro\rfid-handler.php:0
+[26-Sep-2018 01:46:07 Asia/Manila] PHP   2. pdo_db->updateData() C:\UwAmp310\www\despro\rfid-handler.php:21
+[26-Sep-2018 01:46:07 Asia/Manila] PHP Notice:  Undefined variable: pk_value in C:\UwAmp310\www\despro\db.php on line 225
+[26-Sep-2018 01:46:07 Asia/Manila] PHP Stack trace:
+[26-Sep-2018 01:46:07 Asia/Manila] PHP   1. {main}() C:\UwAmp310\www\despro\rfid-handler.php:0
+[26-Sep-2018 01:46:07 Asia/Manila] PHP   2. pdo_db->updateData() C:\UwAmp310\www\despro\rfid-handler.php:21
+[26-Sep-2018 01:46:07 Asia/Manila] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'WHERE rfid=?' at line 1 in C:\UwAmp310\www\despro\db.php:227
+Stack trace:
+#0 C:\UwAmp310\www\despro\db.php(227): PDO->prepare('UPDATE users SE...')
+#1 C:\UwAmp310\www\despro\rfid-handler.php(21): pdo_db->updateData(NULL, 'rfid')
+#2 {main}
+  thrown in C:\UwAmp310\www\despro\db.php on line 227
+[26-Sep-2018 01:46:14 Asia/Manila] PHP Notice:  Undefined variable: data in C:\UwAmp310\www\despro\rfid-handler.php on line 11
+[26-Sep-2018 01:46:14 Asia/Manila] PHP Stack trace:
+[26-Sep-2018 01:46:14 Asia/Manila] PHP   1. {main}() C:\UwAmp310\www\despro\rfid-handler.php:0
+[26-Sep-2018 01:46:14 Asia/Manila] PHP Notice:  Undefined variable: data in C:\UwAmp310\www\despro\rfid-handler.php on line 21
+[26-Sep-2018 01:46:14 Asia/Manila] PHP Stack trace:
+[26-Sep-2018 01:46:14 Asia/Manila] PHP   1. {main}() C:\UwAmp310\www\despro\rfid-handler.php:0
+[26-Sep-2018 01:46:14 Asia/Manila] PHP Warning:  Invalid argument supplied for foreach() in C:\UwAmp310\www\despro\db.php on line 203
+[26-Sep-2018 01:46:14 Asia/Manila] PHP Stack trace:
+[26-Sep-2018 01:46:14 Asia/Manila] PHP   1. {main}() C:\UwAmp310\www\despro\rfid-handler.php:0
+[26-Sep-2018 01:46:14 Asia/Manila] PHP   2. pdo_db->updateData() C:\UwAmp310\www\despro\rfid-handler.php:21
+[26-Sep-2018 01:46:14 Asia/Manila] PHP Notice:  Undefined variable: pk_value in C:\UwAmp310\www\despro\db.php on line 225
+[26-Sep-2018 01:46:14 Asia/Manila] PHP Stack trace:
+[26-Sep-2018 01:46:14 Asia/Manila] PHP   1. {main}() C:\UwAmp310\www\despro\rfid-handler.php:0
+[26-Sep-2018 01:46:14 Asia/Manila] PHP   2. pdo_db->updateData() C:\UwAmp310\www\despro\rfid-handler.php:21
+[26-Sep-2018 01:46:14 Asia/Manila] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'WHERE rfid=?' at line 1 in C:\UwAmp310\www\despro\db.php:227
+Stack trace:
+#0 C:\UwAmp310\www\despro\db.php(227): PDO->prepare('UPDATE users SE...')
+#1 C:\UwAmp310\www\despro\rfid-handler.php(21): pdo_db->updateData(NULL, 'rfid')
+#2 {main}
+  thrown in C:\UwAmp310\www\despro\db.php on line 227
+[26-Sep-2018 01:46:21 Asia/Manila] PHP Notice:  Undefined variable: data in C:\UwAmp310\www\despro\rfid-handler.php on line 11
+[26-Sep-2018 01:46:21 Asia/Manila] PHP Stack trace:
+[26-Sep-2018 01:46:21 Asia/Manila] PHP   1. {main}() C:\UwAmp310\www\despro\rfid-handler.php:0
+[26-Sep-2018 01:46:21 Asia/Manila] PHP Notice:  Undefined variable: data in C:\UwAmp310\www\despro\rfid-handler.php on line 21
+[26-Sep-2018 01:46:21 Asia/Manila] PHP Stack trace:
+[26-Sep-2018 01:46:21 Asia/Manila] PHP   1. {main}() C:\UwAmp310\www\despro\rfid-handler.php:0
+[26-Sep-2018 01:46:21 Asia/Manila] PHP Warning:  Invalid argument supplied for foreach() in C:\UwAmp310\www\despro\db.php on line 203
+[26-Sep-2018 01:46:21 Asia/Manila] PHP Stack trace:
+[26-Sep-2018 01:46:21 Asia/Manila] PHP   1. {main}() C:\UwAmp310\www\despro\rfid-handler.php:0
+[26-Sep-2018 01:46:21 Asia/Manila] PHP   2. pdo_db->updateData() C:\UwAmp310\www\despro\rfid-handler.php:21
+[26-Sep-2018 01:46:21 Asia/Manila] PHP Notice:  Undefined variable: pk_value in C:\UwAmp310\www\despro\db.php on line 225
+[26-Sep-2018 01:46:21 Asia/Manila] PHP Stack trace:
+[26-Sep-2018 01:46:21 Asia/Manila] PHP   1. {main}() C:\UwAmp310\www\despro\rfid-handler.php:0
+[26-Sep-2018 01:46:21 Asia/Manila] PHP   2. pdo_db->updateData() C:\UwAmp310\www\despro\rfid-handler.php:21
+[26-Sep-2018 01:46:21 Asia/Manila] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'WHERE rfid=?' at line 1 in C:\UwAmp310\www\despro\db.php:227
+Stack trace:
+#0 C:\UwAmp310\www\despro\db.php(227): PDO->prepare('UPDATE users SE...')
+#1 C:\UwAmp310\www\despro\rfid-handler.php(21): pdo_db->updateData(NULL, 'rfid')
+#2 {main}
+  thrown in C:\UwAmp310\www\despro\db.php on line 227
+[26-Sep-2018 01:46:29 Asia/Manila] PHP Notice:  Undefined variable: data in C:\UwAmp310\www\despro\rfid-handler.php on line 11
+[26-Sep-2018 01:46:29 Asia/Manila] PHP Stack trace:
+[26-Sep-2018 01:46:29 Asia/Manila] PHP   1. {main}() C:\UwAmp310\www\despro\rfid-handler.php:0
+[26-Sep-2018 01:46:29 Asia/Manila] PHP Notice:  Undefined variable: data in C:\UwAmp310\www\despro\rfid-handler.php on line 21
+[26-Sep-2018 01:46:29 Asia/Manila] PHP Stack trace:
+[26-Sep-2018 01:46:29 Asia/Manila] PHP   1. {main}() C:\UwAmp310\www\despro\rfid-handler.php:0
+[26-Sep-2018 01:46:29 Asia/Manila] PHP Warning:  Invalid argument supplied for foreach() in C:\UwAmp310\www\despro\db.php on line 203
+[26-Sep-2018 01:46:29 Asia/Manila] PHP Stack trace:
+[26-Sep-2018 01:46:29 Asia/Manila] PHP   1. {main}() C:\UwAmp310\www\despro\rfid-handler.php:0
+[26-Sep-2018 01:46:29 Asia/Manila] PHP   2. pdo_db->updateData() C:\UwAmp310\www\despro\rfid-handler.php:21
+[26-Sep-2018 01:46:29 Asia/Manila] PHP Notice:  Undefined variable: pk_value in C:\UwAmp310\www\despro\db.php on line 225
+[26-Sep-2018 01:46:29 Asia/Manila] PHP Stack trace:
+[26-Sep-2018 01:46:29 Asia/Manila] PHP   1. {main}() C:\UwAmp310\www\despro\rfid-handler.php:0
+[26-Sep-2018 01:46:29 Asia/Manila] PHP   2. pdo_db->updateData() C:\UwAmp310\www\despro\rfid-handler.php:21
+[26-Sep-2018 01:46:29 Asia/Manila] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'WHERE rfid=?' at line 1 in C:\UwAmp310\www\despro\db.php:227
+Stack trace:
+#0 C:\UwAmp310\www\despro\db.php(227): PDO->prepare('UPDATE users SE...')
+#1 C:\UwAmp310\www\despro\rfid-handler.php(21): pdo_db->updateData(NULL, 'rfid')
+#2 {main}
+  thrown in C:\UwAmp310\www\despro\db.php on line 227
+[26-Sep-2018 01:46:36 Asia/Manila] PHP Notice:  Undefined variable: data in C:\UwAmp310\www\despro\rfid-handler.php on line 11
+[26-Sep-2018 01:46:36 Asia/Manila] PHP Stack trace:
+[26-Sep-2018 01:46:36 Asia/Manila] PHP   1. {main}() C:\UwAmp310\www\despro\rfid-handler.php:0
+[26-Sep-2018 01:46:36 Asia/Manila] PHP Notice:  Undefined variable: data in C:\UwAmp310\www\despro\rfid-handler.php on line 21
+[26-Sep-2018 01:46:36 Asia/Manila] PHP Stack trace:
+[26-Sep-2018 01:46:36 Asia/Manila] PHP   1. {main}() C:\UwAmp310\www\despro\rfid-handler.php:0
+[26-Sep-2018 01:46:36 Asia/Manila] PHP Warning:  Invalid argument supplied for foreach() in C:\UwAmp310\www\despro\db.php on line 203
+[26-Sep-2018 01:46:36 Asia/Manila] PHP Stack trace:
+[26-Sep-2018 01:46:36 Asia/Manila] PHP   1. {main}() C:\UwAmp310\www\despro\rfid-handler.php:0
+[26-Sep-2018 01:46:36 Asia/Manila] PHP   2. pdo_db->updateData() C:\UwAmp310\www\despro\rfid-handler.php:21
+[26-Sep-2018 01:46:36 Asia/Manila] PHP Notice:  Undefined variable: pk_value in C:\UwAmp310\www\despro\db.php on line 225
+[26-Sep-2018 01:46:36 Asia/Manila] PHP Stack trace:
+[26-Sep-2018 01:46:36 Asia/Manila] PHP   1. {main}() C:\UwAmp310\www\despro\rfid-handler.php:0
+[26-Sep-2018 01:46:36 Asia/Manila] PHP   2. pdo_db->updateData() C:\UwAmp310\www\despro\rfid-handler.php:21
+[26-Sep-2018 01:46:36 Asia/Manila] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'WHERE rfid=?' at line 1 in C:\UwAmp310\www\despro\db.php:227
+Stack trace:
+#0 C:\UwAmp310\www\despro\db.php(227): PDO->prepare('UPDATE users SE...')
+#1 C:\UwAmp310\www\despro\rfid-handler.php(21): pdo_db->updateData(NULL, 'rfid')
+#2 {main}
+  thrown in C:\UwAmp310\www\despro\db.php on line 227
+[26-Sep-2018 01:46:44 Asia/Manila] PHP Notice:  Undefined variable: data in C:\UwAmp310\www\despro\rfid-handler.php on line 11
+[26-Sep-2018 01:46:44 Asia/Manila] PHP Stack trace:
+[26-Sep-2018 01:46:44 Asia/Manila] PHP   1. {main}() C:\UwAmp310\www\despro\rfid-handler.php:0
+[26-Sep-2018 01:46:44 Asia/Manila] PHP Notice:  Undefined variable: data in C:\UwAmp310\www\despro\rfid-handler.php on line 21
+[26-Sep-2018 01:46:44 Asia/Manila] PHP Stack trace:
+[26-Sep-2018 01:46:44 Asia/Manila] PHP   1. {main}() C:\UwAmp310\www\despro\rfid-handler.php:0
+[26-Sep-2018 01:46:44 Asia/Manila] PHP Warning:  Invalid argument supplied for foreach() in C:\UwAmp310\www\despro\db.php on line 203
+[26-Sep-2018 01:46:44 Asia/Manila] PHP Stack trace:
+[26-Sep-2018 01:46:44 Asia/Manila] PHP   1. {main}() C:\UwAmp310\www\despro\rfid-handler.php:0
+[26-Sep-2018 01:46:44 Asia/Manila] PHP   2. pdo_db->updateData() C:\UwAmp310\www\despro\rfid-handler.php:21
+[26-Sep-2018 01:46:44 Asia/Manila] PHP Notice:  Undefined variable: pk_value in C:\UwAmp310\www\despro\db.php on line 225
+[26-Sep-2018 01:46:44 Asia/Manila] PHP Stack trace:
+[26-Sep-2018 01:46:44 Asia/Manila] PHP   1. {main}() C:\UwAmp310\www\despro\rfid-handler.php:0
+[26-Sep-2018 01:46:44 Asia/Manila] PHP   2. pdo_db->updateData() C:\UwAmp310\www\despro\rfid-handler.php:21
+[26-Sep-2018 01:46:44 Asia/Manila] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'WHERE rfid=?' at line 1 in C:\UwAmp310\www\despro\db.php:227
+Stack trace:
+#0 C:\UwAmp310\www\despro\db.php(227): PDO->prepare('UPDATE users SE...')
+#1 C:\UwAmp310\www\despro\rfid-handler.php(21): pdo_db->updateData(NULL, 'rfid')
+#2 {main}
+  thrown in C:\UwAmp310\www\despro\db.php on line 227
+[26-Sep-2018 01:46:51 Asia/Manila] PHP Notice:  Undefined variable: data in C:\UwAmp310\www\despro\rfid-handler.php on line 11
+[26-Sep-2018 01:46:51 Asia/Manila] PHP Stack trace:
+[26-Sep-2018 01:46:51 Asia/Manila] PHP   1. {main}() C:\UwAmp310\www\despro\rfid-handler.php:0
+[26-Sep-2018 01:46:51 Asia/Manila] PHP Notice:  Undefined variable: data in C:\UwAmp310\www\despro\rfid-handler.php on line 21
+[26-Sep-2018 01:46:51 Asia/Manila] PHP Stack trace:
+[26-Sep-2018 01:46:51 Asia/Manila] PHP   1. {main}() C:\UwAmp310\www\despro\rfid-handler.php:0
+[26-Sep-2018 01:46:51 Asia/Manila] PHP Warning:  Invalid argument supplied for foreach() in C:\UwAmp310\www\despro\db.php on line 203
+[26-Sep-2018 01:46:51 Asia/Manila] PHP Stack trace:
+[26-Sep-2018 01:46:51 Asia/Manila] PHP   1. {main}() C:\UwAmp310\www\despro\rfid-handler.php:0
+[26-Sep-2018 01:46:51 Asia/Manila] PHP   2. pdo_db->updateData() C:\UwAmp310\www\despro\rfid-handler.php:21
+[26-Sep-2018 01:46:51 Asia/Manila] PHP Notice:  Undefined variable: pk_value in C:\UwAmp310\www\despro\db.php on line 225
+[26-Sep-2018 01:46:51 Asia/Manila] PHP Stack trace:
+[26-Sep-2018 01:46:51 Asia/Manila] PHP   1. {main}() C:\UwAmp310\www\despro\rfid-handler.php:0
+[26-Sep-2018 01:46:51 Asia/Manila] PHP   2. pdo_db->updateData() C:\UwAmp310\www\despro\rfid-handler.php:21
+[26-Sep-2018 01:46:51 Asia/Manila] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'WHERE rfid=?' at line 1 in C:\UwAmp310\www\despro\db.php:227
+Stack trace:
+#0 C:\UwAmp310\www\despro\db.php(227): PDO->prepare('UPDATE users SE...')
+#1 C:\UwAmp310\www\despro\rfid-handler.php(21): pdo_db->updateData(NULL, 'rfid')
+#2 {main}
+  thrown in C:\UwAmp310\www\despro\db.php on line 227
+[26-Sep-2018 01:46:58 Asia/Manila] PHP Notice:  Undefined variable: data in C:\UwAmp310\www\despro\rfid-handler.php on line 11
+[26-Sep-2018 01:46:58 Asia/Manila] PHP Stack trace:
+[26-Sep-2018 01:46:58 Asia/Manila] PHP   1. {main}() C:\UwAmp310\www\despro\rfid-handler.php:0
+[26-Sep-2018 01:46:58 Asia/Manila] PHP Notice:  Undefined variable: data in C:\UwAmp310\www\despro\rfid-handler.php on line 21
+[26-Sep-2018 01:46:58 Asia/Manila] PHP Stack trace:
+[26-Sep-2018 01:46:58 Asia/Manila] PHP   1. {main}() C:\UwAmp310\www\despro\rfid-handler.php:0
+[26-Sep-2018 01:46:58 Asia/Manila] PHP Warning:  Invalid argument supplied for foreach() in C:\UwAmp310\www\despro\db.php on line 203
+[26-Sep-2018 01:46:58 Asia/Manila] PHP Stack trace:
+[26-Sep-2018 01:46:58 Asia/Manila] PHP   1. {main}() C:\UwAmp310\www\despro\rfid-handler.php:0
+[26-Sep-2018 01:46:58 Asia/Manila] PHP   2. pdo_db->updateData() C:\UwAmp310\www\despro\rfid-handler.php:21
+[26-Sep-2018 01:46:58 Asia/Manila] PHP Notice:  Undefined variable: pk_value in C:\UwAmp310\www\despro\db.php on line 225
+[26-Sep-2018 01:46:58 Asia/Manila] PHP Stack trace:
+[26-Sep-2018 01:46:58 Asia/Manila] PHP   1. {main}() C:\UwAmp310\www\despro\rfid-handler.php:0
+[26-Sep-2018 01:46:58 Asia/Manila] PHP   2. pdo_db->updateData() C:\UwAmp310\www\despro\rfid-handler.php:21
+[26-Sep-2018 01:46:58 Asia/Manila] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'WHERE rfid=?' at line 1 in C:\UwAmp310\www\despro\db.php:227
+Stack trace:
+#0 C:\UwAmp310\www\despro\db.php(227): PDO->prepare('UPDATE users SE...')
+#1 C:\UwAmp310\www\despro\rfid-handler.php(21): pdo_db->updateData(NULL, 'rfid')
+#2 {main}
+  thrown in C:\UwAmp310\www\despro\db.php on line 227
+[26-Sep-2018 01:47:06 Asia/Manila] PHP Notice:  Undefined variable: data in C:\UwAmp310\www\despro\rfid-handler.php on line 11
+[26-Sep-2018 01:47:06 Asia/Manila] PHP Stack trace:
+[26-Sep-2018 01:47:06 Asia/Manila] PHP   1. {main}() C:\UwAmp310\www\despro\rfid-handler.php:0
+[26-Sep-2018 01:47:06 Asia/Manila] PHP Notice:  Undefined variable: data in C:\UwAmp310\www\despro\rfid-handler.php on line 21
+[26-Sep-2018 01:47:06 Asia/Manila] PHP Stack trace:
+[26-Sep-2018 01:47:06 Asia/Manila] PHP   1. {main}() C:\UwAmp310\www\despro\rfid-handler.php:0
+[26-Sep-2018 01:47:06 Asia/Manila] PHP Warning:  Invalid argument supplied for foreach() in C:\UwAmp310\www\despro\db.php on line 203
+[26-Sep-2018 01:47:06 Asia/Manila] PHP Stack trace:
+[26-Sep-2018 01:47:06 Asia/Manila] PHP   1. {main}() C:\UwAmp310\www\despro\rfid-handler.php:0
+[26-Sep-2018 01:47:06 Asia/Manila] PHP   2. pdo_db->updateData() C:\UwAmp310\www\despro\rfid-handler.php:21
+[26-Sep-2018 01:47:06 Asia/Manila] PHP Notice:  Undefined variable: pk_value in C:\UwAmp310\www\despro\db.php on line 225
+[26-Sep-2018 01:47:06 Asia/Manila] PHP Stack trace:
+[26-Sep-2018 01:47:06 Asia/Manila] PHP   1. {main}() C:\UwAmp310\www\despro\rfid-handler.php:0
+[26-Sep-2018 01:47:06 Asia/Manila] PHP   2. pdo_db->updateData() C:\UwAmp310\www\despro\rfid-handler.php:21
+[26-Sep-2018 01:47:06 Asia/Manila] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'WHERE rfid=?' at line 1 in C:\UwAmp310\www\despro\db.php:227
+Stack trace:
+#0 C:\UwAmp310\www\despro\db.php(227): PDO->prepare('UPDATE users SE...')
+#1 C:\UwAmp310\www\despro\rfid-handler.php(21): pdo_db->updateData(NULL, 'rfid')
+#2 {main}
+  thrown in C:\UwAmp310\www\despro\db.php on line 227
+[26-Sep-2018 01:47:13 Asia/Manila] PHP Notice:  Undefined variable: data in C:\UwAmp310\www\despro\rfid-handler.php on line 11
+[26-Sep-2018 01:47:13 Asia/Manila] PHP Stack trace:
+[26-Sep-2018 01:47:13 Asia/Manila] PHP   1. {main}() C:\UwAmp310\www\despro\rfid-handler.php:0
+[26-Sep-2018 01:47:13 Asia/Manila] PHP Notice:  Undefined variable: data in C:\UwAmp310\www\despro\rfid-handler.php on line 21
+[26-Sep-2018 01:47:13 Asia/Manila] PHP Stack trace:
+[26-Sep-2018 01:47:13 Asia/Manila] PHP   1. {main}() C:\UwAmp310\www\despro\rfid-handler.php:0
+[26-Sep-2018 01:47:13 Asia/Manila] PHP Warning:  Invalid argument supplied for foreach() in C:\UwAmp310\www\despro\db.php on line 203
+[26-Sep-2018 01:47:13 Asia/Manila] PHP Stack trace:
+[26-Sep-2018 01:47:13 Asia/Manila] PHP   1. {main}() C:\UwAmp310\www\despro\rfid-handler.php:0
+[26-Sep-2018 01:47:13 Asia/Manila] PHP   2. pdo_db->updateData() C:\UwAmp310\www\despro\rfid-handler.php:21
+[26-Sep-2018 01:47:13 Asia/Manila] PHP Notice:  Undefined variable: pk_value in C:\UwAmp310\www\despro\db.php on line 225
+[26-Sep-2018 01:47:13 Asia/Manila] PHP Stack trace:
+[26-Sep-2018 01:47:13 Asia/Manila] PHP   1. {main}() C:\UwAmp310\www\despro\rfid-handler.php:0
+[26-Sep-2018 01:47:13 Asia/Manila] PHP   2. pdo_db->updateData() C:\UwAmp310\www\despro\rfid-handler.php:21
+[26-Sep-2018 01:47:13 Asia/Manila] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'WHERE rfid=?' at line 1 in C:\UwAmp310\www\despro\db.php:227
+Stack trace:
+#0 C:\UwAmp310\www\despro\db.php(227): PDO->prepare('UPDATE users SE...')
+#1 C:\UwAmp310\www\despro\rfid-handler.php(21): pdo_db->updateData(NULL, 'rfid')
+#2 {main}
+  thrown in C:\UwAmp310\www\despro\db.php on line 227
+[26-Sep-2018 01:47:21 Asia/Manila] PHP Notice:  Undefined variable: data in C:\UwAmp310\www\despro\rfid-handler.php on line 11
+[26-Sep-2018 01:47:21 Asia/Manila] PHP Stack trace:
+[26-Sep-2018 01:47:21 Asia/Manila] PHP   1. {main}() C:\UwAmp310\www\despro\rfid-handler.php:0
+[26-Sep-2018 01:47:21 Asia/Manila] PHP Notice:  Undefined variable: data in C:\UwAmp310\www\despro\rfid-handler.php on line 21
+[26-Sep-2018 01:47:21 Asia/Manila] PHP Stack trace:
+[26-Sep-2018 01:47:21 Asia/Manila] PHP   1. {main}() C:\UwAmp310\www\despro\rfid-handler.php:0
+[26-Sep-2018 01:47:21 Asia/Manila] PHP Warning:  Invalid argument supplied for foreach() in C:\UwAmp310\www\despro\db.php on line 203
+[26-Sep-2018 01:47:21 Asia/Manila] PHP Stack trace:
+[26-Sep-2018 01:47:21 Asia/Manila] PHP   1. {main}() C:\UwAmp310\www\despro\rfid-handler.php:0
+[26-Sep-2018 01:47:21 Asia/Manila] PHP   2. pdo_db->updateData() C:\UwAmp310\www\despro\rfid-handler.php:21
+[26-Sep-2018 01:47:21 Asia/Manila] PHP Notice:  Undefined variable: pk_value in C:\UwAmp310\www\despro\db.php on line 225
+[26-Sep-2018 01:47:21 Asia/Manila] PHP Stack trace:
+[26-Sep-2018 01:47:21 Asia/Manila] PHP   1. {main}() C:\UwAmp310\www\despro\rfid-handler.php:0
+[26-Sep-2018 01:47:21 Asia/Manila] PHP   2. pdo_db->updateData() C:\UwAmp310\www\despro\rfid-handler.php:21
+[26-Sep-2018 01:47:21 Asia/Manila] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'WHERE rfid=?' at line 1 in C:\UwAmp310\www\despro\db.php:227
+Stack trace:
+#0 C:\UwAmp310\www\despro\db.php(227): PDO->prepare('UPDATE users SE...')
+#1 C:\UwAmp310\www\despro\rfid-handler.php(21): pdo_db->updateData(NULL, 'rfid')
+#2 {main}
+  thrown in C:\UwAmp310\www\despro\db.php on line 227
+[26-Sep-2018 01:47:28 Asia/Manila] PHP Notice:  Undefined variable: data in C:\UwAmp310\www\despro\rfid-handler.php on line 11
+[26-Sep-2018 01:47:28 Asia/Manila] PHP Stack trace:
+[26-Sep-2018 01:47:28 Asia/Manila] PHP   1. {main}() C:\UwAmp310\www\despro\rfid-handler.php:0
+[26-Sep-2018 01:47:28 Asia/Manila] PHP Notice:  Undefined variable: data in C:\UwAmp310\www\despro\rfid-handler.php on line 21
+[26-Sep-2018 01:47:28 Asia/Manila] PHP Stack trace:
+[26-Sep-2018 01:47:28 Asia/Manila] PHP   1. {main}() C:\UwAmp310\www\despro\rfid-handler.php:0
+[26-Sep-2018 01:47:28 Asia/Manila] PHP Warning:  Invalid argument supplied for foreach() in C:\UwAmp310\www\despro\db.php on line 203
+[26-Sep-2018 01:47:28 Asia/Manila] PHP Stack trace:
+[26-Sep-2018 01:47:28 Asia/Manila] PHP   1. {main}() C:\UwAmp310\www\despro\rfid-handler.php:0
+[26-Sep-2018 01:47:28 Asia/Manila] PHP   2. pdo_db->updateData() C:\UwAmp310\www\despro\rfid-handler.php:21
+[26-Sep-2018 01:47:28 Asia/Manila] PHP Notice:  Undefined variable: pk_value in C:\UwAmp310\www\despro\db.php on line 225
+[26-Sep-2018 01:47:28 Asia/Manila] PHP Stack trace:
+[26-Sep-2018 01:47:28 Asia/Manila] PHP   1. {main}() C:\UwAmp310\www\despro\rfid-handler.php:0
+[26-Sep-2018 01:47:28 Asia/Manila] PHP   2. pdo_db->updateData() C:\UwAmp310\www\despro\rfid-handler.php:21
+[26-Sep-2018 01:47:28 Asia/Manila] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'WHERE rfid=?' at line 1 in C:\UwAmp310\www\despro\db.php:227
+Stack trace:
+#0 C:\UwAmp310\www\despro\db.php(227): PDO->prepare('UPDATE users SE...')
+#1 C:\UwAmp310\www\despro\rfid-handler.php(21): pdo_db->updateData(NULL, 'rfid')
+#2 {main}
+  thrown in C:\UwAmp310\www\despro\db.php on line 227
+[26-Sep-2018 01:47:35 Asia/Manila] PHP Notice:  Undefined variable: data in C:\UwAmp310\www\despro\rfid-handler.php on line 11
+[26-Sep-2018 01:47:35 Asia/Manila] PHP Stack trace:
+[26-Sep-2018 01:47:35 Asia/Manila] PHP   1. {main}() C:\UwAmp310\www\despro\rfid-handler.php:0
+[26-Sep-2018 01:47:35 Asia/Manila] PHP Notice:  Undefined variable: data in C:\UwAmp310\www\despro\rfid-handler.php on line 21
+[26-Sep-2018 01:47:35 Asia/Manila] PHP Stack trace:
+[26-Sep-2018 01:47:35 Asia/Manila] PHP   1. {main}() C:\UwAmp310\www\despro\rfid-handler.php:0
+[26-Sep-2018 01:47:35 Asia/Manila] PHP Warning:  Invalid argument supplied for foreach() in C:\UwAmp310\www\despro\db.php on line 203
+[26-Sep-2018 01:47:35 Asia/Manila] PHP Stack trace:
+[26-Sep-2018 01:47:35 Asia/Manila] PHP   1. {main}() C:\UwAmp310\www\despro\rfid-handler.php:0
+[26-Sep-2018 01:47:35 Asia/Manila] PHP   2. pdo_db->updateData() C:\UwAmp310\www\despro\rfid-handler.php:21
+[26-Sep-2018 01:47:35 Asia/Manila] PHP Notice:  Undefined variable: pk_value in C:\UwAmp310\www\despro\db.php on line 225
+[26-Sep-2018 01:47:35 Asia/Manila] PHP Stack trace:
+[26-Sep-2018 01:47:35 Asia/Manila] PHP   1. {main}() C:\UwAmp310\www\despro\rfid-handler.php:0
+[26-Sep-2018 01:47:35 Asia/Manila] PHP   2. pdo_db->updateData() C:\UwAmp310\www\despro\rfid-handler.php:21
+[26-Sep-2018 01:47:35 Asia/Manila] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'WHERE rfid=?' at line 1 in C:\UwAmp310\www\despro\db.php:227
+Stack trace:
+#0 C:\UwAmp310\www\despro\db.php(227): PDO->prepare('UPDATE users SE...')
+#1 C:\UwAmp310\www\despro\rfid-handler.php(21): pdo_db->updateData(NULL, 'rfid')
+#2 {main}
+  thrown in C:\UwAmp310\www\despro\db.php on line 227
+[26-Sep-2018 01:47:43 Asia/Manila] PHP Notice:  Undefined variable: data in C:\UwAmp310\www\despro\rfid-handler.php on line 11
+[26-Sep-2018 01:47:43 Asia/Manila] PHP Stack trace:
+[26-Sep-2018 01:47:43 Asia/Manila] PHP   1. {main}() C:\UwAmp310\www\despro\rfid-handler.php:0
+[26-Sep-2018 01:47:43 Asia/Manila] PHP Notice:  Undefined variable: data in C:\UwAmp310\www\despro\rfid-handler.php on line 21
+[26-Sep-2018 01:47:43 Asia/Manila] PHP Stack trace:
+[26-Sep-2018 01:47:43 Asia/Manila] PHP   1. {main}() C:\UwAmp310\www\despro\rfid-handler.php:0
+[26-Sep-2018 01:47:43 Asia/Manila] PHP Warning:  Invalid argument supplied for foreach() in C:\UwAmp310\www\despro\db.php on line 203
+[26-Sep-2018 01:47:43 Asia/Manila] PHP Stack trace:
+[26-Sep-2018 01:47:43 Asia/Manila] PHP   1. {main}() C:\UwAmp310\www\despro\rfid-handler.php:0
+[26-Sep-2018 01:47:43 Asia/Manila] PHP   2. pdo_db->updateData() C:\UwAmp310\www\despro\rfid-handler.php:21
+[26-Sep-2018 01:47:43 Asia/Manila] PHP Notice:  Undefined variable: pk_value in C:\UwAmp310\www\despro\db.php on line 225
+[26-Sep-2018 01:47:43 Asia/Manila] PHP Stack trace:
+[26-Sep-2018 01:47:43 Asia/Manila] PHP   1. {main}() C:\UwAmp310\www\despro\rfid-handler.php:0
+[26-Sep-2018 01:47:43 Asia/Manila] PHP   2. pdo_db->updateData() C:\UwAmp310\www\despro\rfid-handler.php:21
+[26-Sep-2018 01:47:43 Asia/Manila] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'WHERE rfid=?' at line 1 in C:\UwAmp310\www\despro\db.php:227
+Stack trace:
+#0 C:\UwAmp310\www\despro\db.php(227): PDO->prepare('UPDATE users SE...')
+#1 C:\UwAmp310\www\despro\rfid-handler.php(21): pdo_db->updateData(NULL, 'rfid')
+#2 {main}
+  thrown in C:\UwAmp310\www\despro\db.php on line 227
+[26-Sep-2018 01:47:50 Asia/Manila] PHP Notice:  Undefined variable: data in C:\UwAmp310\www\despro\rfid-handler.php on line 11
+[26-Sep-2018 01:47:50 Asia/Manila] PHP Stack trace:
+[26-Sep-2018 01:47:50 Asia/Manila] PHP   1. {main}() C:\UwAmp310\www\despro\rfid-handler.php:0
+[26-Sep-2018 01:47:50 Asia/Manila] PHP Notice:  Undefined variable: data in C:\UwAmp310\www\despro\rfid-handler.php on line 21
+[26-Sep-2018 01:47:50 Asia/Manila] PHP Stack trace:
+[26-Sep-2018 01:47:50 Asia/Manila] PHP   1. {main}() C:\UwAmp310\www\despro\rfid-handler.php:0
+[26-Sep-2018 01:47:50 Asia/Manila] PHP Warning:  Invalid argument supplied for foreach() in C:\UwAmp310\www\despro\db.php on line 203
+[26-Sep-2018 01:47:50 Asia/Manila] PHP Stack trace:
+[26-Sep-2018 01:47:50 Asia/Manila] PHP   1. {main}() C:\UwAmp310\www\despro\rfid-handler.php:0
+[26-Sep-2018 01:47:50 Asia/Manila] PHP   2. pdo_db->updateData() C:\UwAmp310\www\despro\rfid-handler.php:21
+[26-Sep-2018 01:47:50 Asia/Manila] PHP Notice:  Undefined variable: pk_value in C:\UwAmp310\www\despro\db.php on line 225
+[26-Sep-2018 01:47:50 Asia/Manila] PHP Stack trace:
+[26-Sep-2018 01:47:50 Asia/Manila] PHP   1. {main}() C:\UwAmp310\www\despro\rfid-handler.php:0
+[26-Sep-2018 01:47:50 Asia/Manila] PHP   2. pdo_db->updateData() C:\UwAmp310\www\despro\rfid-handler.php:21
+[26-Sep-2018 01:47:50 Asia/Manila] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'WHERE rfid=?' at line 1 in C:\UwAmp310\www\despro\db.php:227
+Stack trace:
+#0 C:\UwAmp310\www\despro\db.php(227): PDO->prepare('UPDATE users SE...')
+#1 C:\UwAmp310\www\despro\rfid-handler.php(21): pdo_db->updateData(NULL, 'rfid')
+#2 {main}
+  thrown in C:\UwAmp310\www\despro\db.php on line 227
+[26-Sep-2018 01:47:58 Asia/Manila] PHP Notice:  Undefined variable: data in C:\UwAmp310\www\despro\rfid-handler.php on line 11
+[26-Sep-2018 01:47:58 Asia/Manila] PHP Stack trace:
+[26-Sep-2018 01:47:58 Asia/Manila] PHP   1. {main}() C:\UwAmp310\www\despro\rfid-handler.php:0
+[26-Sep-2018 01:47:58 Asia/Manila] PHP Notice:  Undefined variable: data in C:\UwAmp310\www\despro\rfid-handler.php on line 21
+[26-Sep-2018 01:47:58 Asia/Manila] PHP Stack trace:
+[26-Sep-2018 01:47:58 Asia/Manila] PHP   1. {main}() C:\UwAmp310\www\despro\rfid-handler.php:0
+[26-Sep-2018 01:47:58 Asia/Manila] PHP Warning:  Invalid argument supplied for foreach() in C:\UwAmp310\www\despro\db.php on line 203
+[26-Sep-2018 01:47:58 Asia/Manila] PHP Stack trace:
+[26-Sep-2018 01:47:58 Asia/Manila] PHP   1. {main}() C:\UwAmp310\www\despro\rfid-handler.php:0
+[26-Sep-2018 01:47:58 Asia/Manila] PHP   2. pdo_db->updateData() C:\UwAmp310\www\despro\rfid-handler.php:21
+[26-Sep-2018 01:47:58 Asia/Manila] PHP Notice:  Undefined variable: pk_value in C:\UwAmp310\www\despro\db.php on line 225
+[26-Sep-2018 01:47:58 Asia/Manila] PHP Stack trace:
+[26-Sep-2018 01:47:58 Asia/Manila] PHP   1. {main}() C:\UwAmp310\www\despro\rfid-handler.php:0
+[26-Sep-2018 01:47:58 Asia/Manila] PHP   2. pdo_db->updateData() C:\UwAmp310\www\despro\rfid-handler.php:21
+[26-Sep-2018 01:47:58 Asia/Manila] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'WHERE rfid=?' at line 1 in C:\UwAmp310\www\despro\db.php:227
+Stack trace:
+#0 C:\UwAmp310\www\despro\db.php(227): PDO->prepare('UPDATE users SE...')
+#1 C:\UwAmp310\www\despro\rfid-handler.php(21): pdo_db->updateData(NULL, 'rfid')
+#2 {main}
+  thrown in C:\UwAmp310\www\despro\db.php on line 227
+[01-Oct-2018 10:35:52 Asia/Manila] PHP Fatal error:  Uncaught PDOException: SQLSTATE[01000]: Warning: 1265 Data truncated for column 'credit' at row 1 in C:\UwAmp310\www\despro\db.php:228
+Stack trace:
+#0 C:\UwAmp310\www\despro\db.php(228): PDOStatement->execute(Array)
+#1 C:\UwAmp310\www\despro\rfid-handler.php(46): pdo_db->updateData(Array, 'rfid')
+#2 {main}
+  thrown in C:\UwAmp310\www\despro\db.php on line 228
+[01-Oct-2018 10:37:05 Asia/Manila] PHP Fatal error:  Uncaught PDOException: SQLSTATE[01000]: Warning: 1265 Data truncated for column 'credit' at row 1 in C:\UwAmp310\www\despro\db.php:228
+Stack trace:
+#0 C:\UwAmp310\www\despro\db.php(228): PDOStatement->execute(Array)
+#1 C:\UwAmp310\www\despro\rfid-handler.php(46): pdo_db->updateData(Array, 'rfid')
+#2 {main}
+  thrown in C:\UwAmp310\www\despro\db.php on line 228
+[01-Oct-2018 10:40:23 Asia/Manila] PHP Fatal error:  Uncaught PDOException: SQLSTATE[01000]: Warning: 1265 Data truncated for column 'credit' at row 1 in C:\UwAmp310\www\despro\db.php:228
+Stack trace:
+#0 C:\UwAmp310\www\despro\db.php(228): PDOStatement->execute(Array)
+#1 C:\UwAmp310\www\despro\rfid-handler.php(46): pdo_db->updateData(Array, 'rfid')
+#2 {main}
+  thrown in C:\UwAmp310\www\despro\db.php on line 228
+[01-Oct-2018 10:44:13 Asia/Manila] PHP Fatal error:  Uncaught PDOException: SQLSTATE[01000]: Warning: 1265 Data truncated for column 'credit' at row 1 in C:\UwAmp310\www\despro\db.php:228
+Stack trace:
+#0 C:\UwAmp310\www\despro\db.php(228): PDOStatement->execute(Array)
+#1 C:\UwAmp310\www\despro\rfid-handler.php(46): pdo_db->updateData(Array, 'rfid')
+#2 {main}
+  thrown in C:\UwAmp310\www\despro\db.php on line 228
+[02-Oct-2018 22:19:55 Asia/Manila] PHP Fatal error:  Uncaught PDOException: SQLSTATE[22007]: Invalid datetime format: 1292 Incorrect datetime value: 'Tue- Oct 02 2018' for column 'date' at row 1 in C:\UwAmp310\www\despro\db.php:135
+Stack trace:
+#0 C:\UwAmp310\www\despro\db.php(135): PDOStatement->execute(Array)
+#1 C:\UwAmp310\www\despro\rfid-handler.php(38): pdo_db->insertData(Array)
+#2 {main}
+  thrown in C:\UwAmp310\www\despro\db.php on line 135
+[17-Nov-2018 13:16:52 Asia/Manila] PHP Fatal error:  Uncaught PDOException: SQLSTATE[HY000]: General error: 1364 Field 'container' doesn't have a default value in C:\UwAmp310\www\despro\db.php:135
+Stack trace:
+#0 C:\UwAmp310\www\despro\db.php(135): PDOStatement->execute(Array)
+#1 C:\UwAmp310\www\despro\rfid-handler.php(38): pdo_db->insertData(Array)
+#2 {main}
+  thrown in C:\UwAmp310\www\despro\db.php on line 135
+[17-Nov-2018 13:35:30 Asia/Manila] PHP Fatal error:  Uncaught PDOException: SQLSTATE[HY000]: General error: 1364 Field 'container' doesn't have a default value in C:\UwAmp310\www\despro\db.php:135
+Stack trace:
+#0 C:\UwAmp310\www\despro\db.php(135): PDOStatement->execute(Array)
+#1 C:\UwAmp310\www\despro\rfid-handler.php(38): pdo_db->insertData(Array)
+#2 {main}
+  thrown in C:\UwAmp310\www\despro\db.php on line 135
+[17-Nov-2018 13:36:22 Asia/Manila] PHP Notice:  Undefined index: cont in C:\UwAmp310\www\despro\rfid-handler.php on line 59
+[17-Nov-2018 13:36:22 Asia/Manila] PHP Stack trace:
+[17-Nov-2018 13:36:22 Asia/Manila] PHP   1. {main}() C:\UwAmp310\www\despro\rfid-handler.php:0
+[17-Nov-2018 13:36:22 Asia/Manila] PHP Fatal error:  Uncaught PDOException: SQLSTATE[23000]: Integrity constraint violation: 1048 Column 'container' cannot be null in C:\UwAmp310\www\despro\db.php:135
+Stack trace:
+#0 C:\UwAmp310\www\despro\db.php(135): PDOStatement->execute(Array)
+#1 C:\UwAmp310\www\despro\rfid-handler.php(62): pdo_db->insertData(Array)
+#2 {main}
+  thrown in C:\UwAmp310\www\despro\db.php on line 135
+[17-Nov-2018 13:38:14 Asia/Manila] PHP Fatal error:  Uncaught PDOException: SQLSTATE[HY000]: General error: 1364 Field 'container' doesn't have a default value in C:\UwAmp310\www\despro\db.php:135
+Stack trace:
+#0 C:\UwAmp310\www\despro\db.php(135): PDOStatement->execute(Array)
+#1 C:\UwAmp310\www\despro\rfid-handler.php(38): pdo_db->insertData(Array)
+#2 {main}
+  thrown in C:\UwAmp310\www\despro\db.php on line 135
+[17-Nov-2018 13:38:50 Asia/Manila] PHP Notice:  Undefined index: cont in C:\UwAmp310\www\despro\rfid-handler.php on line 59
+[17-Nov-2018 13:38:50 Asia/Manila] PHP Stack trace:
+[17-Nov-2018 13:38:50 Asia/Manila] PHP   1. {main}() C:\UwAmp310\www\despro\rfid-handler.php:0
+[17-Nov-2018 13:38:50 Asia/Manila] PHP Fatal error:  Uncaught PDOException: SQLSTATE[23000]: Integrity constraint violation: 1048 Column 'container' cannot be null in C:\UwAmp310\www\despro\db.php:135
+Stack trace:
+#0 C:\UwAmp310\www\despro\db.php(135): PDOStatement->execute(Array)
+#1 C:\UwAmp310\www\despro\rfid-handler.php(62): pdo_db->insertData(Array)
+#2 {main}
+  thrown in C:\UwAmp310\www\despro\db.php on line 135
+[17-Nov-2018 13:43:34 Asia/Manila] PHP Fatal error:  Uncaught PDOException: SQLSTATE[HY000]: General error: 1364 Field 'container' doesn't have a default value in C:\UwAmp310\www\despro\db.php:135
+Stack trace:
+#0 C:\UwAmp310\www\despro\db.php(135): PDOStatement->execute(Array)
+#1 C:\UwAmp310\www\despro\rfid-handler.php(38): pdo_db->insertData(Array)
+#2 {main}
+  thrown in C:\UwAmp310\www\despro\db.php on line 135
+[17-Nov-2018 13:45:21 Asia/Manila] PHP Fatal error:  Uncaught PDOException: SQLSTATE[HY000]: General error: 1364 Field 'container' doesn't have a default value in C:\UwAmp310\www\despro\db.php:135
+Stack trace:
+#0 C:\UwAmp310\www\despro\db.php(135): PDOStatement->execute(Array)
+#1 C:\UwAmp310\www\despro\rfid-handler.php(38): pdo_db->insertData(Array)
+#2 {main}
+  thrown in C:\UwAmp310\www\despro\db.php on line 135
+[17-Nov-2018 13:46:02 Asia/Manila] PHP Notice:  Undefined index: cont in C:\UwAmp310\www\despro\rfid-handler.php on line 59
+[17-Nov-2018 13:46:02 Asia/Manila] PHP Stack trace:
+[17-Nov-2018 13:46:02 Asia/Manila] PHP   1. {main}() C:\UwAmp310\www\despro\rfid-handler.php:0
+[17-Nov-2018 13:46:02 Asia/Manila] PHP Fatal error:  Uncaught PDOException: SQLSTATE[23000]: Integrity constraint violation: 1048 Column 'container' cannot be null in C:\UwAmp310\www\despro\db.php:135
+Stack trace:
+#0 C:\UwAmp310\www\despro\db.php(135): PDOStatement->execute(Array)
+#1 C:\UwAmp310\www\despro\rfid-handler.php(62): pdo_db->insertData(Array)
+#2 {main}
+  thrown in C:\UwAmp310\www\despro\db.php on line 135
+[17-Nov-2018 13:46:18 Asia/Manila] PHP Fatal error:  Uncaught PDOException: SQLSTATE[HY000]: General error: 1364 Field 'container' doesn't have a default value in C:\UwAmp310\www\despro\db.php:135
+Stack trace:
+#0 C:\UwAmp310\www\despro\db.php(135): PDOStatement->execute(Array)
+#1 C:\UwAmp310\www\despro\rfid-handler.php(38): pdo_db->insertData(Array)
+#2 {main}
+  thrown in C:\UwAmp310\www\despro\db.php on line 135
+[17-Nov-2018 13:47:29 Asia/Manila] PHP Fatal error:  Uncaught PDOException: SQLSTATE[HY000]: General error: 1364 Field 'container' doesn't have a default value in C:\UwAmp310\www\despro\db.php:135
+Stack trace:
+#0 C:\UwAmp310\www\despro\db.php(135): PDOStatement->execute(Array)
+#1 C:\UwAmp310\www\despro\rfid-handler.php(38): pdo_db->insertData(Array)
+#2 {main}
+  thrown in C:\UwAmp310\www\despro\db.php on line 135
+[17-Nov-2018 13:47:50 Asia/Manila] PHP Notice:  Undefined index: cont in C:\UwAmp310\www\despro\rfid-handler.php on line 59
+[17-Nov-2018 13:47:50 Asia/Manila] PHP Stack trace:
+[17-Nov-2018 13:47:50 Asia/Manila] PHP   1. {main}() C:\UwAmp310\www\despro\rfid-handler.php:0
+[17-Nov-2018 13:47:50 Asia/Manila] PHP Fatal error:  Uncaught PDOException: SQLSTATE[23000]: Integrity constraint violation: 1048 Column 'container' cannot be null in C:\UwAmp310\www\despro\db.php:135
+Stack trace:
+#0 C:\UwAmp310\www\despro\db.php(135): PDOStatement->execute(Array)
+#1 C:\UwAmp310\www\despro\rfid-handler.php(62): pdo_db->insertData(Array)
+#2 {main}
+  thrown in C:\UwAmp310\www\despro\db.php on line 135
+[17-Nov-2018 13:47:58 Asia/Manila] PHP Fatal error:  Uncaught PDOException: SQLSTATE[HY000]: General error: 1364 Field 'container' doesn't have a default value in C:\UwAmp310\www\despro\db.php:135
+Stack trace:
+#0 C:\UwAmp310\www\despro\db.php(135): PDOStatement->execute(Array)
+#1 C:\UwAmp310\www\despro\rfid-handler.php(38): pdo_db->insertData(Array)
+#2 {main}
+  thrown in C:\UwAmp310\www\despro\db.php on line 135
+[17-Nov-2018 13:52:01 Asia/Manila] PHP Fatal error:  Uncaught PDOException: SQLSTATE[HY000]: General error: 1364 Field 'container' doesn't have a default value in C:\UwAmp310\www\despro\db.php:135
+Stack trace:
+#0 C:\UwAmp310\www\despro\db.php(135): PDOStatement->execute(Array)
+#1 C:\UwAmp310\www\despro\rfid-handler.php(38): pdo_db->insertData(Array)
+#2 {main}
+  thrown in C:\UwAmp310\www\despro\db.php on line 135
+[17-Nov-2018 13:52:23 Asia/Manila] PHP Notice:  Undefined index: cont in C:\UwAmp310\www\despro\rfid-handler.php on line 59
+[17-Nov-2018 13:52:23 Asia/Manila] PHP Stack trace:
+[17-Nov-2018 13:52:23 Asia/Manila] PHP   1. {main}() C:\UwAmp310\www\despro\rfid-handler.php:0
+[17-Nov-2018 13:52:23 Asia/Manila] PHP Fatal error:  Uncaught PDOException: SQLSTATE[23000]: Integrity constraint violation: 1048 Column 'container' cannot be null in C:\UwAmp310\www\despro\db.php:135
+Stack trace:
+#0 C:\UwAmp310\www\despro\db.php(135): PDOStatement->execute(Array)
+#1 C:\UwAmp310\www\despro\rfid-handler.php(62): pdo_db->insertData(Array)
+#2 {main}
+  thrown in C:\UwAmp310\www\despro\db.php on line 135
+[17-Nov-2018 13:52:36 Asia/Manila] PHP Fatal error:  Uncaught PDOException: SQLSTATE[HY000]: General error: 1364 Field 'container' doesn't have a default value in C:\UwAmp310\www\despro\db.php:135
+Stack trace:
+#0 C:\UwAmp310\www\despro\db.php(135): PDOStatement->execute(Array)
+#1 C:\UwAmp310\www\despro\rfid-handler.php(38): pdo_db->insertData(Array)
+#2 {main}
+  thrown in C:\UwAmp310\www\despro\db.php on line 135
+[17-Nov-2018 13:54:12 Asia/Manila] PHP Fatal error:  Uncaught PDOException: SQLSTATE[HY000]: General error: 1364 Field 'container' doesn't have a default value in C:\UwAmp310\www\despro\db.php:135
+Stack trace:
+#0 C:\UwAmp310\www\despro\db.php(135): PDOStatement->execute(Array)
+#1 C:\UwAmp310\www\despro\rfid-handler.php(38): pdo_db->insertData(Array)
+#2 {main}
+  thrown in C:\UwAmp310\www\despro\db.php on line 135
+[17-Nov-2018 13:54:26 Asia/Manila] PHP Notice:  Undefined index: cont in C:\UwAmp310\www\despro\rfid-handler.php on line 59
+[17-Nov-2018 13:54:26 Asia/Manila] PHP Stack trace:
+[17-Nov-2018 13:54:26 Asia/Manila] PHP   1. {main}() C:\UwAmp310\www\despro\rfid-handler.php:0
+[17-Nov-2018 13:54:26 Asia/Manila] PHP Fatal error:  Uncaught PDOException: SQLSTATE[23000]: Integrity constraint violation: 1048 Column 'container' cannot be null in C:\UwAmp310\www\despro\db.php:135
+Stack trace:
+#0 C:\UwAmp310\www\despro\db.php(135): PDOStatement->execute(Array)
+#1 C:\UwAmp310\www\despro\rfid-handler.php(62): pdo_db->insertData(Array)
+#2 {main}
+  thrown in C:\UwAmp310\www\despro\db.php on line 135
+[17-Nov-2018 13:54:38 Asia/Manila] PHP Fatal error:  Uncaught PDOException: SQLSTATE[HY000]: General error: 1364 Field 'container' doesn't have a default value in C:\UwAmp310\www\despro\db.php:135
+Stack trace:
+#0 C:\UwAmp310\www\despro\db.php(135): PDOStatement->execute(Array)
+#1 C:\UwAmp310\www\despro\rfid-handler.php(38): pdo_db->insertData(Array)
+#2 {main}
+  thrown in C:\UwAmp310\www\despro\db.php on line 135
+[17-Nov-2018 13:54:55 Asia/Manila] PHP Fatal error:  Uncaught PDOException: SQLSTATE[HY000]: General error: 1364 Field 'container' doesn't have a default value in C:\UwAmp310\www\despro\db.php:135
+Stack trace:
+#0 C:\UwAmp310\www\despro\db.php(135): PDOStatement->execute(Array)
+#1 C:\UwAmp310\www\despro\rfid-handler.php(38): pdo_db->insertData(Array)
+#2 {main}
+  thrown in C:\UwAmp310\www\despro\db.php on line 135
+[17-Nov-2018 13:55:13 Asia/Manila] PHP Fatal error:  Uncaught PDOException: SQLSTATE[HY000]: General error: 1364 Field 'container' doesn't have a default value in C:\UwAmp310\www\despro\db.php:135
+Stack trace:
+#0 C:\UwAmp310\www\despro\db.php(135): PDOStatement->execute(Array)
+#1 C:\UwAmp310\www\despro\rfid-handler.php(38): pdo_db->insertData(Array)
+#2 {main}
+  thrown in C:\UwAmp310\www\despro\db.php on line 135
+[18-Nov-2018 21:44:32 Asia/Manila] PHP Fatal error:  Uncaught PDOException: SQLSTATE[HY000]: General error: 1364 Field 'container' doesn't have a default value in C:\UwAmp310\www\despro\db.php:135
+Stack trace:
+#0 C:\UwAmp310\www\despro\db.php(135): PDOStatement->execute(Array)
+#1 C:\UwAmp310\www\despro\rfid-handler.php(77): pdo_db->insertData(Array)
+#2 {main}
+  thrown in C:\UwAmp310\www\despro\db.php on line 135
+[18-Nov-2018 21:47:22 Asia/Manila] PHP Fatal error:  Uncaught PDOException: SQLSTATE[HY000]: General error: 1364 Field 'container' doesn't have a default value in C:\UwAmp310\www\despro\db.php:135
+Stack trace:
+#0 C:\UwAmp310\www\despro\db.php(135): PDOStatement->execute(Array)
+#1 C:\UwAmp310\www\despro\rfid-handler.php(77): pdo_db->insertData(Array)
+#2 {main}
+  thrown in C:\UwAmp310\www\despro\db.php on line 135
+[18-Nov-2018 21:47:56 Asia/Manila] PHP Fatal error:  Uncaught PDOException: SQLSTATE[HY000]: General error: 1364 Field 'container' doesn't have a default value in C:\UwAmp310\www\despro\db.php:135
+Stack trace:
+#0 C:\UwAmp310\www\despro\db.php(135): PDOStatement->execute(Array)
+#1 C:\UwAmp310\www\despro\rfid-handler.php(77): pdo_db->insertData(Array)
+#2 {main}
+  thrown in C:\UwAmp310\www\despro\db.php on line 135
+[18-Nov-2018 21:52:08 Asia/Manila] PHP Fatal error:  Uncaught PDOException: SQLSTATE[HY000]: General error: 1364 Field 'container' doesn't have a default value in C:\UwAmp310\www\despro\db.php:135
+Stack trace:
+#0 C:\UwAmp310\www\despro\db.php(135): PDOStatement->execute(Array)
+#1 C:\UwAmp310\www\despro\rfid-handler.php(77): pdo_db->insertData(Array)
+#2 {main}
+  thrown in C:\UwAmp310\www\despro\db.php on line 135
+[18-Nov-2018 21:56:18 Asia/Manila] PHP Fatal error:  Uncaught PDOException: SQLSTATE[HY000]: General error: 1364 Field 'container' doesn't have a default value in C:\UwAmp310\www\despro\db.php:135
+Stack trace:
+#0 C:\UwAmp310\www\despro\db.php(135): PDOStatement->execute(Array)
+#1 C:\UwAmp310\www\despro\rfid-handler.php(77): pdo_db->insertData(Array)
+#2 {main}
+  thrown in C:\UwAmp310\www\despro\db.php on line 135
+[18-Nov-2018 21:56:49 Asia/Manila] PHP Fatal error:  Uncaught PDOException: SQLSTATE[HY000]: General error: 1364 Field 'container' doesn't have a default value in C:\UwAmp310\www\despro\db.php:135
+Stack trace:
+#0 C:\UwAmp310\www\despro\db.php(135): PDOStatement->execute(Array)
+#1 C:\UwAmp310\www\despro\rfid-handler.php(77): pdo_db->insertData(Array)
+#2 {main}
+  thrown in C:\UwAmp310\www\despro\db.php on line 135
+[18-Nov-2018 21:58:44 Asia/Manila] PHP Fatal error:  Uncaught PDOException: SQLSTATE[HY000]: General error: 1364 Field 'container' doesn't have a default value in C:\UwAmp310\www\despro\db.php:135
+Stack trace:
+#0 C:\UwAmp310\www\despro\db.php(135): PDOStatement->execute(Array)
+#1 C:\UwAmp310\www\despro\rfid-handler.php(77): pdo_db->insertData(Array)
+#2 {main}
+  thrown in C:\UwAmp310\www\despro\db.php on line 135
+[18-Nov-2018 22:05:29 Asia/Manila] PHP Fatal error:  Uncaught PDOException: SQLSTATE[HY000]: General error: 1364 Field 'container' doesn't have a default value in C:\UwAmp310\www\despro\db.php:135
+Stack trace:
+#0 C:\UwAmp310\www\despro\db.php(135): PDOStatement->execute(Array)
+#1 C:\UwAmp310\www\despro\rfid-handler.php(77): pdo_db->insertData(Array)
+#2 {main}
+  thrown in C:\UwAmp310\www\despro\db.php on line 135

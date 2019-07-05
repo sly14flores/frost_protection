@@ -1,0 +1,19 @@
+Document Status
+APPROVED
+
+Tracking Status
+Picked up fro PA by ...
+
+Receive and transact
+document_status = 'Received'
+document_tracks_status = 'transaction'
+
+File
+document_status = 'Filed'
+document_tracks_status = 'filed'
+
+Update tracks
+
+if there's enough time finish notification
+
+Tooltip ok

@@ -1,0 +1,173 @@
+<?php
+
+require_once 'authentication.php';
+
+?>
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Benguet</title>
+    <link rel="shortcut icon" type="image/png" href="./imgs/benguet logo.png"/>
+    <link rel="stylesheet" href="./vendor/simple-line-icons/css/simple-line-icons.css">
+    <link rel="stylesheet" href="./vendor/font-awesome/css/fontawesome-all.min.css">
+    <link rel="stylesheet" href="./css/styles.css">
+</head>
+<body class="sidebar-fixed header-fixed" ng-app="profileList" ng-controller="profileListCtrl">
+<div class="page-wrapper">
+    <nav class="navbar page-header">
+        <a href="#" class="btn btn-link sidebar-mobile-toggle d-md-none mr-auto">
+            <i class="fa fa-bars"></i>
+        </a>
+
+        <a class="navbar-brand" href="javascript:;">
+            <img src="./imgs/benguet-logo.png" style ="width:200px; height: 45px;" alt="logo">
+        </a>
+
+        <a href="#" class="btn btn-link sidebar-toggle d-md-down-none">
+            <i class="fa fa-bars"></i>
+        </a>
+
+        <ul class="navbar-nav ml-auto">
+            <li class="nav-item dropdown" account-profile>
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    <img ng-src="{{profile.picture}}" class="avatar avatar-sm" alt="logo">
+                    <span class="small ml-1 d-md-down-none">{{profile.user}}</span>
+                </a>
+                <div class="dropdown-menu dropdown-menu-right" drop-down></div>
+            </li>
+        </ul>
+    </nav>
+
+    <div class="main-container">
+        <div class="sidebar">
+            <nav class="sidebar-nav">
+                <ul class="nav">
+                    <li class="nav-title">NAVIGATION</li>
+
+                    <li class="nav-item">
+                        <a href="index.html" class="nav-link">
+                            <i class="icon icon-speedometer"></i>Dashboard
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="user-profile.html" class="nav-link">
+                            <i class="icon icon-user"></i>User Profile
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="users-list.html" class="nav-link active">
+                            <i class="icon icon-people"></i>Users
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <span><br><br><img src="imgs/benguet logo.png" width="160px" height="160px" style="margin-left: 35px;"></span>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+
+        <div class="content">
+            <div class="container-fluid">
+				<div class="row">
+					<div class="col-md-6">
+						<div class="input-group">					
+                            <span class="input-group-btn">
+                                <button type="button" class="btn btn-primary"><i class="fa fa-search"></i> Search</button>
+                            </span>
+                            <input type="text" id="input-group-1" name="input1-group2" class="form-control" ng-model="search" placeholder="">
+                        </div>
+                        <hr>
+					</div>
+				</div>				
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="card">
+                            <div class="card-header bg-light">
+                                List of Users
+                            </div>
+							<div class="card-body">
+								<div class = "row">
+									<table class="table table-hover">
+										<thead>
+											<tr>
+                                                <th>First Name</th>
+                                                <th>Middle Name</th>
+                                                <th>Last Name</th>
+                                                <th>Phone</th>
+                                                <th>Address</th>
+                                                <th>Location</th>
+												<th>Group</th>
+                                                <th>Options</th>
+                                            </tr>
+										</thead>
+										<tbody>
+											<tr ng-repeat="u in filterData = (users | filter:search) | pagination: currentPage:pageSize">
+                                            <td class="text-capitalize">{{u.fname}}</td>
+                                            <td class="text-capitalize">{{u.mname}}</td>
+                                            <td class="text-capitalize">{{u.lname}}</td>
+											<td>{{u.phone}}</td>
+                                            <td>{{u.address}}</td>
+                                            <td>{{u.location_name}}</td>
+                                            <td>{{u.group_name}}</td>
+                                            <td>
+                                                
+                                                <button class="btn btn-outline-primary circle" ng-click="app.view(this,u)"><i class="fas fa-search"></i></button>
+                                                <button class="btn btn-outline-danger circle" ng-click="app.delete(this,u)"><i class="fas fa-trash"></i></button>
+                                            </td>
+											</tr>
+										</tbody>
+
+										<tfoot><!-- added pagination feature -->
+
+											<tr>
+												<td colspan="9" style="text-align: center;">
+													<div class="float-right"><ul uib-pagination direction-links="false" boundary-links="true" total-items="filterData.length" ng-model="currentPage" max-size="maxSize"></ul></div>
+ 											    </td>
+											</tr>											
+										</tfoot>
+									</table>
+								</div>
+
+							</div>
+
+                        </div>
+                    </div>
+                </div>
+			</div>
+        </div><!-- /content -->
+    </div>
+</div>
+<script src="./vendor/jquery/jquery.min.js"></script>
+<script src="./vendor/popper.js/popper.min.js"></script>
+<script src="./vendor/bootstrap/js/bootstrap.min.js"></script>
+<script src="./vendor/chart.js/chart.min.js"></script>
+<script src="./js/carbon.js"></script>
+<script src="./js/demo.js"></script>
+
+<!-- dependencies -->
+<script src="vendor/bootbox/bootbox.min.js"></script>
+<script src="vendor/growl/jquery.bootstrap-growl.min.js"></script>
+<script src="vendor/blockui/jquery.blockUI.js"></script>
+
+<script src="angular/angular.min.js"></script>
+<script src="angular/angular-route.min.js"></script>
+<script src="angular/angular-sanitize.min.js"></script>
+<script src="angular/ui-bootstrap-tpls-3.0.2.min.js"></script>
+
+<!-- modules -->
+<script src="modules/bootstrap-modal.js"></script>
+<script src="modules/account.js"></script>
+<script src="modules/notifications.js"></script>
+<script src="modules/module-access.js"></script>
+<script src="modules/validate.js"></script>
+<script src="modules/blockui.js"></script>
+<script src="modules/growl.js"></script>
+<script src="modules/user-profile.js"></script>
+<!-- controller -->
+<script src="controllers/users-list.js"></script>
+
+</body>
+</html>
