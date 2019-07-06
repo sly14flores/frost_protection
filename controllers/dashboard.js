@@ -19,7 +19,7 @@ app.controller('dashboardCtrl',function($scope,$http,dashboard,$interval) {
 	
 	$scope.initMap = function() {
 		
-		var latlng = {lat: 16.632507, lng: 120.317550}; // this should be the lat lng of location with id 1
+		var latlng = {lat: 16.5974, lng: 120.6890}; // this should be the lat lng of location with id 1
 
 		$scope.map = new google.maps.Map(
 		  document.getElementById('map'), {zoom: 10, center: latlng, mapTypeId: google.maps.MapTypeId.HYBRID});
@@ -38,7 +38,7 @@ app.controller('dashboardCtrl',function($scope,$http,dashboard,$interval) {
 			
     		$scope.marker.setVisible(true);
     		$scope.marker.setPosition(response.data);
-    		$scope.map.setZoom(10);
+    		$scope.map.setZoom(15);
     		$scope.map.setCenter(response.data);
 			
 		}, function error(response) {
