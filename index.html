@@ -86,7 +86,7 @@ require_once 'authentication.php';
 					<div class="col-lg-7">
 						<div class="card">
 							<div class="card-header bg-light">
-								<strong>Locations</strong>
+								<strong>Real-time Reading</strong>
 							</div>
 							<div class="card-body">
 								<table class="table table-striped" style="font-size: 11px;">
@@ -113,108 +113,210 @@ require_once 'authentication.php';
 						</div>						
 					</div>
 				</div>
+
+<!-- 
+                <div class="row">                   
+                    <div class="col-lg-6">
+                        <div class="card">
+                            <div class="card-header bg-light">
+                                <strong>Farmers</strong>
+                            </div>
+                            <div class="card-body">
+                                <table class="table table-striped" style="font-size: 11px;">
+                                    <thead>
+                                        <tr><th>#</th><th>Name</th><th>Location</th></tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr ng-repeat="farmer in farmers"><td>{{$index+1}}</td><td>{{farmer.fullname}}</td><td>{{farmer.location}}</td></tr>
+                                    </tbody>
+                                </table>
+                            </div>                      
+                        </div>                  
+                    </div>
+                </div> -->
 				
                 <hr>
-
-                <div class="row">                   
-                    <div class="col-lg-4">
-                        <div class="card">
-                            <div class="card-body d-flex justify-content-between align-items-center">
-                                <div>
-                                    <span class="h2 d-block font-weight-normal mb-2" style="font-size:2em">{{dash.zero_balance}}</span>
-                                    <span class="font-weight-normal" style="font-size:1.4em">Average Temperature </span>
-                                </div>
-
-                                <div class="h2 text-muted">
-                                    <i class="fas fa-thermometer-half" style="font-size:2em;color:black;"></i>
-                                </div>
-                            </div>                                                
-                        </div>                  
-                    </div>
-                    <div class="col-lg-4">
-                        <div class="card">
-                            <div class="card-body d-flex justify-content-between align-items-center">
-                                <div>
-                                    <span class="h2 d-block font-weight-normal mb-2" style="font-size:2em">{{dash.zero_balance}}</span>
-                                    <span class="font-weight-normal" style="font-size:1.4em">Average Humidity </span>
-                                </div>
-
-                                <div class="h2 text-muted">
-                                    <i class="fas fa-tint" style="font-size:2em;color:#0099ff;"></i>
-                                </div>
-                            </div>                                                
-                        </div>                  
-                    </div>
-                    <div class="col-lg-4">
-                        <div class="card">
-                            <div class="card-body d-flex justify-content-between align-items-center">
-                                <div>
-                                    <span class="h2 d-block font-weight-normal mb-2" style="font-size:2em">{{dash.zero_balance}}</span>
-                                    <span class="font-weight-normal" style="font-size:1.4em">Average % of Soil Moisture </span>
-                                </div>
-
-                                <div class="h2 text-muted">
-                                    <i class="fas fa-tint" style="font-size:2em;color:#0099ff;"></i>
-                                    <i class="fas fa-bars" style="font-size:1em;color:black;"></i>
-                                </div>
-                            </div>                                             
-                        </div>                  
-                    </div>
-                </div>
                 
-                <div class="row">                   
-                    <div class="col-lg-4 offset-2">
-                        <div class="card">
-                            <div class="card-body d-flex justify-content-between align-items-center">
-                                <div>
-                                    <span class="h2 d-block font-weight-normal mb-2" style="font-size:2em">{{dash.zero_balance}}</span>
-                                    <span class="font-weight-normal" style="font-size:1.4em">Average % of Dew Moisture</span>
+                <div class="row" style="margin-bottom: 20px">
+                    <div class="col-md-3">
+                        <div class="card h-100">
+                            <div class="card-body p-5">
+                                <div class="text-center">
+                                    <span class="h3 d-block font-weight-bold mb-2">232</span>
+                                    <span class="font-weight-normal mb-6">Daily Temperature</span>
+                                    <br><br>
+                                    <span class="font-weight-light">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</span>
                                 </div>
 
-                                <div class="h2 text-muted">
-                                    <i class="fas fa-tint" style="font-size:2em;color:#0099ff;"></i>
-                                    <i class="fas fa-tint" style="font-size:1em;color:#0099ff;"></i>
+                                <div class="mt-4">
+                                    <div class="progress">
+                                        <div class="progress-bar bg-info" role="progressbar" style="width: 65%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">65</div>
+                                    </div>
                                 </div>
-                            </div>                                                
-                        </div>                  
+                            </div>
+                        </div>
                     </div>
-                    <div class="col-lg-4">
-                        <div class="card">
-                            
-                            <div class="card-body d-flex justify-content-between align-items-center">
-                                <div>
-                                    <span class="h2 d-block font-weight-normal mb-2" style="font-size:2em">{{dash.zero_balance}}</span>
-                                    <span class="font-weight-normal" style="font-size:1.4em">Average Occurence of Rain </span>
+                    <div class="col-md-9">
+                        <div class="card h-100">
+                            <div class="card-header">
+                                Weekly Average Temperature
+                            </div>
+
+                            <div class="card-body p-0">
+                                <div class="p-4">
+                                    <canvas id="line-chart" width="100%" height="20"></canvas>
                                 </div>
 
-                                <div class="h2 text-muted">
-                                    <i class="fas fa-umbrella" style="font-size:2em;color:black;"></i>
-                                </div>
-                              
-                            </div>                                                
-                        </div>                  
+                                
+                            </div>
+                        </div>
                     </div>
                 </div>
 
-				<div class="row">					
-					<div class="col-lg-6">
-						<div class="card">
-							<div class="card-header bg-light">
-								<strong>Farmers</strong>
-							</div>
-							<div class="card-body">
-								<table class="table table-striped" style="font-size: 11px;">
-									<thead>
-										<tr><th>#</th><th>Name</th><th>Location</th></tr>
-									</thead>
-									<tbody>
-										<tr ng-repeat="farmer in farmers"><td>{{$index+1}}</td><td>{{farmer.fullname}}</td><td>{{farmer.location}}</td></tr>
-									</tbody>
-								</table>
-							</div>						
-						</div>					
-					</div>
-				</div>
+                <div class="row" style="margin-bottom: 20px">
+                    <div class="col-md-3">
+                        <div class="card h-100">
+                            <div class="card-body p-5">
+                                <div class="text-center">
+                                    <span class="h3 d-block font-weight-bold mb-2">232</span>
+                                    <span class="font-weight-normal mb-6">Daily Humidity</span>
+                                    <br><br>
+                                    <span class="font-weight-light">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</span>
+                                </div>
+
+                                <div class="mt-4">
+                                    <div class="progress">
+                                        <div class="progress-bar bg-info" role="progressbar" style="width: 65%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">65</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-9">
+                        <div class="card h-100">
+                            <div class="card-header">
+                                Weekly Average Humidity
+                            </div>
+
+                            <div class="card-body p-0">
+                                <div class="p-4">
+                                    <canvas id="line-chart" width="100%" height="20"></canvas>
+                                </div>
+
+                                
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row" style="margin-bottom: 20px">
+                    <div class="col-md-3">
+                        <div class="card h-100">
+                            <div class="card-body p-5">
+                                <div class="text-center">
+                                    <span class="h3 d-block font-weight-bold mb-2">232</span>
+                                    <span class="font-weight-normal mb-6">Daily Soil Moisture</span>
+                                    <br><br>
+                                    <span class="font-weight-light">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</span>
+                                </div>
+
+                                <div class="mt-4">
+                                    <div class="progress">
+                                        <div class="progress-bar bg-info" role="progressbar" style="width: 65%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">65</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-9">
+                        <div class="card h-100">
+                            <div class="card-header">
+                                Weekly Average Soil Moisture
+                            </div>
+
+                            <div class="card-body p-0">
+                                <div class="p-4">
+                                    <canvas id="line-chart" width="100%" height="20"></canvas>
+                                </div>
+
+                                
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row" style="margin-bottom: 20px">
+                    <div class="col-md-3">
+                        <div class="card h-100">
+                            <div class="card-body p-5">
+                                <div class="text-center">
+                                    <span class="h3 d-block font-weight-bold mb-2">232</span>
+                                    <span class="font-weight-normal mb-6">Daily Dew Moisture</span>
+                                    <br><br>
+                                    <span class="font-weight-light">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</span>
+                                </div>
+
+                                <div class="mt-4">
+                                    <div class="progress">
+                                        <div class="progress-bar bg-info" role="progressbar" style="width: 65%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">65</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-9">
+                        <div class="card h-100">
+                            <div class="card-header">
+                                Weekly Average Dew Moisture
+                            </div>
+
+                            <div class="card-body p-0">
+                                <div class="p-4">
+                                    <canvas id="line-chart" width="100%" height="20"></canvas>
+                                </div>
+
+                                
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row" style="margin-bottom: 20px">
+                    <div class="col-md-3">
+                        <div class="card h-100">
+                            <div class="card-body p-5">
+                                <div class="text-center">
+                                    <span class="h3 d-block font-weight-bold mb-2">232</span>
+                                    <span class="font-weight-normal mb-6">Daily Rain</span>
+                                    <br><br>
+                                    <span class="font-weight-light">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</span>
+                                </div>
+
+                                <div class="mt-4">
+                                    <div class="progress">
+                                        <div class="progress-bar bg-info" role="progressbar" style="width: 65%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">65</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-9">
+                        <div class="card h-100">
+                            <div class="card-header">
+                                Weekly Average Rain
+                            </div>
+
+                            <div class="card-body p-0">
+                                <div class="p-4">
+                                    <canvas id="line-chart" width="100%" height="20"></canvas>
+                                </div>
+
+                                
+                            </div>
+                        </div>
+                    </div>
+                </div>
+               
 
 			</div>
 		</div>
