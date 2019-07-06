@@ -1,4 +1,4 @@
-angular.module('dashboard-module', ['ngSanitize','ui.bootstrap','bootstrap-modal','block-ui','module-access','anguFixedHeaderTable']).factory('dashboard', function($http,$timeout,$compile,$window,bootstrapModal,bui,access) {
+angular.module('dashboard-module', ['ngSanitize','ui.bootstrap','bootstrap-modal','block-ui','anguFixedHeaderTable']).factory('dashboard', function($http,$timeout,$compile,$window,bootstrapModal,bui) {
 	
 	function dashboard() {
 		

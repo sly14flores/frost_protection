@@ -23,7 +23,7 @@
 .w_scroll {
 	display: block;
 	overflow-y:auto;
-    max-height:380px;
+    height:425px;
 }
 
 

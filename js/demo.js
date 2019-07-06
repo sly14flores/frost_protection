@@ -2,7 +2,7 @@ $(document).ready(function () {
     /**
      * Line Chart
      */
-    var lineChart = $('#line-chart');
+    var lineChart = $('#line-chart1');
 
     if (lineChart.length > 0) {
         new Chart(lineChart, {
@@ -11,7 +11,7 @@ $(document).ready(function () {
                 labels: ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"],
                 datasets: [{
                     label: 'Users',
-                    data: [12, 19, 3, 5, 2, 3, 20, 33, 23, 12, 33, 10],
+                    data: [12, 19, 3, 5, 2, 3, 20, 3, 23, 12, 33, 10],
                     backgroundColor: 'rgba(66, 165, 245, 0.5)',
                     borderColor: '#2196F3',
                     borderWidth: 1
