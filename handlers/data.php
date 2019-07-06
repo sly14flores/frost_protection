@@ -5,10 +5,10 @@ require_once '../db.php';
 
 $con = new pdo_db("humidities");
 
-$list = $con->getData("SELECT * FROM humidities");
+$entries_list = $con->getData("SELECT * FROM humidities");
 
 
-echo json_encode($list);
+echo json_encode($entries_list);
 
 ?>
 
