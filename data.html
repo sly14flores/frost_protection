@@ -15,7 +15,7 @@ require_once 'authentication.php';
     <link rel="stylesheet" href="./vendor/font-awesome/css/fontawesome-all.min.css">
     <link rel="stylesheet" href="./css/styles.css">
 </head>
-<body class="sidebar-fixed header-fixed" ng-app="profileList" ng-controller="profileListCtrl">
+<body class="sidebar-fixed header-fixed" ng-app="dataList" ng-controller="dataListCtrl">
 <div class="page-wrapper">
     <nav class="navbar page-header">
         <a href="#" class="btn btn-link sidebar-mobile-toggle d-md-none mr-auto">
@@ -53,7 +53,7 @@ require_once 'authentication.php';
                         </a>
                     </li>
                     <li class="nav-item">
-                        <a href="data.html" class="nav-link">
+                        <a href="data.html" class="nav-link active">
                             <i class="icon icon-graph"></i>Data Logs
                         </a>
                     </li>
@@ -63,7 +63,7 @@ require_once 'authentication.php';
                         </a>
                     </li>
                     <li class="nav-item">
-                        <a href="users-list.html" class="nav-link active">
+                        <a href="users-list.html" class="nav-link">
                             <i class="icon icon-people"></i>Users
                         </a>
                     </li>
@@ -76,72 +76,61 @@ require_once 'authentication.php';
 
         <div class="content">
             <div class="container-fluid">
-				<div class="row">
-					<div class="col-md-6">
-						<div class="input-group">					
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="input-group">                   
                             <span class="input-group-btn">
                                 <button type="button" class="btn btn-primary"><i class="fa fa-search"></i> Search</button>
                             </span>
                             <input type="text" id="input-group-1" name="input1-group2" class="form-control" ng-model="search" placeholder="">
                         </div>
                         <hr>
-					</div>
-				</div>				
+                    </div>
+                </div>              
                 <div class="row">
                     <div class="col-md-12">
                         <div class="card">
                             <div class="card-header bg-light">
-                                List of Users
+                                Logs
                             </div>
-							<div class="card-body">
-								<div class = "row">
-									<table class="table table-hover">
-										<thead>
-											<tr>
+                            <div class="card-body">
+                                <div class = "row">
+                                    <table class="table table-hover">
+                                        <thead>
+                                            <tr>
                                                 <th>First Name</th>
                                                 <th>Middle Name</th>
                                                 <th>Last Name</th>
-                                                <th>Phone</th>
-                                                <th>Address</th>
-                                                <th>Location</th>
-												<th>Group</th>
-                                                <th>Options</th>
-                                            </tr>
-										</thead>
-										<tbody>
-											<tr ng-repeat="u in filterData = (users | filter:search) | pagination: currentPage:pageSize">
-                                            <td class="text-capitalize">{{u.fname}}</td>
-                                            <td class="text-capitalize">{{u.mname}}</td>
-                                            <td class="text-capitalize">{{u.lname}}</td>
-											<td>{{u.phone}}</td>
-                                            <td>{{u.address}}</td>
-                                            <td>{{u.location_name}}</td>
-                                            <td>{{u.group_name}}</td>
-                                            <td>
                                                 
-                                                <button class="btn btn-outline-primary circle" ng-click="app.view(this,u)"><i class="fas fa-search"></i></button>
-                                                <button class="btn btn-outline-danger circle" ng-click="app.delete(this,u)"><i class="fas fa-trash"></i></button>
-                                            </td>
-											</tr>
-										</tbody>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr ng-repeat="u in filterData = (list | filter:search) | pagination: currentPage:pageSize">
+                                            <td class="text-capitalize">{{l.location_id}}</td>
+                                            <td class="text-capitalize">{{l.sensor_value}}</td>
+                                            <td class="text-capitalize">{{l.system_log}}</td>
+                                            
+                                            
+                                            </tr>
+                                        </tbody>
 
-										<tfoot><!-- added pagination feature -->
+                                        <tfoot><!-- added pagination feature -->
 
-											<tr>
-												<td colspan="9" style="text-align: center;">
-													<div class="float-right"><ul uib-pagination direction-links="false" boundary-links="true" total-items="filterData.length" ng-model="currentPage" max-size="maxSize"></ul></div>
- 											    </td>
-											</tr>											
-										</tfoot>
-									</table>
-								</div>
+                                            <tr>
+                                                <td colspan="9" style="text-align: center;">
+                                                    <div class="float-right"><ul uib-pagination direction-links="false" boundary-links="true" total-items="filterData.length" ng-model="currentPage" max-size="maxSize"></ul></div>
+                                                </td>
+                                            </tr>                                           
+                                        </tfoot>
+                                    </table>
+                                </div>
 
-							</div>
+                            </div>
 
                         </div>
                     </div>
                 </div>
-			</div>
+            </div>
         </div><!-- /content -->
     </div>
 </div>
@@ -170,9 +159,9 @@ require_once 'authentication.php';
 <script src="modules/validate.js"></script>
 <script src="modules/blockui.js"></script>
 <script src="modules/growl.js"></script>
-<script src="modules/user-profile.js"></script>
+<script src="modules/data.js"></script>
 <!-- controller -->
-<script src="controllers/users-list.js"></script>
+<script src="controllers/data.js"></script>
 
 </body>
 </html>
