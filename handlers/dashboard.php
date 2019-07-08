@@ -97,7 +97,7 @@ if (count($moisture_rain)) {
 	
 };
 
-if ($last_update != "") $locations[$i]['last_update'] = date("F j, Y",strtotime($last_update))."<br><strong>".date("h:i A",strtotime($last_update))."</strong>";
+if ($last_update != "") $locations[$i]['last_update'] = date("F j, Y",strtotime($last_update))."<br><br><strong>".date("h:i A",strtotime($last_update))."</strong>";
 else $locations[$i]['last_update'] = "";
 
 };
