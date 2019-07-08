@@ -120,13 +120,15 @@ require_once 'authentication.php';
 				</div>
 				
                 <hr>
-                <div class="col-md-6">
-                    <div class="form-group">
-                        <label>Locations</label>
-                        <select class="form-control" name="location_id" ng-class="{'is-invalid': formHolder.location.location_id.$touched && formHolder.user.location_id.$invalid}" ng-model="location.location_id" ng-options="location.location for location in location track by location.id" ng-disabled="controls.btns.ok" required></select>
-                                                                 
-                    </div>
+				<div class="row">
+					<div class="col-md-6">
+						<div class="form-group">
+							<label>Locations</label>
+							<select class="form-control" ng-model="select.location" ng-options="l.location for l in locations track by l.id"></select>									 
+						</div>
+					</div>
                 </div>
+				<hr>
                 <div class="row" style="margin-bottom: 20px">
                     <div class="col-md-3">
                         <div class="card h-100">

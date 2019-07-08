@@ -10,9 +10,29 @@ angular.module('dashboard-module', ['ngSanitize','ui.bootstrap','bootstrap-modal
 		
 			mqtt_connect(scope);
 			locations(scope);
+			locations_select(scope);
 			
 			farmers(scope);
+			
+			scope.locations = [];
+			
+			scope.select = {};
+			scope.select.location = {id: 1, location: "Location 1"};
 		
+		};
+
+		function locations_select(scope) {
+			
+			$http({
+				url: 'handlers/locations.php',
+				method: 'GET',			
+			}).then(function success(response) {
+				
+				scope.locations = angular.copy(response.data);
+				
+			}, function error(response) {
+				
+			});			
 		};
 
 		function farmers(scope) {
