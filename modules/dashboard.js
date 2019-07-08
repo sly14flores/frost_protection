@@ -63,6 +63,7 @@ angular.module('dashboard-module', ['ngSanitize','ui.bootstrap','bootstrap-modal
 			  // Once a connection has been made, make a subscription and send a message.
 			  console.log("Mqtt client connected");
 			  
+			  scope.mqtt_client.subscribe("benguet/data");
 			  scope.mqtt_client.subscribe("benguet/location/1");
 			  scope.mqtt_client.subscribe("benguet/location/2");
 			  scope.mqtt_client.subscribe("benguet/location/3");
@@ -97,57 +98,23 @@ angular.module('dashboard-module', ['ngSanitize','ui.bootstrap','bootstrap-modal
 				
 				switch (topic) {
 					
-					case "benguet/location/1":
+					case "benguet/data":
 
-						console.log("Location: 1");
-						log_location_values(1,payload)
-
-					break;
-					
-					case "benguet/location/2":
-
-						console.log("Location: 2");
-						log_location_values(2,payload)
-
-					break;
-
-					case "benguet/location/3":
-
-						console.log("Location: 3");
-						log_location_values(3,payload)
-
-					break;
-
-					case "benguet/location/4":
-
-						console.log("Location: 4");
-						log_location_values(4,payload)
-
-					break;
-
-					case "benguet/location/5":
-
-						console.log("Location: 5");
-						log_location_values(5,payload)
-
-					break;
-
-					case "benguet/location/6":
-
-						console.log("Location: 6");
-
-					break;          
+						console.log("Data received");
+						log_location_values(payload);						
+						
+					break;        
 					
 				};
 			  
 			};
 
-			function log_location_values(loc,payload) {
+			function log_location_values(payload) {
 				
 				$http({
 					url: 'handlers/location-values.php',
 					method: 'POST',
-					data: {id: loc, data: payload}
+					data: {data: payload}
 				}).then(function success(response) {
 					
 					locations(scope);
