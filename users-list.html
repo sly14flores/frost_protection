@@ -82,7 +82,7 @@ require_once 'authentication.php';
                             <span class="input-group-btn">
                                 <button type="button" class="btn btn-primary"><i class="fa fa-search"></i> Search</button>
                             </span>
-                            <input type="text" id="input-group-1" name="input1-group2" class="form-control" ng-model="search" placeholder="">
+                            <input type="text" id="input-group-1" name="input1-group2" class="form-control" ng-model="search2" placeholder="">
                         </div>
                         <hr>
 					</div>
@@ -109,7 +109,7 @@ require_once 'authentication.php';
                                             </tr>
 										</thead>
 										<tbody>
-											<tr ng-repeat="u in filterData = (users | filter:search) | pagination: currentPage:pageSize">
+											<tr ng-repeat="u in filterData = (users | filter:search2) | pagination: currentPage:pageSize">
                                             <td class="text-capitalize">{{u.fname}}</td>
                                             <td class="text-capitalize">{{u.mname}}</td>
                                             <td class="text-capitalize">{{u.lname}}</td>

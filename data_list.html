@@ -118,7 +118,14 @@ require_once 'authentication.php';
                             <div class="col-md-6" style="margin-top: 20px;">
                             <div class="form-group">
                                 <label>Factor</label>
-                                <select class="form-control" required></select>
+                                <select class="form-control" ng-model="category" required>
+                                    <option value="">Select</option>
+                                    <option value="temperature">Temperature</option>
+                                    <option value="humidity">Humidity</option>
+                                    <option value="soil">Soil Moisture</option>
+                                    <option value="dew">Dew Moisture</option>
+                                    <option value="rain">Rain</option>
+                                </select>
                                 <div class="invalid-feedback"></div>                                           
                             </div>
                         </div>
@@ -135,7 +142,7 @@ require_once 'authentication.php';
                                             </tr>
                                         </thead>
                                         <tbody>
-                                            <tr ng-repeat="l in filterData = (entries_list | filter:search)">
+                                            <tr ng-repeat="l in filterData = (entries_list | filter:category)">
                                             <td class="text-capitalize">{{l.location_id}}</td>
                                             <td class="text-capitalize">{{l.sensor_value}}</td>
                                             <td class="text-capitalize">{{l.system_log | date:'MMM dd yyyy'}}</td>
@@ -163,7 +170,7 @@ require_once 'authentication.php';
                                             </tr>
                                         </thead>
                                         <tbody>
-                                            <tr ng-repeat="l in filterData = (entries_list | filter:search)">
+                                            <tr ng-repeat="l in filterData = (entries_list | filter:category)">
                                             <td class="text-capitalize">{{l.location_id}}</td>
                                             <td class="text-capitalize">{{l.sensor_value}}</td>
                                             <td class="text-capitalize">{{l.system_log}}</td>
@@ -192,7 +199,7 @@ require_once 'authentication.php';
                                             </tr>
                                         </thead>
                                         <tbody>
-                                            <tr ng-repeat="l in filterData = (entries_list | filter:search)">
+                                            <tr ng-repeat="l in filterData = (entries_list | filter:category)">
                                             <td class="text-capitalize">{{l.location_id}}</td>
                                             <td class="text-capitalize">{{l.sensor_value}}</td>
                                             <td class="text-capitalize">{{l.system_log}}</td>
