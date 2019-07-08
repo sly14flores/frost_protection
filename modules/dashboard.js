@@ -18,6 +18,7 @@ angular.module('dashboard-module', ['ngSanitize','ui.bootstrap','bootstrap-modal
 			
 			scope.select = {};
 			scope.select.location = {id: 1, location: "Location 1"};
+			self.location_selected(scope);
 		
 		};
 
@@ -47,6 +48,22 @@ angular.module('dashboard-module', ['ngSanitize','ui.bootstrap','bootstrap-modal
 			}, function error(response) {
 				
 			});			
+		};
+
+		self.location_selected = function(scope) {
+			
+			$http({
+				url: 'handlers/select-location.php',
+				method: 'POST',
+				data: {id: scope.select.location.id}
+			}).then(function success(response) {
+				
+
+				
+			}, function error(response) {
+				
+			});			
+			
 		};
 
 		function locations(scope) {
