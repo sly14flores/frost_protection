@@ -78,7 +78,7 @@ angular.module('dashboard-module', ['ngSanitize','ui.bootstrap','bootstrap-modal
 						data: {
 							labels: charts.temperature.dates,
 							datasets: [{
-								label: 'Users',
+								label: 'Temperature',
 								data: charts.temperature.data,
 								backgroundColor: 'rgba(156,204,101,.5)',
 								borderColor: '#9CCC65',
@@ -108,7 +108,7 @@ angular.module('dashboard-module', ['ngSanitize','ui.bootstrap','bootstrap-modal
 						data: {
 							labels: charts.humidity.dates,
 							datasets: [{
-								label: 'Users',
+								label: 'Humidity',
 								data: charts.humidity.data,
 								backgroundColor: 'rgba(255,202,40,0.5)',
 								borderColor: '#FFCA28',
@@ -138,7 +138,7 @@ angular.module('dashboard-module', ['ngSanitize','ui.bootstrap','bootstrap-modal
 						data: {
 							labels: charts.soil.dates,
 							datasets: [{
-								label: 'Users',
+								label: 'Soil Moisture',
 								data: charts.soil.data,
 								backgroundColor: 'rgba(38,198,218,0.5)',
 								borderColor: '#26c6da',
@@ -168,7 +168,7 @@ angular.module('dashboard-module', ['ngSanitize','ui.bootstrap','bootstrap-modal
 						data: {
 							labels: charts.dew.dates,
 							datasets: [{
-								label: 'Users',
+								label: 'Dew Moisture',
 								data: charts.dew.data,
 								backgroundColor: 'rgba(66, 165, 245, 0.5)',
 								borderColor: '#2196F3',
@@ -198,7 +198,7 @@ angular.module('dashboard-module', ['ngSanitize','ui.bootstrap','bootstrap-modal
 						data: {
 							labels: charts.rain.dates,
 							datasets: [{
-								label: 'Users',
+								label: 'Rain',
 								data: charts.rain.data,
 								backgroundColor: 'rgba(232, 142, 89, 0.5)',
 								borderColor: '#e88e59',
