@@ -23,7 +23,7 @@ for ( $day=$first; strtotime($day)<=strtotime($now); $day=date("Y-m-d",strtotime
 
 	// temperature | temperatures
 	$charts['temperature']['dates'][] = date("n/j/Y (D)",strtotime($day));
-	$q_temperature = $con->getData("SELECT IFNULL(AVG(sensor_value),0) sensor_value FROM temperatures WHERE system_log LIKE '$day%'");
+	$q_temperature = $con->getData("SELECT IFNULL(AVG(sensor_value),0) sensor_value FROM temperatures WHERE location_id = $id AND system_log LIKE '$day%'");
 	$temperature = 0;
 	if (count($q_temperature)) {
 		$temperature = $q_temperature[0]['sensor_value'];	
@@ -31,7 +31,7 @@ for ( $day=$first; strtotime($day)<=strtotime($now); $day=date("Y-m-d",strtotime
 	$charts['temperature']['data'][] = abs(ceil($temperature));
 	
 	// humidity | humidities
-	$q_humidity = $con->getData("SELECT IFNULL(AVG(sensor_value),0) sensor_value FROM humidities WHERE system_log LIKE '$day%'");	
+	$q_humidity = $con->getData("SELECT IFNULL(AVG(sensor_value),0) sensor_value FROM humidities WHERE location_id = $id AND system_log LIKE '$day%'");	
 	$charts['humidity']['dates'][] = date("n/j/Y (D)",strtotime($day));	
 	$humidity = 0;
 	if (count($q_humidity)) {
@@ -40,7 +40,7 @@ for ( $day=$first; strtotime($day)<=strtotime($now); $day=date("Y-m-d",strtotime
 	$charts['humidity']['data'][] = abs(ceil($humidity));	
 	
 	// soil | soils
-	$q_soil = $con->getData("SELECT IFNULL(AVG(sensor_value),0) sensor_value FROM soils WHERE system_log LIKE '$day%'");
+	$q_soil = $con->getData("SELECT IFNULL(AVG(sensor_value),0) sensor_value FROM soils WHERE location_id = $id AND system_log LIKE '$day%'");
 	$charts['soil']['dates'][] = date("n/j/Y (D)",strtotime($day));	
 	$soil = 0;
 	if (count($q_soil)) {
@@ -49,7 +49,7 @@ for ( $day=$first; strtotime($day)<=strtotime($now); $day=date("Y-m-d",strtotime
 	$charts['soil']['data'][] = abs(ceil($soil));		
 	
 	// moisture dew | moisture_dews
-	$q_moisture_dew = $con->getData("SELECT IFNULL(AVG(sensor_value),0) sensor_value FROM moisture_dews WHERE system_log LIKE '$day%'");	
+	$q_moisture_dew = $con->getData("SELECT IFNULL(AVG(sensor_value),0) sensor_value FROM moisture_dews WHERE location_id = $id AND system_log LIKE '$day%'");	
 	$charts['dew']['dates'][] = date("n/j/Y (D)",strtotime($day));	
 	$moisture_dew = 0;
 	if (count($q_moisture_dew)) {
@@ -58,7 +58,7 @@ for ( $day=$first; strtotime($day)<=strtotime($now); $day=date("Y-m-d",strtotime
 	$charts['dew']['data'][] = abs(ceil($moisture_dew));	
 	
 	// moisture rain | moisture_rains
-	$q_moisture_rain = $con->getData("SELECT IFNULL(AVG(sensor_value),0) sensor_value FROM moisture_rains WHERE system_log LIKE '$day%'");	
+	$q_moisture_rain = $con->getData("SELECT IFNULL(AVG(sensor_value),0) sensor_value FROM moisture_rains WHERE location_id = $id AND system_log LIKE '$day%'");	
 	$charts['rain']['dates'][] = date("n/j/Y (D)",strtotime($day));	
 	$moisture_rain = 0;
 	if (count($q_moisture_rain)) {
