@@ -264,6 +264,38 @@ angular.module('dashboard-module', ['ngSanitize','ui.bootstrap','bootstrap-modal
 				temperature.animationSpeed = 32; // set animation speed (32 is default value)
 				temperature.set(0); // set actual value	
 				// end gauge
+
+				var gauge_humidity = document.getElementById('humidity-gauge'); // your canvas element
+				var humidity = new Gauge(gauge_humidity).setOptions(opts); // create sexy gauge!
+				humidity.maxValue = 15; // set max gauge value
+				humidity.setMinValue(0);  // Prefer setter over gauge.minValue = 0
+				humidity.animationSpeed = 32; // set animation speed (32 is default value)
+				humidity.set(0); // set actual value	
+				// end gauge
+
+				var gauge_soil = document.getElementById('soil-gauge'); // your canvas element
+				var soil = new Gauge(gauge_soil).setOptions(opts); // create sexy gauge!
+				soil.maxValue = 15; // set max gauge value
+				soil.setMinValue(0);  // Prefer setter over gauge.minValue = 0
+				soil.animationSpeed = 32; // set animation speed (32 is default value)
+				soil.set(0); // set actual value	
+				// end gauge
+
+				var gauge_moisture = document.getElementById('moisture-gauge'); // your canvas element
+				var moisture = new Gauge(gauge_moisture).setOptions(opts); // create sexy gauge!
+				moisture.maxValue = 15; // set max gauge value
+				moisture.setMinValue(0);  // Prefer setter over gauge.minValue = 0
+				moisture.animationSpeed = 32; // set animation speed (32 is default value)
+				moisture.set(0); // set actual value	
+				// end gauge
+
+				var gauge_rain = document.getElementById('rain-gauge'); // your canvas element
+				var rain = new Gauge(gauge_rain).setOptions(opts); // create sexy gauge!
+				rain.maxValue = 15; // set max gauge value
+				rain.setMinValue(0);  // Prefer setter over gauge.minValue = 0
+				rain.animationSpeed = 32; // set animation speed (32 is default value)
+				rain.set(0); // set actual value	
+				// end gauge
 				
 			};
 			
