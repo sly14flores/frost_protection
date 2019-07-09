@@ -52,6 +52,39 @@ angular.module('dashboard-module', ['ngSanitize','ui.bootstrap','bootstrap-modal
 
 		self.location_selected = function(scope) {
 			
+			// initialize charts
+			
+			// temperature
+			var temperature_chart = $('#temperature-chart');
+			
+			if (temperature_chart.length>0) {
+				new Chart(temperature_chart, {
+					type: 'line',
+					data: {
+						labels: ["Jul 3, 2019 (Wed)", "Jul 4, 2019 (Thu)", "Jul 5, 2019 (Fri)", "Jul 6, 2019 (Sat)", "Jul 7, 2019 (Sun)", "Jul 8, 2019 (Mon)", "Jul 9, 2019 (Tue)"],
+						datasets: [{
+							label: 'Users',
+							data: [10,20,30,40,50,50,60],
+							backgroundColor: 'rgba(66, 165, 245, 0.5)',
+							borderColor: '#2196F3',
+							borderWidth: 1
+						}]
+					},
+					options: {
+						legend: {
+							display: false
+						},
+						scales: {
+							yAxes: [{
+								ticks: {
+									beginAtZero: true
+								}
+							}]
+						}
+					}
+				});				
+			};
+			
 			$http({
 				url: 'handlers/select-location.php',
 				method: 'POST',
