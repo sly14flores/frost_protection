@@ -100,7 +100,12 @@ require_once 'authentication.php';
 									</thead>
 									<tbody>
 										<tr ng-repeat="l in data.locations" style="cursor: pointer;" ng-click="locate(l.id)">
-											<td>{{l.location}}</td><td ng-bind-html="l.last_update"></td><td>{{l.temperature}}</td><td>{{l.humidity}}</td><td>{{l.soil}}</td><td>{{l.moisture_dew}}</td><td>{{l.moisture_rain}}</td>
+											<td>{{l.location}}</td><td ng-bind-html="l.last_update"></td>
+                                            <td ng-style="{'color':l.temperature == 'OFFLINE' ? 'brown':'black'}">{{l.temperature}}</td>
+                                            <td ng-style="{'color':l.humidity == 'OFFLINE' ? 'brown':'black'}">{{l.humidity}}</td>
+                                            <td ng-style="{'color':l.soil == 'OFFLINE' ? 'brown':'black'}">{{l.soil}}</td>
+                                            <td ng-style="{'color':l.moisture_dew == 'OFFLINE' ? 'brown':'black'}">{{l.moisture_dew}}</td>
+                                            <td ng-style="{'color':l.moisture_rain == 'OFFLINE' ? 'brown':'black'}">{{l.moisture_rain}}</td>
 										</tr>
 									</tbody>
 								</table>
