@@ -28,16 +28,36 @@ require_once 'authentication.php';
         color: brown;
       }
 
-      .isModerate {
+      .isModerate,.isModerate_temp {
         background-color: orange;
         color: white;
         font-weight: bold;
       }
         
-      .isCritical {
+      .isCritical,.isCritical_temp {
         background-color: red;
         color: white;
         font-weight: bold;
+      }
+
+      .isModerate_rain {
+        background-color: orange;
+        color: white;
+        font-weight: bold;
+      }
+        
+      .isCritical_rain {
+        background-color: red;
+        color: white;
+        font-weight: bold;
+      }
+
+      .isNormal::after,.isModerate::after,.isCritical::after {
+        content: " %";
+      }
+
+      .isNormal_temp::after,.isModerate_temp::after,.isCritical_temp::after {
+        content: " °C";
       }
 		
     </style>
@@ -118,11 +138,11 @@ require_once 'authentication.php';
 									<tbody>
 										<tr ng-repeat="l in data.locations" style="cursor: pointer;" ng-click="locate(l.id)">
 											<td>{{l.location}}</td><td ng-bind-html="l.last_update"></td>
-                                            <td ng-class="{'isOff':l.temperature === 'OFFLINE','isCritical':l.temperature <= 7, 'isModerate':l.temperature <= 9}">{{l.temperature}}%</td>
-                                            <td ng-class="{'isOff':l.humidity === 'OFFLINE','isCritical':l.humidity >= 90, 'isModerate':l.humidity >= 80}">{{l.humidity}}%</td>
-                                            <td ng-class="{'isOff':l.soil === 'OFFLINE','isCritical':l.soil >= 90, 'isModerate':l.soil >= 80}">{{l.soil}}%</td>
-                                            <td ng-class="{'isOff':l.moisture_dew === 'OFFLINE','isCritical':l.moisture_dew >= 90, 'isModerate':l.moisture_dew >= 80}">{{l.moisture_dew}}%</td>
-                                            <td ng-class="{'isOff':l.moisture_rain === 'OFFLINE','isModerate':l.moisture_rain === 'Moderate Rain','isCritical':l.moisture_rain === 'Heavy Rain'}">{{l.moisture_rain}}</td>
+                                            <td ng-class="{'isOff':l.temperature === 'OFFLINE','isCritical_temp':l.temperature <= 7, 'isModerate_temp':l.temperature <= 9, 'isNormal_temp':l.temperature > 9}">{{l.temperature}}</td>
+                                            <td ng-class="{'isOff':l.humidity === 'OFFLINE','isCritical':l.humidity >= 90, 'isModerate':l.humidity >= 80, 'isNormal':l.humidity < 80}">{{l.humidity}}</td>
+                                            <td ng-class="{'isOff':l.soil === 'OFFLINE','isCritical':l.soil >= 90, 'isModerate':l.soil >= 80, 'isNormal':l.soil < 80}">{{l.soil}}</td>
+                                            <td ng-class="{'isOff':l.moisture_dew === 'OFFLINE','isCritical':l.moisture_dew >= 90, 'isModerate':l.moisture_dew >= 80, 'isNormal':l.moisture_dew < 80}">{{l.moisture_dew}}</td>
+                                            <td ng-class="{'isOff':l.moisture_rain === 'OFFLINE','isModerate_rain':l.moisture_rain === 'Moderate Rain','isCritical_rain':l.moisture_rain === 'Heavy Rain'}">{{l.moisture_rain}}</td>
 										</tr>
 									</tbody>
 								</table>
