@@ -22686,3 +22686,9 @@ Stack trace:
 #1 D:\DESKTOP\UwAmp310\www\frost_protection\handlers\profile-save.php(22): pdo_db->insertData(Array)
 #2 {main}
   thrown in D:\DESKTOP\UwAmp310\www\frost_protection\db.php on line 135
+[09-Jul-2019 13:37:03 Asia/Manila] PHP Notice:  Undefined offset: 5 in D:\DESKTOP\UwAmp310\www\frost_protection\handlers\location-values.php on line 41
+[09-Jul-2019 13:37:03 Asia/Manila] PHP Stack trace:
+[09-Jul-2019 13:37:03 Asia/Manila] PHP   1. {main}() D:\DESKTOP\UwAmp310\www\frost_protection\handlers\location-values.php:0
+[09-Jul-2019 13:37:10 Asia/Manila] PHP Notice:  Undefined offset: 5 in D:\DESKTOP\UwAmp310\www\frost_protection\handlers\location-values.php on line 41
+[09-Jul-2019 13:37:10 Asia/Manila] PHP Stack trace:
+[09-Jul-2019 13:37:10 Asia/Manila] PHP   1. {main}() D:\DESKTOP\UwAmp310\www\frost_protection\handlers\location-values.php:0
