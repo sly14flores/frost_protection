@@ -19,6 +19,8 @@ $charts = array(
 	"rain"=>[],
 );
 
+$gauges = [];
+
 for ( $day=$first; strtotime($day)<=strtotime($now); $day=date("Y-m-d",strtotime("+1 Day",strtotime(date($day)))) ) {
 
 	// temperature | temperatures
@@ -68,6 +70,6 @@ for ( $day=$first; strtotime($day)<=strtotime($now); $day=date("Y-m-d",strtotime
 	
 };
 
-echo json_encode(array("charts"=>$charts));
+echo json_encode(array("charts"=>$charts,"gauges"=>$gauges));
 
 ?>
