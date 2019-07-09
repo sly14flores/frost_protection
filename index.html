@@ -173,22 +173,13 @@ require_once 'authentication.php';
 				<hr>
                 <div class="row" style="margin-bottom: 20px">
                     <div class="col-md-3">
-                        <div class="card h-100">
-                            <div class="card-body p-5">
-                                <div class="text-center">
-                                    <span class="h3 d-block font-weight-bold mb-2">232</span>
-                                    <span class="font-weight-normal mb-6">Daily Temperature</span>
-                                    <br><br>
-                                    <span class="font-weight-light">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</span>
-                                </div>
-
-                                <div class="mt-4">
-                                    <div class="progress">
-                                        <div class="progress-bar bg-success" role="progressbar" style="width: 65%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">65</div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
+						<div class="card">
+							<div class="card-body">
+								<h5 class="card-title" style="text-align: center;">Temperature</h5>
+								<p style="margin-top: 0; margin-bottom: 10px; text-align: center; font-size: 20;">{{7}} <span>&#176;</span> celsius</p>
+								<div style="text-align: center!important;"><canvas id="temperature-gauge" style="width: 100%;"></canvas></div>
+							</div>
+						</div>
                     </div>
                     <div class="col-md-9">
                         <div class="card h-100">
@@ -371,6 +362,7 @@ require_once 'authentication.php';
 <script src="angular/ui-bootstrap-tpls-3.0.2.min.js"></script>
 
 <script type="text/javascript" src="js/mqttws31.min.js"></script>
+<script type="text/javascript" src="js/gauge.min.js"></script>
 
 <!-- modules -->
 <script src="modules/bootstrap-modal.js"></script>

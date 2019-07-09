@@ -20,6 +20,8 @@ angular.module('dashboard-module', ['ngSanitize','ui.bootstrap','bootstrap-modal
 			scope.select.location = {id: 1, location: "Location 1"};
 			
 			self.location_selected(scope);
+			
+			scope.gauges = {};
 		
 		};
 
@@ -60,6 +62,7 @@ angular.module('dashboard-module', ['ngSanitize','ui.bootstrap','bootstrap-modal
 			}).then(function success(response) {
 				
 				initCharts(response.data.charts);
+				initGauges(response.data.charts);
 				
 			}, function error(response) {
 				
@@ -219,6 +222,48 @@ angular.module('dashboard-module', ['ngSanitize','ui.bootstrap','bootstrap-modal
 						}
 					});				
 				};				
+				
+			};
+			
+			function initGauges(gauges) {
+
+				// temperature				
+				var opts = {
+				  angle: 0.15, // The span of the gauge arc
+				  lineWidth: 0.44, // The line thickness
+				  radiusScale: 1, // Relative radius
+				  pointer: {
+					length: 0.6, // // Relative to gauge radius
+					strokeWidth: 0.035, // The thickness
+					color: '#000000' // Fill color
+				  },
+				  staticZones: [
+					 {strokeStyle: "#F03E3E", min: 1, max: 7},
+					 {strokeStyle: "#FFDD00", min: 7, max: 9},
+					 {strokeStyle: "#30B32D", min: 9, max: 15}, 
+				  ],
+				  staticLabels: {
+					font: "10px sans-serif",
+					labels: [7, 9, 15],
+					fractionDigits: 0
+				  },			  
+				  limitMax: false,     // If false, max value increases automatically if value > maxValue
+				  limitMin: false,     // If true, the min value of the gauge will be fixed
+				  colorStart: '#6FADCF',   // Colors
+				  colorStop: '#8FC0DA',    // just experiment with them
+				  strokeColor: '#E0E0E0',  // to see which ones work best for you
+				  generateGradient: true,
+				  highDpiSupport: true,     // High resolution support
+				  
+				};
+
+				var gauge_temperature = document.getElementById('temperature-gauge'); // your canvas element
+				var temperature = new Gauge(gauge_temperature).setOptions(opts); // create sexy gauge!
+				temperature.maxValue = 15; // set max gauge value
+				temperature.setMinValue(0);  // Prefer setter over gauge.minValue = 0
+				temperature.animationSpeed = 32; // set animation speed (32 is default value)
+				temperature.set(0); // set actual value	
+				// end gauge
 				
 			};
 			
