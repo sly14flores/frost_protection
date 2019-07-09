@@ -244,9 +244,68 @@ angular.module('dashboard-module', ['ngSanitize','ui.bootstrap','bootstrap-modal
 				  ],
 				  staticLabels: {
 					font: "10px sans-serif",
-					labels: [7, 9, 15],
+					labels: [1, 15],
 					fractionDigits: 0
 				  },			  
+				  limitMax: false,     // If false, max value increases automatically if value > maxValue
+				  limitMin: false,     // If true, the min value of the gauge will be fixed
+				  colorStart: '#6FADCF',   // Colors
+				  colorStop: '#8FC0DA',    // just experiment with them
+				  strokeColor: '#E0E0E0',  // to see which ones work best for you
+				  generateGradient: true,
+				  highDpiSupport: true,     // High resolution support
+				  
+				};
+
+				var opt_moisture = {
+				  angle: 0.15, // The span of the gauge arc
+				  lineWidth: 0.44, // The line thickness
+				  radiusScale: 1, // Relative radius
+				  pointer: {
+					length: 0.6, // // Relative to gauge radius
+					strokeWidth: 0.035, // The thickness
+					color: '#000000' // Fill color
+				  },
+				  staticZones: [
+					 {strokeStyle: "#30B32D", min: 1, max:12},
+					 {strokeStyle: "#FFDD00", min: 12, max: 13.5},
+					 {strokeStyle: "#F03E3E", min: 13.5, max: 15}, 
+				  ],
+				  staticLabels: {
+					font: "10px sans-serif",
+					labels: [1, 100],
+					fractionDigits: 0.5
+				  },			  
+				  limitMax: false,     // If false, max value increases automatically if value > maxValue
+				  limitMin: false,     // If true, the min value of the gauge will be fixed
+				  colorStart: '#6FADCF',   // Colors
+				  colorStop: '#8FC0DA',    // just experiment with them
+				  strokeColor: '#E0E0E0',  // to see which ones work best for you
+				  generateGradient: true,
+				  highDpiSupport: true,     // High resolution support
+				  
+				};
+
+				var opt_rain = {
+				  angle: 0.10, // The span of the gauge arc
+				  lineWidth: 0.44, // The line thickness
+				  radiusScale: 1, // Relative radius
+				  pointer: {
+					length: 0.6, // // Relative to gauge radius
+					strokeWidth: 0.035, // The thickness
+					color: '#000000' // Fill color
+				  },
+				  staticZones: [
+					 {strokeStyle: "#F03E3E", min: 1, max: 300},
+					 {strokeStyle: "#FFDD00", min: 300, max: 500},
+					 {strokeStyle: "#30B32D", min: 500, max: 1000}, 
+				  ],
+				  staticLabels: {
+					font: "10px sans-serif",
+					labels: [1, 1000],
+					fractionDigits: 0
+				  },
+
 				  limitMax: false,     // If false, max value increases automatically if value > maxValue
 				  limitMin: false,     // If true, the min value of the gauge will be fixed
 				  colorStart: '#6FADCF',   // Colors
@@ -266,7 +325,7 @@ angular.module('dashboard-module', ['ngSanitize','ui.bootstrap','bootstrap-modal
 				// end gauge
 
 				var gauge_humidity = document.getElementById('humidity-gauge'); // your canvas element
-				var humidity = new Gauge(gauge_humidity).setOptions(opts); // create sexy gauge!
+				var humidity = new Gauge(gauge_humidity).setOptions(opt_moisture); // create sexy gauge!
 				humidity.maxValue = 15; // set max gauge value
 				humidity.setMinValue(0);  // Prefer setter over gauge.minValue = 0
 				humidity.animationSpeed = 32; // set animation speed (32 is default value)
@@ -274,7 +333,7 @@ angular.module('dashboard-module', ['ngSanitize','ui.bootstrap','bootstrap-modal
 				// end gauge
 
 				var gauge_soil = document.getElementById('soil-gauge'); // your canvas element
-				var soil = new Gauge(gauge_soil).setOptions(opts); // create sexy gauge!
+				var soil = new Gauge(gauge_soil).setOptions(opt_moisture); // create sexy gauge!
 				soil.maxValue = 15; // set max gauge value
 				soil.setMinValue(0);  // Prefer setter over gauge.minValue = 0
 				soil.animationSpeed = 32; // set animation speed (32 is default value)
@@ -282,7 +341,7 @@ angular.module('dashboard-module', ['ngSanitize','ui.bootstrap','bootstrap-modal
 				// end gauge
 
 				var gauge_moisture = document.getElementById('moisture-gauge'); // your canvas element
-				var moisture = new Gauge(gauge_moisture).setOptions(opts); // create sexy gauge!
+				var moisture = new Gauge(gauge_moisture).setOptions(opt_moisture); // create sexy gauge!
 				moisture.maxValue = 15; // set max gauge value
 				moisture.setMinValue(0);  // Prefer setter over gauge.minValue = 0
 				moisture.animationSpeed = 32; // set animation speed (32 is default value)
@@ -290,8 +349,8 @@ angular.module('dashboard-module', ['ngSanitize','ui.bootstrap','bootstrap-modal
 				// end gauge
 
 				var gauge_rain = document.getElementById('rain-gauge'); // your canvas element
-				var rain = new Gauge(gauge_rain).setOptions(opts); // create sexy gauge!
-				rain.maxValue = 15; // set max gauge value
+				var rain = new Gauge(gauge_rain).setOptions(opt_rain); // create sexy gauge!
+				rain.maxValue = 1000; // set max gauge value
 				rain.setMinValue(0);  // Prefer setter over gauge.minValue = 0
 				rain.animationSpeed = 32; // set animation speed (32 is default value)
 				rain.set(0); // set actual value	
