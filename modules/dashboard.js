@@ -65,8 +65,128 @@ angular.module('dashboard-module', ['ngSanitize','ui.bootstrap','bootstrap-modal
 						datasets: [{
 							label: 'Users',
 							data: [10,20,30,40,50,50,60],
+							backgroundColor: 'rgba(156,204,101,.5)',
+							borderColor: '#9CCC65',
+							borderWidth: 1
+						}]
+					},
+					options: {
+						legend: {
+							display: false
+						},
+						scales: {
+							yAxes: [{
+								ticks: {
+									beginAtZero: true
+								}
+							}]
+						}
+					}
+				});				
+			};
+
+			var humidity_chart = $('#humidity-chart');
+			
+			if (humidity_chart.length>0) {
+				new Chart(humidity_chart, {
+					type: 'line',
+					data: {
+						labels: ["Jul 3, 2019 (Wed)", "Jul 4, 2019 (Thu)", "Jul 5, 2019 (Fri)", "Jul 6, 2019 (Sat)", "Jul 7, 2019 (Sun)", "Jul 8, 2019 (Mon)", "Jul 9, 2019 (Tue)"],
+						datasets: [{
+							label: 'Users',
+							data: [10,20,30,40,50,50,60],
+							backgroundColor: 'rgba(255,202,40,0.5)',
+							borderColor: '#FFCA28',
+							borderWidth: 1
+						}]
+					},
+					options: {
+						legend: {
+							display: false
+						},
+						scales: {
+							yAxes: [{
+								ticks: {
+									beginAtZero: true
+								}
+							}]
+						}
+					}
+				});				
+			};
+
+			var soil_chart = $('#soil-chart');
+			
+			if (soil_chart.length>0) {
+				new Chart(soil_chart, {
+					type: 'line',
+					data: {
+						labels: ["Jul 3, 2019 (Wed)", "Jul 4, 2019 (Thu)", "Jul 5, 2019 (Fri)", "Jul 6, 2019 (Sat)", "Jul 7, 2019 (Sun)", "Jul 8, 2019 (Mon)", "Jul 9, 2019 (Tue)"],
+						datasets: [{
+							label: 'Users',
+							data: [10,20,30,40,50,50,60],
+							backgroundColor: 'rgba(38,198,218,0.5)',
+							borderColor: '#26c6da',
+							borderWidth: 1
+						}]
+					},
+					options: {
+						legend: {
+							display: false
+						},
+						scales: {
+							yAxes: [{
+								ticks: {
+									beginAtZero: true
+								}
+							}]
+						}
+					}
+				});				
+			};
+
+			var moisture_chart = $('#moisture-chart');
+			
+			if (moisture_chart.length>0) {
+				new Chart(moisture_chart, {
+					type: 'line',
+					data: {
+						labels: ["Jul 3, 2019 (Wed)", "Jul 4, 2019 (Thu)", "Jul 5, 2019 (Fri)", "Jul 6, 2019 (Sat)", "Jul 7, 2019 (Sun)", "Jul 8, 2019 (Mon)", "Jul 9, 2019 (Tue)"],
+						datasets: [{
+							label: 'Users',
+							data: [10,20,30,40,50,50,60],
 							backgroundColor: 'rgba(66, 165, 245, 0.5)',
 							borderColor: '#2196F3',
+							borderWidth: 1
+						}]
+					},
+					options: {
+						legend: {
+							display: false
+						},
+						scales: {
+							yAxes: [{
+								ticks: {
+									beginAtZero: true
+								}
+							}]
+						}
+					}
+				});				
+			};
+
+			var rain_chart = $('#rain-chart');
+			
+			if (rain_chart.length>0) {
+				new Chart(rain_chart, {
+					type: 'line',
+					data: {
+						labels: ["Jul 3, 2019 (Wed)", "Jul 4, 2019 (Thu)", "Jul 5, 2019 (Fri)", "Jul 6, 2019 (Sat)", "Jul 7, 2019 (Sun)", "Jul 8, 2019 (Mon)", "Jul 9, 2019 (Tue)"],
+						datasets: [{
+							label: 'Users',
+							data: [10,20,30,40,50,50,60],
+							backgroundColor: 'rgba(232, 142, 89, 0.5)',
+							borderColor: '#e88e59',
 							borderWidth: 1
 						}]
 					},
