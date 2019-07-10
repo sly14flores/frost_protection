@@ -229,7 +229,7 @@ angular.module('dashboard-module', ['ngSanitize','ui.bootstrap','bootstrap-modal
 
 				// temperature				
 				var opts = {
-				  angle: 0.15, // The span of the gauge arc
+				  angle: 0.08, // The span of the gauge arc
 				  lineWidth: 0.44, // The line thickness
 				  radiusScale: 1, // Relative radius
 				  pointer: {
@@ -240,11 +240,11 @@ angular.module('dashboard-module', ['ngSanitize','ui.bootstrap','bootstrap-modal
 				  staticZones: [
 					 {strokeStyle: "#F03E3E", min: 1, max: 7},
 					 {strokeStyle: "#FFDD00", min: 7, max: 9},
-					 {strokeStyle: "#30B32D", min: 9, max: 15}, 
+					 {strokeStyle: "#30B32D", min: 9, max: 20}, 
 				  ],
 				  staticLabels: {
 					font: "10px sans-serif",
-					labels: [7, 9, 15],
+					labels: [1, 7, 9, 20],
 					fractionDigits: 0
 				  },			  
 				  limitMax: false,     // If false, max value increases automatically if value > maxValue
@@ -257,12 +257,103 @@ angular.module('dashboard-module', ['ngSanitize','ui.bootstrap','bootstrap-modal
 				  
 				};
 
+				var opt_moisture = {
+				  angle: 0.08, // The span of the gauge arc
+				  lineWidth: 0.44, // The line thickness
+				  radiusScale: 1, // Relative radius
+				  pointer: {
+					length: 0.6, // // Relative to gauge radius
+					strokeWidth: 0.035, // The thickness
+					color: '#000000' // Fill color
+				  },
+				  staticZones: [
+					 {strokeStyle: "#30B32D", min: 1, max:80},
+					 {strokeStyle: "#FFDD00", min: 80, max: 90},
+					 {strokeStyle: "#F03E3E", min: 90, max: 100}, 
+				  ],
+				  staticLabels: {
+					font: "10px sans-serif",
+					labels: [1,80,90, 100],
+					fractionDigits: 0.5
+				  },			  
+				  limitMax: false,     // If false, max value increases automatically if value > maxValue
+				  limitMin: false,     // If true, the min value of the gauge will be fixed
+				  colorStart: '#6FADCF',   // Colors
+				  colorStop: '#8FC0DA',    // just experiment with them
+				  strokeColor: '#E0E0E0',  // to see which ones work best for you
+				  generateGradient: true,
+				  highDpiSupport: true,     // High resolution support
+				  
+				};
+
+				var opt_rain = {
+				  angle: 0.08, // The span of the gauge arc
+				  lineWidth: 0.44, // The line thickness
+				  radiusScale: 1, // Relative radius
+				  pointer: {
+					length: 0.6, // // Relative to gauge radius
+					strokeWidth: 0.035, // The thickness
+					color: '#000000' // Fill color
+				  },
+				  staticZones: [
+					 {strokeStyle: "#F03E3E", min: 1, max: 30},
+					 {strokeStyle: "#FFDD00", min: 30, max: 50},
+					 {strokeStyle: "#30B32D", min: 50, max: 100}, 
+				  ],
+				  staticLabels: {
+					font: "10px sans-serif",
+					labels: [1, 30, 50, 100],
+					fractionDigits: 0
+				  },
+
+				  limitMax: false,     // If false, max value increases automatically if value > maxValue
+				  limitMin: false,     // If true, the min value of the gauge will be fixed
+				  colorStart: '#6FADCF',   // Colors
+				  colorStop: '#8FC0DA',    // just experiment with them
+				  strokeColor: '#E0E0E0',  // to see which ones work best for you
+				  generateGradient: true,
+				  highDpiSupport: true,     // High resolution support
+				  
+				};
+
 				var gauge_temperature = document.getElementById('temperature-gauge'); // your canvas element
 				var temperature = new Gauge(gauge_temperature).setOptions(opts); // create sexy gauge!
-				temperature.maxValue = 15; // set max gauge value
+				temperature.maxValue = 20; // set max gauge value
 				temperature.setMinValue(0);  // Prefer setter over gauge.minValue = 0
 				temperature.animationSpeed = 32; // set animation speed (32 is default value)
-				temperature.set(0); // set actual value	
+				temperature.set(gauges.temperature.data[6]); // set actual value	
+				// end gauge
+
+				var gauge_humidity = document.getElementById('humidity-gauge'); // your canvas element
+				var humidity = new Gauge(gauge_humidity).setOptions(opt_moisture); // create sexy gauge!
+				humidity.maxValue = 100; // set max gauge value
+				humidity.setMinValue(0);  // Prefer setter over gauge.minValue = 0
+				humidity.animationSpeed = 32; // set animation speed (32 is default value)
+				humidity.set(gauges.humidity.data[6]); // set actual value	
+				// end gauge
+
+				var gauge_soil = document.getElementById('soil-gauge'); // your canvas element
+				var soil = new Gauge(gauge_soil).setOptions(opt_moisture); // create sexy gauge!
+				soil.maxValue = 100; // set max gauge value
+				soil.setMinValue(0);  // Prefer setter over gauge.minValue = 0
+				soil.animationSpeed = 32; // set animation speed (32 is default value)
+				soil.set(gauges.soil.data[6]); // set actual value	
+				// end gauge
+
+				var gauge_moisture = document.getElementById('moisture-gauge'); // your canvas element
+				var moisture = new Gauge(gauge_moisture).setOptions(opt_moisture); // create sexy gauge!
+				moisture.maxValue = 100; // set max gauge value
+				moisture.setMinValue(0);  // Prefer setter over gauge.minValue = 0
+				moisture.animationSpeed = 32; // set animation speed (32 is default value)
+				moisture.set(gauges.dew.data[6]); // set actual value	
+				// end gauge
+
+				var gauge_rain = document.getElementById('rain-gauge'); // your canvas element
+				var rain = new Gauge(gauge_rain).setOptions(opt_rain); // create sexy gauge!
+				rain.maxValue = 100; // set max gauge value
+				rain.setMinValue(0);  // Prefer setter over gauge.minValue = 0
+				rain.animationSpeed = 32; // set animation speed (32 is default value)
+				rain.set((gauges.rain.data[6])/10); // set actual value	
 				// end gauge
 				
 			};
