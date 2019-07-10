@@ -139,7 +139,7 @@ angular.module('sms-module',[]).factory('sms', function($http) {
 				
 				var locations = payload.split("/");
 				
-				var cp_no = "639179245040";				
+				var cp_no = "639208946918";				
 				
 				if (locations[0]) { // location 1
 					
