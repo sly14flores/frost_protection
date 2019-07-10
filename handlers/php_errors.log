@@ -37,3 +37,18 @@ Stack trace:
 #1 D:\DESKTOP\UwAmp310\www\frost_protection\handlers\data.php(8): pdo_db->getData('SELECT temperat...')
 #2 {main}
   thrown in D:\DESKTOP\UwAmp310\www\frost_protection\db.php on line 42
+[10-Jul-2019 15:05:32 Asia/Manila] PHP Notice:  Undefined offset: 1 in D:\DESKTOP\UwAmp310\www\frost_protection\handlers\location-values.php on line 25
+[10-Jul-2019 15:05:32 Asia/Manila] PHP Stack trace:
+[10-Jul-2019 15:05:32 Asia/Manila] PHP   1. {main}() D:\DESKTOP\UwAmp310\www\frost_protection\handlers\location-values.php:0
+[10-Jul-2019 15:05:32 Asia/Manila] PHP Notice:  Undefined offset: 2 in D:\DESKTOP\UwAmp310\www\frost_protection\handlers\location-values.php on line 29
+[10-Jul-2019 15:05:32 Asia/Manila] PHP Stack trace:
+[10-Jul-2019 15:05:32 Asia/Manila] PHP   1. {main}() D:\DESKTOP\UwAmp310\www\frost_protection\handlers\location-values.php:0
+[10-Jul-2019 15:05:32 Asia/Manila] PHP Notice:  Undefined offset: 3 in D:\DESKTOP\UwAmp310\www\frost_protection\handlers\location-values.php on line 33
+[10-Jul-2019 15:05:32 Asia/Manila] PHP Stack trace:
+[10-Jul-2019 15:05:32 Asia/Manila] PHP   1. {main}() D:\DESKTOP\UwAmp310\www\frost_protection\handlers\location-values.php:0
+[10-Jul-2019 15:05:32 Asia/Manila] PHP Notice:  Undefined offset: 4 in D:\DESKTOP\UwAmp310\www\frost_protection\handlers\location-values.php on line 37
+[10-Jul-2019 15:05:32 Asia/Manila] PHP Stack trace:
+[10-Jul-2019 15:05:32 Asia/Manila] PHP   1. {main}() D:\DESKTOP\UwAmp310\www\frost_protection\handlers\location-values.php:0
+[10-Jul-2019 15:05:32 Asia/Manila] PHP Notice:  Undefined offset: 5 in D:\DESKTOP\UwAmp310\www\frost_protection\handlers\location-values.php on line 41
+[10-Jul-2019 15:05:32 Asia/Manila] PHP Stack trace:
+[10-Jul-2019 15:05:32 Asia/Manila] PHP   1. {main}() D:\DESKTOP\UwAmp310\www\frost_protection\handlers\location-values.php:0

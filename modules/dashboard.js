@@ -38,7 +38,8 @@ angular.module('dashboard-module', ['ngSanitize','ui.bootstrap','bootstrap-modal
 				
 			}, function error(response) {
 				
-			});			
+			});
+			
 		};
 
 		function farmers(scope) {

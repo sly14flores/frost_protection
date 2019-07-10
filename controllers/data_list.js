@@ -13,5 +13,16 @@ app.controller('dashboardListCtrl',function($scope,$http,dashboard,$interval) {
 	
 	$scope.dashboard.data($scope);
 
+	$http({
+		url: 'handlers/locations.php',
+		method: 'GET',			
+	}).then(function success(response) {
+		
+		$scope.locations = response.data;
+		
+	}, function error(response) {
+		
+	});	
+
 	
 });

@@ -1,6 +1,6 @@
 var app = angular.module('profile',['account-module','app-module','ngRoute']);
 
-app.controller('profileCtrl',function($scope,app) {
+app.controller('profileCtrl',function($http,$scope,app) {
 	
 	$scope.app = app;
 	
@@ -16,5 +16,17 @@ app.controller('profileCtrl',function($scope,app) {
 			edit: 3,
 			delete: 4,
 		}
-	};	
+	};
+	
+	$http({
+		url: 'handlers/locations.php',
+		method: 'GET',			
+	}).then(function success(response) {
+		
+		$scope.locations = response.data;
+		
+	}, function error(response) {
+		
+	});	
+	
 });

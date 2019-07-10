@@ -1,4 +1,5 @@
 <?php
+
 $_POST = json_decode(file_get_contents('php://input'), true);
 
 require_once '../db.php';
@@ -13,8 +14,6 @@ INNER JOIN moisture_dews ON soils.system_log=moisture_dews.system_log
 INNER JOIN moisture_rains ON soils.system_log=moisture_rains.system_log
  WHERE soils.location_id = 1
 ORDER by soils.id DESC;");
-
-
 
 echo json_encode($entries_list);
 
