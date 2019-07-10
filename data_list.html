@@ -85,19 +85,7 @@ require_once 'authentication.php';
         </div>
 
 <div class="content">
-            <div class="container-fluid">
-                <!-- <div class="row">
-                    <div class="col-md-6">
-                        <div class="input-group">                   
-                            <span class="input-group-btn">
-                                <button type="button" class="btn btn-primary"><i class="fa fa-search"></i> Search</button>
-                            </span>
-                            <input type="text" id="input-group-1" name="input1-group2" class="form-control" ng-model="search" placeholder="">
-                        </div>
-                        <hr>
-                    </div>
-                </div>   -->
-                          
+            <div class="container-fluid">             
                 <div class="row">
                     <div class="col-md-12">
                         <ul class="nav nav-tabs" role="tablist">
@@ -115,36 +103,39 @@ require_once 'authentication.php';
                         </ul>
 
                         <div class="tab-content">
-                            <div class="col-md-6" style="margin-top: 20px;">
-                            <div class="form-group">
-                                <label>Factor</label>
-                                <select class="form-control" ng-model="category" required>
-                                    <option value="">Select</option>
-                                    <option value="temperature">Temperature</option>
-                                    <option value="humidity">Humidity</option>
-                                    <option value="soil">Soil Moisture</option>
-                                    <option value="dew">Dew Moisture</option>
-                                    <option value="rain">Rain</option>
-                                </select>
-                                <div class="invalid-feedback"></div>                                           
+                            <div class="col-md-6" style="margin-top: 20px; margin-bottom: -25px;">
+                                <div class="form-group">
+                                    <div class="input-group">                   
+                                        <span class="input-group-btn">
+                                            <button type="button" class="btn btn-primary"><i class="fa fa-search"></i> Search</button>
+                                        </span>
+                                        <input type="text" class="form-control" ng-model="category" placeholder="">
+                                    
+                                </div>                                         
+                                </div>
                             </div>
-                        </div>
                             <div class="tab-pane active" id="location_1" role="tabpanel">
                             <div class="card-body">
                                 <div class = "row w_scroll">
-                                    <table class="table table-hover">
+                                    <table class="table table-striped">
                                         <thead>
                                             <tr>
-                                                <th>Devices</th>
-                                                <th>Value</th>
+                                                <th>Temperature</th>
+                                                <th>Humidity</th>
+                                                <th>Soil Moisture</th>
+                                                <th>Dew Moisture</th>
+                                                <th>Rain</th>
                                                 <th>Date / Time</th>
                                                 
                                             </tr>
                                         </thead>
                                         <tbody>
                                             <tr ng-repeat="l in filterData = (entries_list | filter:category)">
-                                            <td class="text-capitalize">{{l.location_id}}</td>
-                                            <td class="text-capitalize">{{l.sensor_value}}</td>
+                                            <td class="text-capitalize">{{l.temperature}}</td>
+                                            <td class="text-capitalize">{{l.humidity}}</td>
+                                            <td class="text-capitalize">{{l.soil}}</td>
+                                            <td class="text-capitalize">{{l.dew}}</td>
+                                            <td class="text-capitalize">{{l.rain}}</td>
                                             <td class="text-capitalize">{{l.system_log | date:'MMM dd yyyy'}}</td>
                                             
                                             </tr>
@@ -160,21 +151,26 @@ require_once 'authentication.php';
                         <div class="tab-pane" id="location_2" role="tabpanel">
                             <div class="card-body">
                                 <div class = "row w_scroll">
-                                    <table class="table table-hover">
+                                    <table class="table table-striped">
                                         <thead>
                                             <tr>
-                                                <th>Devices</th>
-                                                <th>Value</th>
+                                                <th>Temperature</th>
+                                                <th>Humidity</th>
+                                                <th>Soil Moisture</th>
+                                                <th>Dew Moisture</th>
+                                                <th>Rain</th>
                                                 <th>Date / Time</th>
                                                 
                                             </tr>
                                         </thead>
                                         <tbody>
                                             <tr ng-repeat="l in filterData = (entries_list | filter:category)">
-                                            <td class="text-capitalize">{{l.location_id}}</td>
-                                            <td class="text-capitalize">{{l.sensor_value}}</td>
-                                            <td class="text-capitalize">{{l.system_log}}</td>
-                                            
+                                            <td class="text-capitalize">{{l.temperature}}</td>
+                                            <td class="text-capitalize">{{l.humidity}}</td>
+                                            <td class="text-capitalize">{{l.soil}}</td>
+                                            <td class="text-capitalize">{{l.dew}}</td>
+                                            <td class="text-capitalize">{{l.rain}}</td>
+                                            <td class="text-capitalize">{{l.system_log | date:'MMM dd yyyy'}}</td>
                                             
                                             </tr>
                                         </tbody>
@@ -189,21 +185,26 @@ require_once 'authentication.php';
                         <div class="tab-pane" id="location_3" role="tabpanel">
                             <div class="card-body">
                                 <div class = "row w_scroll">
-                                    <table class="table table-hover">
+                                    <table class="table table-striped">
                                         <thead>
                                             <tr>
-                                                <th>Devices</th>
-                                                <th>Value</th>
+                                                <th>Temperature</th>
+                                                <th>Humidity</th>
+                                                <th>Soil Moisture</th>
+                                                <th>Dew Moisture</th>
+                                                <th>Rain</th>
                                                 <th>Date / Time</th>
                                                 
                                             </tr>
                                         </thead>
                                         <tbody>
                                             <tr ng-repeat="l in filterData = (entries_list | filter:category)">
-                                            <td class="text-capitalize">{{l.location_id}}</td>
-                                            <td class="text-capitalize">{{l.sensor_value}}</td>
-                                            <td class="text-capitalize">{{l.system_log}}</td>
-                                            
+                                            <td class="text-capitalize">{{l.temperature}}</td>
+                                            <td class="text-capitalize">{{l.humidity}}</td>
+                                            <td class="text-capitalize">{{l.soil}}</td>
+                                            <td class="text-capitalize">{{l.dew}}</td>
+                                            <td class="text-capitalize">{{l.rain}}</td>
+                                            <td class="text-capitalize">{{l.system_log | date:'MMM dd yyyy'}}</td>
                                             
                                             </tr>
                                         </tbody>

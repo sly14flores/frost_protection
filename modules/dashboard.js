@@ -245,11 +245,11 @@ angular.module('dashboard-module', ['ngSanitize','ui.bootstrap','bootstrap-modal
 			  staticZones: [
 				 {strokeStyle: "#F03E3E", min: 1, max: 7},
 				 {strokeStyle: "#FFDD00", min: 7, max: 9},
-				 {strokeStyle: "#30B32D", min: 9, max: 20}, 
+				 {strokeStyle: "#30B32D", min: 9, max: 40}, 
 			  ],
 			  staticLabels: {
 				font: "10px sans-serif",
-				labels: [1, 7, 9, 20],
+				labels: [1, 7, 9, 40],
 				fractionDigits: 0
 			  },			  
 			  limitMax: false,     // If false, max value increases automatically if value > maxValue
@@ -323,7 +323,7 @@ angular.module('dashboard-module', ['ngSanitize','ui.bootstrap','bootstrap-modal
 
 			var gauge_temperature = document.getElementById('temperature-gauge'); // your canvas element
 			scope.gauges.temperature = new Gauge(gauge_temperature).setOptions(opt_temperature); // create sexy gauge!
-			scope.gauges.temperature.maxValue = 20; // set max gauge value
+			scope.gauges.temperature.maxValue = 40; // set max gauge value
 			scope.gauges.temperature.setMinValue(0);  // Prefer setter over gauge.minValue = 0
 			scope.gauges.temperature.animationSpeed = 32; // set animation speed (32 is default value)
 			// end gauge
