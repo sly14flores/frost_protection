@@ -1,0 +1,39 @@
+[10-Jul-2019 08:50:45 Asia/Manila] PHP Notice:  Undefined index: id in D:\DESKTOP\UwAmp310\www\frost_protection\handlers\select-location.php on line 9
+[10-Jul-2019 08:50:45 Asia/Manila] PHP Stack trace:
+[10-Jul-2019 08:50:45 Asia/Manila] PHP   1. {main}() D:\DESKTOP\UwAmp310\www\frost_protection\handlers\select-location.php:0
+[10-Jul-2019 08:50:45 Asia/Manila] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'AND system_log LIKE '2019-07-03%'' at line 1 in D:\DESKTOP\UwAmp310\www\frost_protection\db.php:42
+Stack trace:
+#0 D:\DESKTOP\UwAmp310\www\frost_protection\db.php(42): PDO->query('SELECT IFNULL(A...')
+#1 D:\DESKTOP\UwAmp310\www\frost_protection\handlers\select-location.php(28): pdo_db->getData('SELECT IFNULL(A...')
+#2 {main}
+  thrown in D:\DESKTOP\UwAmp310\www\frost_protection\db.php on line 42
+[10-Jul-2019 08:50:54 Asia/Manila] PHP Notice:  Undefined index: id in D:\DESKTOP\UwAmp310\www\frost_protection\handlers\select-location.php on line 9
+[10-Jul-2019 08:50:54 Asia/Manila] PHP Stack trace:
+[10-Jul-2019 08:50:54 Asia/Manila] PHP   1. {main}() D:\DESKTOP\UwAmp310\www\frost_protection\handlers\select-location.php:0
+[10-Jul-2019 08:50:54 Asia/Manila] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'AND system_log LIKE '2019-07-03%'' at line 1 in D:\DESKTOP\UwAmp310\www\frost_protection\db.php:42
+Stack trace:
+#0 D:\DESKTOP\UwAmp310\www\frost_protection\db.php(42): PDO->query('SELECT IFNULL(A...')
+#1 D:\DESKTOP\UwAmp310\www\frost_protection\handlers\select-location.php(28): pdo_db->getData('SELECT IFNULL(A...')
+#2 {main}
+  thrown in D:\DESKTOP\UwAmp310\www\frost_protection\db.php on line 42
+[10-Jul-2019 08:52:57 Asia/Manila] PHP Notice:  Undefined index: id in D:\DESKTOP\UwAmp310\www\frost_protection\handlers\select-location.php on line 9
+[10-Jul-2019 08:52:57 Asia/Manila] PHP Stack trace:
+[10-Jul-2019 08:52:57 Asia/Manila] PHP   1. {main}() D:\DESKTOP\UwAmp310\www\frost_protection\handlers\select-location.php:0
+[10-Jul-2019 08:52:57 Asia/Manila] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'AND system_log LIKE '2019-07-03%'' at line 1 in D:\DESKTOP\UwAmp310\www\frost_protection\db.php:42
+Stack trace:
+#0 D:\DESKTOP\UwAmp310\www\frost_protection\db.php(42): PDO->query('SELECT IFNULL(A...')
+#1 D:\DESKTOP\UwAmp310\www\frost_protection\handlers\select-location.php(28): pdo_db->getData('SELECT IFNULL(A...')
+#2 {main}
+  thrown in D:\DESKTOP\UwAmp310\www\frost_protection\db.php on line 42
+[10-Jul-2019 09:11:13 Asia/Manila] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'FROM temperature ORDER BY temperature.system_log ASC' at line 1 in D:\DESKTOP\UwAmp310\www\frost_protection\db.php:42
+Stack trace:
+#0 D:\DESKTOP\UwAmp310\www\frost_protection\db.php(42): PDO->query('SELECT temperat...')
+#1 D:\DESKTOP\UwAmp310\www\frost_protection\handlers\data.php(8): pdo_db->getData('SELECT temperat...')
+#2 {main}
+  thrown in D:\DESKTOP\UwAmp310\www\frost_protection\db.php on line 42
+[10-Jul-2019 09:17:15 Asia/Manila] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'FROM temperature ORDER BY temperature.system_log ASC' at line 1 in D:\DESKTOP\UwAmp310\www\frost_protection\db.php:42
+Stack trace:
+#0 D:\DESKTOP\UwAmp310\www\frost_protection\db.php(42): PDO->query('SELECT temperat...')
+#1 D:\DESKTOP\UwAmp310\www\frost_protection\handlers\data.php(8): pdo_db->getData('SELECT temperat...')
+#2 {main}
+  thrown in D:\DESKTOP\UwAmp310\www\frost_protection\db.php on line 42

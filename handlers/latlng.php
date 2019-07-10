@@ -6,12 +6,10 @@ require_once '../db.php';
 
 $con = new pdo_db();
 
-$location = $con->getData("SELECT lat, lng FROM location WHERE id = ".$_POST['id']);
+$location = $con->getData("SELECT id, location, lat, lng FROM location WHERE id = ".$_POST['id']);
 
-$location[0]['lat'] = floatval($location[0]['lat']);
-$location[0]['lng'] = floatval($location[0]['lng']);
-$latlng = $location[0];
+$latlng = array("lat"=>floatval($location[0]['lat']),"lng"=>floatval($location[0]['lng']));
 
-echo json_encode($latlng);
+echo json_encode(array("latlng"=>$latlng,"place"=>array("id"=>$location[0]['id'],"location"=>$location[0]['location'])));
 
 ?>
