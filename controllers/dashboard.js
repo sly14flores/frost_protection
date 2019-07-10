@@ -1,6 +1,6 @@
-var app = angular.module('dashboard',['account-module','dashboard-module','notifications-module']);
+var app = angular.module('dashboard',['account-module','dashboard-module','notifications-module','sms-module']);
 
-app.controller('dashboardCtrl',function($scope,$http,dashboard,$interval) {
+app.controller('dashboardCtrl',function($scope,$http,dashboard,$interval,sms) {
 
 	$scope.module = {
 		id: 'dashboard',
@@ -48,6 +48,8 @@ app.controller('dashboardCtrl',function($scope,$http,dashboard,$interval) {
 			
 		});
 		
-	};	
+	};
+	
+	sms.init($scope);
 	
 });
