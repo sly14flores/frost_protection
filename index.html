@@ -22,6 +22,43 @@ require_once 'authentication.php';
         height: 350px;
         background-color: grey;
       }
+
+      .isOff {
+        font-weight: bold;
+        color: brown;
+      }
+
+      .isModerate,.isModerate_temp {
+        background-color: orange;
+        color: white;
+        font-weight: bold;
+      }
+        
+      .isCritical,.isCritical_temp {
+        background-color: red;
+        color: white;
+        font-weight: bold;
+      }
+
+      .isModerate_rain {
+        background-color: orange;
+        color: white;
+        font-weight: bold;
+      }
+        
+      .isCritical_rain {
+        background-color: red;
+        color: white;
+        font-weight: bold;
+      }
+
+      .isNormal::after,.isModerate::after,.isCritical::after {
+        content: " %";
+      }
+
+      .isNormal_temp::after,.isModerate_temp::after,.isCritical_temp::after {
+        content: " °C";
+      }
 		
     </style>
 </head>
@@ -96,11 +133,16 @@ require_once 'authentication.php';
 							<div class="card-body">
 								<table class="table table-striped" style="font-size: 11px;">
 									<thead>
-										<tr><th>Location</th><th>Last update</th><th>Temperature</th><th>Humidity</th><th>Soil Moisture</th><th>Dew Moisture</th><th>Rain</th></tr>
+										<tr><th>Location</th><th>Last update</th><th>Temperature °C </th><th>Humidity</th><th>Soil Moisture</th><th>Dew Moisture</th><th>Rain</th></tr>
 									</thead>
 									<tbody>
 										<tr ng-repeat="l in data.locations" style="cursor: pointer;" ng-click="locate(l.id)">
-											<td>{{l.location}}</td><td ng-bind-html="l.last_update"></td><td>{{l.temperature}}</td><td>{{l.humidity}}</td><td>{{l.soil}}</td><td>{{l.moisture_dew}}</td><td>{{l.moisture_rain}}</td>
+											<td>{{l.location}}</td><td ng-bind-html="l.last_update"></td>
+                                            <td ng-class="{'isOff':l.temperature === 'OFFLINE','isCritical_temp':l.temperature <= 7, 'isModerate_temp':l.temperature <= 9, 'isNormal_temp':l.temperature > 9}">{{l.temperature}}</td>
+                                            <td ng-class="{'isOff':l.humidity === 'OFFLINE','isCritical':l.humidity >= 90, 'isModerate':l.humidity >= 80, 'isNormal':l.humidity < 80}">{{l.humidity}}</td>
+                                            <td ng-class="{'isOff':l.soil === 'OFFLINE','isCritical':l.soil >= 90, 'isModerate':l.soil >= 80, 'isNormal':l.soil < 80}">{{l.soil}}</td>
+                                            <td ng-class="{'isOff':l.moisture_dew === 'OFFLINE','isCritical':l.moisture_dew >= 90, 'isModerate':l.moisture_dew >= 80, 'isNormal':l.moisture_dew < 80}">{{l.moisture_dew}}</td>
+                                            <td ng-class="{'isOff':l.moisture_rain === 'OFFLINE','isModerate_rain':l.moisture_rain === 'Moderate Rain','isCritical_rain':l.moisture_rain === 'Heavy Rain'}">{{l.moisture_rain}}</td>
 										</tr>
 									</tbody>
 								</table>
@@ -120,30 +162,24 @@ require_once 'authentication.php';
 				</div>
 				
                 <hr>
-                <div class="col-md-6">
-                    <div class="form-group">
-                        <select class="form-control" required></select>
-                        <div class="invalid-feedback">Group is required</div>                                           
-                    </div>
+				<div class="row">
+					<div class="col-md-6">
+						<div class="form-group">
+							<label>Location: <strong>{{select.location.location}}</strong></label>
+							<!-- <select class="form-control" ng-model="select.location" ng-options="l.location for l in locations track by l.id" ng-change="dashboard.location_selected(this)"></select> -->
+						</div>
+					</div>
                 </div>
                 <div class="row" style="margin-bottom: 20px">
                     <div class="col-md-3">
-                        <div class="card h-100">
-                            <div class="card-body p-5">
-                                <div class="text-center">
-                                    <span class="h3 d-block font-weight-bold mb-2">232</span>
-                                    <span class="font-weight-normal mb-6">Daily Temperature</span>
-                                    <br><br>
-                                    <span class="font-weight-light">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</span>
-                                </div>
-
-                                <div class="mt-4">
-                                    <div class="progress">
-                                        <div class="progress-bar bg-success" role="progressbar" style="width: 65%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">65</div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
+						<div class="card h-100">
+							<div class="card-body">
+								<h5 class="card-title" style="text-align: center; font-weight: bold;">Temperature</h5>
+                                <hr>
+								<p style="margin-top: 0; margin-bottom: 10px; text-align: center; font-size: 20;">{{charts.temperature.data}} <span>&#176;</span> celsius</p>
+								<div style="text-align: center!important;"><canvas id="temperature-gauge" style="width: 100%;"></canvas></div>
+							</div>
+						</div>
                     </div>
                     <div class="col-md-9">
                         <div class="card h-100">
@@ -153,10 +189,8 @@ require_once 'authentication.php';
 
                             <div class="card-body p-0">
                                 <div class="p-3">
-                                    <canvas id="line-chart" width="100%" height="20"></canvas>
+                                    <canvas id="temperature-chart" width="100%" height="20"></canvas>
                                 </div>
-
-                                
                             </div>
                         </div>
                     </div>
@@ -165,19 +199,11 @@ require_once 'authentication.php';
                 <div class="row" style="margin-bottom: 20px">
                     <div class="col-md-3">
                         <div class="card h-100">
-                            <div class="card-body p-5">
-                                <div class="text-center">
-                                    <span class="h3 d-block font-weight-bold mb-2">232</span>
-                                    <span class="font-weight-normal mb-6">Daily Humidity</span>
-                                    <br><br>
-                                    <span class="font-weight-light">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</span>
-                                </div>
-
-                                <div class="mt-4">
-                                    <div class="progress">
-                                        <div class="progress-bar bg-warning" role="progressbar" style="width: 65%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">65</div>
-                                    </div>
-                                </div>
+                            <div class="card-body">
+                                <h5 class="card-title" style="text-align: center; font-weight: bold;">Humidity</h5>
+                                <hr>
+                                <p style="margin-top: 0; margin-bottom: 10px; text-align: center; font-size: 20;">{{7}} <span>&#176;</span> celsius</p>
+                                <div style="text-align: center!important;"><canvas id="humidity-gauge" style="width: 100%;"></canvas></div>
                             </div>
                         </div>
                     </div>
@@ -189,7 +215,7 @@ require_once 'authentication.php';
 
                             <div class="card-body p-0">
                                 <div class="p-4">
-                                    <canvas id="line-chart" width="100%" height="20"></canvas>
+                                    <canvas id="humidity-chart" width="100%" height="20"></canvas>
                                 </div>
 
                                 
@@ -201,19 +227,11 @@ require_once 'authentication.php';
                 <div class="row" style="margin-bottom: 20px">
                     <div class="col-md-3">
                         <div class="card h-100">
-                            <div class="card-body p-5">
-                                <div class="text-center">
-                                    <span class="h3 d-block font-weight-bold mb-2">232</span>
-                                    <span class="font-weight-normal mb-6">Daily Soil Moisture</span>
-                                    <br><br>
-                                    <span class="font-weight-light">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</span>
-                                </div>
-
-                                <div class="mt-4">
-                                    <div class="progress">
-                                        <div class="progress-bar bg-info" role="progressbar" style="width: 65%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">65</div>
-                                    </div>
-                                </div>
+                            <div class="card-body">
+                                <h5 class="card-title" style="text-align: center; font-weight: bold;">Soil Moisture</h5>
+                                <hr>
+                                <p style="margin-top: 0; margin-bottom: 10px; text-align: center; font-size: 20;">{{4}} <span>&#176;</span> celsius</p>
+                                <div style="text-align: center!important;"><canvas id="soil-gauge" style="width: 100%;"></canvas></div>
                             </div>
                         </div>
                     </div>
@@ -225,7 +243,7 @@ require_once 'authentication.php';
 
                             <div class="card-body p-0">
                                 <div class="p-4">
-                                    <canvas id="line-chart" width="100%" height="20"></canvas>
+                                    <canvas id="soil-chart" width="100%" height="20"></canvas>
                                 </div>
 
                                 
@@ -237,19 +255,11 @@ require_once 'authentication.php';
                 <div class="row" style="margin-bottom: 20px">
                     <div class="col-md-3">
                         <div class="card h-100">
-                            <div class="card-body p-5">
-                                <div class="text-center">
-                                    <span class="h3 d-block font-weight-bold mb-2">232</span>
-                                    <span class="font-weight-normal mb-6">Daily Dew Moisture</span>
-                                    <br><br>
-                                    <span class="font-weight-light">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</span>
-                                </div>
-
-                                <div class="mt-4">
-                                    <div class="progress">
-                                        <div class="progress-bar bg-primary" role="progressbar" style="width: 65%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">65</div>
-                                    </div>
-                                </div>
+                            <div class="card-body">
+                                <h5 class="card-title" style="text-align: center; font-weight: bold">Dew Moisture</h5>
+                                <hr>
+                                <p style="margin-top: 0; margin-bottom: 10px; text-align: center; font-size: 20;">{{7}} <span>&#176;</span> celsius</p>
+                                <div style="text-align: center!important;"><canvas id="moisture-gauge" style="width: 100%;"></canvas></div>
                             </div>
                         </div>
                     </div>
@@ -261,7 +271,7 @@ require_once 'authentication.php';
 
                             <div class="card-body p-0">
                                 <div class="p-4">
-                                    <canvas id="line-chart" width="100%" height="20"></canvas>
+                                    <canvas id="moisture-chart" width="100%" height="20"></canvas>
                                 </div>
 
                                 
@@ -273,19 +283,11 @@ require_once 'authentication.php';
                 <div class="row" style="margin-bottom: 20px">
                     <div class="col-md-3">
                         <div class="card h-100">
-                            <div class="card-body p-5">
-                                <div class="text-center">
-                                    <span class="h3 d-block font-weight-bold mb-2">232</span>
-                                    <span class="font-weight-normal mb-6">Daily Rain</span>
-                                    <br><br>
-                                    <span class="font-weight-light">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</span>
-                                </div>
-
-                                <div class="mt-4">
-                                    <div class="progress">
-                                        <div class="progress-bar bg-secondary" role="progressbar" style="width: 65%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">65</div>
-                                    </div>
-                                </div>
+                            <div class="card-body">
+                                <h5 class="card-title" style="text-align: center; font-weight: bold;">Rain</h5>
+                                <hr>
+                                <p style="margin-top: 0; margin-bottom: 10px; text-align: center; font-size: 20;">{{7}} <span>&#176;</span> celsius</p>
+                                <div style="text-align: center!important;"><canvas id="rain-gauge" style="width: 100%;"></canvas></div>
                             </div>
                         </div>
                     </div>
@@ -297,7 +299,7 @@ require_once 'authentication.php';
 
                             <div class="card-body p-0">
                                 <div class="p-4">
-                                    <canvas id="line-chart" width="100%" height="20"></canvas>
+                                    <canvas id="rain-chart" width="100%" height="20"></canvas>
                                 </div>
 
                                 
@@ -328,6 +330,7 @@ require_once 'authentication.php';
 <script src="angular/ui-bootstrap-tpls-3.0.2.min.js"></script>
 
 <script type="text/javascript" src="js/mqttws31.min.js"></script>
+<script type="text/javascript" src="js/gauge.min.js"></script>
 
 <!-- modules -->
 <script src="modules/bootstrap-modal.js"></script>

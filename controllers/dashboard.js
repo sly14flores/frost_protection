@@ -37,9 +37,12 @@ app.controller('dashboardCtrl',function($scope,$http,dashboard,$interval) {
 		}).then(function success(response) {
 			
     		$scope.marker.setVisible(true);
-    		$scope.marker.setPosition(response.data);
+    		$scope.marker.setPosition(response.data.latlng);
     		$scope.map.setZoom(15);
-    		$scope.map.setCenter(response.data);
+    		$scope.map.setCenter(response.data.latlng);
+			
+			$scope.select.location = response.data.place;
+			$scope.dashboard.location_selected($scope,id);			
 			
 		}, function error(response) {
 			
