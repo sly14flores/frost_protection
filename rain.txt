@@ -1,0 +1,3 @@
+Heavy Rain: value<300
+Moderate Rain: value<500
+NoRain: value>500

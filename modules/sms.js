@@ -184,7 +184,36 @@ angular.module('sms-module',[]).factory('sms', function($http) {
 					};
 					
 					// humidity
+					if ((parseFloat(one[2])<90) && (parseFloat(one[2])>=80)) scope.notified[scope.sms.location[location_one_id]].critical.humidity = false;		
+					if (parseFloat(one[2])<80) scope.notified[scope.sms.location[location_one_id]].near_critical.humidity = false;
 					
+					// if near critical
+					if ((parseFloat(one[2])>=80)&&(parseFloat(one[2])<90)) {
+
+						if (!scope.notified[scope.sms.location[location_one_id]].near_critical.humidity) {
+							
+							console.log("Notified")
+							
+							sms(cp_no,"Humidity in "+scope.locations[scope.sms.location[location_one_id]].location+" is near critical level");
+							// mark notified
+							scope.notified[scope.sms.location[location_one_id]].near_critical.humidity = true;
+
+						};
+
+					};
+						
+					// if critical
+					if (parseFloat(one[2])>90) {
+						
+						if (!scope.notified[scope.sms.location[location_one_id]].critical.humidity) {
+							
+							sms(cp_no,"Humidity in "+scope.locations[scope.sms.location[location_one_id]].location+" is at critical level");
+							// mark notified
+							scope.notified[scope.sms.location[location_one_id]].critical.humidity = true;
+							
+						};
+							
+					};					
 					
 					// soil
 					
@@ -239,7 +268,36 @@ angular.module('sms-module',[]).factory('sms', function($http) {
 					};
 					
 					// humidity
+					if ((parseFloat(two[2])<90) && (parseFloat(two[2])>=80)) scope.notified[scope.sms.location[location_two_id]].critical.humidity = false;		
+					if (parseFloat(two[2])<80) scope.notified[scope.sms.location[location_two_id]].near_critical.humidity = false;
 					
+					// if near critical
+					if ((parseFloat(two[2])>=80)&&(parseFloat(two[2])<90)) {
+
+						if (!scope.notified[scope.sms.location[location_two_id]].near_critical.humidity) {
+							
+							console.log("Notified")
+							
+							sms(cp_no,"Humidity in "+scope.locations[scope.sms.location[location_two_id]].location+" is near critical level");
+							// mark notified
+							scope.notified[scope.sms.location[location_two_id]].near_critical.humidity = true;
+
+						};
+
+					};
+						
+					// if critical
+					if (parseFloat(two[2])>90) {
+						
+						if (!scope.notified[scope.sms.location[location_two_id]].critical.humidity) {
+							
+							sms(cp_no,"Humidity in "+scope.locations[scope.sms.location[location_two_id]].location+" is at critical level");
+							// mark notified
+							scope.notified[scope.sms.location[location_two_id]].critical.humidity = true;
+							
+						};
+							
+					};					
 					
 					// soil
 					
@@ -294,7 +352,36 @@ angular.module('sms-module',[]).factory('sms', function($http) {
 					};
 					
 					// humidity
+					if ((parseFloat(three[2])<90) && (parseFloat(three[2])>=80)) scope.notified[scope.sms.location[location_three_id]].critical.humidity = false;		
+					if (parseFloat(three[2])<80) scope.notified[scope.sms.location[location_three_id]].near_critical.humidity = false;
 					
+					// if near critical
+					if ((parseFloat(three[2])>=80)&&(parseFloat(three[2])<90)) {
+
+						if (!scope.notified[scope.sms.location[location_three_id]].near_critical.humidity) {
+							
+							console.log("Notified")
+							
+							sms(cp_no,"Humidity in "+scope.locations[scope.sms.location[location_three_id]].location+" is near critical level");
+							// mark notified
+							scope.notified[scope.sms.location[location_three_id]].near_critical.humidity = true;
+
+						};
+
+					};
+						
+					// if critical
+					if (parseFloat(three[2])>90) {
+						
+						if (!scope.notified[scope.sms.location[location_three_id]].critical.humidity) {
+							
+							sms(cp_no,"Humidity in "+scope.locations[scope.sms.location[location_three_id]].location+" is at critical level");
+							// mark notified
+							scope.notified[scope.sms.location[location_three_id]].critical.humidity = true;
+							
+						};
+							
+					};					
 					
 					// soil
 					
