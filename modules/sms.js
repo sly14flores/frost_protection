@@ -3,7 +3,13 @@ angular.module('sms-module',[]).factory('sms', function($http) {
 	function sms() {
 		
 		var self = this;
+
+		var timestamp = Number(new Date());
 		
+		const date = new Date(timestamp).toDateString();
+
+		const time = new Date(timestamp).toLocaleTimeString();
+
 		self.init = function(scope) {
 			
 			scope.notified = [
@@ -139,7 +145,9 @@ angular.module('sms-module',[]).factory('sms', function($http) {
 				
 				var locations = payload.split("/");
 				
-				var cp_no = "639208946918";				
+				// var cp_no = "639208946918";	
+
+				var cp_no = "639177790394";			
 				
 				if (locations[0]) { // location 1
 					
@@ -162,7 +170,7 @@ angular.module('sms-module',[]).factory('sms', function($http) {
 							
 							console.log("Notified")
 							
-							sms(cp_no,"Temperature in "+scope.locations[scope.sms.location[location_one_id]].location+" is near critical level");
+							sms(cp_no,"Temperature in "+scope.locations[scope.sms.location[location_one_id]].location+" is at near critical level. "+time+", "+date);
 							// mark notified
 							scope.notified[scope.sms.location[location_one_id]].near_critical.temperature = true;
 
@@ -175,7 +183,7 @@ angular.module('sms-module',[]).factory('sms', function($http) {
 						
 						if (!scope.notified[scope.sms.location[location_one_id]].critical.temperature) {
 							
-							sms(cp_no,"Temperature in "+scope.locations[scope.sms.location[location_one_id]].location+" is at critical level");
+							sms(cp_no,"Temperature in "+scope.locations[scope.sms.location[location_one_id]].location+" is at critical level. "+time+", "+date);
 							// mark notified
 							scope.notified[scope.sms.location[location_one_id]].critical.temperature = true;
 							
@@ -194,7 +202,7 @@ angular.module('sms-module',[]).factory('sms', function($http) {
 							
 							console.log("Notified")
 							
-							sms(cp_no,"Humidity in "+scope.locations[scope.sms.location[location_one_id]].location+" is near critical level");
+							sms(cp_no,"Humidity in "+scope.locations[scope.sms.location[location_one_id]].location+" is at near critical level. "+time+", "+date);
 							// mark notified
 							scope.notified[scope.sms.location[location_one_id]].near_critical.humidity = true;
 
@@ -203,11 +211,11 @@ angular.module('sms-module',[]).factory('sms', function($http) {
 					};
 						
 					// if critical
-					if (parseFloat(one[2])>90) {
+					if (parseFloat(one[2])>=90) {
 						
 						if (!scope.notified[scope.sms.location[location_one_id]].critical.humidity) {
 							
-							sms(cp_no,"Humidity in "+scope.locations[scope.sms.location[location_one_id]].location+" is at critical level");
+							sms(cp_no,"Humidity in "+scope.locations[scope.sms.location[location_one_id]].location+" is at critical level. "+time+", "+date);
 							// mark notified
 							scope.notified[scope.sms.location[location_one_id]].critical.humidity = true;
 							
@@ -216,12 +224,101 @@ angular.module('sms-module',[]).factory('sms', function($http) {
 					};					
 					
 					// soil
+					if ((parseFloat(one[3])<90) && (parseFloat(one[3])>=80)) scope.notified[scope.sms.location[location_one_id]].critical.soil = false;		
+					if (parseFloat(one[3])<80) scope.notified[scope.sms.location[location_one_id]].near_critical.soil = false;
 					
+					// if near critical
+					if ((parseFloat(one[3])>=80)&&(parseFloat(one[3])<90)) {
+
+						if (!scope.notified[scope.sms.location[location_one_id]].near_critical.soil) {
+							
+							console.log("Notified")
+							
+							sms(cp_no,"Soil Moisture in "+scope.locations[scope.sms.location[location_one_id]].location+" is at near critical level. "+time+", "+date);
+							// mark notified
+							scope.notified[scope.sms.location[location_one_id]].near_critical.soil = true;
+
+						};
+
+					};
+						
+					// if critical
+					if (parseFloat(one[3])>=90) {
+						
+						if (!scope.notified[scope.sms.location[location_one_id]].critical.soil) {
+							
+							sms(cp_no,"Soil Moisture in "+scope.locations[scope.sms.location[location_one_id]].location+" is at critical level. "+time+", "+date);
+							// mark notified
+							scope.notified[scope.sms.location[location_one_id]].critical.soil = true;
+							
+						};
+							
+					};		
 					
 					// dew
+					if ((parseFloat(one[4])<90) && (parseFloat(one[4])>=80)) scope.notified[scope.sms.location[location_one_id]].critical.dew = false;		
+					if (parseFloat(one[4])<80) scope.notified[scope.sms.location[location_one_id]].near_critical.dew = false;
 					
+					// if near critical
+					if ((parseFloat(one[4])>=80)&&(parseFloat(one[3])<90)) {
+
+						if (!scope.notified[scope.sms.location[location_one_id]].near_critical.dew) {
+							
+							console.log("Notified")
+							
+							sms(cp_no,"Dew Moisture in "+scope.locations[scope.sms.location[location_one_id]].location+" is at near critical level. "+time+", "+date);
+							// mark notified
+							scope.notified[scope.sms.location[location_one_id]].near_critical.dew = true;
+
+						};
+
+					};
+						
+					// if critical
+					if (parseFloat(one[4])>=90) {
+						
+						if (!scope.notified[scope.sms.location[location_one_id]].critical.dew) {
+							
+							sms(cp_no,"Dew Moisture in "+scope.locations[scope.sms.location[location_one_id]].location+" is at critical level. "+time+", "+date);
+							// mark notified
+							scope.notified[scope.sms.location[location_one_id]].critical.dew = true;
+							
+						};
+							
+					};		
 					
 					// rain
+
+					if ((parseFloat(one[5])<500) && (parseFloat(one[5])>=300)) scope.notified[scope.sms.location[location_one_id]].near_critical.rain = false;		
+					if (parseFloat(one[5])<300) scope.notified[scope.sms.location[location_one_id]].critical.rain = false;
+					
+					// if near critical
+					if ((parseFloat(one[5])>=300)&&(parseFloat(one[5])<500)) {
+
+						if (!scope.notified[scope.sms.location[location_one_id]].near_critical.rain) {
+							
+							console.log("Notified")
+							
+							sms(cp_no,"Moderate rain is happening in "+scope.locations[scope.sms.location[location_one_id]].location+". "+time+", "+date);
+							// mark notified
+							scope.notified[scope.sms.location[location_one_id]].near_critical.rain = true;
+
+						};
+
+					};
+						
+					// if critical
+					if (parseFloat(one[5])<300) {
+						
+						if (!scope.notified[scope.sms.location[location_one_id]].critical.rain) {
+							
+							sms(cp_no,"Heavy rain is happening in "+scope.locations[scope.sms.location[location_one_id]].location+". "+time+", "+date);
+							// mark notified
+							scope.notified[scope.sms.location[location_one_id]].critical.rain = true;
+							
+						};
+							
+					};		
 				
 				};
 				
@@ -246,7 +343,7 @@ angular.module('sms-module',[]).factory('sms', function($http) {
 							
 							console.log("Notified")
 							
-							sms(cp_no,"Temperature in "+scope.locations[scope.sms.location[location_two_id]].location+" is near critical level");
+							sms(cp_no,"Temperature in "+scope.locations[scope.sms.location[location_two_id]].location+" is at near critical level. "+time+", "+date);
 							// mark notified
 							scope.notified[scope.sms.location[location_two_id]].near_critical.temperature = true;
 
@@ -259,7 +356,7 @@ angular.module('sms-module',[]).factory('sms', function($http) {
 						
 						if (!scope.notified[scope.sms.location[location_two_id]].critical.temperature) {
 							
-							sms(cp_no,"Temperature in "+scope.locations[scope.sms.location[location_two_id]].location+" is at critical level");
+							sms(cp_no,"Temperature in "+scope.locations[scope.sms.location[location_two_id]].location+" is at critical level. "+time+", "+date);
 							// mark notified
 							scope.notified[scope.sms.location[location_two_id]].critical.temperature = true;
 							
@@ -278,7 +375,7 @@ angular.module('sms-module',[]).factory('sms', function($http) {
 							
 							console.log("Notified")
 							
-							sms(cp_no,"Humidity in "+scope.locations[scope.sms.location[location_two_id]].location+" is near critical level");
+							sms(cp_no,"Humidity in "+scope.locations[scope.sms.location[location_two_id]].location+" is at near critical level. "+time+", "+date);
 							// mark notified
 							scope.notified[scope.sms.location[location_two_id]].near_critical.humidity = true;
 
@@ -291,7 +388,7 @@ angular.module('sms-module',[]).factory('sms', function($http) {
 						
 						if (!scope.notified[scope.sms.location[location_two_id]].critical.humidity) {
 							
-							sms(cp_no,"Humidity in "+scope.locations[scope.sms.location[location_two_id]].location+" is at critical level");
+							sms(cp_no,"Humidity in "+scope.locations[scope.sms.location[location_two_id]].location+" is at critical level. "+time+", "+date);
 							// mark notified
 							scope.notified[scope.sms.location[location_two_id]].critical.humidity = true;
 							
@@ -300,12 +397,100 @@ angular.module('sms-module',[]).factory('sms', function($http) {
 					};					
 					
 					// soil
+					if ((parseFloat(two[3])<90) && (parseFloat(two[3])>=80)) scope.notified[scope.sms.location[location_two_id]].critical.soil = false;		
+					if (parseFloat(two[3])<80) scope.notified[scope.sms.location[location_two_id]].near_critical.soil = false;
 					
+					// if near critical
+					if ((parseFloat(two[3])>=80)&&(parseFloat(two[3])<90)) {
+
+						if (!scope.notified[scope.sms.location[location_two_id]].near_critical.soil) {
+							
+							console.log("Notified")
+							
+							sms(cp_no,"Soil Moisture in "+scope.locations[scope.sms.location[location_two_id]].location+" is at near critical level. "+time+", "+date);
+							// mark notified
+							scope.notified[scope.sms.location[location_two_id]].near_critical.soil = true;
+
+						};
+
+					};
+						
+					// if critical
+					if (parseFloat(two[3])>=90) {
+						
+						if (!scope.notified[scope.sms.location[location_two_id]].critical.soil) {
+							
+							sms(cp_no,"Soil Moisture in "+scope.locations[scope.sms.location[location_two_id]].location+" is at critical level. "+time+", "+date);
+							// mark notified
+							scope.notified[scope.sms.location[location_two_id]].critical.soil = true;
+							
+						};
+							
+					};		
 					
 					// dew
+					if ((parseFloat(two[4])<90) && (parseFloat(two[4])>=80)) scope.notified[scope.sms.location[location_two_id]].critical.dew = false;		
+					if (parseFloat(two[4])<80) scope.notified[scope.sms.location[location_two_id]].near_critical.dew = false;
 					
+					// if near critical
+					if ((parseFloat(two[4])>=80)&&(parseFloat(two[3])<90)) {
+
+						if (!scope.notified[scope.sms.location[location_two_id]].near_critical.dew) {
+							
+							console.log("Notified")
+							
+							sms(cp_no,"Dew Moisture in "+scope.locations[scope.sms.location[location_two_id]].location+" is at near critical level. "+time+", "+date);
+							// mark notified
+							scope.notified[scope.sms.location[location_two_id]].near_critical.dew = true;
+
+						};
+
+					};
+						
+					// if critical
+					if (parseFloat(two[4])>=90) {
+						
+						if (!scope.notified[scope.sms.location[location_two_id]].critical.dew) {
+							
+							sms(cp_no,"Dew Moisture in "+scope.locations[scope.sms.location[location_two_id]].location+" is at critical level. "+time+", "+date);
+							// mark notified
+							scope.notified[scope.sms.location[location_two_id]].critical.dew = true;
+							
+						};
+							
+					};	
 					
-					// rain					
+					// rain	
+					if ((parseFloat(two[5])<500) && (parseFloat(two[5])>=300)) scope.notified[scope.sms.location[location_two_id]].near_critical.rain = false;		
+					if (parseFloat(two[5])<300) scope.notified[scope.sms.location[location_two_id]].critical.rain = false;
+					
+					// if near critical
+					if ((parseFloat(two[5])>=300)&&(parseFloat(two[5])<500)) {
+
+						if (!scope.notified[scope.sms.location[location_two_id]].near_critical.rain) {
+							
+							console.log("Notified")
+							
+							sms(cp_no,"Moderate rain is happening in "+scope.locations[scope.sms.location[location_two_id]].location+". "+time+", "+date);
+							// mark notified
+							scope.notified[scope.sms.location[location_two_id]].near_critical.rain = true;
+
+						};
+
+					};
+						
+					// if critical
+					if (parseFloat(two[5])<300) {
+						
+						if (!scope.notified[scope.sms.location[location_two_id]].critical.rain) {
+							
+							sms(cp_no,"Heavy rain is happening in "+scope.locations[scope.sms.location[location_two_id]].location+". "+time+", "+date);
+							// mark notified
+							scope.notified[scope.sms.location[location_two_id]].critical.rain = true;
+							
+						};
+							
+					};						
 					
 				};
 				
@@ -330,7 +515,7 @@ angular.module('sms-module',[]).factory('sms', function($http) {
 							
 							console.log("Notified")
 							
-							sms(cp_no,"Temperature in "+scope.locations[scope.sms.location[location_three_id]].location+" is near critical level");
+							sms(cp_no,"Temperature in "+scope.locations[scope.sms.location[location_three_id]].location+" is at near critical level. "+time+", "+date);
 							// mark notified
 							scope.notified[scope.sms.location[location_three_id]].near_critical.temperature = true;
 
@@ -343,7 +528,7 @@ angular.module('sms-module',[]).factory('sms', function($http) {
 						
 						if (!scope.notified[scope.sms.location[location_three_id]].critical.temperature) {
 							
-							sms(cp_no,"Temperature in "+scope.locations[scope.sms.location[location_three_id]].location+" is at critical level");
+							sms(cp_no,"Temperature in "+scope.locations[scope.sms.location[location_three_id]].location+" is at critical level. "+time+", "+date);
 							// mark notified
 							scope.notified[scope.sms.location[location_three_id]].critical.temperature = true;
 							
@@ -362,7 +547,7 @@ angular.module('sms-module',[]).factory('sms', function($http) {
 							
 							console.log("Notified")
 							
-							sms(cp_no,"Humidity in "+scope.locations[scope.sms.location[location_three_id]].location+" is near critical level");
+							sms(cp_no,"Humidity in "+scope.locations[scope.sms.location[location_three_id]].location+" is at near critical level. "+time+", "+date);
 							// mark notified
 							scope.notified[scope.sms.location[location_three_id]].near_critical.humidity = true;
 
@@ -375,7 +560,7 @@ angular.module('sms-module',[]).factory('sms', function($http) {
 						
 						if (!scope.notified[scope.sms.location[location_three_id]].critical.humidity) {
 							
-							sms(cp_no,"Humidity in "+scope.locations[scope.sms.location[location_three_id]].location+" is at critical level");
+							sms(cp_no,"Humidity in "+scope.locations[scope.sms.location[location_three_id]].location+" is at critical level. "+time+", "+date);
 							// mark notified
 							scope.notified[scope.sms.location[location_three_id]].critical.humidity = true;
 							
@@ -384,13 +569,101 @@ angular.module('sms-module',[]).factory('sms', function($http) {
 					};					
 					
 					// soil
+					if ((parseFloat(three[3])<90) && (parseFloat(three[3])>=80)) scope.notified[scope.sms.location[location_three_id]].critical.soil = false;		
+					if (parseFloat(three[3])<80) scope.notified[scope.sms.location[location_three_id]].near_critical.soil = false;
 					
+					// if near critical
+					if ((parseFloat(three[3])>=80)&&(parseFloat(three[3])<90)) {
+
+						if (!scope.notified[scope.sms.location[location_three_id]].near_critical.soil) {
+							
+							console.log("Notified")
+							
+							sms(cp_no,"Soil Moisture in "+scope.locations[scope.sms.location[location_three_id]].location+" is at near critical level. "+time+", "+date);
+							// mark notified
+							scope.notified[scope.sms.location[location_three_id]].near_critical.soil = true;
+
+						};
+
+					};
+						
+					// if critical
+					if (parseFloat(three[3])>=90) {
+						
+						if (!scope.notified[scope.sms.location[location_three_id]].critical.soil) {
+							
+							sms(cp_no,"Soil Moisture in "+scope.locations[scope.sms.location[location_three_id]].location+" is at critical level. "+time+", "+date);
+							// mark notified
+							scope.notified[scope.sms.location[location_three_id]].critical.soil = true;
+							
+						};
+							
+					};		
 					
 					// dew
+					if ((parseFloat(three[4])<90) && (parseFloat(three[4])>=80)) scope.notified[scope.sms.location[location_three_id]].critical.dew = false;		
+					if (parseFloat(three[4])<80) scope.notified[scope.sms.location[location_three_id]].near_critical.dew = false;
 					
+					// if near critical
+					if ((parseFloat(three[4])>=80)&&(parseFloat(three[3])<90)) {
+
+						if (!scope.notified[scope.sms.location[location_three_id]].near_critical.dew) {
+							
+							console.log("Notified")
+							
+							sms(cp_no,"Dew Moisture in "+scope.locations[scope.sms.location[location_three_id]].location+" is at near critical level. "+time+", "+date);
+							// mark notified
+							scope.notified[scope.sms.location[location_three_id]].near_critical.dew = true;
+
+						};
+
+					};
+						
+					// if critical
+					if (parseFloat(three[4])>=90) {
+						
+						if (!scope.notified[scope.sms.location[location_three_id]].critical.dew) {
+							
+							sms(cp_no,"Dew Moisture in "+scope.locations[scope.sms.location[location_three_id]].location+" is at critical level. "+time+", "+date);
+							// mark notified
+							scope.notified[scope.sms.location[location_three_id]].critical.dew = true;
+							
+						};
+							
+					};	
 					
 					// rain						
 					
+					if ((parseFloat(three[5])<500) && (parseFloat(three[5])>=300)) scope.notified[scope.sms.location[location_three_id]].near_critical.rain = false;		
+					if (parseFloat(three[5])<300) scope.notified[scope.sms.location[location_three_id]].critical.rain = false;
+					
+					// if near critical
+					if ((parseFloat(three[5])>=300)&&(parseFloat(three[5])<500)) {
+
+						if (!scope.notified[scope.sms.location[location_three_id]].near_critical.rain) {
+							
+							console.log("Notified")
+							
+							sms(cp_no,"Moderate rain is happening in "+scope.locations[scope.sms.location[location_three_id]].location+". "+time+", "+date);
+							// mark notified
+							scope.notified[scope.sms.location[location_three_id]].near_critical.rain = true;
+
+						};
+
+					};
+						
+					// if critical
+					if (parseFloat(three[5])<300) {
+						
+						if (!scope.notified[scope.sms.location[location_three_id]].critical.rain) {
+							
+							sms(cp_no,"Heavy rain is happening in "+scope.locations[scope.sms.location[location_three_id]].location+". "+time+", "+date);
+							// mark notified
+							scope.notified[scope.sms.location[location_three_id]].critical.rain = true;
+							
+						};
+							
+					};		
 				};		
 				
 				function sms(cp,text) {
