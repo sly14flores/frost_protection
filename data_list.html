@@ -121,22 +121,23 @@ require_once 'authentication.php';
                                         <thead>
                                             <tr>
                                                 <th>Temperature</th>
-                                                <th>Humidity</th>
+                                                <!-- <th>Humidity</th>
                                                 <th>Soil Moisture</th>
                                                 <th>Dew Moisture</th>
-                                                <th>Rain</th>
+                                                <th>Rain</th> -->
                                                 <th>Date / Time</th>
                                                 
                                             </tr>
                                         </thead>
                                         <tbody>
-                                            <tr ng-repeat="l in filterData = (entries_list | filter:category)">
-                                            <td class="text-capitalize">{{l.temperature}}</td>
-                                            <td class="text-capitalize">{{l.humidity}}</td>
-                                            <td class="text-capitalize">{{l.soil}}</td>
-                                            <td class="text-capitalize">{{l.dew}}</td>
-                                            <td class="text-capitalize">{{l.rain}}</td>
-                                            <td class="text-capitalize">{{l.system_log | date:'MMM dd yyyy'}}</td>
+                                            <!-- <tr ng-repeat="l in filterData = (data.locations[0] | filter:category)"> -->
+                                            <tr ng-repeat="l in data.locations.temperature">
+                                            <td >{{l.value}}</td>
+                                           <!--  <td >{{l.humidity.value}}</td>
+                                            <td >{{l.soil.value}}</td>
+                                            <td >{{l.moisture_dew.value}}</td>
+                                            <td >{{l.moisture_rain.value}}</td> -->
+                                            <td >{{l.datetime | date:'MMM dd yyyy'}}</td>
                                             
                                             </tr>
                                         </tbody>
@@ -164,7 +165,8 @@ require_once 'authentication.php';
                                             </tr>
                                         </thead>
                                         <tbody>
-                                            <tr ng-repeat="l in filterData = (entries_list | filter:category)">
+                                            <!-- <tr ng-repeat="l in filterData = (data.locations[1] | filter:category)"> -->
+                                            <tr ng-repeat="l in data.locations[1]">
                                             <td class="text-capitalize">{{l.temperature}}</td>
                                             <td class="text-capitalize">{{l.humidity}}</td>
                                             <td class="text-capitalize">{{l.soil}}</td>
@@ -198,7 +200,8 @@ require_once 'authentication.php';
                                             </tr>
                                         </thead>
                                         <tbody>
-                                            <tr ng-repeat="l in filterData = (entries_list | filter:category)">
+                                            <!-- <tr ng-repeat="l in filterData = (data.locations[2] | filter:category)"> -->
+                                            <tr ng-repeat="l in data.locations[2]">
                                             <td class="text-capitalize">{{l.temperature}}</td>
                                             <td class="text-capitalize">{{l.humidity}}</td>
                                             <td class="text-capitalize">{{l.soil}}</td>

@@ -4,7 +4,7 @@ $_POST = json_decode(file_get_contents('php://input'), true);
 
 require_once '../db.php';
 
-$con = new pdo_db("humidities");
+$con = new pdo_db();
 
 $entries_list = $con->getData("SELECT soils.id, soils.location_id location, humidities.sensor_value humidity, soils.sensor_value soil, temperatures.sensor_value temperature, moisture_dews.sensor_value dew, moisture_rains.sensor_value rain, soils.system_log system_log
 FROM soils
