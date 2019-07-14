@@ -12,101 +12,84 @@ $locations = $con->getData("SELECT * FROM location");
 foreach ($locations as $i => $location) {
 
 	$location_id = $location['id'];
-	$locations[$i]['temperature'][] = 0;
-	$locations[$i]['humidity'][] = 0;
-	$locations[$i]['soil'][] = 0;
-	$locations[$i]['moisture_dew'][] = 0;
-	$locations[$i]['moisture_rain'][] = 0;
-
 
 	// temperature
-	$temperatures = $con->getData("SELECT * FROM temperatures");
-
-	foreach ($temperatures as $t => $temperature) {
-
-		$temperature = $con->getData("SELECT * FROM temperatures WHERE location_id = $location_id");
-		if (count($temperature)) {
+	$temperatures = $con->getData("SELECT * FROM temperatures WHERE location_id = $location_id");
+	if (count($temperatures)) { 
+		foreach ($temperatures as $k => $temperature) {
 			
-			$locations[$i]['temperature']['value'][$t] = $temperature[count($temperature)-1]['sensor_value'];
-			$locations[$i]['temperature']['datetime'][$t] = $temperature[count($temperature)-1]['system_log'];
-			
-		};
-	};
-	// humidity
-	$humidities = $con->getData("SELECT * FROM humidities");
-
-	foreach ($humidities as $h => $humidity) {
-
-
-		$humidity = $con->getData("SELECT * FROM humidities WHERE location_id = $location_id");
-		if (count($humidity)) {
-			
-			$locations[$i]['humidity']['value'][$h] = $humidity[count($humidity)-1]['sensor_value'];
-			$locations[$i]['humidity']['datetime'][$h] = $humidity[count($humidity)-1]['system_log'];
-			
-		};
-
-	};
-
-		// soil
-
-	$soils = $con->getData("SELECT * FROM soils");
-
-	foreach ($soils as $s => $soil) {
-
-
-		$soil = $con->getData("SELECT * FROM soils WHERE location_id = $location_id");
-		if (count($soil)) {
-			
-			$locations[$i]['soil']['value'][$s] = $soil[count($soil)-1]['sensor_value'];	
-			$locations[$i]['soil']['datetime'][$s] = $soil[count($soil)-1]['sensor_value'];	
-			
-			
-		};
-
-	};
-
-		// moisture_dew
-
-	$moisture_dews = $con->getData("SELECT * FROM moisture_dews");
-
-	foreach ($moisture_dews as $d => $moisture_dew) {
+			$locations[$i]["data"][] = array(
+				"id"=>$temperature['id'],
+				"factor"=>"Temperature",
+				"value"=>$temperature['sensor_value'],
+				"datetime"=>date("F j, Y h:i A",strtotime($temperature['system_log']))
+			);
 		
-		$moisture_dew = $con->getData("SELECT * FROM moisture_dews WHERE location_id = $location_id");
-		if (count($moisture_dew)) {
-			
-			$locations[$i]['moisture_dew']['value'][$d] = $moisture_dew[count($moisture_dew)-1]['sensor_value'];
-			$locations[$i]['moisture_dew']['datetime'][$d] = $moisture_dew[count($moisture_dew)-1]['system_log'];
-			
 		};
-
+	};
+	
+ 	// humidity
+	$humidities = $con->getData("SELECT * FROM humidities WHERE location_id = $location_id");
+	if (count($humidities)) { 
+		foreach ($humidities as $k => $humidity) {
+			
+			$locations[$i]["data"][] = array(
+				"id"=>$humidity['id'],
+				"factor"=>"Humidity",
+				"value"=>$humidity['sensor_value'],
+				"datetime"=>date("F j, Y h:i A",strtotime($humidity['system_log']))
+			);
+		
+		};
 	};
 
-
-		// moisture_rain
-
-	$moisture_rains = $con->getData("SELECT * FROM moisture_rains");
-
-	foreach ($moisture_rains as $r => $moisture_rain) {
-
-		$moisture_rain = $con->getData("SELECT * FROM moisture_rains WHERE location_id = $location_id");
-		if (count($moisture_rain)) {
+	// soil
+	$soils = $con->getData("SELECT * FROM soils WHERE location_id = $location_id");
+	if (count($soils)) { 
+		foreach ($soils as $k => $soil) {
 			
-			$locations[$i]['moisture_rain']['value'][$r] = $moisture_rain[count($moisture_rain)-1]['sensor_value'];	
-			$locations[$i]['moisture_rain']['datetime'][$r] = $moisture_rain[count($moisture_rain)-1]['system_log'];	
-
-				
+			$locations[$i]["data"][] = array(
+				"id"=>$soil['id'],
+				"factor"=>"Soil",
+				"value"=>$soil['sensor_value'],
+				"datetime"=>date("F j, Y h:i A",strtotime($soil['system_log']))
+			);
+		
 		};
-
 	};
 
+	// moisture_dew
+	$moisture_dews = $con->getData("SELECT * FROM moisture_dews WHERE location_id = $location_id");
+	if (count($moisture_dews)) { 
+		foreach ($moisture_dews as $k => $moisture_dew) {
+			
+			$locations[$i]["data"][] = array(
+				"id"=>$moisture_dew['id'],
+				"factor"=>"Moisture Dew",
+				"value"=>$moisture_dew['sensor_value'],
+				"datetime"=>date("F j, Y h:i A",strtotime($moisture_dew['system_log']))
+			);
+		
+		};
+	};
+
+	// moisture_rain
+	$moisture_rains = $con->getData("SELECT * FROM moisture_rains WHERE location_id = $location_id");
+	if (count($moisture_rains)) { 
+		foreach ($moisture_rains as $k => $moisture_rain) {
+			
+			$locations[$i]["data"][] = array(
+				"id"=>$moisture_rain['id'],
+				"factor"=>"Moisture Rain",
+				"value"=>$moisture_rain['sensor_value'],
+				"datetime"=>date("F j, Y h:i A",strtotime($moisture_rain['system_log']))
+			);
+		
+		};
+	};
 
 };
 
-$data = array(
-	"locations"=>$locations
-);
-
-echo json_encode($data);
+echo json_encode($locations);
 
 ?>
