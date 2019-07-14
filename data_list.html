@@ -15,15 +15,6 @@ require_once 'authentication.php';
     <link rel="stylesheet" href="./vendor/font-awesome/css/fontawesome-all.min.css">
     <link rel="stylesheet" href="./css/styles.css">
     <link href="css/jquery-jvectormap-1.2.2.css" rel="stylesheet">
-    <style style="text/css">
-    
-      #map {
-        width: 100%;
-        height: 350px;
-        background-color: grey;
-      }
-        
-    </style>
 </head>
 <body id="dashboard" class="sidebar-fixed header-fixed" ng-app="dashboardList" ng-controller="dashboardListCtrl">
 <div class="page-wrapper">
@@ -89,65 +80,42 @@ require_once 'authentication.php';
                 <div class="row">
                     <div class="col-md-12">
                         <ul class="nav nav-tabs" role="tablist">
-                            <li class="nav-item">
-                                <a class="nav-link active" data-toggle="tab" href="#location_1" role="tab" aria-controls="location_1">Location 1</a>
-                            </li>
-
-                            <li class="nav-item">
-                                <a class="nav-link" data-toggle="tab" href="#location_2" role="tab" aria-controls="location_2">Location 2</a>
-                            </li>
-
-                            <li class="nav-item">
-                                <a class="nav-link" data-toggle="tab" href="#location_3" role="tab" aria-controls="location_3">Location 3</a>
+                            <li class="nav-item" ng-repeat="location in logs">
+                                <a class="nav-link" ng-class="{'active': $index==0}" data-toggle="tab" href="#location_{{location.id}}" role="tab" aria-controls="location_{{location.id}}">{{location.location}}</a>
                             </li>
                         </ul>
-
                         <div class="tab-content">
-                            <div class="col-md-6" style="margin-top: 20px; margin-bottom: -25px;">
-                                <div class="form-group">
-                                    <div class="input-group">                   
-                                        <span class="input-group-btn">
-                                            <button type="button" class="btn btn-primary"><i class="fa fa-search"></i> Search</button>
-                                        </span>
-                                        <input type="text" class="form-control" ng-model="category" placeholder="">
-                                    
-                                </div>                                         
-                                </div>
-                            </div>
-                            <div class="tab-pane active" id="location_1" role="tabpanel">
-                            <div class="card-body">
-                                <div class = "row w_scroll">
-                                    <table class="table table-striped">
-                                        <thead>
-                                            <tr>
-                                                <th>Temperature</th>
-                                                <!-- <th>Humidity</th>
-                                                <th>Soil Moisture</th>
-                                                <th>Dew Moisture</th>
-                                                <th>Rain</th> -->
-                                                <th>Date / Time</th>
-                                                
-                                            </tr>
-                                        </thead>
-                                        <tbody>
-                                            <!-- <tr ng-repeat="l in filterData = (data.locations[0] | filter:category)"> -->
-                                            <tr ng-repeat="l in data.locations.temperature">
-                                            <td >{{l.value}}</td>
-                                           <!--  <td >{{l.humidity.value}}</td>
-                                            <td >{{l.soil.value}}</td>
-                                            <td >{{l.moisture_dew.value}}</td>
-                                            <td >{{l.moisture_rain.value}}</td> -->
-                                            <td >{{l.datetime | date:'MMM dd yyyy'}}</td>
-                                            
-                                            </tr>
-                                        </tbody>
-
-                                       
-                                    </table>
-                                </div>
-
-                            </div>
-                        </div>
+                            <div ng-repeat="location in logs" class="tab-pane" ng-class="{'active': $index==0}" id="location_{{location.id}}" role="tabpanel">            
+								<div class="card-body">
+									<div class = "row w_scroll">
+										<table class="table table-striped">
+											<thead>
+												<tr>
+													<!-- <th>Id</th> -->
+													<th>Factor</th>
+													<th>Value</th>
+													<th>Date / Time</th>
+												</tr>
+											</thead>
+											<tbody>
+												<tr ng-repeat="f in page[$index].filterData = (page[$index].data | filter:page[$index].search) | pagination: page[$index].currentPage:page[$index].pageSize">
+													<!-- <td >{{f.id}}</td> -->
+													<td >{{f.factor}}</td>
+													<td >{{f.value}}</td>
+													<td >{{f.datetime}}</td>
+												</tr>
+											</tbody>
+											<tfoot>
+												<tr>
+													<td colspan="3">
+														<ul uib-pagination direction-links="true" boundary-links="true" total-items="page[$index].filterData.length" ng-model="page[$index].currentPage" max-size="page[$index].maxSize"></ul>
+													</td>
+												</tr>
+											</tfoot>
+										</table>
+									</div>
+								</div>
+							</div>
 
                         <div class="tab-pane" id="location_2" role="tabpanel">
                             <div class="card-body">

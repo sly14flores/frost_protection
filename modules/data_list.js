@@ -6,29 +6,43 @@ angular.module('dashboard-module', ['ngSanitize','ui.bootstrap','bootstrap-modal
 		
 		self.data = function(scope) {
 		
-			scope.locations = [];
+			scope.logs = [];
 			locations(scope);
 			
+			scope.page = {};
 		
 		};
 
 		function locations(scope) {
-			
+
 			$http({
 				url: 'handlers/data_list.php',
 				method: 'POST',				
 			}).then(function success(response) {
 				
-				scope.data = response.data;
+				scope.logs = response.data;
+				
+				angular.forEach(scope.logs, function(log,i) {
+					
+					scope.page[i] = {
+						search: '',
+						currentPage: 1,
+						pageSize: 15,
+						maxSize: 3,
+						data: log.data,
+						filterData: log.data
+					};
+					
+				});
 				
 			}, function error(response) {
 				
-			});		
+			});
+
 		};
-	
-		
+
 	};
-	
+
 	return new dashboard();
-	
+
 });
