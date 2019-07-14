@@ -9,7 +9,7 @@ angular.module('dashboard-module', ['ngSanitize','ui.bootstrap','bootstrap-modal
 			scope.logs = [];
 			locations(scope);
 			
-			scope.page = {};
+			scope.page = [];
 		
 		};
 
@@ -24,14 +24,13 @@ angular.module('dashboard-module', ['ngSanitize','ui.bootstrap','bootstrap-modal
 				
 				angular.forEach(scope.logs, function(log,i) {
 					
-					scope.page[i] = {
+					scope.page.push({
 						search: '',
 						currentPage: 1,
 						pageSize: 15,
 						maxSize: 3,
-						data: log.data,
 						filterData: log.data
-					};
+					});
 					
 				});
 				

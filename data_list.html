@@ -98,7 +98,7 @@ require_once 'authentication.php';
 												</tr>
 											</thead>
 											<tbody>
-												<tr ng-repeat="f in page[$index].filterData = (page[$index].data | filter:page[$index].search) | pagination: page[$index].currentPage:page[$index].pageSize">
+												<tr ng-repeat="f in page[$index].filterData = (location.data | filter:page[$index].search) | pagination: page[$index].currentPage:page[$index].pageSize">
 													<!-- <td >{{f.id}}</td> -->
 													<td >{{f.factor}}</td>
 													<td >{{f.value}}</td>
@@ -108,7 +108,7 @@ require_once 'authentication.php';
 											<tfoot>
 												<tr>
 													<td colspan="3">
-														<ul uib-pagination direction-links="true" boundary-links="true" total-items="page[$index].filterData.length" ng-model="page[$index].currentPage" max-size="page[$index].maxSize"></ul>
+														<ul uib-pagination direction-links="true" boundary-links="true" total-items="location.data.length-10" ng-model="page[$index].currentPage" max-size="page[$index].maxSize"></ul>
 													</td>
 												</tr>
 											</tfoot>
