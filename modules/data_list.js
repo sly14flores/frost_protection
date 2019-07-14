@@ -6,24 +6,24 @@ angular.module('dashboard-module', ['ngSanitize','ui.bootstrap','bootstrap-modal
 		
 		self.data = function(scope) {
 		
-			scope.entries_list = [];
+			scope.locations = [];
+			locations(scope);
 			
-			entries_list(scope);
 		
 		};
 
-		function entries_list(scope) {
+		function locations(scope) {
 			
 			$http({
-				url: 'handlers/data.php',
+				url: 'handlers/data_list.php',
 				method: 'POST',				
 			}).then(function success(response) {
 				
-				scope.entries_list = response.data;
+				scope.data = response.data;
 				
 			}, function error(response) {
 				
-			});			
+			});		
 		};
 	
 		
