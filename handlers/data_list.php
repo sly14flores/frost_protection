@@ -14,7 +14,7 @@ foreach ($locations as $i => $location) {
 	$location_id = $location['id'];
 
 	// temperature
-	$temperatures = $con->getData("SELECT * FROM temperatures WHERE location_id = $location_id");
+	$temperatures = $con->getData("SELECT * FROM temperatures WHERE location_id = $location_id ORDER BY id DESC");
 	if (count($temperatures)) { 
 		foreach ($temperatures as $k => $temperature) {
 			
@@ -29,7 +29,7 @@ foreach ($locations as $i => $location) {
 	};
 	
  	// humidity
-	$humidities = $con->getData("SELECT * FROM humidities WHERE location_id = $location_id");
+	$humidities = $con->getData("SELECT * FROM humidities WHERE location_id = $location_id ORDER BY id DESC");
 	if (count($humidities)) { 
 		foreach ($humidities as $k => $humidity) {
 			
@@ -44,7 +44,7 @@ foreach ($locations as $i => $location) {
 	};
 
 	// soil
-	$soils = $con->getData("SELECT * FROM soils WHERE location_id = $location_id");
+	$soils = $con->getData("SELECT * FROM soils WHERE location_id = $location_id ORDER BY id DESC");
 	if (count($soils)) { 
 		foreach ($soils as $k => $soil) {
 			
@@ -59,7 +59,7 @@ foreach ($locations as $i => $location) {
 	};
 
 	// moisture_dew
-	$moisture_dews = $con->getData("SELECT * FROM moisture_dews WHERE location_id = $location_id");
+	$moisture_dews = $con->getData("SELECT * FROM moisture_dews WHERE location_id = $location_id ORDER BY id DESC");
 	if (count($moisture_dews)) { 
 		foreach ($moisture_dews as $k => $moisture_dew) {
 			
@@ -74,7 +74,7 @@ foreach ($locations as $i => $location) {
 	};
 
 	// moisture_rain
-	$moisture_rains = $con->getData("SELECT * FROM moisture_rains WHERE location_id = $location_id");
+	$moisture_rains = $con->getData("SELECT * FROM moisture_rains WHERE location_id = $location_id ORDER BY id DESC");
 	if (count($moisture_rains)) { 
 		foreach ($moisture_rains as $k => $moisture_rain) {
 			

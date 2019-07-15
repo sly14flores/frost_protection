@@ -16,7 +16,7 @@ require_once 'authentication.php';
     <link rel="stylesheet" href="./css/styles.css">
     <link href="css/jquery-jvectormap-1.2.2.css" rel="stylesheet">
 </head>
-<body id="dashboard" class="sidebar-fixed header-fixed" ng-app="dashboardList" ng-controller="dashboardListCtrl">
+<body id="data_list" class="sidebar-fixed header-fixed" ng-app="dashboardList" ng-controller="dashboardListCtrl">
 <div class="page-wrapper">
     <nav class="navbar page-header">
         <a href="#" class="btn btn-link sidebar-mobile-toggle d-md-none mr-auto">
@@ -85,7 +85,18 @@ require_once 'authentication.php';
                             </li>
                         </ul>
                         <div class="tab-content">
-                            <div ng-repeat="location in logs" class="tab-pane" ng-class="{'active': $index==0}" id="location_{{location.id}}" role="tabpanel">            
+                            <div ng-repeat="location in logs" class="tab-pane" ng-class="{'active': $index==0}" id="location_{{location.id}}" role="tabpanel"> 
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <div class="input-group">                   
+                                            <span class="input-group-btn">
+                                                <button type="button" class="btn btn-primary"><i class="fa fa-search"></i> Search</button>
+                                            </span>
+                                            <input type="text" class="form-control" ng-model="page[$index].search" placeholder="">
+                                        </div>
+                                        <hr>
+                                    </div>
+                                </div>             
 								<div class="card-body">
 									<div class = "row w_scroll">
 										<table class="table table-striped">
@@ -117,7 +128,7 @@ require_once 'authentication.php';
 								</div>
 							</div>
 
-                        <div class="tab-pane" id="location_2" role="tabpanel">
+                       <!--  <div class="tab-pane" id="location_2" role="tabpanel">
                             <div class="card-body">
                                 <div class = "row w_scroll">
                                     <table class="table table-striped">
@@ -133,7 +144,7 @@ require_once 'authentication.php';
                                             </tr>
                                         </thead>
                                         <tbody>
-                                            <!-- <tr ng-repeat="l in filterData = (data.locations[1] | filter:category)"> -->
+                                             <tr ng-repeat="l in filterData = (data.locations[1] | filter:category)">
                                             <tr ng-repeat="l in data.locations[1]">
                                             <td class="text-capitalize">{{l.temperature}}</td>
                                             <td class="text-capitalize">{{l.humidity}}</td>
@@ -168,7 +179,7 @@ require_once 'authentication.php';
                                             </tr>
                                         </thead>
                                         <tbody>
-                                            <!-- <tr ng-repeat="l in filterData = (data.locations[2] | filter:category)"> -->
+                                            <tr ng-repeat="l in filterData = (data.locations[2] | filter:category)"> 
                                             <tr ng-repeat="l in data.locations[2]">
                                             <td class="text-capitalize">{{l.temperature}}</td>
                                             <td class="text-capitalize">{{l.humidity}}</td>
@@ -185,7 +196,7 @@ require_once 'authentication.php';
                                 </div>
 
                             </div>
-                        </div>
+                        </div> -->
 
 
                         </div>
