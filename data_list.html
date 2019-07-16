@@ -16,7 +16,7 @@ require_once 'authentication.php';
     <link rel="stylesheet" href="./css/styles.css">
     <link href="css/jquery-jvectormap-1.2.2.css" rel="stylesheet">
 </head>
-<body id="data_list" class="sidebar-fixed header-fixed" ng-app="dashboardList" ng-controller="dashboardListCtrl">
+<body id="data_list" class="sidebar-fixed header-fixed" ng-app="dataList" ng-controller="dataListCtrl">
 <div class="page-wrapper">
     <nav class="navbar page-header">
         <a href="#" class="btn btn-link sidebar-mobile-toggle d-md-none mr-auto">
@@ -119,7 +119,7 @@ require_once 'authentication.php';
 											<tfoot>
 												<tr>
 													<td colspan="3">
-														<ul uib-pagination direction-links="true" boundary-links="true" total-items="location.data.length-100" ng-model="page[$index].currentPage" max-size="page[$index].maxSize"></ul>
+														<ul uib-pagination direction-links="true" boundary-links="true" total-items="location.data.length" ng-model="page[$index].currentPage" max-size="page[$index].maxSize"></ul>
 													</td>
 												</tr>
 											</tfoot>

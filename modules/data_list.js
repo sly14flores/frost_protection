@@ -1,6 +1,6 @@
-angular.module('dashboard-module', ['ngSanitize','ui.bootstrap','bootstrap-modal','block-ui','anguFixedHeaderTable']).factory('dashboard', function($http,$timeout,$compile,$window,bootstrapModal,bui) {
+angular.module('app-module', ['ngSanitize','ui.bootstrap','bootstrap-modal','block-ui','anguFixedHeaderTable']).factory('app', function($http,$timeout,$compile,$window,bootstrapModal,bui) {
 	
-	function dashboard() {
+	function app() {
 		
 		var self = this;
 		
@@ -27,7 +27,7 @@ angular.module('dashboard-module', ['ngSanitize','ui.bootstrap','bootstrap-modal
 					scope.page.push({
 						search: '',
 						currentPage: 1,
-						pageSize: 15,
+						pageSize: 10,
 						maxSize: 3,
 						filterData: log.data
 					});
@@ -42,6 +42,6 @@ angular.module('dashboard-module', ['ngSanitize','ui.bootstrap','bootstrap-modal
 
 	};
 
-	return new dashboard();
+	return new app();
 
 });
