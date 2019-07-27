@@ -1,17 +1,17 @@
-var app = angular.module('dashboardList',['account-module','dashboard-module','notifications-module']);
+var app = angular.module('dataList',['account-module','app-module','notifications-module']);
 
-app.controller('dashboardListCtrl',function($scope,$http,dashboard,$interval) {
+app.controller('dataListCtrl',function($scope,$http,app,$interval) {
 
 	$scope.module = {
-		id: 'dashboard',
+		id: 'data_list',
 		privileges: {
 
 		}
 	};
 
-	$scope.dashboard = dashboard;
+	$scope.app = app;
 	
-	$scope.dashboard.data($scope);
+	$scope.app.data($scope);
 
 	$http({
 		url: 'handlers/locations.php',
