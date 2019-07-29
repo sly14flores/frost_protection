@@ -16,7 +16,7 @@ require_once 'authentication.php';
     <link rel="stylesheet" href="./css/styles.css">
     <link href="css/jquery-jvectormap-1.2.2.css" rel="stylesheet">
 </head>
-<body id="data_list" class="sidebar-fixed header-fixed" ng-app="dataList" ng-controller="dataListCtrl">
+<body id="locations_list" class="sidebar-fixed header-fixed" ng-app="locationsList" ng-controller="locationsListCtrl">
 <div class="page-wrapper">
     <nav class="navbar page-header">
         <a href="#" class="btn btn-link sidebar-mobile-toggle d-md-none mr-auto">
@@ -54,12 +54,12 @@ require_once 'authentication.php';
                         </a>
                     </li>
                     <li class="nav-item">
-                        <a href="data_list.html" class="nav-link active">
+                        <a href="data_list.html" class="nav-link">
                             <i class="icon icon-graph"></i>Data Logs
                         </a>
                     </li>
                     <li class="nav-item">
-                        <a href="locations.html" class="nav-link">
+                        <a href="locations.html" class="nav-link active">
                             <i class="icon icon-location-pin"></i>Locations
                         </a>
                     </li>
@@ -79,72 +79,52 @@ require_once 'authentication.php';
                 </ul>
             </nav>
         </div>
-
-<div class="content">
-            <div class="container-fluid">             
+        <div class="content">
+            <div class="container-fluid">
+						
                 <div class="row">
                     <div class="col-md-12">
-                        <ul class="nav nav-tabs" role="tablist">
-                            <li class="nav-item" ng-repeat="location in logs">
-                                <a class="nav-link" ng-class="{'active': $index==0}" data-toggle="tab" href="#location_{{location.id}}" role="tab" aria-controls="location_{{location.id}}">{{location.location}}</a>
-                            </li>
-                        </ul>
-                        <div class="tab-content">
-                            <div ng-repeat="location in logs" class="tab-pane" ng-class="{'active': $index==0}" id="location_{{location.id}}" role="tabpanel"> 
-                                <div class="row">
-                                    <div class="col-md-6">
-                                        <div class="input-group">                   
-                                            
-
-                                            <select name="factors" id="factor_select" class="form-control" ng-model="page[$index].search">
-                                                <option value="">Select</option>
-                                                <option value="Temperature">Temperature</option>
-                                                <option value="Humidity">Humidity</option>
-                                                <option value="Rain">Rain</option>
-                                                <option value="Soil">Soil Moisture</option>
-                                                <option value="Dew">Dew Moisture</option>
-                                            </select>
-                                        </div>
-                                        <hr>
-                                    </div>
-                                </div>             
-								<div class="card-body">
-									<div class = "row w_scroll">
-										<table class="table table-striped">
-											<thead>
-												<tr>
-													<!-- <th>Id</th> -->
-													<th>Factor</th>
-													<th>Value</th>
-													<th>Date / Time</th>
-												</tr>
-											</thead>
-											<tbody>
-												<tr ng-repeat="f in page[$index].filterData = (location.data | filter:page[$index].search)">
-                                                <!-- | pagination: page[$index].currentPage:page[$index].pageSize"> -->
-													<!-- <td >{{f.id}}</td> -->
-													<td >{{f.factor}}</td>
-													<td >{{f.value}}</td>
-													<td >{{f.datetime}}</td>
-												</tr>
-											</tbody>
-											<!-- <tfoot>
-												<tr>
-													<td colspan="3">
-														<ul uib-pagination direction-links="true" boundary-links="true" total-items="location.data.length" ng-model="page[$index].currentPage" max-size="page[$index].maxSize"></ul>
-													</td>
-												</tr>
-											</tfoot> -->
-										</table>
-									</div>
+					
+                        <div class="card">
+                            <div class="card-header bg-light">
+                                Locations
+								<button type="button" class="btn btn-primary float-right" ng-click="app.add(this,null)">
+									<i class="fas fa-plus"></i> &nbsp; Add
+								</button>								
+                            </div>						
+							<div class="card-body">
+								<div class="row">
+									<table class="table table-striped">
+										<thead>
+											<tr>
+												<th>Location Name</th>
+												<th>Latitude</th>
+												<th>Longitude</th>
+												<th>Actions</th>
+											</tr>
+										</thead>
+										<tbody>
+											<tr ng-repeat="loc in locations">
+											<td>{{loc.location}}</td>
+											<td>{{loc.lat}}</td>
+											<td>{{loc.lng}}</td>
+											<td>
+											<button class="btn btn-primary" ng-click="app.add(this,loc)"><i class="icon icon-pencil"></i></button>
+											<button class="btn btn-secondary" ng-click="app.delete(this,loc)"><i class="icon icon-trash"></i></button>
+											</td>
+											</tr>
+										</tbody>
+									</table>
 								</div>
 							</div>
+								<hr>								
+                            </div>
                         </div>
                     </div>
                 </div>
-            </div>
+			</div>
         </div><!-- /content -->
-        
+    </div>
 </div>
 <script src="./vendor/jquery/jquery.min.js"></script>
 <script src="./vendor/popper.js/popper.min.js"></script>
@@ -173,11 +153,10 @@ require_once 'authentication.php';
 <script src="modules/notifications.js"></script>
 <script src="modules/module-access.js"></script>
 
-<script src="modules/data_list.js"></script>
+<script src="modules/locations_list.js"></script>
 <!-- controller -->
 <script type="text/javascript" src="angular/angu-fixed-header-table.js"></script>
 
-<script src="controllers/data_list.js"></script>
-
+<script src="controllers/locations_list.js"></script>
 </body>
 </html>

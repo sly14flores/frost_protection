@@ -50,7 +50,7 @@ foreach ($locations as $i => $location) {
 			
 			$locations[$i]["data"][] = array(
 				"id"=>$soil['id'],
-				"factor"=>"Soil",
+				"factor"=>"Soil Moisture",
 				"value"=>$soil['sensor_value'],
 				"datetime"=>date("F j, Y h:i A",strtotime($soil['system_log']))
 			);
@@ -65,7 +65,7 @@ foreach ($locations as $i => $location) {
 			
 			$locations[$i]["data"][] = array(
 				"id"=>$moisture_dew['id'],
-				"factor"=>"Moisture Dew",
+				"factor"=>"Dew",
 				"value"=>$moisture_dew['sensor_value'],
 				"datetime"=>date("F j, Y h:i A",strtotime($moisture_dew['system_log']))
 			);
@@ -80,7 +80,7 @@ foreach ($locations as $i => $location) {
 			
 			$locations[$i]["data"][] = array(
 				"id"=>$moisture_rain['id'],
-				"factor"=>"Moisture Rain",
+				"factor"=>"Rain",
 				"value"=>$moisture_rain['sensor_value'],
 				"datetime"=>date("F j, Y h:i A",strtotime($moisture_rain['system_log']))
 			);
