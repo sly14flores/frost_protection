@@ -1,0 +1,38 @@
+<form name="formHolder.loc">
+<div class="row">
+	<div class="col-md-12">
+		<label>Location</label>
+		<div class="input-group mb-3">
+			<div class="input-group-prepend">
+				<i class="icon icon-location-pin input-group-text"></i>
+			</div>
+			<input type="text" class="form-control" placeholder="Location" name="location" ng-class="{'is-invalid': formHolder.loc.location.$touched && formHolder.loc.location.$invalid}" ng-model="loc.location" required>
+			<div class="invalid-feedback">Location Name is required</div>
+		</div>                
+	</div>
+</div>
+<div class="row">
+	<div class="col-md-12">
+		<label>Latitude</label>
+		<div class="input-group mb-3">
+			<div class="input-group-prepend">
+				<i class="icon icon-location-pin input-group-text"></i>
+			</div>
+			<input type="text" class="form-control" placeholder="Latitude" name="lat" ng-class="{'is-invalid': formHolder.loc.lat.$touched && formHolder.loc.lat.$invalid}" ng-model="loc.lat" required>
+			<div class="invalid-feedback">Latitude is required</div>
+		</div>                
+	</div>
+</div>
+<div class="row">
+	<div class="col-md-12">
+		<label>Longitude</label>
+		<div class="input-group mb-3">
+			<div class="input-group-prepend">
+				<i class="icon icon-social-reddit input-group-text"></i>
+			</div>
+			<input type="text" class="form-control" placeholder="Longitude" name="lng" ng-class="{'is-invalid': formHolder.loc.lng.$touched && formHolder.loc.lng.$invalid}" ng-model="loc.lng" required>
+			<div class="invalid-feedback">Longitude is required</div>
+		</div>                
+	</div>
+</div>
+</form>

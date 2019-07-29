@@ -17,7 +17,7 @@ angular.module('dashboard-module', ['ngSanitize','ui.bootstrap','bootstrap-modal
 			scope.locations = [];
 			
 			scope.select = {};
-			scope.select.location = {id: 1, location: "Location 1"};
+			scope.select.location = {id: 1, location: " "};
 			
 			scope.gauges = {};
 			scope.gauges.data = {};			
