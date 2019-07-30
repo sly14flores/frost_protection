@@ -97,7 +97,7 @@ require_once 'authentication.php';
                                             
 
                                             <select name="factors" id="factor_select" class="form-control" ng-model="page[$index].search">
-                                                <option value="">Select</option>
+                                                <option value="">All</option>
                                                 <option value="Temperature">Temperature</option>
                                                 <option value="Humidity">Humidity</option>
                                                 <option value="Rain">Rain</option>
@@ -120,21 +120,20 @@ require_once 'authentication.php';
 												</tr>
 											</thead>
 											<tbody>
-												<tr ng-repeat="f in page[$index].filterData = (location.data | filter:page[$index].search)">
-                                                <!-- | pagination: page[$index].currentPage:page[$index].pageSize"> -->
-													<!-- <td >{{f.id}}</td> -->
+												<tr ng-repeat="f in page[$index].filterData = (location.data | filter:page[$index].search) | pagination: page[$index].currentPage:page[$index].pageSize">
+													 <!-- <td >{{f.id}}</td> -->
 													<td >{{f.factor}}</td>
 													<td >{{f.value}}</td>
 													<td >{{f.datetime}}</td>
 												</tr>
 											</tbody>
-											<!-- <tfoot>
+											<tfoot>
 												<tr>
 													<td colspan="3">
-														<ul uib-pagination direction-links="true" boundary-links="true" total-items="location.data.length" ng-model="page[$index].currentPage" max-size="page[$index].maxSize"></ul>
+														<ul uib-pagination direction-links="true" boundary-links="true" total-items="page[$index].filterData.length" ng-model="page[$index].currentPage" max-size="page[$index].maxSize"></ul>
 													</td>
 												</tr>
-											</tfoot> -->
+											</tfoot>
 										</table>
 									</div>
 								</div>
