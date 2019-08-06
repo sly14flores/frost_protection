@@ -93,6 +93,9 @@ angular.module('sms-module',[]).factory('sms', function($http) {
 			  
 			  self.mqtt_client.subscribe("benguet/data");
 			  self.mqtt_client.subscribe("benguet/sms/test");
+			  self.mqtt_client.subscribe("benguet/status/1");
+			  self.mqtt_client.subscribe("benguet/status/2");
+			  self.mqtt_client.subscribe("benguet/status/3");
 				  
 			};
 			
@@ -162,7 +165,84 @@ angular.module('sms-module',[]).factory('sms', function($http) {
 					
 					break;
 					
+					case "benguet/status/1":
+						
+						$http({
+							url: 'handlers/status.php',
+							method: 'POST',
+							data: {location_id: 1}
+						}).then(function success(response) {
+							
+							send(payload,response.data);
+							
+						}, function error(response) {
+							
+						});						
+					
+					break;
+					
+					case "benguet/status/2":
+					
+						$http({
+							url: 'handlers/status.php',
+							method: 'POST',
+							data: {location_id: 2}
+						}).then(function success(response) {
+							
+							send(payload,response.data);
+							
+						}, function error(response) {
+							
+						});						
+					
+					break;
+
+					case "benguet/status/3":
+					
+						$http({
+							url: 'handlers/status.php',
+							method: 'POST',
+							data: {location_id: 3}
+						}).then(function success(response) {
+							
+							send(payload,response.data);
+							
+						}, function error(response) {
+							
+						});						
+					
+					break;					
+					
 				};
+				
+				function send(cp,text) {
+				
+					var params = {
+						un: "mcglenntangalin07",
+						pwd: "returnednaako12314",
+						dstno: cp,
+						msg: text,
+						type: 1,
+						agreedterm: "YES"
+					};
+					
+					$.ajax({
+						url: 'https://www.isms.com.my/isms_send.php',
+						type: 'GET',
+						data: params,					
+						success: function(result,status,xhr) {
+
+							// console.log(result);
+						
+						},
+						error: function(xhr,status,error) {
+
+							// console.log(status);
+							
+						}
+					});						
+					
+				};				
 			  
 			};
 
